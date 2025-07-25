@@ -1,0 +1,48 @@
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.arena-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.arena-title {
+  font-size: 2em;
+  color: #ffcc00;
+}
+
+.subtext {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #cccccc;
+}
+
+.battle-options {
+  margin-top: 30px;
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+  padding: 15px 30px;
+  background-color: #1f1f1f;
+  color: #fff;
+  border: 2px solid #444;
+  border-radius: 12px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}

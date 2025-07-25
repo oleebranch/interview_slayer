@@ -11,15 +11,14 @@
     <h1>Welcome to the <br><span class="arena-title">Job Interview Arena</span></h1>
     <p class="subtext">Now...<br><strong>CHOOSE YOUR BATTLE ⚔️</strong></p>
     <div class="battle-options">
-      <button onclick="goToArena('solo')">🥷🏾 Solo Mission</button>
-      <button onclick="goToArena('timed')">⏱️ Timed Challenge</button>
-      <button onclick="goToArena('boss')">🦾 Boss Moves</button>
+      <button onclick="goToArena('solo.html')">🥷🏾 Solo Mission</button>
+      <button onclick="goToArena('timed.html')">⏱️ Timed Challenge</button>
+      <button onclick="goToArena('boss.html')">🦾 Boss Moves</button>
     </div>
   </div>
   <script>
-    function goToArena(mode) {
-      alert('Entering ' + mode.charAt(0).toUpperCase() + mode.slice(1) + ' Arena...');
-      // future: window.location.href = mode + ".html";
+    function goToArena(file) {
+      window.location.href = file;
     }
   </script>
 </body>

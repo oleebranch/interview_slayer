@@ -13,21 +13,17 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
+      position: relative;
+      margin: 0;
       padding: 2rem 1rem;
       text-align: center;
-      margin: 0;
-    }
-    .container {
-      max-width: 600px;
-      width: 100%;
-      margin: auto;
     }
     .back {
       position: absolute;
-      top: 2rem;
-      left: 2rem;
+      top: 1rem;
+      left: 1rem;
       color: #f1f1f1;
       text-decoration: none;
       font-size: 1rem;
@@ -38,6 +34,7 @@
     h1 {
       font-size: 2em;
       color: #ffcc00;
+      margin-top: 3rem;
     }
     .tagline {
       font-size: 1rem;
@@ -49,7 +46,7 @@
       line-height: 1.6;
       margin-bottom: 2rem;
     }
-    .cta-button {
+    .category-button, .cta-button {
       background-color: #1e1e1e;
       color: #f1f1f1;
       border: 2px solid #f1f1f1;
@@ -61,24 +58,73 @@
       text-decoration: none;
       display: inline-block;
     }
-    .cta-button:hover {
+    .category-button:hover, .cta-button:hover {
       background-color: #f1f1f1;
       color: #121212;
     }
+    .cta-container {
+      display: none;
+      margin-top: 1.5rem;
+    }
+    #current-path {
+      font-size: 1rem;
+      font-style: italic;
+      margin-top: 2rem;
+      color: #aaa;
+    }
   </style>
+  <script>
+    function showActions(category) {
+      // Hide all categories
+      document.getElementById('category-buttons').style.display = 'none';
+
+      // Show only the selected category's CTA buttons
+      document.querySelectorAll('.cta-container').forEach(el => el.style.display = 'none');
+      document.getElementById(category).style.display = 'block';
+
+      // Update current path text
+      let pathText = "";
+      if (category === 'pm') pathText = "📊 Practicing: Project Management";
+      if (category === 'genai') pathText = "🤖 Practicing: GenAI";
+      if (category === 'cx') pathText = "💬 Practicing: Client Relations";
+      document.getElementById('current-path').textContent = pathText;
+    }
+  </script>
 </head>
 <body>
   <a href="index.html" class="back">Back</a>
-  <div class="container">
-    <h1>🥷🏾 Solo Mission: Where Legends Stretch First</h1>
-    <p class="tagline">This is your warm-up. But warm-ups can still heat you up...</p>
-    <p class="intro">
-      Ease in or power up — this is your space to learn, not sweat.<br>
-      Whether you're on the loo, between meetings, or winding down with wine,<br>
-      <strong>Solo Mission</strong> is here to keep your blade sharp.
-    </p>
-    <a class="cta-button" href="flashcard.html">🔁 Flip Flashcards</a>
-    <a class="cta-button" href="quiz.html">🎯 Slay 5 Questions</a>
+  <h1>🥷🏾 Solo Mission: Where Legends Stretch with Intention</h1>
+  <p class="tagline">Your blade’s only as sharp as the direction you swing it.</p>
+  <p class="intro">
+    Every great mission starts with purpose. Choose your path:<br>
+    Will you master the art of Project Management, decode the power of GenAI,<br>
+    or perfect your Client Relations craft?<br>
+    You set the pace. We’ll sharpen the skills.
+  </p>
+
+  <div id="category-buttons">
+    <button class="category-button" onclick="showActions('pm')">📊 Project Management</button>
+    <button class="category-button" onclick="showActions('genai')">🤖 GenAI</button>
+    <button class="category-button" onclick="showActions('cx')">💬 Client Relations</button>
+  </div>
+
+  <p id="current-path"></p>
+
+  <div id="pm" class="cta-container">
+    <a class="cta-button" href="flashcard_pm.html">🔁 Flip Flashcards</a>
+    <a class="cta-button" href="quiz_pm.html">🎯 Slay 20 Questions</a>
+    <a class="cta-button" href="xp.html">📊 Check Your XP Score</a>
+  </div>
+
+  <div id="genai" class="cta-container">
+    <a class="cta-button" href="flashcard_genai.html">🔁 Flip Flashcards</a>
+    <a class="cta-button" href="quiz_genai.html">🎯 Slay 20 Questions</a>
+    <a class="cta-button" href="xp.html">📊 Check Your XP Score</a>
+  </div>
+
+  <div id="cx" class="cta-container">
+    <a class="cta-button" href="flashcard_cx.html">🔁 Flip Flashcards</a>
+    <a class="cta-button" href="quiz_cx.html">🎯 Slay 20 Questions</a>
     <a class="cta-button" href="xp.html">📊 Check Your XP Score</a>
   </div>
 </body>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GenAI Flashcards - Interview Slayer</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 2rem;
+    }
+
+    .back-btn {
+      align-self: flex-start;
+      margin-bottom: 1rem;
+      color: #ffcc00;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #ffcc00;
+    }
+
+    .card-container {
+      perspective: 1000px;
+      width: 100%;
+      max-width: 400px;
+      height: 240px;
+      margin-bottom: 2rem;
+    }
+
+    .card {
+      width: 100%;
+      height: 100%;
+      background-color: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 1rem;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .card.flipped {
+      transform: rotateY(180deg);
+    }
+
+    .front, .back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .back {
+      transform: rotateY(180deg);
+    }
+
+    button {
+      background-color: #ffcc00;
+      color: #000000;
+      border: none;
+      border-radius: 5px;
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 1.5rem;
+    }
+
+    button:hover {
+      background-color: #ffcc00;
+    }
+  </style>
+</head>
+<body>
+  <a href="solo.html" class="back-btn">&#8592; Back</a>
+  <h1>GenAI Flashcards</h1>
+  <div class="card-container" onclick="flipCard()">
+    <div class="card" id="card">
+      <div class="front" id="front">
+        Loading question...
+      </div>
+      <div class="back" id="back">
+        Loading answer...
+      </div>
+    </div>
+  </div>
+  <button onclick="nextCard()">Next</button>
+
+  <script>
+    const cards = [
+      {
+        question: "What does NLP stand for in AI?",
+        answer: "Natural Language Processing",
+        tip: "NLP helps machines understand human language—used in chatbots and sentiment analysis."
+      },
+      {
+        question: "What is prompt engineering?",
+        answer: "Designing inputs to get the best outputs from a generative AI model.",
+        tip: "It's like crafting the perfect question to get a helpful answer."
+      },
+      {
+        question: "What is a hallucination in AI?",
+        answer: "When a model gives a false or made-up response.",
+        tip: "These are confident but incorrect answers, watch out for them in GenAI tools."
+      },
+      {
+        question: "What does 'fine-tuning' a model mean?",
+        answer: "Adjusting a pre-trained model to perform better on a specific task.",
+        tip: "Used to specialize models for industries like healthcare or law."
+      },
+      {
+        question: "What is the purpose of a tokenizer in NLP?",
+        answer: "To break down text into smaller pieces (tokens) for processing.",
+        tip: "Tokens can be words, characters, or subwords—essential for understanding language."
+      },
+      {
+        question: "What is transfer learning in AI?",
+        answer: "Using knowledge from one task to improve performance on another related task.",
+        tip: "It allows models to leverage existing data and learn faster."
+      },
+      {
+        question: "What is a Large Language Model (LLM)?",
+        answer: "A type of AI trained on vast text datasets to understand and generate human-like language.",
+        tip: "Examples include GPT, BERT, and PaLM."
+      },
+      {
+        question: "What is Generative AI primarily used for?",
+        answer: "Creating new content such as text, images, audio, and code.",
+        tip: "Generative AI is designed to generate data that resembles its training set."
+    },
+    {
+        question: "What does 'fine-tuning' mean in the context of AI models?",
+        answer: "Adjusting a pre-trained model on a smaller, specific dataset to improve its performance on a particular task.",
+        tip: "Fine-tuning helps models specialize beyond general-purpose training."
+    },
+    {
+        question: "Which model architecture is widely used in modern generative AI tools like ChatGPT?",
+        answer: "Transformer",
+        tip: "Transformers use attention mechanisms to weigh the importance of input data."
+    },
+    {
+        question: "What is 'prompt engineering'?",
+        answer: "Crafting inputs to guide a language model\u2019s output effectively.",
+        tip: "The quality of your prompt heavily influences the model\u2019s response."
+    },
+    {
+        question: "What is a major ethical concern in generative AI?",
+        answer: "Misinformation and deepfakes.",
+        tip: "Generated content can be misused to spread false or misleading information."
+    },
+    {
+        question: "How does generative AI differ from traditional AI?",
+        answer: "Generative AI creates new content, whereas traditional AI focuses on predictions and classifications.",
+        tip: "Generative AI outputs new data; traditional AI interprets existing data."
+    },
+    {
+        question: "Which type of generative model can create images from text prompts?",
+        answer: "Diffusion models (e.g., DALL\u00b7E, Stable Diffusion).",
+        tip: "These models translate text into pixel-by-pixel images."
+    },
+    {
+        question: "What is zero-shot learning in AI?",
+        answer: "The model performs tasks without any specific training examples for that task.",
+        tip: "Language models like GPT-4 demonstrate zero-shot capabilities."
+    },
+    {
+        question: "What does 'token' mean in language models?",
+        answer: "A piece of text, often a word or part of a word, used as a unit of input for the model.",
+        tip: "Models process and generate content one token at a time."
+    },
+    {
+        question: "Why is data quality important in training AI models?",
+        answer: "Poor-quality data can lead to biased or inaccurate outputs.",
+        tip: "The output is only as good as the data it\u2019s trained on\u2014garbage in, garbage out."
+    }    
+    ];
+
+    let currentIndex = 0;
+    let isFlipped = false;
+
+    function loadCard(index) {
+      const card = cards[index];
+      document.getElementById("front").innerText = card.question;
+      document.getElementById("back").innerHTML = `<strong>Answer:</strong> ${card.answer}<br><br><em>Tip:</em> ${card.tip}`;
+      document.getElementById("card").classList.remove("flipped");
+      isFlipped = false;
+    }
+
+    function flipCard() {
+      const card = document.getElementById("card");
+      isFlipped = !isFlipped;
+      card.classList.toggle("flipped");
+    }
+
+    function nextCard() {
+      currentIndex = (currentIndex + 1) % cards.length;
+      loadCard(currentIndex);
+    }
+
+    window.onload = function() {
+      cards.sort(() => 0.5 - Math.random());
+      loadCard(currentIndex);
+    };
+  </script>
+</body>
+</html>

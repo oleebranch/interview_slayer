@@ -1,12 +1,27 @@
 {
-  "name": "project_slayer_mvp",
+  "name": "interview-slayer",
   "version": "1.0.0",
+  "description": "A gamified, dark-mode interview preparation tool with flashcards, quizzes, and XP tracking. Free for job seekers, built for confidence.",
   "main": "script.js",
   "scripts": {
+    "start": "live-server",
+    "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "keywords": [
+    "interview-prep",
+    "gamified-learning",
+    "project-management",
+    "generative-ai",
+    "flashcards",
+    "job-search",
+    "portfolio-project"
+  ],
+  "author": "Olive Nakiyemba",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^9.32.0"
+  },
+  "devDependencies": {}
 }
+

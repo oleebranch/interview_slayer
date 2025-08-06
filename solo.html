@@ -1,9 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Solo Mission | Interview Slayer</title>
   <style>
     body {
@@ -20,6 +20,7 @@
       padding: 2rem 1rem;
       text-align: center;
     }
+
     .back {
       position: absolute;
       top: 1rem;
@@ -28,25 +29,31 @@
       text-decoration: none;
       font-size: 1rem;
     }
+
     .back::before {
       content: "⬅ ";
     }
+
     h1 {
       font-size: 2em;
       color: #ffcc00;
       margin-top: 3rem;
     }
+
     .tagline {
       font-size: 1rem;
       font-style: italic;
       margin-bottom: 1.5rem;
     }
+
     .intro {
       font-size: 1rem;
       line-height: 1.6;
       margin-bottom: 2rem;
     }
-    .category-button, .cta-button {
+
+    .category-button,
+    .cta-button {
       background-color: #1e1e1e;
       color: #f1f1f1;
       border: 2px solid #f1f1f1;
@@ -58,14 +65,18 @@
       text-decoration: none;
       display: inline-block;
     }
-    .category-button:hover, .cta-button:hover {
+
+    .category-button:hover,
+    .cta-button:hover {
       background-color: #f1f1f1;
       color: #121212;
     }
+
     .cta-container {
       display: none;
       margin-top: 1.5rem;
     }
+
     #current-path {
       font-size: 1rem;
       font-style: italic;
@@ -86,26 +97,25 @@
       let pathText = "";
       if (category === 'pm') pathText = "📊 Practicing: Project Management";
       if (category === 'genai') pathText = "🤖 Practicing: GenAI";
-      if (category === 'cx') pathText = "💬 Practicing: Client Relations";
+      // if (category === 'cx') pathText = "💬 Practicing: Client Relations";
       document.getElementById('current-path').textContent = pathText;
     }
   </script>
 </head>
+
 <body>
   <a href="index.html" class="back">Back</a>
   <h1>🥷🏾 Solo Mission: Where Legends Stretch with Intention</h1>
   <p class="tagline">Your blade’s only as sharp as the direction you swing it.</p>
   <p class="intro">
     Every great mission starts with purpose. Choose your path:<br>
-    Will you master the art of Project Management, decode the power of GenAI,<br>
-    or perfect your Client Relations craft?<br>
+    Will you master the art of Project Management, and decode the power of GenAI?<br>
     You set the pace. We’ll sharpen the skills.
   </p>
 
   <div id="category-buttons">
     <button class="category-button" onclick="showActions('pm')">📊 Project Management</button>
     <button class="category-button" onclick="showActions('genai')">🤖 GenAI</button>
-    <button class="category-button" onclick="showActions('cx')">💬 Client Relations</button>
   </div>
 
   <p id="current-path"></p>
@@ -120,9 +130,10 @@
     <a class="cta-button" href="quiz_genai.html">🤺 Combat Drill</a>
   </div>
 
-  <div id="cx" class="cta-container">
+  <!-- <div id="cx" class="cta-container">
     <a class="cta-button" href="flashcard_cx.html">🔁 Flip Flashcards</a>
     <a class="cta-button" href="quiz_cx.html">🤺 Combat Drill</a>
-  </div>
+  </div> -->
 </body>
+
 </html>

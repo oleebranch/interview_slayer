@@ -1,0 +1,824 @@
+[
+  {
+    "question": "A sequence shows: triangle up, square, triangle right, circle, triangle down. What comes next?",
+    "options": ["Triangle left", "Square", "Circle", "Triangle up"],
+    "answer": "Triangle left",
+    "tip": "The triangle rotates 90° clockwise each appearance."
+  },
+  {
+    "question": "Retail store: A customer can’t find a book and it’s out of stock. What should you do?",
+    "options": [
+      "Apologise and suggest he try another online retailer",
+      "Offer to order the book and call him when it arrives, giving a timeframe",
+      "Give him the ISBN so he can search elsewhere himself",
+      "Suggest he drive to a branch 40 minutes away"
+    ],
+    "answer": "Offer to order the book and call him when it arrives, giving a timeframe",
+    "tip": "Own the problem and keep the sale in‑house with clear follow‑up."
+  },
+  {
+    "question": "Retail store: You spot a nearby section in disarray while heading to break. Best action?",
+    "options": [
+      "Take your break and tidy later if still messy",
+      "Ask your team lead to spare you for 10–15 minutes to help, then take a later break",
+      "Do nothing—another team will handle it",
+      "Leave a note for the section lead and continue to break"
+    ],
+    "answer": "Ask your team lead to spare you for 10–15 minutes to help, then take a later break",
+    "tip": "Proactive help with permission protects standards and workflow."
+  },
+  {
+    "question": "Retail store: Raise children’s book sales by 15% next month with no extra budget. Best move?",
+    "options": [
+      "Hand‑write a poster near the till",
+      "Create a front‑of‑area display of summer‑themed kids’ books and activity titles",
+      "Deep‑clean the children’s area",
+      "Pitch kids’ books to anyone who looks like a parent"
+    ],
+    "answer": "Create a front‑of‑area display of summer‑themed kids’ books and activity titles",
+    "tip": "Targeted merchandising beats generic promotions."
+  },
+  {
+    "question": "Retail store: Card terminals fail; fix ETA 15 minutes with a long queue. Best action?",
+    "options": [
+      "Send someone down the line to explain the issue and ETA",
+      "Keep serving and apologising",
+      "Ask the team lead what to do",
+      "Take your break since most will return later"
+    ],
+    "answer": "Send someone down the line to explain the issue and ETA",
+    "tip": "Transparent comms reduce frustration and wasted time."
+  },
+  {
+    "question": "What does MVP stand for in product development?",
+    "options": [
+      "Most Valuable Product",
+      "Minimum Viable Product",
+      "Model Validation Process",
+      "Market Viability Plan"
+    ],
+    "answer": "Minimum Viable Product",
+    "tip": "Ship the smallest thing that delivers value to learn fast."
+  },
+  {
+    "question": "Who prioritizes the Product Backlog in Scrum?",
+    "options": ["Scrum Master", "Project Manager", "Product Owner", "Developers"],
+    "answer": "Product Owner",
+    "tip": "The PO orders items to maximize value."
+  },
+  {
+    "question": "What is scope creep?",
+    "options": ["Planned scope increase", "Uncontrolled expansion of scope", "Reducing requirements", "Gold plating"],
+    "answer": "Uncontrolled expansion of scope",
+    "tip": "Prevent with change control and clear acceptance criteria."
+  },
+  {
+    "question": "Which tool shows task dependencies over time?",
+    "options": ["Kanban board", "Burndown chart", "Gantt chart", "Pareto chart"],
+    "answer": "Gantt chart",
+    "tip": "Gantt shows durations and predecessors/successors."
+  },
+  {
+    "question": "Definition of a milestone?",
+    "options": ["A long task", "A significant point/event", "A blocker", "A dependency"],
+    "answer": "A significant point/event",
+    "tip": "Zero‑duration marker for key achievements."
+  },
+  {
+    "question": "What are tokens in large language models?",
+    "options": ["Entire sentences", "Chunks like words/subwords", "Paragraphs", "Files"],
+    "answer": "Chunks like words/subwords",
+    "tip": "Models read and generate token by token."
+  },
+  {
+    "question": "Which architecture powers most modern LLMs?",
+    "options": ["CNN", "RNN", "Transformer", "KNN"],
+    "answer": "Transformer",
+    "tip": "Self‑attention captures long‑range dependencies."
+  },
+  {
+    "question": "In text generation, temperature controls…",
+    "options": ["Model size", "Randomness/creativity", "Latency", "Cost"],
+    "answer": "Randomness/creativity",
+    "tip": "Lower is focused; higher is diverse and unpredictable."
+  },
+  {
+    "question": "Embeddings primarily capture…",
+    "options": ["Token counts", "Semantic similarity", "Network latency", "GPU memory"],
+    "answer": "Semantic similarity",
+    "tip": "Similar ideas sit close in vector space."
+  },
+  {
+    "question": "Which metric shows schedule efficiency in Earned Value Management?",
+    "options": ["CPI", "SPI", "BAC", "EAC"],
+    "answer": "SPI",
+    "tip": "Schedule Performance Index = EV ÷ PV."
+  },
+  {
+    "question": "Fast‑tracking a schedule means…",
+    "options": ["Adding resources to tasks", "Doing critical tasks in parallel", "Cutting scope", "Increasing overtime"],
+    "answer": "Doing critical tasks in parallel",
+    "tip": "Shortens duration but increases risk."
+  },
+  {
+    "question": "RACI: what does “A” stand for?",
+    "options": ["Assigned", "Approved", "Accountable", "Advisor"],
+    "answer": "Accountable",
+    "tip": "Exactly one accountable owner per task."
+  },
+  {
+    "question": "Main output of a Sprint Review?",
+    "options": ["Risk register", "Updated Gantt", "Increment", "Team charter"],
+    "answer": "Increment",
+    "tip": "A working increment shows delivered value."
+  },
+  {
+    "question": "What does a burndown chart show?",
+    "options": ["Cost variance over time", "Remaining work vs time", "Defect density", "Team size trend"],
+    "answer": "Remaining work vs time",
+    "tip": "Visualizes sprint progress to zero."
+  },
+  {
+    "question": "RAG stands for…",
+    "options": [
+      "Randomized Adversarial Generation",
+      "Retrieval‑Augmented Generation",
+      "Rule‑Assisted Generation",
+      "Reinforced Autonomy Generation"
+    ],
+    "answer": "Retrieval‑Augmented Generation",
+    "tip": "Grounding reduces hallucinations and enables citations."
+  },
+  {
+    "question": "Best way to reduce hallucinations in production?",
+    "options": ["Raise temperature", "Shorten prompts", "Use retrieval/grounding", "Use a smaller model"],
+    "answer": "Use retrieval/grounding",
+    "tip": "Constrain answers to trusted context with sources."
+  },
+  {
+    "question": "RLHF stands for…",
+    "options": [
+      "Reinforcement Learning from Human Feedback",
+      "Regularized Learning with Heuristic Features",
+      "Representation Learning via Human Forms",
+      "Rapid Learning for High‑Fidelity"
+    ],
+    "answer": "Reinforcement Learning from Human Feedback",
+    "tip": "Aligns model behavior with human preferences."
+  },
+  {
+    "question": "A context window is…",
+    "options": ["Training dataset size", "Tokens the model can consider at once", "VRAM per batch", "Number of layers"],
+    "answer": "Tokens the model can consider at once",
+    "tip": "Bigger windows allow longer documents."
+  },
+  {
+    "question": "Fine‑tuning a base model does what?",
+    "options": ["Compresses weights", "Adapts it to domain data", "Removes bias entirely", "Extends context window"],
+    "answer": "Adapts it to domain data",
+    "tip": "Use when you need domain style or terminology."
+  },
+  {
+    "question": "Why use GPUs over CPUs for LLM inference?",
+    "options": ["More RAM", "Parallelism for matrix ops", "Cheaper per core", "Better I/O"],
+    "answer": "Parallelism for matrix ops",
+    "tip": "Transformers are heavy on linear algebra."
+  },
+  {
+    "question": "Graduate Trainee: Conflicting preferences on suppliers; 1‑hour meeting. Best way to run it?",
+    "options": [
+      "Open discussion until consensus emerges",
+      "Free discussion first, add structure after 15 minutes",
+      "Agree criteria first, then evaluate options systematically to decide",
+      "State your view first with pros/cons, then ask for opinions"
+    ],
+    "answer": "Agree criteria first, then evaluate options systematically to decide",
+    "tip": "Criteria‑led facilitation prevents bias and meets the timebox."
+  },
+  {
+    "question": "Graduate Trainee: You’ll rotate into Finance at peak season and lack experience. Best action now?",
+    "options": [
+      "Search the internet for budgeting concepts",
+      "Request a 1:1 with your future supervisor to understand upcoming work",
+      "Thank them and promise to reach out in a few months",
+      "Ask for any documents they can email and wait"
+    ],
+    "answer": "Request a 1:1 with your future supervisor to understand upcoming work",
+    "tip": "Proactive stakeholder engagement beats generic study."
+  },
+  {
+    "question": "Change requests should…",
+    "options": [
+      "Be implemented immediately",
+      "Go through formal change control",
+      "Be ignored late in the project",
+      "Be approved only by the PM"
+    ],
+    "answer": "Go through formal change control",
+    "tip": "Assess impact to scope, schedule, cost, and quality."
+  },
+  {
+    "question": "Critical Chain primarily focuses on…",
+    "options": ["Resource buffers", "Lead/lag", "Calendar exceptions", "Vendor SLAs"],
+    "answer": "Resource buffers",
+    "tip": "Buffers protect delivery from variability."
+  },
+  {
+    "question": "Stakeholder becomes unresponsive. First move?",
+    "options": ["Escalate to sponsor", "Proceed without them", "Re‑engage via their preferred channels", "Remove them from the register"],
+    "answer": "Re‑engage via their preferred channels",
+    "tip": "Tailored outreach before escalation."
+  },
+  {
+    "question": "Velocity in Scrum is…",
+    "options": ["Story points completed per sprint", "Team size", "Bug count", "Lines of code"],
+    "answer": "Story points completed per sprint",
+    "tip": "Used for planning, not comparing teams."
+  },
+  {
+    "question": "Definition of Done ensures…",
+    "options": ["Scope is fixed", "Work meets agreed quality", "Stakeholders are informed", "Budget is approved"],
+    "answer": "Work meets agreed quality",
+    "tip": "A checklist for completeness and quality."
+  },
+  {
+    "question": "Customer returns a mixer after 3 months with no receipt and is angry. Best first step?",
+    "options": [
+      "Refuse—policy is 28 days only",
+      "Blame misuse and ask if they read the manual",
+      "Take them to Customer Service to review policy and find proof of purchase options",
+      "Offer cash refund immediately"
+    ],
+    "answer": "Take them to Customer Service to review policy and find proof of purchase options",
+    "tip": "De‑escalate and seek solutions (e.g., card statements, warranty)."
+  },
+  {
+    "question": "Customer unsure between £299 dishwasher and £350 superior model (offer ends today). Best approach?",
+    "options": [
+      "Urge a quick decision before the offer ends",
+      "Leave them to decide alone",
+      "Explain total cost of ownership and suggest calling their partner now to confirm",
+      "Say quality is always better than ‘cheap and cheerful’"
+    ],
+    "answer": "Explain total cost of ownership and suggest calling their partner now to confirm",
+    "tip": "Frame value clearly and support informed consent."
+  },
+  {
+    "question": "Store morning tasks: expired offer display up, messy till, stock delivery pending, 10–11am meeting (short‑staffed). Best plan?",
+    "options": [
+      "Do the delivery first before opening, discuss the rest later",
+      "Wait for the supervisor’s guidance",
+      "Dismantle the expired offer display, tidy till, split meeting coverage, then handle delivery",
+      "Skip the meeting and focus on delivery all day"
+    ],
+    "answer": "Dismantle the expired offer display, tidy till, split meeting coverage, then handle delivery",
+    "tip": "Fix legal/comms risks first, prep for customers, then process stock."
+  },
+  {
+    "question": "Customer asks which coffee maker to buy. Best next step?",
+    "options": [
+      "Show best sellers plus a premium model",
+      "Say everything is high quality and subjective",
+      "Ask usage, kitchen setup, style/price preferences, and coffee type to tailor options",
+      "Ask their favorite coffee and point to matching machines"
+    ],
+    "answer": "Ask usage, kitchen setup, style/price preferences, and coffee type to tailor options",
+    "tip": "Needs discovery precedes recommendation."
+  },
+  {
+    "question": "HR: Internal candidate complains after losing a consultant post. Best response?",
+    "options": [
+      "Say the process was fair and seniority isn’t decisive",
+      "Explain the panel valued the winner’s academics and leadership",
+      "Acknowledge disappointment and offer details on requesting formal feedback",
+      "Offer tea and let him vent"
+    ],
+    "answer": "Acknowledge disappointment and offer details on requesting formal feedback",
+    "tip": "Empathy + process transparency channels the complaint productively."
+  },
+  {
+    "question": "HR: You must shortlist 5 vendors from 20 training bids. Best approach?",
+    "options": [
+      "Score all bidders against agreed criteria on a 1–5 grid",
+      "Pick the lowest 5 prices",
+      "Ask managers for key criteria and structure your decision around them",
+      "Email another Trust for generic advice"
+    ],
+    "answer": "Ask managers for key criteria and structure your decision around them",
+    "tip": "Align with stakeholders’ success criteria; then score."
+  },
+  {
+    "question": "HR: Recruit 10 nursing assistants with good ‘staying power’. Best first step?",
+    "options": [
+      "Advertise immediately everywhere, design shortlisting later",
+      "Copy the last campaign process exactly",
+      "Work back from interview date and draft an ad to attract value‑aligned candidates",
+      "Ask agencies to write the ad"
+    ],
+    "answer": "Work back from interview date and draft an ad to attract value‑aligned candidates",
+    "tip": "Plan backwards and target fit to reduce turnover."
+  },
+  {
+    "question": "HR: Induction courses are full for 3 months; Head of Nursing wants 8 starters inducted within 2 weeks. After review, you book first available. Best way to convey this?",
+    "options": [
+      "Apologise and promise to watch for cancellations, prioritising her staff",
+      "Say her staff aren’t more important than others",
+      "Apologise; explain you reviewed attendees and can’t reschedule; booked first available dates",
+      "Ask her to run 1:1 inductions herself"
+    ],
+    "answer": "Apologise; explain you reviewed attendees and can’t reschedule; booked first available dates",
+    "tip": "Show diligence, fairness, and a concrete plan."
+  },
+  {
+    "question": "What is the critical path?",
+    "options": [
+      "The longest task in the project",
+      "The sequence of tasks with zero float that determines project duration",
+      "All tasks assigned to the critical team",
+      "Tasks with the highest risk"
+    ],
+    "answer": "The sequence of tasks with zero float that determines project duration",
+    "tip": "Delays on the path delay the project."
+  },
+  {
+    "question": "Primary purpose of a risk register?",
+    "options": [
+      "Track only issues that occurred",
+      "Record identified risks, owners, responses, and status",
+      "Store financial actuals",
+      "Log scope requests"
+    ],
+    "answer": "Record identified risks, owners, responses, and status",
+    "tip": "It’s the backbone of risk management."
+  },
+  {
+    "question": "Why limit Work‑In‑Process (WIP) in Kanban?",
+    "options": [
+      "To increase multitasking",
+      "To reduce context switching and improve flow",
+      "To match Scrum sprints",
+      "To measure individual output"
+    ],
+    "answer": "To reduce context switching and improve flow",
+    "tip": "Lower WIP → faster throughput and fewer bottlenecks."
+  },
+  {
+    "question": "STAR framework stands for…",
+    "options": [
+      "Situation, Task, Action, Result",
+      "Scope, Timeline, Action, Review",
+      "Setup, Target, Act, Reflect",
+      "Situation, Time, Ask, Result"
+    ],
+    "answer": "Situation, Task, Action, Result",
+    "tip": "Use it to structure concise behavioral answers."
+  },
+  {
+    "question": "A junior asks you to paste production API keys into a prompt for quick testing. Best response?",
+    "options": [
+      "Share keys but remind them to be careful",
+      "Decline and provide a sandbox key/process",
+      "Paste keys into a private prompt",
+      "Email a screenshot of your .env"
+    ],
+    "answer": "Decline and provide a sandbox key/process",
+    "tip": "Never share secrets; use least‑privilege test paths."
+  },
+  {
+    "question": "Logging GenAI requests in production: best practice for user privacy?",
+    "options": [
+      "Store raw prompts forever for analytics",
+      "Disable logs entirely",
+      "Implement retention limits and PII redaction before storage",
+      "Let the model decide what to log"
+    ],
+    "answer": "Implement retention limits and PII redaction before storage",
+    "tip": "Collect minimal data, redact, and expire."
+  },
+  {
+    "question": "Managing prompts across teams: good practice?",
+    "options": [
+      "Keep prompts in private notepads",
+      "Store prompts as code with version history and tests",
+      "Rewrite prompts every sprint from scratch",
+      "Only the PM can edit prompts"
+    ],
+    "answer": "Store prompts as code with version history and tests",
+    "tip": "Treat prompts like product artifacts."
+  },
+  {
+    "question": "Best use of embeddings + vector DB?",
+    "options": [
+      "Render UI components",
+      "Semantic search over documents",
+      "Scale servers horizontally",
+      "Compress images"
+    ],
+    "answer": "Semantic search over documents",
+    "tip": "Find conceptually similar passages, not just exact matches."
+  },
+  {
+    "question": "Goal of backlog refinement?",
+    "options": [
+      "Commit to sprint scope",
+      "Clarify, split, estimate, and order items before sprint planning",
+      "Report earned value",
+      "Approve the budget"
+    ],
+    "answer": "Clarify, split, estimate, and order items before sprint planning",
+    "tip": "Keeps planning short and effective."
+  },
+  {
+    "question": "RAID log stands for…",
+    "options": [
+      "Risks, Assumptions, Issues, Dependencies",
+      "Requirements, Actions, Inputs, Deliverables",
+      "Risks, Actions, Insights, Decisions",
+      "Requests, Approvals, Items, Deltas"
+    ],
+    "answer": "Risks, Assumptions, Issues, Dependencies",
+    "tip": "One place to track the big four."
+  },
+  {
+    "question": "Time pressure: boss moves a report deadline forward; a colleague asks you to cover their meeting. Best plan?",
+    "options": [
+      "Do the meeting, skip the report",
+      "Negotiate meeting coverage so you can deliver the report; reschedule lower‑value work",
+      "Fill feedback form first",
+      "Decline your boss’s request"
+    ],
+    "answer": "Negotiate meeting coverage so you can deliver the report; reschedule lower‑value work",
+    "tip": "Protect the critical deliverable; manage trade‑offs openly."
+  },
+  {
+    "question": "In Agile, what is the primary measure of progress?",
+    "options": [
+      "Story points completed",
+      "Working software",
+      "Number of tasks done",
+      "Sprint velocity"
+    ],
+    "answer": "Working software",
+    "tip": "The Agile Manifesto values working software as the key indicator."
+  },
+  {
+    "question": "What does MoSCoW stand for in prioritization?",
+    "options": [
+      "Must, Should, Could, Won't",
+      "Most, Should, Can, Will",
+      "Main, Secondary, Critical, Weak",
+      "Monitor, Select, Control, Work"
+    ],
+    "answer": "Must, Should, Could, Won't",
+    "tip": "A common framework to prioritize requirements."
+  },
+  {
+    "question": "Which Scrum event is time-boxed to 15 minutes?",
+    "options": [
+      "Sprint Review",
+      "Sprint Planning",
+      "Daily Scrum",
+      "Retrospective"
+    ],
+    "answer": "Daily Scrum",
+    "tip": "Designed for quick synchronization of the team."
+  },
+  {
+    "question": "In Earned Value Management, CV stands for…",
+    "options": [
+      "Cost Value",
+      "Cost Variance",
+      "Critical Value",
+      "Current Variance"
+    ],
+    "answer": "Cost Variance",
+    "tip": "CV = EV - AC."
+  },
+  {
+    "question": "Which diagram is used to find the root cause of a problem?",
+    "options": [
+      "Gantt Chart",
+      "Pareto Chart",
+      "Fishbone Diagram",
+      "Burndown Chart"
+    ],
+    "answer": "Fishbone Diagram",
+    "tip": "Also called Ishikawa; great for cause-effect analysis."
+  },
+  {
+    "question": "You are behind schedule but cannot add more resources. Best PM strategy?",
+    "options": [
+      "Fast-track critical tasks",
+      "Cut scope",
+      "Add overtime",
+      "Extend deadlines"
+    ],
+    "answer": "Fast-track critical tasks",
+    "tip": "Overlap tasks where possible to save time."
+  },
+  {
+    "question": "What is a sprint backlog?",
+    "options": [
+      "All tasks in the project",
+      "Items committed for the sprint",
+      "Pending change requests",
+      "Defects from testing"
+    ],
+    "answer": "Items committed for the sprint",
+    "tip": "It evolves during the sprint but is focused on the sprint goal."
+  },
+  {
+    "question": "In stakeholder analysis, high power + low interest stakeholders should be…",
+    "options": [
+      "Monitored",
+      "Kept satisfied",
+      "Managed closely",
+      "Kept informed"
+    ],
+    "answer": "Kept satisfied",
+    "tip": "Avoid overloading them with unnecessary details."
+  },
+  {
+    "question": "What is the main advantage of Kanban over Scrum?",
+    "options": [
+      "Fixed time-boxes",
+      "Continuous flow",
+      "More ceremonies",
+      "Strict roles"
+    ],
+    "answer": "Continuous flow",
+    "tip": "Kanban allows work to progress without sprints."
+  },
+  {
+    "question": "What is the critical path?",
+    "options": [
+      "The shortest project route",
+      "Sequence of tasks with zero float",
+      "Tasks with most resources",
+      "Longest sequence including float"
+    ],
+    "answer": "Sequence of tasks with zero float",
+    "tip": "Delays here delay the entire project."
+  },
+  {
+    "question": "In Agile, what is the primary measure of progress?",
+    "options": ["Story points completed", "Working software", "Number of tasks done", "Sprint velocity"],
+    "answer": "Working software",
+    "tip": "The Agile Manifesto values working software as the key indicator."
+  },
+  {
+    "question": "What does MoSCoW stand for in prioritization?",
+    "options": ["Must, Should, Could, Won't", "Most, Should, Can, Will", "Main, Secondary, Critical, Weak", "Monitor, Select, Control, Work"],
+    "answer": "Must, Should, Could, Won't",
+    "tip": "A common framework to prioritize requirements."
+  },
+  {
+    "question": "Which Scrum event is time-boxed to 15 minutes?",
+    "options": ["Sprint Review", "Sprint Planning", "Daily Scrum", "Retrospective"],
+    "answer": "Daily Scrum",
+    "tip": "Designed for quick synchronization of the team."
+  },
+  {
+    "question": "In Earned Value Management, CV stands for…",
+    "options": ["Cost Value", "Cost Variance", "Critical Value", "Current Variance"],
+    "answer": "Cost Variance",
+    "tip": "CV = EV - AC."
+  },
+  {
+    "question": "Which diagram is used to find the root cause of a problem?",
+    "options": ["Gantt Chart", "Pareto Chart", "Fishbone Diagram", "Burndown Chart"],
+    "answer": "Fishbone Diagram",
+    "tip": "Also called Ishikawa; great for cause-effect analysis."
+  },
+  {
+    "question": "You are behind schedule but cannot add more resources. Best PM strategy?",
+    "options": ["Fast-track critical tasks", "Cut scope", "Add overtime", "Extend deadlines"],
+    "answer": "Fast-track critical tasks",
+    "tip": "Overlap tasks where possible to save time."
+  },
+  {
+    "question": "What is a sprint backlog?",
+    "options": ["All tasks in the project", "Items committed for the sprint", "Pending change requests", "Defects from testing"],
+    "answer": "Items committed for the sprint",
+    "tip": "It evolves during the sprint but is focused on the sprint goal."
+  },
+  {
+    "question": "In stakeholder analysis, high power + low interest stakeholders should be…",
+    "options": ["Monitored", "Kept satisfied", "Managed closely", "Kept informed"],
+    "answer": "Kept satisfied",
+    "tip": "Avoid overloading them with unnecessary details."
+  },
+  {
+    "question": "What is the main advantage of Kanban over Scrum?",
+    "options": ["Fixed time-boxes", "Continuous flow", "More ceremonies", "Strict roles"],
+    "answer": "Continuous flow",
+    "tip": "Kanban allows work to progress without sprints."
+  },
+  {
+    "question": "What is the critical path?",
+    "options": ["The shortest project route", "Sequence of tasks with zero float", "Tasks with most resources", "Longest sequence including float"],
+    "answer": "Sequence of tasks with zero float",
+    "tip": "Delays here delay the entire project."
+  },
+
+  {
+    "question": "In GenAI, what does 'few-shot learning' mean?",
+    "options": ["Training from scratch", "Learning from a few examples", "Fine-tuning on domain data", "Learning without examples"],
+    "answer": "Learning from a few examples",
+    "tip": "The model uses provided examples in the prompt to improve output."
+  },
+  {
+    "question": "In PM, a RAID log captures…",
+    "options": ["Requirements, Actions, Issues, Deliverables", "Risks, Assumptions, Issues, Dependencies", "Roadmap, Actions, Inputs, Deliverables", "Risks, Activities, Items, Decisions"],
+    "answer": "Risks, Assumptions, Issues, Dependencies",
+    "tip": "A tool for tracking key uncertainties and blockers."
+  },
+  {
+    "question": "Which GenAI feature reduces hallucinations by adding verified facts?",
+    "options": ["Fine-tuning", "Retrieval-Augmented Generation", "Tokenization", "Beam search"],
+    "answer": "Retrieval-Augmented Generation",
+    "tip": "RAG grounds responses in trusted data."
+  },
+  {
+    "question": "Which metric in EVM shows cost efficiency?",
+    "options": ["CPI", "SPI", "BAC", "EAC"],
+    "answer": "CPI",
+    "tip": "Cost Performance Index = EV ÷ AC."
+  },
+  {
+    "question": "What is the first step in risk management?",
+    "options": ["Quantify risks", "Identify risks", "Mitigate risks", "Assign owners"],
+    "answer": "Identify risks",
+    "tip": "You can’t plan for what you haven’t identified."
+  },
+  {
+    "question": "In Scrum, the person accountable for maximizing product value is…",
+    "options": ["Scrum Master", "Product Owner", "Developers", "Project Manager"],
+    "answer": "Product Owner",
+    "tip": "Owns backlog prioritization and vision."
+  },
+  {
+    "question": "What does NLP stand for in GenAI?",
+    "options": ["Natural Logic Processing", "Natural Language Processing", "Neural Language Prediction", "Non-Linear Programming"],
+    "answer": "Natural Language Processing",
+    "tip": "The field of enabling machines to understand and generate human language."
+  },
+  {
+    "question": "Which PM document defines how scope will be validated?",
+    "options": ["Scope Management Plan", "Risk Register", "Quality Plan", "Charter"],
+    "answer": "Scope Management Plan",
+    "tip": "Outlines acceptance criteria and review process."
+  },
+  {
+    "question": "A model’s temperature set to 0.9 will produce…",
+    "options": ["Very predictable output", "Highly random output", "No output", "Low-cost output"],
+    "answer": "Highly random output",
+    "tip": "Higher temperature increases creativity but also unpredictability."
+  },
+  {
+    "question": "When two tasks can start at the same time, they are…",
+    "options": ["Concurrent", "Dependent", "Sequential", "Critical"],
+    "answer": "Concurrent",
+    "tip": "Parallel work can shorten schedules."
+  },
+
+  {
+    "question": "Retail: You see a customer struggling with self-checkout. Best action?",
+    "options": ["Wait until they ask for help", "Offer help politely", "Ignore", "Call manager immediately"],
+    "answer": "Offer help politely",
+    "tip": "Proactive service improves experience."
+  },
+  {
+    "question": "A project with fixed budget and timeline but flexible scope follows…",
+    "options": ["Waterfall", "Agile", "Critical Chain", "PRINCE2"],
+    "answer": "Agile",
+    "tip": "Scope flex allows adaptation to constraints."
+  },
+  {
+    "question": "In AI ethics, bias mitigation is important because…",
+    "options": ["It increases model speed", "It improves fairness and accuracy", "It reduces cost", "It removes all errors"],
+    "answer": "It improves fairness and accuracy",
+    "tip": "Unchecked bias can harm decisions."
+  },
+  {
+    "question": "Which chart shows remaining work in a sprint?",
+    "options": ["Burnup chart", "Burndown chart", "Pareto chart", "Control chart"],
+    "answer": "Burndown chart",
+    "tip": "Tracks progress toward sprint completion."
+  },
+  {
+    "question": "The purpose of a retrospective is to…",
+    "options": ["Review backlog", "Plan next sprint", "Reflect and improve", "Assign tasks"],
+    "answer": "Reflect and improve",
+    "tip": "Focus on process, not deliverables."
+  },
+  {
+    "question": "Which GenAI concept involves mapping words to vectors?",
+    "options": ["Embedding", "Tokenization", "Attention", "Decoding"],
+    "answer": "Embedding",
+    "tip": "Similar meanings cluster in vector space."
+  },
+  {
+    "question": "In stakeholder comms, 'push' means…",
+    "options": ["Making information available", "Sending information directly", "Holding a meeting", "Waiting for pull"],
+    "answer": "Sending information directly",
+    "tip": "Emails, reports, and updates are push methods."
+  },
+  {
+    "question": "In AI, zero-shot means…",
+    "options": ["Training from zero data", "Performing tasks without examples", "Model with no parameters", "First version model"],
+    "answer": "Performing tasks without examples",
+    "tip": "Relies on pre-trained knowledge only."
+  },
+  {
+    "question": "If CPI < 1 and SPI < 1, the project is…",
+    "options": ["Over budget and ahead of schedule", "Over budget and behind schedule", "Under budget and behind schedule", "Under budget and ahead of schedule"],
+    "answer": "Over budget and behind schedule",
+    "tip": "Both efficiency metrics are below target."
+  },
+  {
+    "question": "Which document formally authorizes a project?",
+    "options": ["Project Charter", "Project Plan", "Business Case", "SOW"],
+    "answer": "Project Charter",
+    "tip": "Issued by the sponsor to kick things off."
+  },
+
+  {
+    "question": "Diagram reasoning: What comes after ▲, ■, ▼, ○, ◄?",
+    "options": ["▲", "►", "■", "○"],
+    "answer": "▲",
+    "tip": "The shapes repeat in a cycle."
+  },
+  {
+    "question": "GenAI: A 'prompt' is…",
+    "options": ["An instruction to the model", "A model's output", "A training dataset", "An embedding"],
+    "answer": "An instruction to the model",
+    "tip": "Clear prompts produce better results."
+  },
+  {
+    "question": "Which constraint in PM is often called the 'fourth constraint'?",
+    "options": ["Scope", "Schedule", "Quality", "Cost"],
+    "answer": "Quality",
+    "tip": "Added to the triple constraint to balance delivery."
+  },
+  {
+    "question": "In a decision tree, leaves represent…",
+    "options": ["Decisions", "Outcomes", "Splits", "Root"],
+    "answer": "Outcomes",
+    "tip": "Leaves are the final classifications."
+  },
+  {
+    "question": "Fast tracking increases…",
+    "options": ["Risk", "Scope", "Budget", "Quality"],
+    "answer": "Risk",
+    "tip": "Overlapping tasks can cause rework."
+  },
+  {
+    "question": "AI hallucination refers to…",
+    "options": ["Overheating GPU", "Incorrect but plausible output", "Model freezing", "Token overflow"],
+    "answer": "Incorrect but plausible output",
+    "tip": "Mitigate with retrieval grounding."
+  },
+  {
+    "question": "Which meeting inspects progress toward a sprint goal?",
+    "options": ["Daily Scrum", "Sprint Review", "Retrospective", "Backlog Refinement"],
+    "answer": "Sprint Review",
+    "tip": "Showcases completed work to stakeholders."
+  },
+  {
+    "question": "An activity with float > 0 is…",
+    "options": ["On critical path", "Delayable without impact", "Blocked", "Baseline"],
+    "answer": "Delayable without impact",
+    "tip": "Float indicates flexibility."
+  },
+  {
+    "question": "In GenAI, 'beam search' is used for…",
+    "options": ["Selecting the best output sequence", "Faster training", "Lowering temperature", "Removing bias"],
+    "answer": "Selecting the best output sequence",
+    "tip": "Keeps multiple candidates before choosing."
+  },
+  {
+    "question": "The 'Definition of Ready' ensures…",
+    "options": ["A story can be started", "A task is complete", "A sprint is done", "A release is deployed"],
+    "answer": "A story can be started",
+    "tip": "Criteria to begin work."
+  },
+  {
+    "question": "A stakeholder with high interest but low power should be…",
+    "options": ["Managed closely", "Kept satisfied", "Monitored", "Kept informed"],
+    "answer": "Kept informed",
+    "tip": "Engage them but don't overload."
+  },
+  {
+    "question": "Which PMO type has the most control?",
+    "options": ["Supportive", "Controlling", "Directive", "Advisory"],
+    "answer": "Directive",
+    "tip": "Directly manages projects."
+  },
+  {
+    "question": "A use case in AI is…",
+    "options": ["An example application", "A test dataset", "A prompt", "A feature"],
+    "answer": "An example application",
+    "tip": "Describes how the tech solves a problem."
+  }
+]

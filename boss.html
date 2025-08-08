@@ -1,1 +1,516 @@
-<h1>Welcome to the Boss Arena!</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Interview Slayer — Boss Moves</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0e0f12;
+      --panel: #1a1d22;
+      --panel-2: #15181d;
+      --text: #e9eef3;
+      --muted: #a9b1bb;
+      --yellow: #ffd21f;
+      --yellow-2: #ffcc00;
+      --border: #2a2f36;
+      --danger: #ff5d73;
+      --ok: #2dd47a;
+    }
+
+    /* * {
+      box-sizing: border-box
+    } */
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    }
+
+    .wrap {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px
+    }
+
+    a.back {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      color: #ffcc00;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    a.back::before {
+      content: "⬅ ";
+    }
+
+    h1 {
+      margin-top: 3rem;
+      font-size: 1.8rem;
+      color: #ffcc00;
+      text-align: center;
+    }
+
+    .sub {
+      margin: 0 0 20px;
+      color: var(--muted);
+      text-align: center
+    }
+
+    .arena {
+      width: 100%;
+      max-width: 760px;
+      background: var(--panel);
+      border: 1px solid #2a2f35;
+      border-radius: 14px;
+      padding: 18px;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, .25);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .start-screen {
+      text-align: center;
+      margin-top: 60px;
+      /* matches Timed Challenge spacing */
+    }
+
+    .exam-screen {
+      display: flex;
+      justify-content: center;
+      display: flex;
+      justify-content: center;
+      margin-top: 5rem;
+
+    }
+
+    .subtext {
+      color: #ccc;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      background: #1e1e1e;
+      border-radius: 12px;
+      padding: 20px;
+      display: inline-block;
+    }
+
+    .ready {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 760px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, .35);
+    }
+
+    .ready {
+      font-size: 22px;
+      font-weight: 700;
+      text-align: center;
+
+    }
+
+    .options {
+      display: grid;
+      gap: 10px;
+      margin: 12px 0
+    }
+
+    button.opt {
+      text-align: left;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px 14px;
+      background: var(--panel-2);
+      color: var(--text);
+      cursor: pointer;
+      transition: transform .05s ease, border-color .2s ease;
+    }
+
+    button.opt:hover {
+      transform: translateY(-1px);
+      border-color: #3a404a
+    }
+
+    button.opt.correct {
+      outline: 2px solid var(--ok)
+    }
+
+    button.opt.wrong {
+      outline: 2px solid var(--danger)
+    }
+
+    .toolbar {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 12px;
+      flex-wrap: wrap
+    }
+
+    .left,
+    .right {
+      display: flex;
+      gap: 10px;
+      align-items: center
+    }
+
+    .btn {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 10px 14px;
+      background: var(--panel-2);
+      font-weight: 700;
+      cursor: pointer;
+      margin: auto;
+      color: #ffcc00;
+    }
+
+    .btn.primary {
+      background: var(--yellow-2);
+      color: #1a1a1a;
+      border-color: #d0a800
+    }
+
+    .btn.ghost {
+      background: transparent
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 14px
+    }
+
+    .meter {
+      width: 100%;
+      height: 10px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: #0b0c0f;
+      overflow: hidden;
+      margin: 10px 0 10px
+    }
+
+    .meter>div {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #ffd21f, #ff9f1f);
+      transition: width .25s ease
+    }
+
+    .score {
+      font-size: 18px;
+      font-weight: 800;
+      color: #ffcc00;
+    }
+
+    .big {
+      font-size: 26px;
+      font-weight: 800;
+      margin: 6px 0
+    }
+
+    .list {
+      display: grid;
+      gap: 12px;
+      margin-top: 12px
+    }
+
+    .review {
+      padding: 14px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--panel-2)
+    }
+
+    .review .q {
+      font-weight: 700;
+      margin: 0 0 6px
+    }
+
+    .review .a {
+      margin: 4px 0 0
+    }
+
+    .review .tip {
+      color: var(--muted);
+      margin: 6px 0 0
+    }
+
+    footer {
+      color: var(--muted);
+      font-size: 13px;
+      margin: 28px 0 6px
+    }
+
+    /* mobile spacing */
+    @media (max-width:540px) {
+      .card {
+        padding: 16px
+      }
+
+      h1 {
+        font-size: 24px
+      }
+
+      .question {
+        font-size: 20px
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="back" href="boss.html">Back</a>
+  <div class="start-screen" id="screen-start">
+    <h1>⚔️ Boss Moves</h1>
+    <p class="subtext">
+      50 questions • 15 minutes • One pass only. Skips are allowed, but the clock never stops.
+    </p>
+
+    <div class="card">
+      <p class="ready">Ready to fight?</p>
+      <button id="startBtn" class="btn primary">🎮 Start the Boss Fight</button>
+    </div>
+  </div>
+
+  <div id="screen-exam" class="exam-screen" style="display:none">
+    <div class="card" style="width:100%">
+      <div class="toolbar">
+        <div class="left">
+          <span class="muted">Time left:</span>
+          <span id="time" class="score">15:00</span>
+        </div>
+        <div class="right muted"><span id="progressTxt">Q 1/50</span></div>
+      </div>
+      <div class="meter">
+        <div id="timeBar"></div>
+      </div>
+      <div id="qtext" class="question">Loading…</div>
+      <div id="opts" class="options"></div>
+      <div class="toolbar">
+        <div class="left muted"><span id="status">&nbsp;</span></div>
+        <div class="right">
+          <button id="skipBtn" class="btn">Skip</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="screen-end" class="center" style="display:none">
+    <div class="card">
+      <div class="question" style="margin-top:0">Boss fight complete.</div>
+      <div class="big">Score: <span id="score"></span> / <span id="total"></span></div>
+      <div class="muted">Time left: <span id="timeLeft"></span></div>
+      <div class="toolbar">
+        <div class="left">
+          <button id="reviewBtn" class="btn">Review mistakes & tips</button>
+        </div>
+        <div class="right">
+          <a class="btn" href="solo.html">Return to Solo</a>
+          <button id="retryBtn" class="btn primary">Play Again</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="screen-review" class="center" style="display:none">
+    <div class="card">
+      <div class="question" style="margin-top:0">Review — learn and level up</div>
+      <div id="reviewList" class="list"></div>
+      <div class="toolbar">
+        <div class="right">
+          <button id="doneBtn" class="btn primary">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script>
+    const JSON_PATH = 'boss.json'; // keep next to this file
+
+    // State
+    let items = [];
+    let order = [];
+    let idx = 0;
+    let correct = 0;
+    let answers = []; // {q, chosen, correct, tip}
+    let timer = null;
+    let totalMs = 15 * 60 * 1000;
+    let endAt = 0;
+
+    // Elements
+    const $ = (id) => document.getElementById(id);
+    const screens = {
+      start: $('screen-start'),
+      exam: $('screen-exam'),
+      end: $('screen-end'),
+      review: $('screen-review')
+    };
+    const qtext = $('qtext');
+    const opts = $('opts');
+    const timeEl = $('time');
+    const timeBar = $('timeBar');
+    const progressTxt = $('progressTxt');
+    const statusEl = $('status');
+
+    function show(name) {
+      for (const key in screens) screens[key].style.display = (key === name ? 'flex' : 'none');
+    }
+
+    function msToClock(ms) {
+      const s = Math.max(0, Math.ceil(ms / 1000));
+      const m = Math.floor(s / 60).toString().padStart(2, '0');
+      const ss = (s % 60).toString().padStart(2, '0');
+      return `${m}:${ss}`;
+    }
+
+    function startTimer() {
+      endAt = Date.now() + totalMs;
+      timer = setInterval(() => {
+        const left = endAt - Date.now();
+        timeEl.textContent = msToClock(left);
+        const pct = Math.max(0, 1 - (left / totalMs));
+        timeBar.style.width = (pct * 100).toFixed(2) + '%';
+        if (left <= 0) {
+          clearInterval(timer);
+          finish();
+        }
+      }, 200);
+    }
+
+    function shuffle(arr) {
+      for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      return arr;
+    }
+
+    function start() {
+      idx = 0;
+      correct = 0;
+      answers = [];
+      order = shuffle([...Array(items.length).keys()]);
+      show('exam');
+      render();
+      startTimer();
+    }
+
+    function render() {
+      const q = items[order[idx]];
+      progressTxt.textContent = `Q ${idx + 1}/${items.length}`;
+      qtext.textContent = q.question;
+      statusEl.textContent = '\u00A0';
+      opts.innerHTML = '';
+      q.options.forEach((o, i) => {
+        const b = document.createElement('button');
+        b.className = 'opt';
+        b.textContent = o;
+        b.onclick = () => select(i);
+        opts.appendChild(b);
+      });
+    }
+
+    function next() {
+      idx++;
+      if (idx >= items.length) { finish(); }
+      else { render(); }
+    }
+
+    function select(i) {
+      // lock buttons
+      const q = items[order[idx]];
+      const nodes = [...document.querySelectorAll('button.opt')];
+      nodes.forEach(n => n.disabled = true);
+      const isCorrect = q.answer === q.options[i];
+      if (isCorrect) correct++;
+      // mark styles
+      nodes.forEach((n, ix) => {
+        const label = q.options[ix];
+        if (label === q.answer) n.classList.add('correct');
+        if (ix === i && !isCorrect) n.classList.add('wrong');
+      });
+      // record
+      answers.push({ question: q.question, chosen: q.options[i], correct: q.answer, tip: q.tip || '' });
+      // advance after short delay
+      setTimeout(next, 550);
+    }
+
+    function finish() {
+      clearInterval(timer);
+      $('score').textContent = correct;
+      $('total').textContent = items.length;
+      $('timeLeft').textContent = msToClock(endAt - Date.now());
+      show('end');
+    }
+
+    function review() {
+      const wrong = answers.filter(a => a.chosen !== a.correct);
+      const list = $('reviewList');
+      list.innerHTML = '';
+      if (!wrong.length) {
+        const div = document.createElement('div');
+        div.className = 'review';
+        div.innerHTML = '<div class="q">Flawless victory 💥</div><div class="a">You got everything right. Go celebrate or play another set.</div>';
+        list.appendChild(div);
+      } else {
+        wrong.forEach((r, idx) => {
+          const div = document.createElement('div');
+          div.className = 'review';
+          div.innerHTML = `<div class="q">${r.question}</div>
+        <div class="a">Correct: <strong>${r.correct}</strong></div>
+        <div class="a">You chose: <span class="muted">${r.chosen}</span></div>
+        ${r.tip ? `<div class="tip">Tip: ${r.tip}</div>` : ''}`;
+          list.appendChild(div);
+        });
+      }
+      show('review');
+    }
+
+    // Buttons
+    $('startBtn').addEventListener('click', start);
+    $('skipBtn').addEventListener('click', () => {
+      // record as skipped (no penalty beyond lost time)
+      const q = items[order[idx]];
+      answers.push({ question: q.question, chosen: '(skipped)', correct: q.answer, tip: q.tip || '' });
+      next();
+    });
+    $('reviewBtn').addEventListener('click', review);
+    $('retryBtn').addEventListener('click', () => location.reload());
+    $('doneBtn').addEventListener('click', () => location.reload());
+
+    // Load questions & init
+    fetch(JSON_PATH)
+      .then(r => r.json())
+      .then(data => {
+        items = data;
+      })
+      .catch(e => {
+        console.error(e);
+        alert('Could not load boss_moves_exam1.json. Place it next to this file.');
+      });
+  </script>
+</body>
+
+</html>

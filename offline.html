@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Offline — Interview Slayer</title>
+
+    <!-- PWA bits (already cached by SW) -->
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#121212" />
+
+    <!-- Reuse app styles (keep this file precached in sw.js) -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Minimal safety styles if CSS didn’t load -->
+    <style>
+        body {
+            background: #0b0b0f;
+            color: #eaeaf0;
+            font-family: system-ui, Segoe UI, Roboto, Inter, sans-serif;
+            min-height: 100dvh;
+            display: grid;
+            place-items: center;
+            margin: 0;
+            padding: 24px
+        }
+
+        .card {
+            max-width: 680px;
+            width: 100%;
+            background: #13131a;
+            border: 1px solid #262633;
+            border-radius: 16px;
+            padding: 28px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .3)
+        }
+
+        h1 {
+            margin: 0 0 8px;
+            font-size: 1.6rem
+        }
+
+        .sub {
+            opacity: .8;
+            margin: 0 0 18px
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            border-radius: 12px;
+            padding: .7rem 1rem;
+            border: 1px solid #2a2a33;
+            background: #1a1a22;
+            color: #eaeaf0;
+            cursor: pointer;
+            text-decoration: none
+        }
+
+        .btn.primary {
+            background: #f5bf2f;
+            color: #111;
+            border-color: #f5bf2f
+        }
+
+        .grid {
+            display: grid;
+            gap: .6rem;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            margin-top: 16px
+        }
+
+        .muted {
+            opacity: .7
+        }
+    </style>
+</head>
+
+<body>
+    <a class="back" href="index.html" style="position:absolute;left:20px;top:18px;color:#ffcc00;text-decoration:none">←
+        Back</a>
+
+    <div class="card">
+        <h1>You're offline</h1>
+        <p class="sub">No worries — your progress can wait. When you’re back online, we’ll resume the fight.</p>
+
+        <div class="grid">
+            <button class="btn primary" onclick="location.reload()">🔄 Try Again</button>
+            <a class="btn" href="index.html">🏠 Home</a>
+            <a class="btn" href="solo.html">🧠 Solo Mission</a>
+            <a class="btn" href="timed.html">⏱ Timed Challenge</a>
+            <a class="btn" href="boss.html">⚔️ Boss Moves</a>
+        </div>
+
+        <p class="muted" style="margin-top:18px">
+            Tip: Add Interview Slayer to your Home Screen for a smoother offline experience.
+        </p>
+    </div>
+
+    <noscript>
+        <p style="position:fixed;bottom:10px;left:0;right:0;text-align:center;opacity:.7">
+            JavaScript is disabled — the Retry button won’t work.</p>
+    </noscript>
+</body>
+
+</html>

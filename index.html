@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#121212">
+
+  <!-- iOS “Add to Home Screen” support -->
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" href="icons/icon-512.png">
+  <meta name="apple-mobile-web-app-title" content="Slayer">
+
   <title>Interview Slayer Arena</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div class="arena-container">
     <h1>Welcome to the <br><span class="arena-title">Job Interview Arena</span></h1>
@@ -20,6 +32,14 @@
     function goToArena(file) {
       window.location.href = file;
     }
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js')
+          .catch(console.error);
+      });
+    }
   </script>
 </body>
+
 </html>

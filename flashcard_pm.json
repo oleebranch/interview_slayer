@@ -1,0 +1,1047 @@
+[
+  {
+    "question": "Burndown vs Burnup chart—what’s the key difference?",
+    "answer": "Burndown shows remaining work; burnup shows work completed toward scope.",
+    "tip": "Track remaining work daily to see if you’re on pace. If the line flatlines, remove blockers or reduce scope."
+  },
+  {
+    "question": "Common negative risk (threat) responses?",
+    "answer": "Avoid, Mitigate, Transfer, Accept, Escalate.",
+    "tip": "Transfer ≠ abdicate and you still own oversight."
+  },
+  {
+    "question": "Common positive risk (opportunity) responses?",
+    "answer": "Exploit, Enhance, Share, Accept, Escalate.",
+    "tip": "Exploit = guarantee realization if possible."
+  },
+  {
+    "question": "Communication channels for n=6 stakeholders?",
+    "answer": "15",
+    "tip": "N(n−1)/2 = 6*5/2 = 15."
+  },
+  {
+    "question": "Define Critical Path.",
+    "answer": "The longest path of dependent activities that determines the shortest project duration.",
+    "tip": "Tasks on the critical path have zero float; delays there delay the project. Protect and monitor them closely."
+  },
+  {
+    "question": "Define scope creep.",
+    "answer": "Uncontrolled expansion of scope without adjustments to time, cost, or resources.",
+    "tip": "Prevent with a clear change process."
+  },
+  {
+    "question": "Difference between a risk and an issue?",
+    "answer": "Risk is uncertain future event; issue is a problem happening now.",
+    "tip": "Manage risks proactively and issues reactively."
+  },
+  {
+    "question": "Difference between free float and total float?",
+    "answer": "Free float: delay without affecting successor; Total float: delay without affecting project finish.",
+    "tip": "Know both for schedule flexibility."
+  },
+  {
+    "question": "Difference between KPIs and OKRs?",
+    "answer": "KPIs track health; OKRs drive change.",
+    "tip": "Use KPIs to monitor ongoing health, and OKRs to drive focused change. Run both together to avoid vanity metrics and drift."
+  },
+  {
+    "question": "Difference between project, program, and portfolio?",
+    "answer": "Project: temporary endeavor; Program: related projects managed together; Portfolio: projects/programs aligned to strategy.",
+    "tip": "Think zoom levels: micro, meso, macro."
+  },
+  {
+    "question": "Fast tracking vs crashing—what’s the difference?",
+    "answer": "Fast tracking overlaps tasks; crashing adds resources to shorten duration.",
+    "tip": "Both increase risk/cost in different ways."
+  },
+  {
+    "question": "Four types of activity dependencies?",
+    "answer": "Finish-to-Start (FS), Start-to-Start (SS), Finish-to-Finish (FF), Start-to-Finish (SF).",
+    "tip": "FS is most common and SF is rare."
+  },
+  {
+    "question": "How many principles are in the Agile Manifesto?",
+    "answer": "12 principles.",
+    "tip": "Know the difference: 4 values vs 12 principles."
+  },
+  {
+    "question": "If average cycle time is 4 days and WIP limit is 8, what is average throughput?",
+    "answer": "2 items/day",
+    "tip": "Cap concurrent work to reduce context switching and queues; finish more by starting less."
+  },
+  {
+    "question": "If average throughput is 3 items/day and WIP is 9, what is cycle time?",
+    "answer": "3 days",
+    "tip": "CT = WIP / Throughput = 9/3 = 3."
+  },
+  {
+    "question": "If BAC (Budget at Completion)=1,000 and CPI (Cost Performance Index)=0.8, what is EAC (Estimate at Completion) (CPI (Cost Performance Index) continues)?",
+    "answer": "1,250",
+    "tip": "CPI < 1 means you’re over budget; investigate causes and adjust plan or scope."
+  },
+  {
+    "question": "If EV (Earned Value)=50 and AC (Actual Cost)=60, what is CPI (Cost Performance Index)?",
+    "answer": "0.83",
+    "tip": "CPI < 1 means you’re over budget; investigate causes and adjust plan or scope."
+  },
+  {
+    "question": "If EV (Earned Value)=80 and PV (Planned Value)=100, what is SPI (Schedule Performance Index)?",
+    "answer": "0.8",
+    "tip": "SPI < 1 means you’re behind schedule; re-sequence, add resources, or reduce scope."
+  },
+  {
+    "question": "In DevOps/DORA, what is Change Failure Rate?",
+    "answer": "Percentage of deployments causing incidents.",
+    "tip": "Use a ready checklist so teams start work with shared understanding and minimal thrash."
+  },
+  {
+    "question": "In DevOps/DORA, what is Deployment Frequency?",
+    "answer": "How often you deploy changes to production.",
+    "tip": "Use a ready checklist so teams start work with shared understanding and minimal thrash."
+  },
+  {
+    "question": "In DevOps/DORA, what is Lead Time for Changes?",
+    "answer": "Time from commit to running in production.",
+    "tip": "Use a ready checklist so teams start work with shared understanding and minimal thrash."
+  },
+  {
+    "question": "In DevOps/DORA, what is Mean Time to Restore (MTTR)?",
+    "answer": "Time to recover from a failure.",
+    "tip": "Use a ready checklist so teams start work with shared understanding and minimal thrash."
+  },
+  {
+    "question": "In Earned Value Management, what is PV (Planned Value) (or BCWS)?",
+    "answer": "Planned Value: authorized budget for scheduled work.",
+    "tip": "Baseline plan value up to a status date."
+  },
+  {
+    "question": "In PERT, what is standard deviation of an activity?",
+    "answer": "σ = (Pessimistic − Optimistic) ÷ 6.",
+    "tip": "Use O, M, P estimates to compute an expected duration and risk. Helpful when uncertainty is high."
+  },
+  {
+    "question": "Little’s Law: If throughput=5 items/day and WIP=25, cycle time?",
+    "answer": "5 days",
+    "tip": "Lower work‑in‑progress to shorten cycle time; flow efficiency beats multitasking."
+  },
+  {
+    "question": "Name a Daily Scrum anti-pattern.",
+    "answer": "Status-reporting to the Scrum Master instead of collaborating as a team.",
+    "tip": "Plan the next 24 hours toward the Sprint Goal—collaborative, under 15 minutes, not a status report to the Scrum Master."
+  },
+  {
+    "question": "Name a Retrospective format you can use.",
+    "answer": "Start/Stop/Continue (or Mad/Sad/Glad, 4Ls).",
+    "tip": "Inspect teamwork, tools, and process; pick 1–2 specific improvements and assign owners for the next Sprint."
+  },
+  {
+    "question": "Name one conflict resolution technique.",
+    "answer": "Collaborating (problem-solving).",
+    "tip": "Others: Compromising, Smoothing, Forcing, Avoiding."
+  },
+  {
+    "question": "Name Scrum’s three artifacts.",
+    "answer": "Product Backlog, Sprint Backlog, Increment.",
+    "tip": "Artifacts are made transparent with commitments."
+  },
+  {
+    "question": "PERT expected time for O=4, M=6, P=10?",
+    "answer": "6.67",
+    "tip": "Use O, M, P estimates to compute an expected duration and risk. Helpful when uncertainty is high."
+  },
+  {
+    "question": "PERT standard deviation for O=4, P=10?",
+    "answer": "1.0",
+    "tip": "Use O, M, P estimates to compute an expected duration and risk. Helpful when uncertainty is high."
+  },
+  {
+    "question": "Prototype vs Proof of Concept (PoC)—what’s the difference?",
+    "answer": "Prototype demos form/UX; PoC proves feasibility/tech.",
+    "tip": "Use Prototype to test usability and PoC to test viability."
+  },
+  {
+    "question": "Task B cannot finish until Task A finishes. Which dependency?",
+    "answer": "Finish-to-Finish (FF).",
+    "tip": "Used when completions must align."
+  },
+  {
+    "question": "Task B cannot finish until Task A starts. Which dependency?",
+    "answer": "Start-to-Finish (SF).",
+    "tip": "Rare and think 24/7 shift handover."
+  },
+  {
+    "question": "Task B cannot start until Task A finishes. Which dependency?",
+    "answer": "Finish-to-Start (FS).",
+    "tip": "Most common dependency type."
+  },
+  {
+    "question": "Task B cannot start until Task A starts. Which dependency?",
+    "answer": "Start-to-Start (SS).",
+    "tip": "Parallel starts with coupling."
+  },
+  {
+    "question": "What are acceptance criteria?",
+    "answer": "Conditions that must be met for a story/feature to be accepted.",
+    "tip": "Write them with Gherkin-style Given/When/Then when useful."
+  },
+  {
+    "question": "What are common contract types in procurement?",
+    "answer": "Fixed-Price, Cost-Reimbursable, Time & Materials.",
+    "tip": "Choose to balance scope certainty and risk."
+  },
+  {
+    "question": "What are common PMO types?",
+    "answer": "Supportive, Controlling, Directive.",
+    "tip": "Different levels of authority and standardization."
+  },
+  {
+    "question": "What are OKRs?",
+    "answer": "Objectives and Key Results—a goal setting framework with measurable outcomes.",
+    "tip": "Objectives are inspirational and KRs are specific and measurable."
+  },
+  {
+    "question": "What are Scrum’s five events?",
+    "answer": "Sprint, Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective.",
+    "tip": "Remember: one container event (Sprint) + four within it."
+  },
+  {
+    "question": "What are the commitments for Scrum artifacts?",
+    "answer": "Product Goal (Product Backlog), Sprint Goal (Sprint Backlog), Definition of Done (Increment).",
+    "tip": "Each artifact has a commitment for clarity."
+  },
+  {
+    "question": "What are the core Kanban practices?",
+    "answer": "Visualize work, limit WIP, manage flow, make policies explicit, implement feedback loops, improve collaboratively.",
+    "tip": "Start with what you do now and evolve."
+  },
+  {
+    "question": "What are the four values of the Agile Manifesto?",
+    "answer": "Individuals and interactions; working software; customer collaboration; responding to change.",
+    "tip": "Remember: people, product, partnership, pivot."
+  },
+  {
+    "question": "What are the three accountabilities (roles) in Scrum?",
+    "answer": "Product Owner, Scrum Master, Developers.",
+    "tip": "Scrum dropped 'Team' vs 'Development Team'—now just Developers."
+  },
+  {
+    "question": "What are the triple constraints?",
+    "answer": "Scope, Schedule, Cost (with Quality often central).",
+    "tip": "Changing one affects the others."
+  },
+  {
+    "question": "What artifact makes work and plan for the Sprint visible?",
+    "answer": "Sprint Backlog.",
+    "tip": "Includes selected PBIs and plan to deliver them."
+  },
+  {
+    "question": "What do story points measure?",
+    "answer": "Relative effort/complexity, not exact hours.",
+    "tip": "Points compare items and velocity is team-specific."
+  },
+  {
+    "question": "What does a RACI matrix define?",
+    "answer": "Roles: Responsible, Accountable, Consulted, Informed.",
+    "tip": "Clarify who does the work (R), who owns the outcome (A), who gives input (C), and who is kept in the loop (I)."
+  },
+  {
+    "question": "What does INVEST stand for in user stories?",
+    "answer": "Independent, Negotiable, Valuable, Estimable, Small, Testable.",
+    "tip": "Good stories are Independent, Negotiable, Valuable, Estimable, Small, and Testable—use this as a quick quality check."
+  },
+  {
+    "question": "What does JTBD stand for?",
+    "answer": "Jobs To Be Done.",
+    "tip": "Frame problems by the job, not the feature."
+  },
+  {
+    "question": "What does Little’s Law state (simplified)?",
+    "answer": "WIP = Throughput × Cycle Time.",
+    "tip": "Lower work‑in‑progress to shorten cycle time; flow efficiency beats multitasking."
+  },
+  {
+    "question": "What does MoSCoW stand for in prioritization?",
+    "answer": "Must have, Should have, Could have, Won’t have (this time).",
+    "tip": "Classify scope into Must/Should/Could/Won’t to protect timelines and focus. Revisit as you learn from users."
+  },
+  {
+    "question": "What does RICE stand for in prioritization?",
+    "answer": "Reach, Impact, Confidence, Effort.",
+    "tip": "Score high reach/impact, low effort, and strong confidence."
+  },
+  {
+    "question": "What does the FF dependency mean?",
+    "answer": "Successor finishes after predecessor finishes.",
+    "tip": "Use dependency types to model realistic sequencing."
+  },
+  {
+    "question": "What does the FS dependency mean?",
+    "answer": "Successor starts after predecessor finishes.",
+    "tip": "Use dependency types to model realistic sequencing."
+  },
+  {
+    "question": "What does the SF dependency mean?",
+    "answer": "Successor finishes after predecessor starts.",
+    "tip": "Use dependency types to model realistic sequencing."
+  },
+  {
+    "question": "What does the SS dependency mean?",
+    "answer": "Successor starts after predecessor starts.",
+    "tip": "Use dependency types to model realistic sequencing."
+  },
+  {
+    "question": "What is a baseline schedule?",
+    "answer": "The approved version of the schedule used to measure performance.",
+    "tip": "Re-baseline only with formal approval."
+  },
+  {
+    "question": "What is a baseline?",
+    "answer": "The approved scope/schedule/cost plan used to measure performance.",
+    "tip": "Manage changes formally via change control."
+  },
+  {
+    "question": "What is a benefits owner?",
+    "answer": "Person accountable for realizing specific benefits.",
+    "tip": "Often on business side, not the PM."
+  },
+  {
+    "question": "What is a benefits realization plan?",
+    "answer": "A plan to track and realize expected business benefits.",
+    "tip": "Tie features to measurable outcomes."
+  },
+  {
+    "question": "What is a buffer in critical chain?",
+    "answer": "Protective time added to absorb variability.",
+    "tip": "Project, feeding, and resource buffers."
+  },
+  {
+    "question": "What is a business case?",
+    "answer": "Justification for the project including expected benefits and costs.",
+    "tip": "Reassess if assumptions change."
+  },
+  {
+    "question": "What is a capability (in scaling)?",
+    "answer": "A higher-level feature spanning multiple ARTs or teams.",
+    "tip": "Used in SAFe to organize large solutions."
+  },
+  {
+    "question": "What is a Change Control Board (CCB)?",
+    "answer": "A group that reviews and approves or rejects change requests.",
+    "tip": "Right-size the CCB for your project’s risk."
+  },
+  {
+    "question": "What is a change request?",
+    "answer": "A formal proposal to modify a baseline or plan.",
+    "tip": "Log, analyze impact, and route to CCB."
+  },
+  {
+    "question": "What is a charter vs contract difference?",
+    "answer": "Charter authorizes internally; contract binds legally between parties.",
+    "tip": "Both can exist on vendor projects."
+  },
+  {
+    "question": "What is a control chart used for?",
+    "answer": "Monitoring process stability against control limits over time.",
+    "tip": "Look for trends and rule violations."
+  },
+  {
+    "question": "What is a customer journey map?",
+    "answer": "A visualization of user steps, touchpoints, emotions, and pain points.",
+    "tip": "Great for finding moments that matter."
+  },
+  {
+    "question": "What is a DACI model?",
+    "answer": "Driver, Approver, Contributors, Informed—decision-making roles.",
+    "tip": "Good when decisions need clear ownership."
+  },
+  {
+    "question": "What is a External dependency in projects?",
+    "answer": "Task relies on a third party or external event.",
+    "tip": "Track closely and build buffer time."
+  },
+  {
+    "question": "What is a feature toggle?",
+    "answer": "A switch to enable/disable features at runtime.",
+    "tip": "Decouple deploy from release."
+  },
+  {
+    "question": "What is a float buffer best practice?",
+    "answer": "Don’t hide buffers inside many tasks; keep visible buffers.",
+    "tip": "Transparent buffers aid control."
+  },
+  {
+    "question": "What is a Gantt chart?",
+    "answer": "A bar chart showing tasks over time with dependencies.",
+    "tip": "Useful for communicating timeline at a glance."
+  },
+  {
+    "question": "What is a Go/No-Go decision?",
+    "answer": "A formal review to proceed with release or major stage.",
+    "tip": "Use clear criteria agreed upfront."
+  },
+  {
+    "question": "What is a guardrail metric?",
+    "answer": "A metric that prevents harmful trade-offs when optimizing another.",
+    "tip": "Example: keep churn ≤ target while growing ARPU."
+  },
+  {
+    "question": "What is a lessons learned register?",
+    "answer": "Ongoing log of insights throughout the project.",
+    "tip": "Don’t wait till closeout—capture continuously."
+  },
+  {
+    "question": "What is a milestone?",
+    "answer": "A significant point or event with zero duration in the schedule.",
+    "tip": "Use to signal major decisions or deliveries."
+  },
+  {
+    "question": "What is a north star metric?",
+    "answer": "A single metric that best captures the product’s core value delivered.",
+    "tip": "Choose carefully and avoid vanity metrics."
+  },
+  {
+    "question": "What is a predecessor vs successor?",
+    "answer": "Predecessor comes before; successor follows in dependency chain.",
+    "tip": "Link them to reflect real constraints."
+  },
+  {
+    "question": "What is a product backlog item (PBI)?",
+    "answer": "Any unit of value in the backlog: user story, bug, spike, task.",
+    "tip": "Stories are common but not the only type."
+  },
+  {
+    "question": "What is a Product Goal?",
+    "answer": "A long-term objective for the product that the Scrum Team works toward.",
+    "tip": "Think of it as the north star for backlog ordering."
+  },
+  {
+    "question": "What is a Product Increment?",
+    "answer": "A usable, potentially releasable slice of value that meets the Definition of Done.",
+    "tip": "Each Sprint should produce a usable slice that meets DoD; release when it makes sense."
+  },
+  {
+    "question": "What is a product roadmap?",
+    "answer": "A high-level view of product direction over time.",
+    "tip": "Use Now/Next/Later to avoid false precision."
+  },
+  {
+    "question": "What is a product vision board?",
+    "answer": "A template aligning target group, needs, product, value, and goals.",
+    "tip": "Popularized by Roman Pichler."
+  },
+  {
+    "question": "What is a product vision?",
+    "answer": "A concise statement of what you’re building and why.",
+    "tip": "Use it to guide prioritization and say no."
+  },
+  {
+    "question": "What is a program board?",
+    "answer": "A visual of features by iteration with dependencies and risks.",
+    "tip": "Outcome of PI Planning to track alignment."
+  },
+  {
+    "question": "What is a raci pitfall?",
+    "answer": "Too many 'Accountable' roles for one outcome.",
+    "tip": "Clarify who does the work (R), who owns the outcome (A), who gives input (C), and who is kept in the loop (I)."
+  },
+  {
+    "question": "What is a RAID log?",
+    "answer": "Risks, Assumptions, Issues, Dependencies log.",
+    "tip": "Simple but powerful program governance tool."
+  },
+  {
+    "question": "What is a release plan?",
+    "answer": "A plan outlining how increments will be bundled and released.",
+    "tip": "Sync with operations, marketing, and support."
+  },
+  {
+    "question": "What is a Requirements Traceability Matrix (RTM)?",
+    "answer": "A matrix linking requirements to design, build, and test artifacts to ensure coverage.",
+    "tip": "Helps prevent gold-plating and gaps."
+  },
+  {
+    "question": "What is a Resource dependency in projects?",
+    "answer": "Tasks compete for the same limited resource.",
+    "tip": "Resolve by leveling or adding capacity."
+  },
+  {
+    "question": "What is a retro anti-pattern?",
+    "answer": "Blame and finger-pointing.",
+    "tip": "Use data, not drama and focus on process."
+  },
+  {
+    "question": "What is a retrospective prime directive?",
+    "answer": "Assume everyone did the best they could with what they knew.",
+    "tip": "Inspect teamwork, tools, and process; pick 1–2 specific improvements and assign owners for the next Sprint."
+  },
+  {
+    "question": "What is a risk heat map?",
+    "answer": "A grid visualizing risk probability vs impact.",
+    "tip": "Use colors to focus attention on top-right."
+  },
+  {
+    "question": "What is a risk register?",
+    "answer": "A log of identified risks with owners, responses, and current status.",
+    "tip": "Keep it alive with regular reviews."
+  },
+  {
+    "question": "What is a roadmap vs release plan difference?",
+    "answer": "Roadmap is strategic; release plan is tactical.",
+    "tip": "Roadmap says 'why/when' and release plan says 'what/how'."
+  },
+  {
+    "question": "What is a service level objective (SLO)?",
+    "answer": "A reliability target for a service (e.g., 99.9% availability).",
+    "tip": "SLOs guide error budgets and trade-offs."
+  },
+  {
+    "question": "What is a Spike?",
+    "answer": "A timeboxed research/experiment task to reduce uncertainty.",
+    "tip": "Timebox spikes so they don’t drag on — the goal is to learn enough to decide next steps, not to deliver production-ready code."
+  },
+  {
+    "question": "What is a Sprint Goal?",
+    "answer": "A single objective for the Sprint that provides focus and coherence.",
+    "tip": "Choose one clear objective. Let it guide trade‑offs and keep the team aligned when details change."
+  },
+  {
+    "question": "What is a stakeholder power-interest grid used for?",
+    "answer": "Classifying stakeholders to tailor engagement strategies.",
+    "tip": "High power/high interest → manage closely."
+  },
+  {
+    "question": "What is a stakeholder register?",
+    "answer": "A list of stakeholders with interests, influence, and engagement strategies.",
+    "tip": "Update as new stakeholders appear."
+  },
+  {
+    "question": "What is a T&M contract?",
+    "answer": "Time and Materials: pay for labor time and materials used.",
+    "tip": "Useful when scope is unclear but you need speed."
+  },
+  {
+    "question": "What is a Technical dependency in projects?",
+    "answer": "One component’s design or build depends on another.",
+    "tip": "Coordinate architecture decisions early."
+  },
+  {
+    "question": "What is a user persona?",
+    "answer": "A research-based profile representing key user segments.",
+    "tip": "Use personas to anchor decisions in user needs."
+  },
+  {
+    "question": "What is a walking skeleton?",
+    "answer": "An end-to-end thin slice of the system that touches all major components.",
+    "tip": "Proves architecture and value early."
+  },
+  {
+    "question": "What is a WBS Dictionary?",
+    "answer": "A companion document that details each WBS element’s description, owner, and acceptance criteria.",
+    "tip": "It clarifies ‘what done looks like’ per work package."
+  },
+  {
+    "question": "What is a WBS?",
+    "answer": "Work Breakdown Structure—a deliverable-oriented decomposition of the project.",
+    "tip": "Decompose to work packages for planning/estimating."
+  },
+  {
+    "question": "What is a WIP limit?",
+    "answer": "A cap on the number of items in progress to reduce multitasking and queues.",
+    "tip": "Cap concurrent work to reduce context switching and queues; finish more by starting less."
+  },
+  {
+    "question": "What is a work package?",
+    "answer": "The lowest-level deliverable in the WBS used for estimating and tracking.",
+    "tip": "Aim for 8/80 rule as a heuristic."
+  },
+  {
+    "question": "What is a working agreement?",
+    "answer": "Team-defined norms for collaboration and conduct.",
+    "tip": "Create them early and revisit as the team evolves."
+  },
+  {
+    "question": "What is AC (Actual Cost) (or ACWP)?",
+    "answer": "Actual Cost: cost incurred for the work performed.",
+    "tip": "Money actually spent."
+  },
+  {
+    "question": "What is affinity estimation?",
+    "answer": "Grouping items by relative size quickly without detailed discussion.",
+    "tip": "Good for initial sizing of large backlogs."
+  },
+  {
+    "question": "What is an epic?",
+    "answer": "A large body of work that can be split into multiple stories.",
+    "tip": "Keep epics time-bounded in your system."
+  },
+  {
+    "question": "What is an error budget?",
+    "answer": "The permissible unreliability allowed before slowing releases.",
+    "tip": "Balance speed with stability."
+  },
+  {
+    "question": "What is an MVP?",
+    "answer": "Minimum Viable Product: the smallest testable product that delivers value and learning.",
+    "tip": "Ship the smallest testable product that delivers value and learning. Validate assumptions before investing in full features."
+  },
+  {
+    "question": "What is backlog ordering vs prioritization?",
+    "answer": "Ordering is the final sequence; prioritization informs order.",
+    "tip": "PO orders by value, risk, and dependencies."
+  },
+  {
+    "question": "What is backlog refinement?",
+    "answer": "Ongoing activity to add detail, estimates, and order to Product Backlog items.",
+    "tip": "Continuously clarify and slice upcoming work so the next 1–2 Sprints have ‘ready’ items."
+  },
+  {
+    "question": "What is capacity planning in Scrum?",
+    "answer": "Adjusting forecasted work based on team availability and constraints.",
+    "tip": "Account for holidays, PTO, and support duties."
+  },
+  {
+    "question": "What is CI/CD?",
+    "answer": "Continuous Integration/Continuous Delivery or Deployment.",
+    "tip": "Automate build, test, and release pipelines."
+  },
+  {
+    "question": "What is configuration management?",
+    "answer": "Tracking and controlling versions of product artifacts and documents.",
+    "tip": "CM ensures you know exactly what is built."
+  },
+  {
+    "question": "What is cost baseline?",
+    "answer": "Time-phased budget used to measure and monitor cost performance.",
+    "tip": "Often visualized as an S-curve."
+  },
+  {
+    "question": "What is cycle time?",
+    "answer": "Time to complete work from start to finish.",
+    "tip": "Lead time includes waiting before start."
+  },
+  {
+    "question": "What is definition of 'Ready vs Done' key difference?",
+    "answer": "Ready: can start; Done: meets DoD and is potentially releasable.",
+    "tip": "Both improve flow but serve different gates."
+  },
+  {
+    "question": "What is DoR good for?",
+    "answer": "Ensures items are sufficiently understood before committing.",
+    "tip": "Use a ready checklist so teams start work with shared understanding and minimal thrash."
+  },
+  {
+    "question": "What is dual-track Agile?",
+    "answer": "Parallel tracks for discovery (learning) and delivery (building).",
+    "tip": "Avoids building the wrong thing quickly."
+  },
+  {
+    "question": "What is EAC (Estimate at Completion) when CPI (Cost Performance Index) is expected to continue?",
+    "answer": "EAC (Estimate at Completion) = BAC (Budget at Completion) ÷ CPI (Cost Performance Index).",
+    "tip": "CPI < 1 means you’re over budget; investigate causes and adjust plan or scope."
+  },
+  {
+    "question": "What is Earned Schedule?",
+    "answer": "A schedule performance technique mapping EV (Earned Value) to planned time.",
+    "tip": "Can complement SPI when late in projects."
+  },
+  {
+    "question": "What is Earned Value 'percent complete' pitfall?",
+    "answer": "It may hide unfinished critical work when front-loaded.",
+    "tip": "Prefer objective completion criteria."
+  },
+  {
+    "question": "What is ETC (Estimate to Complete) in EVM (Earned Value Management)?",
+    "answer": "Estimate to Complete: expected cost to finish remaining work.",
+    "tip": "ETC = EAC − AC (simple form)."
+  },
+  {
+    "question": "What is EV (Earned Value) (or BCWP)?",
+    "answer": "Earned Value: budgeted value of work actually completed.",
+    "tip": "What you earned, not what you spent."
+  },
+  {
+    "question": "What is exploratory testing?",
+    "answer": "Simultaneous learning, test design, and execution.",
+    "tip": "Great for discovering edge cases quickly."
+  },
+  {
+    "question": "What is gold plating?",
+    "answer": "Adding extra features not requested or approved.",
+    "tip": "Stick to approved scope. Extra features feel nice but add cost and risk without validated value—channel that effort into agreed outcomes."
+  },
+  {
+    "question": "What is lead vs lag in scheduling?",
+    "answer": "Lead allows overlap (negative lag); lag adds wait time between tasks.",
+    "tip": "Example: testing starts 2 days after build = lag."
+  },
+  {
+    "question": "What is Monte Carlo simulation used for?",
+    "answer": "Quantitatively modeling uncertainty in schedule or cost.",
+    "tip": "Gives probability ranges for dates/budgets."
+  },
+  {
+    "question": "What is OKR cadence?",
+    "answer": "Set per quarter, reviewed weekly/biweekly.",
+    "tip": "Stretch but achievable and grade at period end."
+  },
+  {
+    "question": "What is pair programming?",
+    "answer": "Two developers collaborate at one workstation (driver/navigator).",
+    "tip": "Boosts quality and knowledge sharing."
+  },
+  {
+    "question": "What is PI Planning in SAFe?",
+    "answer": "A two-day, cadence-based event to align teams on a Program Increment.",
+    "tip": "Results in committed objectives and a program board."
+  },
+  {
+    "question": "What is Planning Poker?",
+    "answer": "A consensus-based estimation technique using cards (often Fibonacci).",
+    "tip": "Discuss outliers to uncover hidden assumptions."
+  },
+  {
+    "question": "What is procurement SOW?",
+    "answer": "Statement of Work describing deliverables, standards, and acceptance criteria.",
+    "tip": "Be specific to avoid disputes."
+  },
+  {
+    "question": "What is product discovery?",
+    "answer": "Activities to validate problems and solutions before heavy build.",
+    "tip": "Dual-track Agile pairs discovery and delivery."
+  },
+  {
+    "question": "What is product-market fit indicator?",
+    "answer": "Retention and organic growth alongside engagement.",
+    "tip": "Anecdotes are not enough—watch cohorts."
+  },
+  {
+    "question": "What is qualitative vs quantitative risk analysis?",
+    "answer": "Qualitative ranks probability/impact; quantitative uses numbers/models.",
+    "tip": "Start qualitative, use quant when stakes are large."
+  },
+  {
+    "question": "What is refactoring?",
+    "answer": "Improving internal code structure without changing behavior.",
+    "tip": "Keep quality high and speed sustainable."
+  },
+  {
+    "question": "What is resource leveling vs smoothing?",
+    "answer": "Leveling resolves over-allocation (may change critical path); smoothing keeps within float.",
+    "tip": "Choose based on schedule flexibility."
+  },
+  {
+    "question": "What is rolling wave planning?",
+    "answer": "Plan near-term work in detail; keep long-term at higher level.",
+    "tip": "Update as information emerges."
+  },
+  {
+    "question": "What is schedule baseline?",
+    "answer": "Approved project schedule.",
+    "tip": "Use it for variance analysis."
+  },
+  {
+    "question": "What is scope baseline made of?",
+    "answer": "Scope statement, WBS, and WBS dictionary.",
+    "tip": "It anchors what is in scope."
+  },
+  {
+    "question": "What is scope management plan?",
+    "answer": "Defines how scope will be defined, validated, and controlled.",
+    "tip": "Prevents ambiguity during execution."
+  },
+  {
+    "question": "What is Scrum of Scrums?",
+    "answer": "A coordination meeting among representatives of multiple Scrum teams.",
+    "tip": "Focus on cross-team impediments and dependencies."
+  },
+  {
+    "question": "What is servant leadership?",
+    "answer": "A leadership style that empowers and serves the team, removing impediments.",
+    "tip": "Core to Scrum Master and modern PM roles."
+  },
+  {
+    "question": "What is stakeholder salience model?",
+    "answer": "Classifies by power, legitimacy, urgency.",
+    "tip": "Helps prioritize engagement."
+  },
+  {
+    "question": "What is story mapping?",
+    "answer": "A technique to map user activities and break features into slices.",
+    "tip": "Ship walking skeletons first."
+  },
+  {
+    "question": "What is t-shirt sizing?",
+    "answer": "Relative sizing using categories like XS, S, M, L, XL.",
+    "tip": "Map sizes to points later if needed."
+  },
+  {
+    "question": "What is team velocity?",
+    "answer": "The average number of story points completed per Sprint.",
+    "tip": "Useful for forecasting, not for comparing teams."
+  },
+  {
+    "question": "What is technical debt?",
+    "answer": "The implied cost of rework from quick or suboptimal solutions.",
+    "tip": "Pay it down regularly and don’t only ship features."
+  },
+  {
+    "question": "What is test pyramid?",
+    "answer": "Unit tests at base, service/integration in middle, UI tests at top.",
+    "tip": "Think pyramid: keep many fast unit tests, fewer integration tests, and only a few end‑to‑end tests so feedback stays quick and reliable."
+  },
+  {
+    "question": "What is the communication channels formula for n stakeholders?",
+    "answer": "n(n − 1) ÷ 2.",
+    "tip": "As n grows, simplify comms paths."
+  },
+  {
+    "question": "What is the cone of uncertainty?",
+    "answer": "Early estimates have high uncertainty that narrows over time.",
+    "tip": "Use ranges, not single-point estimates early."
+  },
+  {
+    "question": "What is the CPI (Cost Performance Index) formula?",
+    "answer": "CPI (Cost Performance Index) = EV (Earned Value) ÷ AC (Actual Cost).",
+    "tip": "CPI < 1 means you’re over budget; investigate causes and adjust plan or scope."
+  },
+  {
+    "question": "What is the Definition of Done (DoD)?",
+    "answer": "A shared checklist that defines what it means for work to be complete.",
+    "tip": "Agree on a shared checklist so 'done' means releasable quality, not 'dev complete.' This prevents hidden work and rework."
+  },
+  {
+    "question": "What is the Definition of Ready (DoR)?",
+    "answer": "A checklist indicating a backlog item is well-understood and ready for Sprint Planning.",
+    "tip": "Use a ready checklist so teams start work with shared understanding and minimal thrash."
+  },
+  {
+    "question": "What is the difference between QA and QC?",
+    "answer": "QA prevents defects (process-focused); QC detects defects (product-focused).",
+    "tip": "Build quality in and don’t test it in."
+  },
+  {
+    "question": "What is the Kano model used for?",
+    "answer": "Classifying features by how they affect customer satisfaction (basic, performance, delighters).",
+    "tip": "Balance basics, performance features, and delighters. Remember: today’s delighters become tomorrow’s basics."
+  },
+  {
+    "question": "What is the purpose of a Project Charter?",
+    "answer": "Authorizes the project, names the project manager, and defines high-level objectives and constraints.",
+    "tip": "It’s the project’s birth certificate."
+  },
+  {
+    "question": "What is the purpose of Sprint Review?",
+    "answer": "Inspect the increment with stakeholders and adapt the Product Backlog.",
+    "tip": "It’s a working session, not a demo-only show."
+  },
+  {
+    "question": "What is the purpose of the Daily Scrum?",
+    "answer": "Inspect progress toward the Sprint Goal and adapt the plan for the next 24 hours.",
+    "tip": "Plan the next 24 hours toward the Sprint Goal—collaborative, under 15 minutes, not a status report to the Scrum Master."
+  },
+  {
+    "question": "What is the SPI (Schedule Performance Index) formula?",
+    "answer": "SPI (Schedule Performance Index) = EV (Earned Value) ÷ PV (Planned Value).",
+    "tip": "SPI < 1 means you’re behind schedule; re-sequence, add resources, or reduce scope."
+  },
+  {
+    "question": "What is the timebox for a Sprint?",
+    "answer": "One month or less, most teams use 1–2 weeks.",
+    "tip": "Shorter sprints increase feedback loops."
+  },
+  {
+    "question": "What is the typical timebox for Daily Scrum in Scrum?",
+    "answer": "15 minutes or less.",
+    "tip": "Plan the next 24 hours toward the Sprint Goal—collaborative, under 15 minutes, not a status report to the Scrum Master."
+  },
+  {
+    "question": "What is the typical timebox for Sprint Planning in Scrum?",
+    "answer": "up to 8 hours for a 1-month Sprint (proportionally less for shorter).",
+    "tip": "Timebox scales with Sprint length."
+  },
+  {
+    "question": "What is the typical timebox for Sprint Retrospective in Scrum?",
+    "answer": "up to 3 hours for a 1-month Sprint (proportionally less).",
+    "tip": "Inspect teamwork, tools, and process; pick 1–2 specific improvements and assign owners for the next Sprint."
+  },
+  {
+    "question": "What is the typical timebox for Sprint Review in Scrum?",
+    "answer": "up to 4 hours for a 1-month Sprint (proportionally less).",
+    "tip": "Timebox scales with Sprint length."
+  },
+  {
+    "question": "What is the WSJF formula in SAFe-style prioritization?",
+    "answer": "Weighted Shortest Job First = Cost of Delay ÷ Job Size.",
+    "tip": "Maximize value flow by doing the highest Cost‑of‑Delay items with the smallest job size first."
+  },
+  {
+    "question": "What is three-point (PERT) estimation formula for expected duration?",
+    "answer": "E = (Optimistic + 4×Most Likely + Pessimistic) ÷ 6.",
+    "tip": "Use O, M, P estimates to compute an expected duration and risk. Helpful when uncertainty is high."
+  },
+  {
+    "question": "What is throughput?",
+    "answer": "Number of items completed per unit time.",
+    "tip": "Stabilize flow before optimizing."
+  },
+  {
+    "question": "What is total float?",
+    "answer": "The amount of time a task can slip without delaying the project end date.",
+    "tip": "Free float is about not delaying the next task."
+  },
+  {
+    "question": "What is trunk-based development?",
+    "answer": "Teams integrate small changes into mainline frequently.",
+    "tip": "Reduces merge hell and enables CI/CD."
+  },
+  {
+    "question": "What is UAT?",
+    "answer": "User Acceptance Testing—validation by end users against business needs.",
+    "tip": "Define acceptance criteria early with users."
+  },
+  {
+    "question": "What is VAC (Variance at Completion) in EVM (Earned Value Management)?",
+    "answer": "Variance at Completion: BAC (Budget at Completion) − EAC (Estimate at Completion).",
+    "tip": "Negative VAC means expected overrun."
+  },
+  {
+    "question": "What is validate scope vs control quality?",
+    "answer": "Validate scope = acceptance by customer; Control quality = conformance to specs.",
+    "tip": "Do both to avoid surprises."
+  },
+  {
+    "question": "What is WSJF (Weighted Shortest Job First) 'Cost of Delay' made of?",
+    "answer": "User/Business Value, Time Criticality, Risk Reduction/Opportunity Enablement.",
+    "tip": "Maximize value flow by doing the highest Cost‑of‑Delay items with the smallest job size first."
+  },
+  {
+    "question": "What is WSJF (Weighted Shortest Job First) used for at scale?",
+    "answer": "Prioritizing backlog items by Cost of Delay over Job Size.",
+    "tip": "Maximize value flow by doing the highest Cost‑of‑Delay items with the smallest job size first."
+  },
+  {
+    "question": "What scale do teams often use for story points?",
+    "answer": "Modified Fibonacci (e.g., 0, 1, 2, 3, 5, 8, 13…).",
+    "tip": "Bigger numbers reflect greater uncertainty."
+  },
+  {
+    "question": "What’s a good anti-scope-creep guard?",
+    "answer": "A clear change control process with impact analysis.",
+    "tip": "Say 'Yes, and here’s the impact'—not just 'No'."
+  },
+  {
+    "question": "When can the Sprint Backlog be updated?",
+    "answer": "Any time during the Sprint by the Developers.",
+    "tip": "It’s a living plan toward the Sprint Goal."
+  },
+  {
+    "question": "Which Agile principle emphasizes this idea: “Build projects around motivated individuals”?",
+    "answer": "Build projects around motivated individuals.",
+    "tip": "Trust people—give them support and autonomy."
+  },
+  {
+    "question": "Which Agile principle emphasizes this idea: “Business and developers work together daily”?",
+    "answer": "Business and developers work together daily.",
+    "tip": "Tight collaboration enables fast decisions."
+  },
+  {
+    "question": "Which Agile principle emphasizes this idea: “Continuous attention to technical excellence and good design”?",
+    "answer": "Continuous attention to technical excellence and good design.",
+    "tip": "Quality enables speed."
+  },
+  {
+    "question": "Which Agile principle emphasizes this idea: “Deliver working software frequently”?",
+    "answer": "Deliver working software frequently.",
+    "tip": "Short cycles reduce risk and boost feedback."
+  },
+  {
+    "question": "Which Agile principle emphasizes this idea: “Face-to-face conversation is most effective”?",
+    "answer": "Face-to-face conversation is most effective.",
+    "tip": "Prefer direct, synchronous communication."
+  },
+  {
+    "question": "Which Agile principle emphasizes this idea: “Regularly reflect and adjust behavior”?",
+    "answer": "Regularly reflect and adjust behavior.",
+    "tip": "Retrospectives power continuous improvement."
+  },
+  {
+    "question": "Which Agile principle emphasizes this idea: “Satisfy the customer through early and continuous delivery”?",
+    "answer": "Satisfy the customer through early and continuous delivery.",
+    "tip": "Deliver value early and often."
+  },
+  {
+    "question": "Which Agile principle emphasizes this idea: “Self-organizing teams produce the best designs and architectures”?",
+    "answer": "Self-organizing teams produce the best designs and architectures.",
+    "tip": "Teams decide how to deliver."
+  },
+  {
+    "question": "Which Agile principle emphasizes this idea: “Simplicity—the art of maximizing work not done”?",
+    "answer": "Simplicity—the art of maximizing work not done.",
+    "tip": "Do less, but the right less."
+  },
+  {
+    "question": "Which Agile principle emphasizes this idea: “Sustainable development, maintain a constant pace”?",
+    "answer": "Sustainable development, maintain a constant pace.",
+    "tip": "Avoid heroics—pace yourself for consistency."
+  },
+  {
+    "question": "Which Agile principle emphasizes this idea: “Welcome changing requirements, even late in development”?",
+    "answer": "Welcome changing requirements, even late in development.",
+    "tip": "Change is a feature, not a bug—embrace it."
+  },
+  {
+    "question": "Which Agile principle emphasizes this idea: “Working software is the primary measure of progress”?",
+    "answer": "Working software is the primary measure of progress.",
+    "tip": "Outputs less than Outcomes and ship usable increments."
+  },
+  {
+    "question": "Which conflict style seeks win–win outcomes?",
+    "answer": "Collaborating.",
+    "tip": "Takes time but yields strong solutions."
+  },
+  {
+    "question": "Which contract shifts most cost risk to the seller?",
+    "answer": "Fixed-Price contracts.",
+    "tip": "Buyer risk is lower when scope is clear."
+  },
+  {
+    "question": "Which meeting ensures continuous improvement each Sprint?",
+    "answer": "Sprint Retrospective.",
+    "tip": "Inspect and adapt process, tools, and relationships."
+  },
+  {
+    "question": "Who can cancel a Sprint?",
+    "answer": "The Product Owner (or organization) when the Sprint Goal becomes obsolete.",
+    "tip": "It’s rare and replan promptly."
+  },
+  {
+    "question": "Who decides how much work to pull into a Sprint?",
+    "answer": "Developers (with input from PO).",
+    "tip": "Forecast, don’t commit beyond capacity."
+  },
+  {
+    "question": "Who ensures Scrum is understood and enacted?",
+    "answer": "Scrum Master.",
+    "tip": "Coach, facilitator, and impediment remover."
+  },
+  {
+    "question": "Who is accountable for maximizing product value?",
+    "answer": "Product Owner.",
+    "tip": "Value comes from ordering and clarity of goals."
+  },
+  {
+    "question": "Who is accountable for Scrum effectiveness?",
+    "answer": "The Scrum Master.",
+    "tip": "They coach the team, org, and Product Owner."
+  },
+  {
+    "question": "Who owns the Product Backlog?",
+    "answer": "The Product Owner.",
+    "tip": "Others may contribute and ownership stays with PO."
+  },
+  {
+    "question": "WSJF (Weighted Shortest Job First): If CoD=30 and Job Size=5, WSJF?",
+    "answer": "6",
+    "tip": "Maximize value flow by doing the highest Cost‑of‑Delay items with the smallest job size first."
+  }
+]

@@ -2,11 +2,9 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#121212">
-  <title>⏱️ Timed Challenge | Interview Slayer</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Timed Challenge</title>
   <style>
     :root {
       --bg: #111315;
@@ -15,46 +13,62 @@
       --muted: #a9b1ba;
       --accent: #ffc600;
       --good: #2ea043;
-      --bad: #e5534b;
+      --bad: #e5534b
     }
 
     * {
       box-sizing: border-box
     }
 
+    /* Base page */
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif;
       background: var(--bg);
       color: var(--text);
       min-height: 100dvh;
+    }
+
+    /* Fixed back link (stays in corner) */
+    a.back {
+      position: fixed;
+      top: 12px;
+      left: 12px;
+      text-decoration: none;
+      color: var(--accent);
+      font-size: 1.05rem;
+      z-index: 10;
+    }
+
+    /* Center everything else */
+    .stage {
+      min-height: 100dvh;
+      display: grid;
+      place-items: center;
+      padding: 24px 16px 56px;
+      /* room for small screens */
+      text-align: center;
+    }
+
+    .stack {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 24px 16px 56px;
-    }
-
-    a.back {
-      align-self: flex-start;
-      text-decoration: none;
-      color: var(--accent);
-      margin: 4px 0 12px;
-      font-size: 1.05rem;
+      gap: 12px
     }
 
     h1 {
       margin: 8px 0 6px;
       font-size: 1.8rem;
       color: var(--accent);
-      text-align: center;
     }
 
     p.subtitle {
       margin: 0 0 20px;
-      color: var(--muted);
-      text-align: center
+      color: var(--muted)
     }
 
+    /* Card */
     .arena {
       width: 100%;
       max-width: 760px;
@@ -63,8 +77,11 @@
       border-radius: 14px;
       padding: 18px;
       box-shadow: 0 10px 24px rgba(0, 0, 0, .25);
+      text-align: left;
+      /* inner content left-aligned */
     }
 
+    /* Quiz internals (unchanged) */
     .row {
       display: flex;
       justify-content: space-between;
@@ -83,7 +100,7 @@
       background: #2a2f35;
       border-radius: 999px;
       overflow: hidden;
-      margin: 8px 0 16px;
+      margin: 8px 0 16px
     }
 
     .timer>.bar {
@@ -93,7 +110,7 @@
       bottom: 0;
       background: linear-gradient(90deg, var(--good), #f39c12, var(--bad));
       width: 100%;
-      transition: width .2s linear;
+      transition: width .2s linear
     }
 
     .question {
@@ -116,7 +133,7 @@
       padding: 12px 14px;
       border-radius: 10px;
       cursor: pointer;
-      font-size: 1rem;
+      font-size: 1rem
     }
 
     .btn:hover {
@@ -143,7 +160,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-top: 12px;
+      margin-top: 12px
     }
 
     .ghost {
@@ -157,13 +174,13 @@
       padding: 10px 14px;
       border-radius: 10px;
       font-weight: 600;
-      cursor: pointer;
+      cursor: pointer
     }
 
     .cta.secondary {
-      background: #2a2f35;
-      color: var(--text);
-      border: 1px solid #3a4048;
+      background: #1a1a1a;
+      color: #ffcc00;
+      border: 1px solid #3a4048
     }
 
     .center {
@@ -172,56 +189,74 @@
       align-items: center;
       gap: 12px
     }
+
+    /* If the viewport is very short, allow content to start a bit higher */
+    @media (max-height:640px) {
+      .stage {
+        align-content: start;
+        padding-top: 64px
+      }
+    }
   </style>
 </head>
 
 <body>
-  <a href="solo.html" class="back">⬅ Back</a>
-  <h1>⏱️ Timed Challenge</h1>
-  <p class="subtitle">You've got the skills — now beat the clock. Every second counts.</p>
+  <a href="index.html" class="back">⬅ Back</a>
 
-  <div class="arena" id="arena">
-    <div class="center" id="startScreen">
-      <p class="ghost">10 questions · 20s per question · +10 XP per correct</p>
-      <button class="cta" id="startBtn">🎮 Start Challenge</button>
-    </div>
+  <main class="stage">
+    <div class="stack">
+      <h1>⏱️ Timed Challenge</h1>
+      <p class="subtitle">You've got the skills — now beat the clock. Every second counts.</p>
 
-    <div id="quiz" style="display:none">
-      <div class="row">
-        <div class="badge">Question <span id="qNum">1</span>/10</div>
-        <div class="badge">⏳ <span id="timeLeft">20</span>s</div>
-      </div>
-      <div class="timer">
-        <div class="bar" id="bar"></div>
-      </div>
-      <div class="question" id="question">Loading…</div>
-      <div class="options" id="options"></div>
-      <div class="feedback" id="feedback"></div>
-
-      <div class="footer">
-        <div class="badge">XP this run: <span id="xpRun">0</span></div>
-        <button class="cta secondary" id="skipBtn">Skip</button>
-      </div>
-    </div>
-
-    <div id="end" style="display:none">
-      <div class="center">
-        <h2>Well played, legend. ⚔️</h2>
-        <p class="ghost">Accuracy: <span id="accPct">0</span>% · Time used: <span id="timeUsed">0</span>s</p>
-        <p>XP earned: <strong><span id="xpEarned">0</span></strong></p>
-        <div style="display:flex;gap:10px">
-          <button class="cta" id="playAgain">Play Again</button>
-
+      <div class="arena" id="arena">
+        <div class="center" id="startScreen">
+          <p class="ghost">10 questions · 20s per question · +10 XP per correct</p>
+          <button class="cta" id="startBtn">🎮 Start Challenge</button>
         </div>
+
+        <div id="quiz" style="display:none">
+          <div class="row">
+            <div class="badge">Question <span id="qNum">1</span>/10</div>
+            <div class="badge">⏳ <span id="timeLeft">20</span>s</div>
+          </div>
+          <div class="timer">
+            <div class="bar" id="bar"></div>
+          </div>
+          <div class="question" id="question">Loading…</div>
+          <div class="options" id="options"></div>
+          <div class="feedback" id="feedback"></div>
+          <div class="footer">
+            <div class="badge">XP this run: <span id="xpRun">0</span></div>
+            <button class="cta secondary" id="skipBtn">Skip</button>
+          </div>
+        </div>
+
+        <div id="end" style="display:none">
+          <div class="center">
+            <h2>Well played, legend. ⚔️</h2>
+            <p class="ghost">Accuracy: <span id="accPct">0</span>% · Time used: <span id="timeUsed">0</span>s</p>
+            <p>XP earned: <strong><span id="xpEarned">0</span></strong></p>
+            <div style="display:flex;gap:10px">
+              <button class="cta" id="playAgain">Play Again</button>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-  </div>
+  </main>
+
 
   <script>
-    const PER_Q = 20;           // seconds per question
-    const TOTAL_Q = 10;         // questions per run
-    const XP_CORRECT = 10;
+    /* -------------------- CONFIG -------------------- */
+    const BANK_URL = 'timed_quiz.json';  // sits next to timed.html
+    const PER_Q = 20;                 // seconds per question
+    const TOTAL_Q = 10;                 // questions per run
+    const XP_CORRECT = 10;                 // XP per correct answer
+    const BAG_KEY = 'timed_bag_v1';     // rotation state
+    const XP_KEY = 'xp';               // cumulative XP storage
 
+    /* -------------------- ELEMENTS -------------------- */
     const els = {
       start: document.getElementById('startScreen'),
       startBtn: document.getElementById('startBtn'),
@@ -239,198 +274,310 @@
       timeUsed: document.getElementById('timeUsed'),
       xpEarned: document.getElementById('xpEarned'),
       playAgain: document.getElementById('playAgain'),
+      arena: document.getElementById('arena')
     };
 
-    let bank = [];       // full question bank
-    let deck = [];       // selected questions for the run
-    let idx = 0;
+    /* -------------------- STATE -------------------- */
+    let bank = [];         // full question bank
+    let bag = [];         // rotating shuffled indices (persisted)
+    let deck = [];         // current run's questions (objects)
+    let idx = 0;           // pointer into deck
     let correct = 0;
     let xpThisRun = 0;
     let usedSeconds = 0;
     let ticking = null;
     let secs = PER_Q;
+    let misses = [];       // [{q, chosen, correct, tip}...]
 
-    // Fallback questions if fetch fails
+    /* -------------------- UTILS -------------------- */
+    function fyShuffle(arr) {
+      for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      return arr;
+    }
+
+    function saveBag() {
+      localStorage.setItem(BAG_KEY, JSON.stringify(bag));
+    }
+
+    function loadBag(expectedLen) {
+      try {
+        const raw = localStorage.getItem(BAG_KEY);
+        const parsed = raw ? JSON.parse(raw) : null;
+        if (Array.isArray(parsed) && parsed.every(n => Number.isInteger(n))) {
+          // If bank size changed, reset the bag
+          const unique = [...new Set(parsed)].filter(i => i >= 0 && i < expectedLen);
+          if (unique.length) return unique;
+        }
+      } catch { }
+      return null;
+    }
+
+    /* -------------------- DATA LOAD -------------------- */
     const fallback = [
-      { "question": "What does MVP stand for in product development?", "options": ["Most Valuable Product", "Minimum Viable Product", "Model Validation Process", "Market Viability Plan"], "answer": "Minimum Viable Product", "tip": "An MVP is the simplest version of a product that can still deliver value." },
-      { "question": "Which methodology uses sprints and stand-ups?", "options": ["Waterfall", "Agile", "Kanban", "PRINCE2"], "answer": "Agile", "tip": "Agile emphasizes iterative development and regular team check-ins." },
-      { "question": "Which AI concept allows a model to learn from one task and apply it to another?", "options": ["Overfitting", "Prompt engineering", "Transfer learning", "Batch processing"], "answer": "Transfer learning", "tip": "Transfer learning leverages pre-trained models to improve efficiency on new tasks." },
-      { "question": "What is hallucination in AI?", "options": ["AI generating false or misleading content", "A model freezing during training", "Overuse of compute power", "AI mimicking human emotion"], "answer": "AI generating false or misleading content", "tip": "AI hallucination occurs when models confidently produce incorrect information." },
-      { "question": "Which document defines the work required to complete a project?", "options": ["WBS", "Scope Statement", "RACI chart", "Charter"], "answer": "Scope Statement", "tip": "The scope statement clarifies project deliverables and boundaries." },
-      { "question": "Which metric is best for measuring model accuracy?", "options": ["Latency", "Precision", "Throughput", "Batch size"], "answer": "Precision", "tip": "Precision measures the proportion of correct positive predictions." },
-      { "question": "What does the critical path identify?", "options": ["Tasks with the most resources", "Optional tasks", "Tasks that cannot be delayed", "Low-risk tasks"], "answer": "Tasks that cannot be delayed", "tip": "Delaying a task on the critical path delays the whole project." },
-      { "question": "What is the main goal of a sprint retrospective?", "options": ["Plan future features", "Deliver code", "Inspect and adapt", "Stakeholder review"], "answer": "Inspect and adapt", "tip": "Retrospectives focus on continuous improvement by reviewing team processes." },
-      { "question": "What is prompt engineering?", "options": ["Building AI models from scratch", "Designing input to guide generative AI", "Coding web scrapers", "Debugging Python scripts"], "answer": "Designing input to guide generative AI", "tip": "Good prompt engineering gets better results from generative models." },
-      { "question": "What is the output of a successful sprint review?", "options": ["Backlog refinement", "Updated Gantt chart", "Increment", "Risk register"], "answer": "Increment", "tip": "A working product increment is the main output of each sprint." },
-      { "question": "Which metric shows schedule efficiency in EVM?", "options": ["CPI", "SPI", "BAC", "EAC"], "answer": "SPI", "tip": "Schedule Performance Index = EV / PV." },
-      { "question": "Which meeting is time\u2011boxed to 15 minutes?", "options": ["Sprint Planning", "Daily Standup", "Sprint Review", "Retrospective"], "answer": "Daily Standup", "tip": "Inspect progress, surface blockers, re\u2011plan daily." },
-      { "question": "RAG stands for\u2026", "options": ["Randomized Adversarial Generation", "Retrieval\u2011Augmented Generation", "Rule\u2011Assisted Generation", "Reinforced Autonomy Generation"], "answer": "Retrieval\u2011Augmented Generation", "Tip": "Grounds answers in fetched documents to reduce errors." },
-      { "question": "Easiest way to persist XP in MVP web app?", "options": ["Database", "localStorage", "Cookies only", "Session per tab"], "answer": "localStorage", "tip": "Simple key\u2011value store in the browser for now." },
-      { "question": "Primary benefit of pair programming?", "options": ["Fewer meetings", "Knowledge sharing & quality", "Shorter standups", "Automatic tests"], "answer": "Knowledge sharing & quality", "tip": "Two brains catch more defects than one." },
-      { "question": "Chain\u2011of\u2011Thought prompting helps by\u2026", "options": ["Adding emojis", "Step\u2011by\u2011step reasoning", "Faster tokens", "Lower cost"], "answer": "Step\u2011by\u2011step reasoning", "tip": "Great for math/logic problems." },
-      { "question": "Diffusion models are mainly for\u2026", "options": ["Time\u2011series", "Speech\u2011to\u2011text", "Image generation", "Spam filtering"], "answer": "Image generation", "tip": "Iteratively denoise to synthesize images." },
-      { "question": "Stakeholder register tracks\u2026", "options": ["Contracts only", "People, interest, influence", "Risks only", "Source code"], "answer": "People, interest, influence", "tip": "Use it to tailor comms and engagement plans." },
-      { "question": "Mitigation response aims to\u2026", "options": ["Eliminate a risk entirely", "Reduce probability/impact", "Ignore a risk", "Transfer value"], "answer": "Reduce probability/impact", "tip": "Part of a proactive risk strategy." },
-      { "question": "Embeddings capture\u2026", "options": ["Token counts", "Semantic similarity", "Network latency", "GPU memory"], "answer": "Semantic similarity", "tip": "Similar ideas sit close together in vector space." },
-      { "question": "What is fast\u2011tracking?", "options": ["Adding resources to tasks", "Doing critical tasks in parallel", "Cutting scope", "Increasing overtime"], "answer": "Doing critical tasks in parallel", "tip": "Speeds schedule but can increase risk and rework." },
-      { "question": "Zero\u2011shot learning means\u2026", "options": ["Training with no data", "Handling unseen tasks without examples", "Training on zero labels", "Inferencing with zero compute"], "answer": "Handling unseen tasks without examples", "tip": "LLMs generalize from pretraining knowledge." },
-      { "question": "Primary purpose of a RAID log?", "options": ["Track requirements only", "Track Risks, Assumptions, Issues, Dependencies", "Track sprint velocity", "Track contracts"], "answer": "Track Risks, Assumptions, Issues, Dependencies", "tip": "Keeps cross\u2011cutting items visible and owned." },
-      { "question": "ASR (like Whisper) does\u2026", "options": ["Generate images", "Transcribe audio to text", "Translate code", "Render charts"], "answer": "Transcribe audio to text", "tip": "Useful for meeting notes and captions." },
-      { "question": "A stakeholder becomes unresponsive. First step?", "options": ["Escalate to sponsor", "Remove from register", "Re\u2011engage via preferred channels", "Proceed without input"], "answer": "Re\u2011engage via preferred channels", "tip": "Try tailored communication before escalating." },
-      { "question": "What is tokenization?", "options": ["Model distillation", "Splitting text into units", "Parameter pruning", "Data augmentation"], "answer": "Splitting text into units", "tip": "Essential preprocessing for NLP tasks." },
-      { "question": "A good acceptance criterion is\u2026", "options": ["Vague", "Ambiguous", "Testable", "Hidden"], "answer": "Testable", "tip": "Clear, measurable, and observable." },
-      { "question": "What is scope creep?", "options": ["Planned scope increase", "Uncontrolled expansion of scope", "Reducing requirements", "Gold plating"], "answer": "Uncontrolled expansion of scope", "tip": "Prevent via change control and clear acceptance criteria." },
-      { "question": "GPU is preferred over CPU for LLMs because\u2026", "options": ["More RAM", "Parallelism for matrix ops", "Cheaper per core", "Better for I/O"], "answer": "Parallelism for matrix ops", "tip": "Transformers are heavy on linear algebra." },
-      { "question": "Ethical AI policies should include\u2026", "options": ["Proprietary secrets", "Prohibited uses & human oversight", "Developer salaries", "Stock options"], "answer": "Prohibited uses & human oversight", "tip": "Define guardrails and accountability upfront." },
-      { "question": "Which file likely stores model weights?", "options": [".csv", ".md", ".bin", ".png"], "answer": ".bin", "tip": "Weights are typically binary blobs (.bin/.pt/.pth)." },
-      { "question": "Primary risk of biased training data?", "options": ["Overfitting only", "Unfair outputs", "Lower GPU temps", "Better generalization"], "answer": "Unfair outputs", "tip": "Audit datasets and test with diverse cases." },
-      { "question": "Best way to reduce hallucinations?", "options": ["Raise temperature", "Shorten prompts", "Use RAG/grounding", "Smaller model"], "answer": "Use RAG/grounding", "tip": "Cite sources and constrain to retrieved context." },
-      { "question": "Overfitting means\u2026", "options": ["Great generalization", "Memorizing training data", "Under\u2011training", "Perfect accuracy everywhere"], "answer": "Memorizing training data", "tip": "Use regularization and validation checks." },
-      { "question": "Best artifact to decompose deliverables?", "options": ["Risk register", "WBS", "SOW", "Network diagram"], "answer": "WBS", "tip": "Breaks deliverables into manageable work packages." },
-      { "question": "RACI: what does 'A' stand for?", "options": ["Assigned", "Approved", "Accountable", "Advisor"], "answer": "Accountable", "tip": "The single owner of the outcome — success or failure rests here." },
-      { "question": "Which chart shows remaining work in Scrum?", "options": ["Control chart", "Burn\u2011down chart", "Histogram", "Bubble chart"], "answer": "Burn\u2011down chart", "tip": "Ideal to visualize sprint progress to zero." },
-      { "question": "Fine\u2011tuning a model does what?", "options": ["Compresses weights", "Adapts it to domain data", "Removes biases entirely", "Extends context window"], "answer": "Adapts it to domain data", "tip": "Useful for legal/medical/brand style specialization." },
-      { "question": "Definition of a dependency?", "options": ["Two tasks starting together", "A task relying on another", "Tasks on same team", "Vendor lock\u2011in"], "answer": "A task relying on another", "tip": "FS/SS/FF/SF relationships define timing." },
-      { "question": "Temperature controls\u2026", "options": ["Model size", "Randomness/creativity", "Latency", "Cost"], "answer": "Randomness/creativity", "tip": "Lower = focused; higher = diverse/unpredictable." },
-      { "question": "What does a burndown chart show?", "options": ["Cost variance over time", "Scope changes", "Remaining work vs time", "Defect density"], "answer": "Remaining work vs time", "tip": "Downward slope to zero by sprint end." },
-      { "question": "Best use of LLMs in PM comms?", "options": ["Auto\u2011approve scope", "Draft and summarize updates", "Assign legal sign\u2011off", "Replace retros"], "answer": "Draft and summarize updates", "tip": "Speed + tone control = clearer comms." },
-      { "question": "RLHF stands for\u2026", "options": ["Reinforcement Learning from Human Feedback", "Regularized Learning with Heuristic Features", "Representation Learning via Human Forms", "Rapid Learning for High\u2011Fidelity"], "answer": "Reinforcement Learning from Human Feedback", "tip": "Aligns model behavior to human preferences." },
-      { "question": "Which is a multimodal model capability?", "options": ["Text only", "Image only", "Mix text + images", "Audio only"], "answer": "Mix text + images", "tip": "Models can reason across modalities." },
-      { "question": "Which tool best visualizes task dependencies?", "options": ["Kanban board", "Burndown chart", "Gantt chart", "Pareto chart"], "answer": "Gantt chart", "tip": "Gantt shows durations and predecessors/successors clearly." },
-      { "question": "What does the critical path identify?", "options": ["Tasks with most resources", "Optional tasks", "Tasks that cannot be delayed", "Low\u2011risk tasks"], "answer": "Tasks that cannot be delayed", "tip": "Any delay on the critical path delays the whole project." },
-      { "question": "What are tokens in LLMs?", "options": ["Entire sentences", "Chunks like words/subwords", "Paragraphs", "Files"], "answer": "Chunks like words/subwords", "tip": "Models read and generate token by token." },
-      { "question": "A context window is\u2026", "options": ["Training dataset size", "Tokens model can consider at once", "VRAM per batch", "Number of layers"], "answer": "Tokens model can consider at once", "tip": "Bigger window \u2192 longer documents in one go." },
-      { "question": "What is Generative AI primarily used for?", "options": ["Classification", "Clustering", "Creating new content", "Feature selection"], "answer": "Creating new content", "tip": "Text, images, code, audio \u2014 all fair game." },
-      { "question": "Which architecture powers modern LLMs?", "options": ["CNN", "RNN", "Transformer", "KNN"], "answer": "Transformer", "tip": "Self\u2011attention models capture long\u2011range dependencies." },
-      { "question": "Purpose of prompt engineering?", "options": ["Tune hyperparameters", "Curate datasets", "Guide model outputs with input design", "Increase batch size"], "answer": "Guide model outputs with input design", "tip": "Clear instructions \u2192 clearer outputs." },
-      { "question": "Definition of a milestone?", "options": ["A long task", "A significant point/event", "A blocker", "A dependency"], "answer": "A significant point/event", "tip": "Zero\u2011duration markers for key achievements." },
-      { "question": "Velocity in Scrum is\u2026", "options": ["Story points completed per sprint", "Team size", "Bug count", "Lines of code"], "answer": "Story points completed per sprint", "tip": "Used for planning, not for comparing teams." },
-      { "question": "Kanban\u2019s key focus is\u2026", "options": ["Fixed iterations", "WIP limits & flow", "Gantt accuracy", "Scope freezes"], "answer": "WIP limits & flow", "tip": "Visualize, limit WIP, manage flow." },
-      { "question": "Critical Chain focuses on\u2026", "options": ["Resource buffers", "Lead/lag", "Calendar exceptions", "Vendor SLAs"], "answer": "Resource buffers", "tip": "Buffers protect the project from variability." },
-      { "question": "Explainability matters because\u2026", "options": ["It speeds training", "It reduces paywalls", "It builds trust and accountability", "It replaces QA"], "answer": "It builds trust and accountability", "tip": "Essential in regulated or high\u2011impact decisions." },
-
+      {
+        question: "What does MVP stand for in product development?",
+        options: ["Most Valuable Product", "Minimum Viable Product", "Model Validation Process", "Market Viability Plan"],
+        answer: "Minimum Viable Product",
+        tip: "Smallest thing that still delivers value."
+      },
+      {
+        question: "Which methodology uses sprints and stand-ups?",
+        options: ["Waterfall", "Agile", "Kanban", "PRINCE2"],
+        answer: "Agile",
+        tip: "Iterative, collaborative, quick feedback."
+      }
     ];
-
-    function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1));[a[i], a[j]] = [a[j], a[i]]; } return a; }
 
     async function loadBank() {
       try {
-        const res = await fetch('timed_challenge_questions.json', { cache: 'no-store' });
-        if (!res.ok) throw new Error('net');
-        bank = await res.json();
+        const res = await fetch(BANK_URL, { cache: 'no-store' });
+        if (!res.ok) throw new Error('Network error');
+        const data = await res.json();
+
+        // Keep only clean, valid items
+        bank = data.filter(q =>
+          q && typeof q.question === 'string' &&
+          Array.isArray(q.options) && q.options.length >= 2 &&
+          (q.answer || q.correctAnswer)
+        ).map(q => ({
+          question: q.question.trim(),
+          options: q.options.slice(),
+          answer: (q.answer || q.correctAnswer).toString().trim(),
+          tip: (q.tip || q.explanation || '').toString().trim()
+        }));
+
+        if (!bank.length) throw new Error('Empty bank');
+
+        // init/restore the rotation bag
+        bag = loadBag(bank.length);
+        if (!bag || bag.length === 0) {
+          bag = fyShuffle([...Array(bank.length).keys()]);
+          saveBag();
+        }
       } catch (e) {
+        console.warn('Using fallback questions due to load error:', e);
         bank = fallback;
+        bag = fyShuffle([...Array(bank.length).keys()]);
+        saveBag();
       }
     }
 
-    let lastDeckSet = new Set();
-
-    function pickDeck() {
-      // Prefer a fresh set that avoids last run's questions where possible
-      const pool = bank.filter(q => !lastDeckSet.has((q.question || q.prompt || JSON.stringify(q))));
-      let candidate;
-      if (pool.length >= TOTAL_Q) {
-        candidate = shuffle([...pool]).slice(0, TOTAL_Q);
-      } else {
-        // Not enough unseen items; still shuffle entire bank
-        candidate = shuffle([...bank]).slice(0, TOTAL_Q);
+    /* -------------------- GAME FLOW -------------------- */
+    function takeFromBag(n) {
+      // if not enough items left, reshuffle a fresh full bag
+      if (bag.length < n) {
+        bag = fyShuffle([...Array(bank.length).keys()]);
       }
-      return candidate;
+      const pickedIdxs = bag.splice(0, n);
+      saveBag();
+      return pickedIdxs.map(i => bank[i]);
     }
 
     function start() {
-      idx = 0; correct = 0; xpThisRun = 0; usedSeconds = 0;
-      deck = pickDeck();
+      // reset run state
+      idx = 0; correct = 0; xpThisRun = 0; usedSeconds = 0; secs = PER_Q;
+      misses = [];
+      deck = takeFromBag(Math.min(TOTAL_Q, bank.length));
+
+      // switch screens
       els.start.style.display = 'none';
       els.end.style.display = 'none';
       els.quiz.style.display = 'block';
+      els.feedback.textContent = '';
+      els.xpRun.textContent = xpThisRun;
+
       next();
     }
 
     function next() {
       clearInterval(ticking);
+      if (idx >= deck.length) { finish(); return; }
+
       secs = PER_Q;
+      els.qNum.textContent = idx + 1;
       els.timeLeft.textContent = secs;
       els.bar.style.width = '100%';
-      els.feedback.textContent = '';
-      renderQ();
+
+      // render Q
+      const q = deck[idx];
+      els.question.textContent = q.question;
+      els.options.innerHTML = '';
+      fyShuffle(q.options.slice()).forEach(opt => {
+        const b = document.createElement('button');
+        b.className = 'btn';
+        b.textContent = opt;
+        b.onclick = () => choose(opt);
+        els.options.appendChild(b);
+      });
+
+      // timer
       ticking = setInterval(() => {
         secs--; usedSeconds++;
         els.timeLeft.textContent = Math.max(0, secs);
         els.bar.style.width = (secs / PER_Q * 100) + '%';
-        if (secs <= 0) { lock(); reveal(false, true); setTimeout(advance, 700); }
+        if (secs <= 0) {
+          clearInterval(ticking);
+          recordMiss(null);   // time-out counts as miss (no choice)
+          // immediately move on (no hint mid-run)
+          advance();
+        }
       }, 1000);
     }
 
-    function renderQ() {
-      const q = deck[idx];
-      els.qNum.textContent = idx + 1;
-      els.question.textContent = q.question;
-      els.options.innerHTML = '';
-      shuffle([...q.options]).forEach(opt => {
-        const b = document.createElement('button');
-        b.className = 'btn';
-        b.textContent = opt;
-        b.onclick = () => choose(b, opt);
-        els.options.appendChild(b);
-      });
-      els.xpRun.textContent = xpThisRun;
+    function lockOptions() {
+      [...els.options.children].forEach(b => b.disabled = true);
     }
 
-    function choose(btn, opt) {
+    function choose(opt) {
+      clearInterval(ticking);
       const q = deck[idx];
-      lock();
-      const correctOpt = q.answer || q.correctAnswer;
+      const correctOpt = q.answer;
+
+      lockOptions();
+
       if (opt === correctOpt) {
-        btn.classList.add('correct');
-        correct++; xpThisRun += XP_CORRECT;
-        els.feedback.textContent = '✅ Correct! +' + XP_CORRECT + ' XP';
+        correct++;
+        xpThisRun += XP_CORRECT;
+        els.xpRun.textContent = xpThisRun;
+        // tiny flash on the picked button (optional)
+        const picked = [...els.options.children].find(b => b.textContent === opt);
+        if (picked) picked.classList.add('correct');
       } else {
-        btn.classList.add('wrong');
-        // mark the correct one
-        [...els.options.children].forEach(b => {
-          if (b.textContent === correctOpt) b.classList.add('correct');
-        });
-        els.feedback.textContent = '❌ Nope. Tip: ' + (q.tip || q.explanation || 'Review this concept.');
+        // mark wrong quickly, no hint; review later
+        recordMiss(opt);
+        const picked = [...els.options.children].find(b => b.textContent === opt);
+        if (picked) picked.classList.add('wrong');
       }
-      els.xpRun.textContent = xpThisRun;
-      setTimeout(advance, 850);
+
+      // short pause so the user sees what was selected, then move on
+      setTimeout(advance, 220);
     }
 
-    function lock() { [...els.options.children].forEach(b => b.disabled = true); clearInterval(ticking); }
-
-    function reveal(isCorrect, timeUp) {
-      // currently handled in choose/timeout
+    function recordMiss(chosen) {
+      const q = deck[idx];
+      misses.push({
+        question: q.question,
+        chosen: chosen === null ? '(timeout)' : (chosen ?? '(skipped)'),
+        correct: q.answer,
+        tip: q.tip || ''
+      });
     }
 
     function advance() {
       idx++;
-      if (idx < deck.length) { next(); }
-      else { finish(); }
+      next();
     }
 
+    els.skipBtn.addEventListener('click', () => {
+      clearInterval(ticking);
+      lockOptions();
+      recordMiss('(skipped)');
+      setTimeout(advance, 120);
+    });
+
+    /* -------------------- END / REVIEW -------------------- */
     function finish() {
-      // Remember the last deck to vary the next run
-      lastDeckSet = new Set(deck.map(q => (q.question || q.prompt || JSON.stringify(q))));
+      clearInterval(ticking);
       els.quiz.style.display = 'none';
       els.end.style.display = 'block';
+
       const acc = Math.round((correct / deck.length) * 100);
       els.accPct.textContent = acc;
       els.timeUsed.textContent = usedSeconds;
       els.xpEarned.textContent = xpThisRun;
 
-      // persist XP
-      const current = Number(localStorage.getItem('xp') || 0);
-      localStorage.setItem('xp', String(current + xpThisRun));
+      // persist cumulative XP
+      const total = Number(localStorage.getItem(XP_KEY) || 0) + xpThisRun;
+      localStorage.setItem(XP_KEY, String(total));
+
+      // build review (misses only)
+      buildReview();
     }
 
+    function buildReview() {
+      // remove prior review block if exists
+      const old = document.getElementById('review');
+      if (old) old.remove();
+
+      const wrap = document.createElement('div');
+      wrap.id = 'review';
+      wrap.style.marginTop = '16px';
+
+      if (misses.length === 0) {
+        const p = document.createElement('p');
+        p.className = 'ghost';
+        p.textContent = 'Flawless victory. No misses to review. ✨';
+        wrap.appendChild(p);
+      } else {
+        const details = document.createElement('details');
+        details.open = true;
+
+        const summary = document.createElement('summary');
+        summary.textContent = `Review missed questions (${misses.length})`;
+        summary.style.cursor = 'pointer';
+        summary.style.marginBottom = '10px';
+        details.appendChild(summary);
+
+        const list = document.createElement('div');
+        list.style.display = 'grid';
+        list.style.gap = '10px';
+
+        misses.forEach(m => {
+          const card = document.createElement('div');
+          card.style.border = '1px solid #2a2f35';
+          card.style.borderRadius = '10px';
+          card.style.padding = '10px';
+          card.style.background = '#23282e';
+
+          const q = document.createElement('div');
+          q.style.fontWeight = '700';
+          q.style.marginBottom = '6px';
+          q.textContent = m.question;
+
+          const your = document.createElement('div');
+          your.innerHTML = `<span class="ghost">Your answer:</span> ${m.chosen}`;
+
+          const corr = document.createElement('div');
+          corr.innerHTML = `<span class="ghost">Correct:</span> ${m.correct}`;
+
+          card.appendChild(q);
+          card.appendChild(your);
+          card.appendChild(corr);
+
+          if (m.tip) {
+            const tip = document.createElement('div');
+            tip.className = 'ghost';
+            tip.style.marginTop = '4px';
+            tip.textContent = `Tip: ${m.tip}`;
+            card.appendChild(tip);
+          }
+
+          list.appendChild(card);
+        });
+
+        details.appendChild(list);
+        wrap.appendChild(details);
+      }
+
+      els.end.querySelector('.center').appendChild(wrap);
+    }
+
+    /* -------------------- PLAY AGAIN -------------------- */
     els.playAgain.addEventListener('click', start);
-    els.skipBtn.addEventListener('click', advance);
+
+    /* -------------------- START BUTTON / BOOT -------------------- */
+    els.startBtn.disabled = true;
     els.startBtn.addEventListener('click', start);
 
-    // boot
-    loadBank();
+    (async function boot() {
+      await loadBank();
+      els.startBtn.disabled = false; // ready to go
+    })();
   </script>
+
 </body>
 
 </html>

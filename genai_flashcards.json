@@ -1,0 +1,777 @@
+[
+  {
+    "question": "What does NLP stand for in AI?",
+    "answer": "Natural Language Processing",
+    "tip": "It is how machines work with human language."
+  },
+  {
+    "question": "What does CV stand for in AI vision?",
+    "answer": "Computer Vision",
+    "tip": "Used for images, video, and perception tasks."
+  },
+  {
+    "question": "Which model architecture powers many modern language models?",
+    "answer": "Transformer",
+    "tip": "Self-attention handles long-range dependencies."
+  },
+  {
+    "question": "In AI, what does 'k' often represent in algorithms like k-means?",
+    "answer": "The number of clusters to form",
+    "tip": "In k-means, 'k' tells the algorithm how many groups to find."
+  },
+  {
+    "question": "What does 'k' mean in k-nearest neighbors (k-NN)?",
+    "answer": "The number of neighbors to consider",
+    "tip": "The prediction is based on the majority label among the k closest points."
+  },
+  {
+    "question": "In top-k sampling for language models, what does 'k' refer to?",
+    "answer": "The number of most likely tokens to choose from",
+    "tip": "Lower k is safer and more predictable; higher k allows more diversity."
+  },
+  {
+    "question": "How does changing 'k' affect diversity in top-k sampling?",
+    "answer": "Higher k increases diversity, lower k makes output safer",
+    "tip": "Small k means fewer token choices; large k allows more creative variations."
+  },
+  {
+    "question": "What is 'k-fold cross-validation' used for in machine learning?",
+    "answer": "Evaluating model performance by splitting data into k parts",
+    "tip": "Each fold is used as a test set once while the rest are for training."
+  },
+  {
+    "question": "What is a token in language models?",
+    "answer": "A small piece of text such as a word or subword",
+    "tip": "Tokenization splits text into model-readable units."
+  },
+  {
+    "question": "What is a context window?",
+    "answer": "The maximum number of tokens the model can attend to at once",
+    "tip": "Longer windows allow longer prompts or documents."
+  },
+  {
+    "question": "What does the temperature parameter control?",
+    "answer": "Output randomness during generation",
+    "tip": "Lower is more deterministic; higher is more creative."
+  },
+  {
+    "question": "What is top-p (nucleus) sampling?",
+    "answer": "Sampling from the smallest set of tokens whose cumulative probability is at least p",
+    "tip": "Often paired with temperature for natural text."
+  },
+  {
+    "question": "What is top-k sampling?",
+    "answer": "Sampling from the k most likely next tokens",
+    "tip": "Lower k is safer; higher k is more diverse."
+  },
+  {
+    "question": "What is beam search?",
+    "answer": "A decoding method that keeps multiple best candidates at each step",
+    "tip": "Good for deterministic tasks but can sound rigid."
+  },
+  {
+    "question": "What is greedy decoding?",
+    "answer": "Always choose the highest probability token next",
+    "tip": "Deterministic but may miss better global sequences."
+  },
+  {
+    "question": "What is a system prompt?",
+    "answer": "Instructions that set the assistant's role and behavior",
+    "tip": "Place global rules here to steer responses."
+  },
+  {
+    "question": "What is few-shot prompting?",
+    "answer": "Providing labeled examples in the prompt",
+    "tip": "Shows the model the pattern you expect."
+  },
+  {
+    "question": "What is zero-shot prompting?",
+    "answer": "Asking the model to perform a task without examples",
+    "tip": "Works well with instruction-tuned models."
+  },
+  {
+    "question": "What is chain-of-thought prompting?",
+    "answer": "Asking the model to reason step by step",
+    "tip": "Useful for math and logic reasoning tasks."
+  },
+  {
+    "question": "What is retrieval-augmented generation (RAG)?",
+    "answer": "Fetching relevant documents and generating from them",
+    "tip": "Grounding reduces hallucinations and keeps answers fresh."
+  },
+  {
+    "question": "What is an embedding?",
+    "answer": "A numeric vector that represents meaning",
+    "tip": "Use for semantic search, clustering, and recommendations."
+  },
+  {
+    "question": "Which database supports vector search efficiently?",
+    "answer": "Vector database",
+    "tip": "Indexes like HNSW accelerate similarity queries."
+  },
+  {
+    "question": "What is fine-tuning?",
+    "answer": "Training a base model further on task-specific data",
+    "tip": "Improves style, format, and domain performance."
+  },
+  {
+    "question": "What is instruction tuning?",
+    "answer": "Training models to follow natural language instructions",
+    "tip": "Often performed before RLHF."
+  },
+  {
+    "question": "What is RLHF?",
+    "answer": "Reinforcement Learning from Human Feedback",
+    "tip": "Aligns model outputs with human preferences."
+  },
+  {
+    "question": "What causes hallucinations in LLMs?",
+    "answer": "Generating unsupported statements when uncertain",
+    "tip": "Mitigate with RAG, constraints, and better prompts."
+  },
+  {
+    "question": "What is a guardrail in GenAI apps?",
+    "answer": "A control that restricts or shapes model outputs",
+    "tip": "Use policies, filters, and validators."
+  },
+  {
+    "question": "What is a stop sequence?",
+    "answer": "A token pattern that halts generation",
+    "tip": "Helpful for structured outputs and tool calls."
+  },
+  {
+    "question": "What is a prompt injection?",
+    "answer": "Malicious content that tries to override instructions",
+    "tip": "Sanitize inputs and isolate external content."
+  },
+  {
+    "question": "What is prompt leaking?",
+    "answer": "The model reveals hidden instructions or secrets",
+    "tip": "Never include secrets directly in prompts."
+  },
+  {
+    "question": "What is a function call in LLMs?",
+    "answer": "A structured request emitted by the model to run a tool",
+    "tip": "Lets the assistant act instead of only chat."
+  },
+  {
+    "question": "What is a multimodal model?",
+    "answer": "A model that processes text, images, audio, or video",
+    "tip": "Great for OCR, charts, and screenshot Q&A."
+  },
+  {
+    "question": "What is OCR?",
+    "answer": "Optical Character Recognition",
+    "tip": "Converts text in images and PDFs to machine text."
+  },
+  {
+    "question": "What are diffusion models used for?",
+    "answer": "Generating images or media by denoising random noise",
+    "tip": "Used in Stable Diffusion and similar systems."
+  },
+  {
+    "question": "What is CLIP used for?",
+    "answer": "Linking images and text in a shared embedding space",
+    "tip": "Helps rank image generations to match prompts."
+  },
+  {
+    "question": "What is a VAE?",
+    "answer": "Variational Autoencoder",
+    "tip": "Often used for image latents in diffusion pipelines."
+  },
+  {
+    "question": "What is quantization?",
+    "answer": "Reducing numeric precision of model weights and activations",
+    "tip": "Shrinks memory and speeds inference with small accuracy loss."
+  },
+  {
+    "question": "What is a KV cache?",
+    "answer": "Cached attention key and value tensors from prior tokens",
+    "tip": "Speeds up autoregressive decoding."
+  },
+  {
+    "question": "What is MoE?",
+    "answer": "Mixture of Experts",
+    "tip": "Routes tokens to specialized experts to scale efficiently."
+  },
+  {
+    "question": "Why do transformers need positional encoding?",
+    "answer": "To inject token order information",
+    "tip": "Can be sinusoidal, learned, or rotary."
+  },
+  {
+    "question": "What is BPE in tokenization?",
+    "answer": "Byte Pair Encoding",
+    "tip": "Balances vocabulary size and coverage using subwords."
+  },
+  {
+    "question": "What is a safety policy?",
+    "answer": "Rules that define allowed and blocked content",
+    "tip": "Apply consistently to both inputs and outputs."
+  },
+  {
+    "question": "What are evals for LLMs?",
+    "answer": "Systematic tests to measure model quality on tasks",
+    "tip": "Track regressions and compare settings."
+  },
+  {
+    "question": "What is grounding?",
+    "answer": "Tying outputs to verifiable sources",
+    "tip": "Show citations or snippets to build trust."
+  },
+  {
+    "question": "What is a jailbreak?",
+    "answer": "A prompt that bypasses model safeguards",
+    "tip": "Defend with robust filters and adversarial testing."
+  },
+  {
+    "question": "What is semantic chunking?",
+    "answer": "Splitting text by meaning rather than fixed length",
+    "tip": "Improves retrieval recall and coherence."
+  },
+  {
+    "question": "What is chunk overlap?",
+    "answer": "Repeating a small portion between chunks",
+    "tip": "Prevents context loss at boundaries."
+  },
+  {
+    "question": "What is a reranker?",
+    "answer": "A model that re-scores retrieved passages for relevance",
+    "tip": "Boosts RAG accuracy beyond pure vector search."
+  },
+  {
+    "question": "What is deterministic decoding useful for?",
+    "answer": "Reproducible outputs for testing and grading",
+    "tip": "Use temperature 0 or greedy decoding."
+  },
+  {
+    "question": "When should you prefer few-shot over fine-tuning?",
+    "answer": "When the need is small or temporary",
+    "tip": "Fine-tune for persistent, large-scale needs."
+  },
+  {
+    "question": "What is synthetic data?",
+    "answer": "Data generated by models to augment training sets",
+    "tip": "Review and filter to avoid quality drift."
+  },
+  {
+    "question": "What is data leakage in evaluation?",
+    "answer": "Test data appears in training or prompt context",
+    "tip": "Keep a clean holdout set."
+  },
+  {
+    "question": "Good temperature range for creative writing?",
+    "answer": "About 0.7 to 1.0",
+    "tip": "Pair with top-p around 0.9."
+  },
+  {
+    "question": "Good temperature range for coding or facts?",
+    "answer": "About 0.0 to 0.3",
+    "tip": "Favor precision over creativity."
+  },
+  {
+    "question": "What is a safety filter?",
+    "answer": "A classifier that flags or blocks unsafe content",
+    "tip": "Run on inputs and outputs for defense in depth."
+  },
+  {
+    "question": "What is an API rate limit?",
+    "answer": "The maximum call rate allowed by a service",
+    "tip": "Batch, cache, and backoff to stay within limits."
+  },
+  {
+    "question": "What is request batching?",
+    "answer": "Combining multiple tasks into one request",
+    "tip": "Reduces latency and cost if supported."
+  },
+  {
+    "question": "How does caching help GenAI apps?",
+    "answer": "Reuses results for identical prompts and params",
+    "tip": "Hash prompts to create cache keys."
+  },
+  {
+    "question": "What is cosine similarity?",
+    "answer": "A measure of angle between two vectors",
+    "tip": "1.0 means identical direction; 0 means orthogonal."
+  },
+  {
+    "question": "What is a safety red-team?",
+    "answer": "A group that probes models for failures",
+    "tip": "Use adversarial prompts to harden systems."
+  },
+  {
+    "question": "What is gradient checkpointing?",
+    "answer": "Saving fewer activations to reduce memory use",
+    "tip": "Trades compute for RAM during training."
+  },
+  {
+    "question": "What is data anonymization?",
+    "answer": "Removing or obfuscating personal identifiers",
+    "tip": "Protects privacy and compliance."
+  },
+  {
+    "question": "What is PII?",
+    "answer": "Personally Identifiable Information",
+    "tip": "Do not log or expose it."
+  },
+  {
+    "question": "What is differential privacy?",
+    "answer": "Sharing insights without revealing individual data",
+    "tip": "Noise is added to protect records."
+  },
+  {
+    "question": "What is harmonization in RAG?",
+    "answer": "Cleaning and standardizing retrieved text",
+    "tip": "Fix encoding, tables, and boilerplate."
+  },
+  {
+    "question": "What is a safety sandbox?",
+    "answer": "An isolated environment for tool execution",
+    "tip": "Constrain file system, network, and time."
+  },
+  {
+    "question": "What is a latent representation?",
+    "answer": "Compressed internal features learned by a model",
+    "tip": "Embeddings are one form of latent vector."
+  },
+  {
+    "question": "What is a model checkpoint?",
+    "answer": "Saved weights at a training step",
+    "tip": "Used for resume, evaluation, or deployment."
+  },
+  {
+    "question": "What is early stopping?",
+    "answer": "Halting training when validation stops improving",
+    "tip": "Prevents overfitting."
+  },
+  {
+    "question": "What is overfitting?",
+    "answer": "Model memorizes training data and fails to generalize",
+    "tip": "Use regularization and more data."
+  },
+  {
+    "question": "What is underfitting?",
+    "answer": "Model too simple to capture patterns",
+    "tip": "Increase capacity or features."
+  },
+  {
+    "question": "What is a learning rate?",
+    "answer": "Step size for weight updates during training",
+    "tip": "Warmup and schedulers stabilize training."
+  },
+  {
+    "question": "What is a tokenizer's role?",
+    "answer": "Map text to token IDs and back to text",
+    "tip": "Using the wrong tokenizer breaks results."
+  },
+  {
+    "question": "Why use instruction-following base models?",
+    "answer": "They respond well to natural prompts",
+    "tip": "Less prompt engineering is needed."
+  },
+  {
+    "question": "What is a safety policy conflict?",
+    "answer": "Two rules give opposite guidance",
+    "tip": "Prioritize higher-level rules and document decisions."
+  },
+  {
+    "question": "What is hallucination detection?",
+    "answer": "Classifying whether output is unsupported by sources",
+    "tip": "Use entailment or citation checks."
+  },
+  {
+    "question": "What is tool misuse risk?",
+    "answer": "A model calls a tool in unsafe or costly ways",
+    "tip": "Validate arguments and set budgets."
+  },
+  {
+    "question": "What is latency hiding?",
+    "answer": "Streaming tokens to show progress early",
+    "tip": "Improves perceived speed for users."
+  },
+  {
+    "question": "What is schema validation for tool calls?",
+    "answer": "Checking model-emitted JSON against a schema",
+    "tip": "Reject or repair before executing tools."
+  },
+  {
+    "question": "What is a seed in generation?",
+    "answer": "Value that controls randomness initialization",
+    "tip": "Same seed and params produce reproducible outputs."
+  },
+  {
+    "question": "What is typical sampling (top-a)?",
+    "answer": "Sampling near the expected probability mass",
+    "tip": "Alternative to top-p with different behavior."
+  },
+  {
+    "question": "What is masked language modeling?",
+    "answer": "Predicting masked tokens during training",
+    "tip": "Used by models like BERT."
+  },
+  {
+    "question": "What is causal language modeling?",
+    "answer": "Predicting the next token given previous tokens",
+    "tip": "Used by GPT-style models."
+  },
+  {
+    "question": "What is an allow-list in safety?",
+    "answer": "Explicitly permitted patterns, URLs, or tools",
+    "tip": "Stronger than deny-lists alone."
+  },
+  {
+    "question": "What is dropout?",
+    "answer": "Randomly disabling neurons during training",
+    "tip": "Reduces overfitting."
+  },
+  {
+    "question": "What is weight decay?",
+    "answer": "L2 regularization on weights",
+    "tip": "Helps generalization."
+  },
+  {
+    "question": "What is perplexity?",
+    "answer": "Exponentiated average negative log likelihood",
+    "tip": "Lower perplexity is better for language modeling."
+  },
+  {
+    "question": "What is a hyperparameter?",
+    "answer": "A setting chosen before training such as learning rate",
+    "tip": "Tune with validation data, not test data."
+  },
+  {
+    "question": "What is gradient clipping?",
+    "answer": "Limiting gradient norms to stabilize training",
+    "tip": "Prevents exploding gradients."
+  },
+  {
+    "question": "What is a watermark in AI outputs?",
+    "answer": "Signal embedded to mark AI-generated content",
+    "tip": "Aids detection and attribution."
+  },
+  {
+    "question": "What is style transfer in GenAI?",
+    "answer": "Making content match a desired tone or style",
+    "tip": "Provide examples to steer the voice."
+  },
+  {
+    "question": "What is a TTS model?",
+    "answer": "Text to Speech model",
+    "tip": "Converts text to audio voices."
+  },
+  {
+    "question": "What is an ASR model?",
+    "answer": "Automatic Speech Recognition model",
+    "tip": "Converts audio into text."
+  },
+  {
+    "question": "What is a VLM?",
+    "answer": "Vision Language Model",
+    "tip": "Understands images and text together."
+  },
+  {
+    "question": "Main benefit of RAG over pure fine-tuning?",
+    "answer": "Up-to-date answers without retraining the model",
+    "tip": "Swap documents to update knowledge."
+  },
+  {
+    "question": "What is a prompt template?",
+    "answer": "Reusable string with variables to build prompts",
+    "tip": "Track versions and parameters."
+  },
+  {
+    "question": "What is JSONL format?",
+    "answer": "JSON Lines with one JSON object per line",
+    "tip": "Common for training and evaluations."
+  },
+  {
+    "question": "What is an attention head?",
+    "answer": "One parallel attention sub-layer in a transformer",
+    "tip": "Multiple heads learn different relations."
+  },
+  {
+    "question": "What is self-attention?",
+    "answer": "Tokens attend to other tokens to compute context",
+    "tip": "Enables parallel sequence processing."
+  },
+  {
+    "question": "What is cross-attention?",
+    "answer": "Attention from one sequence to another",
+    "tip": "Used in encoder-decoder and multimodal models."
+  },
+  {
+    "question": "What is an encoder-only model good for?",
+    "answer": "Understanding and classification tasks",
+    "tip": "Example uses include search and embeddings."
+  },
+  {
+    "question": "What is a decoder-only model good for?",
+    "answer": "Autoregressive text generation",
+    "tip": "Used for chat and code generation."
+  },
+  {
+    "question": "What is an encoder-decoder model good for?",
+    "answer": "Sequence to sequence tasks",
+    "tip": "Used in translation and summarization."
+  },
+  {
+    "question": "What is parameter-efficient fine-tuning (PEFT)?",
+    "answer": "Adapting a model by training a small set of parameters",
+    "tip": "Includes LoRA, adapters, and prompt-tuning."
+  },
+  {
+    "question": "What is LoRA?",
+    "answer": "Low Rank Adaptation for fine-tuning",
+    "tip": "Adds small trainable matrices to a frozen model."
+  },
+  {
+    "question": "What is prompt-tuning?",
+    "answer": "Learning virtual prompt embeddings",
+    "tip": "No model weights are updated."
+  },
+  {
+    "question": "What is adapters fine-tuning?",
+    "answer": "Adding small layers into the network to train",
+    "tip": "Leaves original weights mostly frozen."
+  },
+  {
+    "question": "What is catastrophic forgetting?",
+    "answer": "A model forgets prior knowledge after new training",
+    "tip": "Mix old data or use regularization."
+  },
+  {
+    "question": "What is domain adaptation?",
+    "answer": "Adapting a model to a specific domain",
+    "tip": "Use in-context examples or fine-tuning."
+  },
+  {
+    "question": "What is temperature vs top-p best practice?",
+    "answer": "Tune one while keeping the other default",
+    "tip": "Avoid unpredictable interactions."
+  },
+  {
+    "question": "What is teacher forcing?",
+    "answer": "Feeding the ground-truth token during training",
+    "tip": "Common in sequence to sequence training."
+  },
+  {
+    "question": "What is label smoothing?",
+    "answer": "Softening target distributions during training",
+    "tip": "Improves generalization."
+  },
+  {
+    "question": "What is a confusion matrix?",
+    "answer": "Table showing true vs predicted classes",
+    "tip": "Helps analyze classification errors."
+  },
+  {
+    "question": "What is precision in classification?",
+    "answer": "True positives divided by predicted positives",
+    "tip": "Measures exactness of positive predictions."
+  },
+  {
+    "question": "What is recall in classification?",
+    "answer": "True positives divided by actual positives",
+    "tip": "Measures completeness of positive predictions."
+  },
+  {
+    "question": "What is F1 score?",
+    "answer": "Harmonic mean of precision and recall",
+    "tip": "Balances exactness and completeness."
+  },
+  {
+    "question": "What is ROC AUC?",
+    "answer": "Area under the ROC curve",
+    "tip": "Higher AUC indicates better ranking performance."
+  },
+  {
+    "question": "What is a baseline prompt?",
+    "answer": "A simple default prompt to compare against",
+    "tip": "Use it to judge prompt experiments fairly."
+  },
+  {
+    "question": "What is prompt caching?",
+    "answer": "Storing past responses for identical prompts",
+    "tip": "Cuts cost and latency."
+  },
+  {
+    "question": "What is tool call budget?",
+    "answer": "A limit on the number or cost of tool calls",
+    "tip": "Prevents runaway expenses."
+  },
+  {
+    "question": "What is context overflow?",
+    "answer": "Prompt exceeds the model's max context window",
+    "tip": "Shorten text or use longer-context models."
+  },
+  {
+    "question": "What is stop word removal?",
+    "answer": "Removing very common words from text",
+    "tip": "Sometimes helps in classical NLP pipelines."
+  },
+  {
+    "question": "What is stemming?",
+    "answer": "Reducing words to their root form",
+    "tip": "Used in traditional NLP search systems."
+  },
+  {
+    "question": "What is lemmatization?",
+    "answer": "Reducing words to dictionary base forms",
+    "tip": "More accurate than stemming."
+  },
+  {
+    "question": "What is BM25?",
+    "answer": "A ranking function for search",
+    "tip": "Often combined with vectors in hybrid retrieval."
+  },
+  {
+    "question": "What is hybrid retrieval?",
+    "answer": "Combining lexical and vector search",
+    "tip": "Improves recall and precision."
+  },
+  {
+    "question": "What is cosine vs dot-product similarity?",
+    "answer": "Angle vs magnitude sensitive measures",
+    "tip": "Normalize vectors for fair comparisons."
+  },
+  {
+    "question": "What is temperature drift?",
+    "answer": "Inconsistent sampling parameters across calls",
+    "tip": "Centralize defaults in one place."
+  },
+  {
+    "question": "What is logging in GenAI systems for?",
+    "answer": "Tracking prompts, parameters, and outputs",
+    "tip": "Aids debugging and quality control."
+  },
+  {
+    "question": "What is prompt versioning?",
+    "answer": "Tracking changes to prompts over time",
+    "tip": "Helps reproduce results."
+  },
+  {
+    "question": "What is content moderation?",
+    "answer": "Filtering harmful or inappropriate content",
+    "tip": "Apply to both incoming and outgoing text."
+  },
+  {
+    "question": "What is an eval harness?",
+    "answer": "Scripted tests to measure system quality",
+    "tip": "Automate to catch regressions early."
+  },
+  {
+    "question": "What is model distillation?",
+    "answer": "Training a small model to mimic a larger model",
+    "tip": "Reduces cost and latency."
+  },
+  {
+    "question": "What is a safety override?",
+    "answer": "Admin bypass with audit logs",
+    "tip": "Use only for legitimate use cases."
+  },
+  {
+    "question": "What is a router model?",
+    "answer": "Small model that picks which tool or expert to use",
+    "tip": "Improves cost and latency."
+  },
+  {
+    "question": "What is a latency budget?",
+    "answer": "Maximum time the UX allows for a response",
+    "tip": "Allocate across retrieval, model, and tools."
+  },
+  {
+    "question": "What is a vector dimension?",
+    "answer": "Number of features in an embedding vector",
+    "tip": "Must match the index configuration."
+  },
+  {
+    "question": "What is batch size in training?",
+    "answer": "Number of examples per training step",
+    "tip": "Affects stability and speed."
+  },
+  {
+    "question": "What is curriculum learning?",
+    "answer": "Training from easy to hard examples",
+    "tip": "Can speed up convergence."
+  },
+  {
+    "question": "What is data augmentation?",
+    "answer": "Expanding training data with transformations",
+    "tip": "Common in vision and audio."
+  },
+  {
+    "question": "What is a learning rate scheduler?",
+    "answer": "Policy that changes learning rate during training",
+    "tip": "Warmup and cosine decay are popular choices."
+  },
+  {
+    "question": "What is early fusion in multimodal?",
+    "answer": "Combine modalities at the input level",
+    "tip": "Contrast with late fusion at the output level."
+  },
+  {
+    "question": "What is late fusion in multimodal?",
+    "answer": "Combine modalities near the output",
+    "tip": "Allows separate encoders per modality."
+  },
+  {
+    "question": "What is gradient accumulation?",
+    "answer": "Summing gradients across micro-batches",
+    "tip": "Useful when GPU memory is limited."
+  },
+  {
+    "question": "What is mixed precision training?",
+    "answer": "Using lower precision like FP16 during training",
+    "tip": "Saves memory and speeds up computation."
+  },
+  {
+    "question": "What is a replay buffer?",
+    "answer": "Storage of past interactions for RL",
+    "tip": "Stabilizes training."
+  },
+  {
+    "question": "What is a reward model?",
+    "answer": "Model that scores outputs for preference learning",
+    "tip": "Used in RLHF training loops."
+  },
+  {
+    "question": "What is a safety rate limit?",
+    "answer": "Throttle requests when safety risk increases",
+    "tip": "Protects systems from abuse."
+  },
+  {
+    "question": "What is a persona in prompting?",
+    "answer": "A consistent voice or role for the assistant",
+    "tip": "Set in the system prompt."
+  },
+  {
+    "question": "What is defogging PDF tables?",
+    "answer": "Converting messy tables into clean structured text",
+    "tip": "Pre-process before passing to models."
+  },
+  {
+    "question": "What is a knowledge cutoff?",
+    "answer": "The date after which a model was not trained on data",
+    "tip": "Use retrieval to get newer facts."
+  },
+  {
+    "question": "What is long-form QA?",
+    "answer": "Answering complex questions with multi-paragraph outputs",
+    "tip": "Break down reasoning and cite sources."
+  },
+  {
+    "question": "What is few-shot chain-of-thought?",
+    "answer": "Providing stepwise examples in the prompt",
+    "tip": "Helps the model reason through tasks."
+  },
+  {
+    "question": "What is slot filling?",
+    "answer": "Extracting specific fields from text",
+    "tip": "Use function calling with JSON schemas."
+  },
+  {
+    "question": "What is tool selection?",
+    "answer": "Choosing the right tool for a user request",
+    "tip": "Router models can automate the choice."
+  }
+]

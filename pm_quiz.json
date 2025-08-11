@@ -1,0 +1,2730 @@
+[
+  {
+    "question": "During a critical milestone, a vendor reports a security incident. What do you do?",
+    "options": [
+      "Assess impact and replan",
+      "Escalate immediately",
+      "Add it to the backlog for prioritization",
+      "Assess the critical path and dependencies"
+    ],
+    "answer": "Escalate immediately",
+    "explanation": "Follow incident response protocol immediately; containment and escalation are priority."
+  },
+  {
+    "question": "During a critical milestone, a product owner goes on leave. What do you do?",
+    "options": [
+      "Discuss the issue privately",
+      "Clarify acceptance criteria together",
+      "Reassign their work",
+      "Ignore it"
+    ],
+    "answer": "Reassign their work",
+    "explanation": "First secure continuity and communicate; escalate only if unmanaged impact remains."
+  },
+  {
+    "question": "Monte Carlo simulation is used to:",
+    "options": [
+      "Assess schedule/cost uncertainty",
+      "Hire faster",
+      "Improve UI",
+      "Pick vendors"
+    ],
+    "answer": "Assess schedule/cost uncertainty",
+    "explanation": "Random sampling of inputs produces a distribution of outcomes."
+  },
+  {
+    "question": "RAID log content typically includes what?",
+    "options": [
+      "Risks, Assumptions, Issues, Dependencies",
+      "Roadmaps and Ideas",
+      "Roles and Interfaces",
+      "Reports and Docs"
+    ],
+    "answer": "Risks, Assumptions, Issues, Dependencies",
+    "explanation": "Keep the RAID log updated at a regular cadence."
+  },
+  {
+    "question": "Sprint Planning primarily establishes which of the following?",
+    "options": [
+      "Define why, what, and how for the Sprint",
+      "Review the budget",
+      "Hire new team members",
+      "Demo the product"
+    ],
+    "answer": "Define why, what, and how for the Sprint",
+    "explanation": "Sprint Planning sets the Sprint Goal (why), selects work (what), and crafts a plan (how)."
+  },
+  {
+    "question": "What is the main purpose of Sprint Planning?",
+    "options": [
+      "Define why, what, and how for the Sprint",
+      "Review the budget",
+      "Hire new team members",
+      "Demo the product"
+    ],
+    "answer": "Define why, what, and how for the Sprint",
+    "explanation": "Sprint Planning sets the Sprint Goal (why), selects work (what), and crafts a plan (how)."
+  },
+  {
+    "question": "A phase gate (go/no-go) review decides:",
+    "options": [
+      "Continue, change, or stop",
+      "Hire or fire",
+      "Choose coffee",
+      "Design UI"
+    ],
+    "answer": "Continue, change, or stop",
+    "explanation": "Governance checkpoints validate continued justification and control."
+  },
+  {
+    "question": "Definition of Ready is:",
+    "options": [
+      "An optional agreement for start criteria",
+      "Mandated by Scrum Guide",
+      "A contract",
+      "A process audit"
+    ],
+    "answer": "An optional agreement for start criteria",
+    "explanation": "Many teams use it to reduce thrash before starting work."
+  },
+  {
+    "question": "Which group is responsible for crafting the Sprint Goal?",
+    "options": [
+      "Entire Scrum Team",
+      "Product Owner",
+      "Scrum Master",
+      "Architect"
+    ],
+    "answer": "Entire Scrum Team",
+    "explanation": "The Sprint Goal is created collaboratively during Sprint Planning."
+  },
+  {
+    "question": "Which commitment is tied to the Increment?",
+    "options": [
+      "Definition of Done",
+      "Product Goal",
+      "Team Charter",
+      "WIP Limit"
+    ],
+    "answer": "Definition of Done",
+    "explanation": "The Definition of Done ensures each Increment meets a shared quality standard."
+  },
+  {
+    "question": "A control chart is used to:",
+    "options": [
+      "Monitor process stability over time",
+      "Build a WBS",
+      "Order backlog",
+      "Set budgets"
+    ],
+    "answer": "Monitor process stability over time",
+    "explanation": "Control charts reveal variation and out-of-control signals."
+  },
+  {
+    "question": "What does EV stand for in EVM?",
+    "options": [
+      "Earned Value",
+      "Estimated Variance",
+      "Expected Volume",
+      "Expense Value"
+    ],
+    "answer": "Earned Value",
+    "explanation": "Earned Value quantifies the work performed in budget terms."
+  },
+  {
+    "question": "Integrated change control ensures:",
+    "options": [
+      "Only approved changes are implemented",
+      "All changes are accepted",
+      "No changes allowed",
+      "Only sponsor changes"
+    ],
+    "answer": "Only approved changes are implemented",
+    "explanation": "Assess impacts and update baselines after approvals."
+  },
+  {
+    "question": "Who owns the Sprint Backlog?",
+    "options": [
+      "Developers",
+      "Product Owner",
+      "Scrum Master",
+      "Stakeholders"
+    ],
+    "answer": "Developers",
+    "explanation": "Developers manage the Sprint Backlog and plan for delivering the Increment."
+  },
+  {
+    "question": "Definition of success should be:",
+    "options": [
+      "Measured with clear KPIs",
+      "Only anecdotal",
+      "Only financial",
+      "Undefined"
+    ],
+    "answer": "Measured with clear KPIs",
+    "explanation": "Agree success measures upfront with sponsors."
+  },
+  {
+    "question": "What does a cumulative flow diagram show?",
+    "options": [
+      "Work states over time",
+      "Budget by month",
+      "Headcount trend",
+      "Risk severity only"
+    ],
+    "answer": "Work states over time",
+    "explanation": "A CFD highlights bottlenecks, queue growth, and WIP issues."
+  },
+  {
+    "question": "Who orders the Product Backlog?",
+    "options": [
+      "Product Owner",
+      "Scrum Master",
+      "Developers",
+      "PMO"
+    ],
+    "answer": "Product Owner",
+    "explanation": "Ordering maximizes value delivery and clarity."
+  },
+  {
+    "question": "During a critical milestone, a developer introduces a critical dependency late. What do you do?",
+    "options": [
+      "Escalate immediately",
+      "Assess the critical path and dependencies",
+      "Discuss the issue privately",
+      "Assess impact and replan"
+    ],
+    "answer": "Assess impact and replan",
+    "explanation": "Reassess plan and risks; negotiate scope/time/cost and escalate if necessary."
+  },
+  {
+    "question": "During a critical milestone, a vendor requests an out-of-scope feature in review. What do you do?",
+    "options": [
+      "Add it to the backlog for prioritization",
+      "Ignore it",
+      "Assess impact and replan",
+      "Clarify acceptance criteria together"
+    ],
+    "answer": "Add it to the backlog for prioritization",
+    "explanation": "Respect focus; capture in backlog and prioritize collaboratively."
+  },
+  {
+    "question": "What is the timebox for the Daily Scrum?",
+    "options": [
+      "15 minutes",
+      "60 minutes",
+      "45 minutes",
+      "As long as needed"
+    ],
+    "answer": "15 minutes",
+    "explanation": "Daily Scrum is a focused 15-minute event for Developers to inspect progress and adapt the plan."
+  },
+  {
+    "question": "What is expected at the end of each Sprint?",
+    "options": [
+      "A usable Increment",
+      "A detailed Gantt chart",
+      "A project charter",
+      "A staffing plan"
+    ],
+    "answer": "A usable Increment",
+    "explanation": "Each Sprint produces a usable Increment that meets the Definition of Done."
+  },
+  {
+    "question": "Which formula forecasts EAC using current CPI?",
+    "options": [
+      "EAC = BAC / CPI",
+      "EAC = AC + ETC (bottom-up)",
+      "EAC = AC + (BAC - EV)",
+      "EAC = BAC × CPI"
+    ],
+    "answer": "EAC = BAC / CPI",
+    "explanation": "Assumes current cost efficiency continues."
+  },
+  {
+    "question": "Backlog ordering should consider primarily:",
+    "options": [
+      "Value and risk",
+      "Alphabetical order",
+      "Team preference only",
+      "Vendor names"
+    ],
+    "answer": "Value and risk",
+    "explanation": "Order to maximize value delivery and manage uncertainty."
+  },
+  {
+    "question": "What does MoSCoW stand for in prioritization?",
+    "options": [
+      "Must, Should, Could, Won’t",
+      "Model, Scope, Code, Work",
+      "Monitor, Secure, Control, Warn",
+      "More Scrum or Waterfall"
+    ],
+    "answer": "Must, Should, Could, Won’t",
+    "explanation": "MoSCoW is a lightweight technique to categorize requirement priority."
+  },
+  {
+    "question": "During a critical milestone, a vendor refuses to use the project tool. What do you do?",
+    "options": [
+      "Add it to the backlog for prioritization",
+      "Discuss the issue privately",
+      "Escalate immediately",
+      "Ignore it"
+    ],
+    "answer": "Discuss the issue privately",
+    "explanation": "Reset expectations on transparency; support adoption then escalate if needed."
+  },
+  {
+    "question": "How long is the Daily Scrum event?",
+    "options": [
+      "15 minutes",
+      "60 minutes",
+      "45 minutes",
+      "As long as needed"
+    ],
+    "answer": "15 minutes",
+    "explanation": "Daily Scrum is a focused 15-minute event for Developers to inspect progress and adapt the plan."
+  },
+  {
+    "question": "Who can cancel a Sprint?",
+    "options": [
+      "Product Owner",
+      "Scrum Master",
+      "Developers",
+      "Sponsor"
+    ],
+    "answer": "Product Owner",
+    "explanation": "If the Sprint Goal becomes obsolete, the Product Owner may cancel the Sprint."
+  },
+  {
+    "question": "Who is responsible for managing the Sprint Backlog?",
+    "options": [
+      "Developers",
+      "Product Owner",
+      "Scrum Master",
+      "Stakeholders"
+    ],
+    "answer": "Developers",
+    "explanation": "Developers manage the Sprint Backlog and plan for delivering the Increment."
+  },
+  {
+    "question": "Resource smoothing adjusts:",
+    "options": [
+      "Activities within available float",
+      "Critical path directly",
+      "Scope only",
+      "Budget baselines"
+    ],
+    "answer": "Activities within available float",
+    "explanation": "Keeps resource usage within limits without changing the critical path."
+  },
+  {
+    "question": "Qualitative risk analysis primarily assesses:",
+    "options": [
+      "Probability and impact qualitatively",
+      "Exact monetary value",
+      "Precise schedule days",
+      "Earned Value"
+    ],
+    "answer": "Probability and impact qualitatively",
+    "explanation": "It prioritizes risks for deeper analysis or response."
+  },
+  {
+    "question": "Responding to change over:",
+    "options": [
+      "Following a plan",
+      "Estimating",
+      "QA reviews",
+      "Risk logs"
+    ],
+    "answer": "Following a plan",
+    "explanation": "Adaptation beats rigid plans in uncertain environments."
+  },
+  {
+    "question": "Who is accountable for maximizing product value in Scrum?",
+    "options": [
+      "Product Owner",
+      "Scrum Master",
+      "Developers",
+      "Project Manager"
+    ],
+    "answer": "Product Owner",
+    "explanation": "The Product Owner orders the Product Backlog and is accountable for value."
+  },
+  {
+    "question": "During a critical milestone, a QA tester reports a blocker. What do you do?",
+    "options": [
+      "Clarify acceptance criteria together",
+      "Escalate immediately",
+      "Reassign their work",
+      "Assess the critical path and dependencies"
+    ],
+    "answer": "Escalate immediately",
+    "explanation": "Impediments need rapid removal; increase visibility and escalate if the team cannot resolve quickly."
+  },
+  {
+    "question": "Which role serves the team and organization by coaching and removing impediments?",
+    "options": [
+      "Scrum Master",
+      "Product Owner",
+      "Developers",
+      "Sponsor"
+    ],
+    "answer": "Scrum Master",
+    "explanation": "The Scrum Master fosters empiricism and removes impediments."
+  },
+  {
+    "question": "Each Sprint should produce what?",
+    "options": [
+      "A usable Increment",
+      "A detailed Gantt chart",
+      "A project charter",
+      "A staffing plan"
+    ],
+    "answer": "A usable Increment",
+    "explanation": "Each Sprint produces a usable Increment that meets the Definition of Done."
+  },
+  {
+    "question": "What is the outcome of a Sprint?",
+    "options": [
+      "A usable Increment",
+      "A detailed Gantt chart",
+      "A project charter",
+      "A staffing plan"
+    ],
+    "answer": "A usable Increment",
+    "explanation": "Each Sprint produces a usable Increment that meets the Definition of Done."
+  },
+  {
+    "question": "How long can a Scrum Sprint be at most?",
+    "options": [
+      "One month or less",
+      "Exactly two months",
+      "No time limit",
+      "Exactly one week"
+    ],
+    "answer": "One month or less",
+    "explanation": "Scrum Sprints are one month or less to enable frequent inspection and adaptation."
+  },
+  {
+    "question": "Who is accountable for maximizing product value in Scrum?",
+    "options": [
+      "Product Owner",
+      "Scrum Master",
+      "Developers",
+      "Project Manager"
+    ],
+    "answer": "Product Owner",
+    "explanation": "The Product Owner orders the Product Backlog and is accountable for value."
+  },
+  {
+    "question": "The purpose of backlog refinement is:",
+    "options": [
+      "Ongoing clarification and sizing of items",
+      "A formal Scrum event",
+      "Contract review",
+      "Bug triage only"
+    ],
+    "answer": "Ongoing clarification and sizing of items",
+    "explanation": "Continuous activity that helps items be understood and ready."
+  },
+  {
+    "question": "Kanban primarily focuses on what?",
+    "options": [
+      "Visualizing work and limiting WIP",
+      "Timeboxed Sprints",
+      "Annual plans",
+      "Detailed upfront design"
+    ],
+    "answer": "Visualizing work and limiting WIP",
+    "explanation": "Kanban visualizes flow and limits WIP to improve throughput and predictability."
+  },
+  {
+    "question": "Critical path refers to:",
+    "options": [
+      "The longest path that determines duration",
+      "The shortest path",
+      "The cheapest path",
+      "The safest path"
+    ],
+    "answer": "The longest path that determines duration",
+    "explanation": "Delays on the critical path delay the overall project."
+  },
+  {
+    "question": "A burnup chart shows:",
+    "options": [
+      "Work completed and total scope over time",
+      "Only work remaining",
+      "Only defects over time",
+      "Only budget burn"
+    ],
+    "answer": "Work completed and total scope over time",
+    "explanation": "Helpful to visualize scope change as well as progress."
+  },
+  {
+    "question": "What does velocity measure?",
+    "options": [
+      "Amount of work completed per Sprint",
+      "Team happiness",
+      "Bug count",
+      "Budget variance"
+    ],
+    "answer": "Amount of work completed per Sprint",
+    "explanation": "Use as a trend, not a target."
+  },
+  {
+    "question": "What is expected at the end of each Sprint?",
+    "options": [
+      "A usable Increment",
+      "A detailed Gantt chart",
+      "A project charter",
+      "A staffing plan"
+    ],
+    "answer": "A usable Increment",
+    "explanation": "Each Sprint produces a usable Increment that meets the Definition of Done."
+  },
+  {
+    "question": "During a critical milestone, a product owner refuses to use the project tool. What do you do?",
+    "options": [
+      "Reassign their work",
+      "Discuss the issue privately",
+      "Clarify acceptance criteria together",
+      "Assess the critical path and dependencies"
+    ],
+    "answer": "Discuss the issue privately",
+    "explanation": "Reset expectations on transparency; support adoption then escalate if needed."
+  },
+  {
+    "question": "A Work Breakdown Structure (WBS) is:?",
+    "options": [
+      "Hierarchical decomposition of deliverables",
+      "A team chart",
+      "A risk register",
+      "A Gantt template"
+    ],
+    "answer": "Hierarchical decomposition of deliverables",
+    "explanation": "WBS breaks scope into manageable components for planning and control."
+  },
+  {
+    "question": "During a critical milestone, a QA tester asks to fast-track without resources. What do you do?",
+    "options": [
+      "Assess the critical path and dependencies",
+      "Clarify acceptance criteria together",
+      "Ignore it",
+      "Add it to the backlog for prioritization"
+    ],
+    "answer": "Assess the critical path and dependencies",
+    "explanation": "Do not promise blindly; analyze critical path and trade-offs first."
+  },
+  {
+    "question": "What is the recommended size of a Scrum Team?",
+    "options": [
+      "10 or fewer",
+      "30+",
+      "Exactly 5",
+      "Only 3"
+    ],
+    "answer": "10 or fewer",
+    "explanation": "Small, cross-functional teams remain nimble and effective."
+  },
+  {
+    "question": "A project risk is defined as:",
+    "options": [
+      "An uncertain event affecting objectives",
+      "A certain issue",
+      "A completed task",
+      "An approved change"
+    ],
+    "answer": "An uncertain event affecting objectives",
+    "explanation": "Risks can be threats or opportunities with probability and impact."
+  },
+  {
+    "question": "A hybrid lifecycle blends:",
+    "options": [
+      "Predictive and adaptive approaches",
+      "Finance and HR",
+      "UX and DevOps",
+      "QA and Sales"
+    ],
+    "answer": "Predictive and adaptive approaches",
+    "explanation": "Tailor methods to product risk, compliance, and uncertainty."
+  },
+  {
+    "question": "Which Scrum artifact has the commitment Product Goal?",
+    "options": [
+      "Product Backlog",
+      "Sprint Backlog",
+      "Increment",
+      "Roadmap"
+    ],
+    "answer": "Product Backlog",
+    "explanation": "Product Goal guides long-term direction."
+  },
+  {
+    "question": "What is the outcome of a Sprint?",
+    "options": [
+      "A usable Increment",
+      "A detailed Gantt chart",
+      "A project charter",
+      "A staffing plan"
+    ],
+    "answer": "A usable Increment",
+    "explanation": "Each Sprint produces a usable Increment that meets the Definition of Done."
+  },
+  {
+    "question": "Who crafts the Sprint Goal?",
+    "options": [
+      "Entire Scrum Team",
+      "Product Owner",
+      "Scrum Master",
+      "Architect"
+    ],
+    "answer": "Entire Scrum Team",
+    "explanation": "The Sprint Goal is created collaboratively during Sprint Planning."
+  },
+  {
+    "question": "Which items belong in a RAID log?",
+    "options": [
+      "Risks, Assumptions, Issues, Dependencies",
+      "Roadmaps and Ideas",
+      "Roles and Interfaces",
+      "Reports and Docs"
+    ],
+    "answer": "Risks, Assumptions, Issues, Dependencies",
+    "explanation": "Keep the RAID log updated at a regular cadence."
+  },
+  {
+    "question": "Which group is responsible for crafting the Sprint Goal?",
+    "options": [
+      "Entire Scrum Team",
+      "Product Owner",
+      "Scrum Master",
+      "Architect"
+    ],
+    "answer": "Entire Scrum Team",
+    "explanation": "The Sprint Goal is created collaboratively during Sprint Planning."
+  },
+  {
+    "question": "Which is a DORA metric?",
+    "options": [
+      "Deployment frequency",
+      "UI bounce rate",
+      "Server rack count",
+      "Headcount"
+    ],
+    "answer": "Deployment frequency",
+    "explanation": "DORA metrics (e.g., lead time, change failure rate) gauge DevOps performance."
+  },
+  {
+    "question": "What is a Sprint Goal?",
+    "options": [
+      "A single objective for the Sprint",
+      "A list of all tasks",
+      "A performance KPI",
+      "Capacity number"
+    ],
+    "answer": "A single objective for the Sprint",
+    "explanation": "It provides focus and flexibility for the team."
+  },
+  {
+    "question": "Who is accountable for maximizing product value in Scrum?",
+    "options": [
+      "Product Owner",
+      "Scrum Master",
+      "Developers",
+      "Project Manager"
+    ],
+    "answer": "Product Owner",
+    "explanation": "The Product Owner orders the Product Backlog and is accountable for value."
+  },
+  {
+    "question": "Customer collaboration over:",
+    "options": [
+      "Contract negotiation",
+      "Unit tests",
+      "Pair programming",
+      "Daily standups"
+    ],
+    "answer": "Contract negotiation",
+    "explanation": "Engage customers continuously to discover value."
+  },
+  {
+    "question": "Management by exception means:",
+    "options": [
+      "Escalate only when out-of-tolerance",
+      "Escalate all details",
+      "Never escalate",
+      "Escalate by title"
+    ],
+    "answer": "Escalate only when out-of-tolerance",
+    "explanation": "Used in PRINCE2 to focus attention efficiently."
+  },
+  {
+    "question": "Resource smoothing adjusts:",
+    "options": [
+      "Activities within float to meet resource limits",
+      "Critical path to shorten duration",
+      "Only scope",
+      "Only quality"
+    ],
+    "answer": "Activities within float to meet resource limits",
+    "explanation": "Unlike leveling, smoothing keeps the critical path and end date."
+  },
+  {
+    "question": "During Sprint Planning, what is determined?",
+    "options": [
+      "Define why, what, and how for the Sprint",
+      "Review the budget",
+      "Hire new team members",
+      "Demo the product"
+    ],
+    "answer": "Define why, what, and how for the Sprint",
+    "explanation": "Sprint Planning sets the Sprint Goal (why), selects work (what), and crafts a plan (how)."
+  },
+  {
+    "question": "The Sprint Backlog is owned by which role?",
+    "options": [
+      "Developers",
+      "Product Owner",
+      "Scrum Master",
+      "Stakeholders"
+    ],
+    "answer": "Developers",
+    "explanation": "Developers manage the Sprint Backlog and plan for delivering the Increment."
+  },
+  {
+    "question": "Daily Scrum is timeboxed to how long?",
+    "options": [
+      "15 minutes",
+      "60 minutes",
+      "45 minutes",
+      "As long as needed"
+    ],
+    "answer": "15 minutes",
+    "explanation": "Daily Scrum is a focused 15-minute event for Developers to inspect progress and adapt the plan."
+  },
+  {
+    "question": "Which role prioritizes the Product Backlog?",
+    "options": [
+      "Product Owner",
+      "Scrum Master",
+      "Developers",
+      "PMO"
+    ],
+    "answer": "Product Owner",
+    "explanation": "Ordering maximizes value delivery and clarity."
+  },
+  {
+    "question": "A RACI matrix clarifies:",
+    "options": [
+      "Roles and responsibilities",
+      "Budget baselines",
+      "Schedule buffers",
+      "Risk responses"
+    ],
+    "answer": "Roles and responsibilities",
+    "explanation": "RACI = Responsible, Accountable, Consulted, Informed."
+  },
+  {
+    "question": "What is the recommended size of a Scrum Team?",
+    "options": [
+      "10 or fewer",
+      "30+",
+      "Exactly 5",
+      "Only 3"
+    ],
+    "answer": "10 or fewer",
+    "explanation": "Small, cross-functional teams remain nimble and effective."
+  },
+  {
+    "question": "During a critical milestone, a sponsor requests an out-of-scope feature in review. What do you do?",
+    "options": [
+      "Assess impact and replan",
+      "Clarify acceptance criteria together",
+      "Add it to the backlog for prioritization",
+      "Escalate immediately"
+    ],
+    "answer": "Add it to the backlog for prioritization",
+    "explanation": "Respect focus; capture in backlog and prioritize collaboratively."
+  },
+  {
+    "question": "Resource leveling typically affects:",
+    "options": [
+      "The critical path and schedule duration",
+      "Only cost",
+      "Only scope",
+      "Only risk"
+    ],
+    "answer": "The critical path and schedule duration",
+    "explanation": "Leveling resolves overallocations, possibly extending duration."
+  },
+  {
+    "question": "How long is the Daily Scrum event?",
+    "options": [
+      "15 minutes",
+      "60 minutes",
+      "45 minutes",
+      "As long as needed"
+    ],
+    "answer": "15 minutes",
+    "explanation": "Daily Scrum is a focused 15-minute event for Developers to inspect progress and adapt the plan."
+  },
+  {
+    "question": "Feedback in communication primarily confirms:",
+    "options": [
+      "Message understanding",
+      "Budget accuracy",
+      "Resource hire",
+      "Risk closure"
+    ],
+    "answer": "Message understanding",
+    "explanation": "Sender–receiver model relies on feedback to close the loop."
+  },
+  {
+    "question": "During a critical milestone, a product owner asks to fast-track without resources. What do you do?",
+    "options": [
+      "Assess impact and replan",
+      "Escalate immediately",
+      "Assess the critical path and dependencies",
+      "Discuss the issue privately"
+    ],
+    "answer": "Assess the critical path and dependencies",
+    "explanation": "Do not promise blindly; analyze critical path and trade-offs first."
+  },
+  {
+    "question": "Who ensures Scrum is understood and enacted?",
+    "options": [
+      "Scrum Master",
+      "Product Owner",
+      "Developers",
+      "Sponsor"
+    ],
+    "answer": "Scrum Master",
+    "explanation": "The Scrum Master fosters empiricism and removes impediments."
+  },
+  {
+    "question": "During a critical milestone, a stakeholder asks to fast-track without resources. What do you do?",
+    "options": [
+      "Ignore it",
+      "Escalate immediately",
+      "Discuss the issue privately",
+      "Assess the critical path and dependencies"
+    ],
+    "answer": "Assess the critical path and dependencies",
+    "explanation": "Do not promise blindly; analyze critical path and trade-offs first."
+  },
+  {
+    "question": "Crashing a schedule means:",
+    "options": [
+      "Adding resources to shorten duration",
+      "Reducing quality activities",
+      "Stopping testing",
+      "Pausing procurement"
+    ],
+    "answer": "Adding resources to shorten duration",
+    "explanation": "Crashing increases cost to reduce time."
+  },
+  {
+    "question": "Planning Poker is used for:",
+    "options": [
+      "Collaborative estimation",
+      "Vendor selection",
+      "Risk transfer",
+      "Budget approval"
+    ],
+    "answer": "Collaborative estimation",
+    "explanation": "Teams estimate by discussion, then converge using hidden votes."
+  },
+  {
+    "question": "The Sprint Goal is created by whom?",
+    "options": [
+      "Entire Scrum Team",
+      "Product Owner",
+      "Scrum Master",
+      "Architect"
+    ],
+    "answer": "Entire Scrum Team",
+    "explanation": "The Sprint Goal is created collaboratively during Sprint Planning."
+  },
+  {
+    "question": "During a critical milestone, a scrum master asks to fast-track without resources. What do you do?",
+    "options": [
+      "Assess the critical path and dependencies",
+      "Ignore it",
+      "Add it to the backlog for prioritization",
+      "Reassign their work"
+    ],
+    "answer": "Assess the critical path and dependencies",
+    "explanation": "Do not promise blindly; analyze critical path and trade-offs first."
+  },
+  {
+    "question": "Each Sprint should produce what?",
+    "options": [
+      "A usable Increment",
+      "A detailed Gantt chart",
+      "A project charter",
+      "A staffing plan"
+    ],
+    "answer": "A usable Increment",
+    "explanation": "Each Sprint produces a usable Increment that meets the Definition of Done."
+  },
+  {
+    "question": "What does a RAID log capture?",
+    "options": [
+      "Risks, Assumptions, Issues, Dependencies",
+      "Roadmaps and Ideas",
+      "Roles and Interfaces",
+      "Reports and Docs"
+    ],
+    "answer": "Risks, Assumptions, Issues, Dependencies",
+    "explanation": "Keep the RAID log updated at a regular cadence."
+  },
+  {
+    "question": "During a critical milestone, a developer delivers low-quality work. What do you do?",
+    "options": [
+      "Discuss the issue privately",
+      "Reassign their work",
+      "Add it to the backlog for prioritization",
+      "Escalate immediately"
+    ],
+    "answer": "Discuss the issue privately",
+    "explanation": "Reinforce Definition of Done and acceptance criteria; coach before escalating."
+  },
+  {
+    "question": "Little’s Law relates which variables?",
+    "options": [
+      "WIP, throughput, lead time",
+      "Scope, time, cost",
+      "Risk, impact, probability",
+      "CPU, RAM, I/O"
+    ],
+    "answer": "WIP, throughput, lead time",
+    "explanation": "Lead time ≈ WIP / Throughput (stable systems, consistent units)."
+  },
+  {
+    "question": "Who ensures Scrum is understood and enacted?",
+    "options": [
+      "Scrum Master",
+      "Product Owner",
+      "Developers",
+      "Sponsor"
+    ],
+    "answer": "Scrum Master",
+    "explanation": "The Scrum Master fosters empiricism and removes impediments."
+  },
+  {
+    "question": "What is the commitment for the Increment?",
+    "options": [
+      "Definition of Done",
+      "Product Goal",
+      "Team Charter",
+      "WIP Limit"
+    ],
+    "answer": "Definition of Done",
+    "explanation": "The Definition of Done ensures each Increment meets a shared quality standard."
+  },
+  {
+    "question": "Little’s Law relates which variables?",
+    "options": [
+      "WIP, throughput, lead time",
+      "Scope, time, cost",
+      "Risk, impact, probability",
+      "CPU, RAM, I/O"
+    ],
+    "answer": "WIP, throughput, lead time",
+    "explanation": "Lead time ≈ WIP / Throughput (stable systems, consistent units)."
+  },
+  {
+    "question": "Which are the Scrum artifacts?",
+    "options": [
+      "Product Backlog, Sprint Backlog, Increment",
+      "Roadmap, Burnup, Charter",
+      "Risk Register, RAID, Log",
+      "WBS, Gantt, Contract"
+    ],
+    "answer": "Product Backlog, Sprint Backlog, Increment",
+    "explanation": "Scrum artifacts provide transparency of work and progress."
+  },
+  {
+    "question": "Sprint Review primarily aims to do what?",
+    "options": [
+      "Inspect the Increment with stakeholders",
+      "Do performance reviews",
+      "Set salaries",
+      "Run a retrospective"
+    ],
+    "answer": "Inspect the Increment with stakeholders",
+    "explanation": "Feedback from stakeholders informs future backlog ordering."
+  },
+  {
+    "question": "Benefit realization management tracks:",
+    "options": [
+      "Outcomes vs expected value",
+      "Only costs",
+      "Only headcount",
+      "Only defects"
+    ],
+    "answer": "Outcomes vs expected value",
+    "explanation": "Did the investment deliver the intended benefits?"
+  },
+  {
+    "question": "Which Scrum artifact has the commitment Definition of Done?",
+    "options": [
+      "Increment",
+      "Product Backlog",
+      "Sprint Backlog",
+      "Roadmap"
+    ],
+    "answer": "Increment",
+    "explanation": "The DoD is the quality commitment for the Increment."
+  },
+  {
+    "question": "A risk probability–impact matrix is used to:",
+    "options": [
+      "Prioritize risks for action",
+      "Estimate EAC",
+      "Define WBS",
+      "Track communication channels"
+    ],
+    "answer": "Prioritize risks for action",
+    "explanation": "Combines probability and impact ratings into a severity ranking."
+  },
+  {
+    "question": "What is the focus of the Sprint Retrospective?",
+    "options": [
+      "Improving process and collaboration",
+      "Approving code",
+      "Hiring",
+      "Contract renewals"
+    ],
+    "answer": "Improving process and collaboration",
+    "explanation": "The team inspects people, processes, and tools, then adapts for the next Sprint."
+  },
+  {
+    "question": "Which diagram visualizes activity sequencing and dependencies?",
+    "options": [
+      "Network diagram",
+      "Org chart",
+      "Risk matrix",
+      "Pareto chart"
+    ],
+    "answer": "Network diagram",
+    "explanation": "Precedence diagrams (AON) show task order and relationships."
+  },
+  {
+    "question": "During a critical milestone, a scrum master goes on leave. What do you do?",
+    "options": [
+      "Reassign their work",
+      "Discuss the issue privately",
+      "Escalate immediately",
+      "Assess impact and replan"
+    ],
+    "answer": "Reassign their work",
+    "explanation": "First secure continuity and communicate; escalate only if unmanaged impact remains."
+  },
+  {
+    "question": "What is the main purpose of Sprint Planning?",
+    "options": [
+      "Define why, what, and how for the Sprint",
+      "Review the budget",
+      "Hire new team members",
+      "Demo the product"
+    ],
+    "answer": "Define why, what, and how for the Sprint",
+    "explanation": "Sprint Planning sets the Sprint Goal (why), selects work (what), and crafts a plan (how)."
+  },
+  {
+    "question": "Which role orders the Product Backlog to maximize value?",
+    "options": [
+      "Product Owner",
+      "Scrum Master",
+      "Developers",
+      "Project Manager"
+    ],
+    "answer": "Product Owner",
+    "explanation": "The Product Owner orders the Product Backlog and is accountable for value."
+  },
+  {
+    "question": "A baseline is best defined as:",
+    "options": [
+      "Approved plan for tracking performance",
+      "A rough guess",
+      "A prototype",
+      "A backlog"
+    ],
+    "answer": "Approved plan for tracking performance",
+    "explanation": "Scope, schedule, and cost baselines support variance control."
+  },
+  {
+    "question": "What is total float (slack)?",
+    "options": [
+      "Time an activity can slip without delaying the project",
+      "Extra budget",
+      "Unused scope",
+      "Vendor buffer"
+    ],
+    "answer": "Time an activity can slip without delaying the project",
+    "explanation": "Float indicates schedule flexibility for non-critical activities."
+  },
+  {
+    "question": "During a critical milestone, a vendor disagrees on acceptance criteria. What do you do?",
+    "options": [
+      "Escalate immediately",
+      "Add it to the backlog for prioritization",
+      "Assess the critical path and dependencies",
+      "Clarify acceptance criteria together"
+    ],
+    "answer": "Clarify acceptance criteria together",
+    "explanation": "Align on objective criteria early; reference DoD and user acceptance tests."
+  },
+  {
+    "question": "What is expected at the end of each Sprint?",
+    "options": [
+      "A usable Increment",
+      "A detailed Gantt chart",
+      "A project charter",
+      "A staffing plan"
+    ],
+    "answer": "A usable Increment",
+    "explanation": "Each Sprint produces a usable Increment that meets the Definition of Done."
+  },
+  {
+    "question": "Management reserve is intended for:",
+    "options": [
+      "Unknown-unknowns",
+      "Known risks",
+      "Vendor rebates",
+      "Travel"
+    ],
+    "answer": "Unknown-unknowns",
+    "explanation": "Held by management and not part of the cost baseline."
+  },
+  {
+    "question": "A change control board (CCB) typically:",
+    "options": [
+      "Reviews and approves or rejects change requests",
+      "Writes code",
+      "Performs QA testing",
+      "Manages payroll"
+    ],
+    "answer": "Reviews and approves or rejects change requests",
+    "explanation": "Ensures changes are evaluated consistently."
+  },
+  {
+    "question": "What is the formula for CPI?",
+    "options": [
+      "EV / AC",
+      "EV / PV",
+      "AC / EV",
+      "PV / AC"
+    ],
+    "answer": "EV / AC",
+    "explanation": "CPI (Cost Performance Index) measures cost efficiency — how much value is earned for every unit of cost spent. EV (Earned Value) is the value of work actually completed; AC (Actual Cost) is the cost incurred. Formula: CPI = EV ÷ AC.."
+  },
+  {
+    "question": "Who ensures Scrum is understood and enacted?",
+    "options": [
+      "Scrum Master",
+      "Product Owner",
+      "Developers",
+      "Sponsor"
+    ],
+    "answer": "Scrum Master",
+    "explanation": "The Scrum Master fosters empiricism and removes impediments."
+  },
+  {
+    "question": "Which forecast considers current cost efficiency?",
+    "options": [
+      "EAC = BAC / CPI",
+      "EAC = AC + ETC (bottom-up)",
+      "EAC = AC + (BAC - EV)",
+      "EAC = BAC × CPI"
+    ],
+    "answer": "EAC = BAC / CPI",
+    "explanation": "A common rough forecast uses current CPI to project total cost."
+  },
+  {
+    "question": "Who crafts the Sprint Goal?",
+    "options": [
+      "Entire Scrum Team",
+      "Product Owner",
+      "Scrum Master",
+      "Architect"
+    ],
+    "answer": "Entire Scrum Team",
+    "explanation": "The Sprint Goal is created collaboratively during Sprint Planning."
+  },
+  {
+    "question": "Which model helps prioritize stakeholders?",
+    "options": [
+      "Power–Legitimacy–Urgency (Salience)",
+      "Kano",
+      "SWOT",
+      "Porter’s Five Forces"
+    ],
+    "answer": "Power–Legitimacy–Urgency (Salience)",
+    "explanation": "The salience model guides engagement strategies."
+  },
+  {
+    "question": "What is the commitment for the Increment?",
+    "options": [
+      "Definition of Done",
+      "Product Goal",
+      "Team Charter",
+      "WIP Limit"
+    ],
+    "answer": "Definition of Done",
+    "explanation": "The Definition of Done ensures each Increment meets a shared quality standard."
+  },
+  {
+    "question": "Kanban primarily focuses on what?",
+    "options": [
+      "Visualizing work and limiting WIP",
+      "Timeboxed Sprints",
+      "Annual plans",
+      "Detailed upfront design"
+    ],
+    "answer": "Visualizing work and limiting WIP",
+    "explanation": "Kanban visualizes flow and limits WIP to improve throughput and predictability."
+  },
+  {
+    "question": "During a critical milestone, a developer refuses to use the project tool. What do you do?",
+    "options": [
+      "Ignore it",
+      "Clarify acceptance criteria together",
+      "Assess impact and replan",
+      "Discuss the issue privately"
+    ],
+    "answer": "Discuss the issue privately",
+    "explanation": "Reset expectations on transparency; support adoption then escalate if needed."
+  },
+  {
+    "question": "What does 'sunk cost' refer to?",
+    "options": [
+      "Money already spent and unrecoverable",
+      "Money in contingency",
+      "Vendor credit",
+      "Unapproved budget"
+    ],
+    "answer": "Money already spent and unrecoverable",
+    "explanation": "Avoid sunk cost fallacy—decide based on future value."
+  },
+  {
+    "question": "What is the purpose of the Sprint Review?",
+    "options": [
+      "Inspect the Increment with stakeholders",
+      "Do performance reviews",
+      "Set salaries",
+      "Run a retrospective"
+    ],
+    "answer": "Inspect the Increment with stakeholders",
+    "explanation": "Feedback from stakeholders informs future backlog ordering."
+  },
+  {
+    "question": "During a critical milestone, a vendor asks to fast-track without resources. What do you do?",
+    "options": [
+      "Escalate immediately",
+      "Assess the critical path and dependencies",
+      "Assess impact and replan",
+      "Discuss the issue privately"
+    ],
+    "answer": "Assess the critical path and dependencies",
+    "explanation": "Do not promise blindly; analyze critical path and trade-offs first."
+  },
+  {
+    "question": "During a critical milestone, a scrum master refuses to use the project tool. What do you do?",
+    "options": [
+      "Discuss the issue privately",
+      "Assess the critical path and dependencies",
+      "Ignore it",
+      "Escalate immediately"
+    ],
+    "answer": "Discuss the issue privately",
+    "explanation": "Reset expectations on transparency; support adoption then escalate if needed."
+  },
+  {
+    "question": "What is the critical path?",
+    "options": [
+      "The longest path that determines duration",
+      "The shortest path",
+      "The cheapest path",
+      "The safest path"
+    ],
+    "answer": "The longest path that determines duration",
+    "explanation": "Delays on the critical path delay the overall project."
+  },
+  {
+    "question": "What does a WIP limit do?",
+    "options": [
+      "Caps concurrent work",
+      "Forces overtime",
+      "Eliminates testing",
+      "Hides blockers"
+    ],
+    "answer": "Caps concurrent work",
+    "explanation": "Limiting WIP reduces multitasking and creates smoother flow."
+  },
+  {
+    "question": "During a critical milestone, a vendor goes on leave. What do you do?",
+    "options": [
+      "Ignore it",
+      "Escalate immediately",
+      "Assess the critical path and dependencies",
+      "Reassign their work"
+    ],
+    "answer": "Reassign their work",
+    "explanation": "First secure continuity and communicate; escalate only if unmanaged impact remains."
+  },
+  {
+    "question": "During a critical milestone, a designer goes on leave. What do you do?",
+    "options": [
+      "Ignore it",
+      "Assess impact and replan",
+      "Assess the critical path and dependencies",
+      "Reassign their work"
+    ],
+    "answer": "Reassign their work",
+    "explanation": "First secure continuity and communicate; escalate only if unmanaged impact remains."
+  },
+  {
+    "question": "During a critical milestone, a developer asks to fast-track without resources. What do you do?",
+    "options": [
+      "Assess impact and replan",
+      "Clarify acceptance criteria together",
+      "Assess the critical path and dependencies",
+      "Ignore it"
+    ],
+    "answer": "Assess the critical path and dependencies",
+    "explanation": "Do not promise blindly; analyze critical path and trade-offs first."
+  },
+  {
+    "question": "During a critical milestone, a product owner reports a security incident. What do you do?",
+    "options": [
+      "Assess impact and replan",
+      "Ignore it",
+      "Discuss the issue privately",
+      "Escalate immediately"
+    ],
+    "answer": "Escalate immediately",
+    "explanation": "Follow incident response protocol immediately; containment and escalation are priority."
+  },
+  {
+    "question": "During a critical milestone, a designer introduces a critical dependency late. What do you do?",
+    "options": [
+      "Reassign their work",
+      "Ignore it",
+      "Escalate immediately",
+      "Assess impact and replan"
+    ],
+    "answer": "Assess impact and replan",
+    "explanation": "Reassess plan and risks; negotiate scope/time/cost and escalate if necessary."
+  },
+  {
+    "question": "Daily Scrum is timeboxed to how long?",
+    "options": [
+      "15 minutes",
+      "60 minutes",
+      "45 minutes",
+      "As long as needed"
+    ],
+    "answer": "15 minutes",
+    "explanation": "Daily Scrum is a focused 15-minute event for Developers to inspect progress and adapt the plan."
+  },
+  {
+    "question": "In Agile, story points typically reflect:",
+    "options": [
+      "Relative effort/complexity",
+      "Exact hours",
+      "Budget",
+      "Headcount"
+    ],
+    "answer": "Relative effort/complexity",
+    "explanation": "Abstract sizing aids forecasting without tying to hours."
+  },
+  {
+    "question": "The Product Goal describes:",
+    "options": [
+      "A long-term objective for the product",
+      "A task list",
+      "Team capacity",
+      "A budget line"
+    ],
+    "answer": "A long-term objective for the product",
+    "explanation": "It provides direction for backlog evolution."
+  },
+  {
+    "question": "What is the timebox for a Sprint in Scrum?",
+    "options": [
+      "One month or less",
+      "Exactly two months",
+      "No time limit",
+      "Exactly one week"
+    ],
+    "answer": "One month or less",
+    "explanation": "Scrum Sprints are one month or less to enable frequent inspection and adaptation."
+  },
+  {
+    "question": "Which dependency type means 'finish-to-start'?",
+    "options": [
+      "Predecessor must finish before successor starts",
+      "Both must start together",
+      "Finish together",
+      "Start after finish is optional"
+    ],
+    "answer": "Predecessor must finish before successor starts",
+    "explanation": "FS is the most common precedence relationship."
+  },
+  {
+    "question": "What is the purpose of the Sprint Review?",
+    "options": [
+      "Inspect the Increment with stakeholders",
+      "Do performance reviews",
+      "Set salaries",
+      "Run a retrospective"
+    ],
+    "answer": "Inspect the Increment with stakeholders",
+    "explanation": "Feedback from stakeholders informs future backlog ordering."
+  },
+  {
+    "question": "Story points are used to estimate:",
+    "options": [
+      "Relative effort/complexity",
+      "Exact hours",
+      "Budget",
+      "Headcount"
+    ],
+    "answer": "Relative effort/complexity",
+    "explanation": "Abstract sizing aids forecasting without tying to hours."
+  },
+  {
+    "question": "During a critical milestone, a product owner misses a deadline. What do you do?",
+    "options": [
+      "Add it to the backlog for prioritization",
+      "Discuss the issue privately",
+      "Escalate immediately",
+      "Clarify acceptance criteria together"
+    ],
+    "answer": "Discuss the issue privately",
+    "explanation": "Treat as a realized risk; understand causes, adjust plan, and protect milestones."
+  },
+  {
+    "question": "What does a WIP limit do?",
+    "options": [
+      "Caps concurrent work",
+      "Forces overtime",
+      "Eliminates testing",
+      "Hides blockers"
+    ],
+    "answer": "Caps concurrent work",
+    "explanation": "Limiting WIP reduces multitasking and creates smoother flow."
+  },
+  {
+    "question": "During a critical milestone, a QA tester introduces a critical dependency late. What do you do?",
+    "options": [
+      "Discuss the issue privately",
+      "Assess impact and replan",
+      "Assess the critical path and dependencies",
+      "Add it to the backlog for prioritization"
+    ],
+    "answer": "Assess impact and replan",
+    "explanation": "Reassess plan and risks; negotiate scope/time/cost and escalate if necessary."
+  },
+  {
+    "question": "Who is responsible for managing the Sprint Backlog?",
+    "options": [
+      "Developers",
+      "Product Owner",
+      "Scrum Master",
+      "Stakeholders"
+    ],
+    "answer": "Developers",
+    "explanation": "Developers manage the Sprint Backlog and plan for delivering the Increment."
+  },
+  {
+    "question": "What does a change request include?",
+    "options": [
+      "Reason, impact, decision",
+      "Only reason",
+      "Only budget",
+      "Only scope"
+    ],
+    "answer": "Reason, impact, decision",
+    "explanation": "Keep a log of CRs with status for traceability."
+  },
+  {
+    "question": "Which commitment is tied to the Increment?",
+    "options": [
+      "Definition of Done",
+      "Product Goal",
+      "Team Charter",
+      "WIP Limit"
+    ],
+    "answer": "Definition of Done",
+    "explanation": "The Definition of Done ensures each Increment meets a shared quality standard."
+  },
+  {
+    "question": "During a critical milestone, a vendor reports a blocker. What do you do?",
+    "options": [
+      "Escalate immediately",
+      "Assess the critical path and dependencies",
+      "Discuss the issue privately",
+      "Assess impact and replan"
+    ],
+    "answer": "Escalate immediately",
+    "explanation": "Impediments need rapid removal; increase visibility and escalate if the team cannot resolve quickly."
+  },
+  {
+    "question": "During a critical milestone, a stakeholder misses a deadline. What do you do?",
+    "options": [
+      "Assess the critical path and dependencies",
+      "Discuss the issue privately",
+      "Add it to the backlog for prioritization",
+      "Escalate immediately"
+    ],
+    "answer": "Discuss the issue privately",
+    "explanation": "Treat as a realized risk; understand causes, adjust plan, and protect milestones."
+  },
+  {
+    "question": "What is the critical path?",
+    "options": [
+      "The longest path that determines duration",
+      "The shortest path",
+      "The cheapest path",
+      "The safest path"
+    ],
+    "answer": "The longest path that determines duration",
+    "explanation": "Delays on the critical path delay the overall project."
+  },
+  {
+    "question": "Which estimate technique uses expert judgment with similar past work?",
+    "options": [
+      "Analogous estimating",
+      "Parametric estimating",
+      "Bottom-up estimating",
+      "Monte Carlo"
+    ],
+    "answer": "Analogous estimating",
+    "explanation": "Top-down, quick, and less precise than parametric or bottom-up."
+  },
+  {
+    "question": "Each Sprint should produce what?",
+    "options": [
+      "A usable Increment",
+      "A detailed Gantt chart",
+      "A project charter",
+      "A staffing plan"
+    ],
+    "answer": "A usable Increment",
+    "explanation": "Each Sprint produces a usable Increment that meets the Definition of Done."
+  },
+  {
+    "question": "What is the focus of the Sprint Retrospective?",
+    "options": [
+      "Improving process and collaboration",
+      "Approving code",
+      "Hiring",
+      "Contract renewals"
+    ],
+    "answer": "Improving process and collaboration",
+    "explanation": "The team inspects people, processes, and tools, then adapts for the next Sprint."
+  },
+  {
+    "question": "How long can a Scrum Sprint be at most?",
+    "options": [
+      "One month or less",
+      "Exactly two months",
+      "No time limit",
+      "Exactly one week"
+    ],
+    "answer": "One month or less",
+    "explanation": "Scrum Sprints are one month or less to enable frequent inspection and adaptation."
+  },
+  {
+    "question": "What is a scope baseline composed of?",
+    "options": [
+      "Scope statement, WBS, WBS dictionary",
+      "Charter, WBS, roadmap",
+      "Risk log, WBS, budget",
+      "WBS only"
+    ],
+    "answer": "Scope statement, WBS, WBS dictionary",
+    "explanation": "The scope baseline documents approved project scope for control."
+  },
+  {
+    "question": "During a critical milestone, a sponsor introduces a critical dependency late. What do you do?",
+    "options": [
+      "Escalate immediately",
+      "Assess the critical path and dependencies",
+      "Ignore it",
+      "Assess impact and replan"
+    ],
+    "answer": "Assess impact and replan",
+    "explanation": "Reassess plan and risks; negotiate scope/time/cost and escalate if necessary."
+  },
+  {
+    "question": "Procurement risk is shifted most to the seller in:",
+    "options": [
+      "Firm Fixed Price (FFP)",
+      "Cost Plus Fixed Fee",
+      "Time & Materials",
+      "Cost Plus Award Fee"
+    ],
+    "answer": "Firm Fixed Price (FFP)",
+    "explanation": "FFP places performance risk on the vendor to deliver within the fixed price."
+  },
+  {
+    "question": "Rolling wave planning means:",
+    "options": [
+      "Plan near-term in detail, future at a higher level",
+      "Plan everything upfront",
+      "Avoid planning",
+      "Plan only test work"
+    ],
+    "answer": "Plan near-term in detail, future at a higher level",
+    "explanation": "Detail increases as work gets closer and clearer."
+  },
+  {
+    "question": "Which role serves the team and organization by coaching and removing impediments?",
+    "options": [
+      "Scrum Master",
+      "Product Owner",
+      "Developers",
+      "Sponsor"
+    ],
+    "answer": "Scrum Master",
+    "explanation": "The Scrum Master fosters empiricism and removes impediments."
+  },
+  {
+    "question": "Leads and lags are used to:",
+    "options": [
+      "Adjust activity relationships",
+      "Create budgets",
+      "Change team size",
+      "Set quality levels"
+    ],
+    "answer": "Adjust activity relationships",
+    "explanation": "Lead allows overlap; lag inserts waiting time."
+  },
+  {
+    "question": "Story points primarily measure:",
+    "options": [
+      "Relative effort/complexity",
+      "Exact hours",
+      "Budget",
+      "Headcount"
+    ],
+    "answer": "Relative effort/complexity",
+    "explanation": "Abstract sizing aids forecasting without tying to hours."
+  },
+  {
+    "question": "Lead time measures:",
+    "options": [
+      "Request-to-delivery time",
+      "Coding time only",
+      "Testing time only",
+      "Design time only"
+    ],
+    "answer": "Request-to-delivery time",
+    "explanation": "Lead time is from the customer's perspective."
+  },
+  {
+    "question": "During a critical milestone, a vendor introduces a critical dependency late. What do you do?",
+    "options": [
+      "Assess impact and replan",
+      "Add it to the backlog for prioritization",
+      "Escalate immediately",
+      "Reassign their work"
+    ],
+    "answer": "Assess impact and replan",
+    "explanation": "Reassess plan and risks; negotiate scope/time/cost and escalate if necessary."
+  },
+  {
+    "question": "Cycle time measures:",
+    "options": [
+      "Start-to-finish time for one work item",
+      "Project duration",
+      "Fiscal year",
+      "Vendor payment time"
+    ],
+    "answer": "Start-to-finish time for one work item",
+    "explanation": "Shorter cycle time indicates faster flow."
+  },
+  {
+    "question": "During a critical milestone, a developer reports a blocker. What do you do?",
+    "options": [
+      "Clarify acceptance criteria together",
+      "Ignore it",
+      "Escalate immediately",
+      "Assess the critical path and dependencies"
+    ],
+    "answer": "Escalate immediately",
+    "explanation": "Impediments need rapid removal; increase visibility and escalate if the team cannot resolve quickly."
+  },
+  {
+    "question": "What does a communication plan define?",
+    "options": [
+      "Who gets what info when and how",
+      "UI style",
+      "Code review rules",
+      "Server configs"
+    ],
+    "answer": "Who gets what info when and how",
+    "explanation": "Tailor frequency, channels, and content to stakeholder needs."
+  },
+  {
+    "question": "Which role serves the team and organization by coaching and removing impediments?",
+    "options": [
+      "Scrum Master",
+      "Product Owner",
+      "Developers",
+      "Sponsor"
+    ],
+    "answer": "Scrum Master",
+    "explanation": "The Scrum Master fosters empiricism and removes impediments."
+  },
+  {
+    "question": "If SPI > 1.0, schedule performance is:?",
+    "options": [
+      "Ahead of plan",
+      "Behind plan",
+      "On plan",
+      "Not applicable"
+    ],
+    "answer": "Ahead of plan",
+    "explanation": "SPI above 1 indicates work is being earned faster than planned."
+  },
+  {
+    "question": "During Sprint Planning, what is determined?",
+    "options": [
+      "Define why, what, and how for the Sprint",
+      "Review the budget",
+      "Hire new team members",
+      "Demo the product"
+    ],
+    "answer": "Define why, what, and how for the Sprint",
+    "explanation": "Sprint Planning sets the Sprint Goal (why), selects work (what), and crafts a plan (how)."
+  },
+  {
+    "question": "During a critical milestone, a product owner reports a blocker. What do you do?",
+    "options": [
+      "Add it to the backlog for prioritization",
+      "Escalate immediately",
+      "Clarify acceptance criteria together",
+      "Assess the critical path and dependencies"
+    ],
+    "answer": "Escalate immediately",
+    "explanation": "Impediments need rapid removal; increase visibility and escalate if the team cannot resolve quickly."
+  },
+  {
+    "question": "A Statement of Work (SOW) describes:",
+    "options": [
+      "Work to be performed for the procurement",
+      "Salary bands",
+      "UI colors",
+      "OS images"
+    ],
+    "answer": "Work to be performed for the procurement",
+    "explanation": "Clear SOW reduces disputes and aligns expectations."
+  },
+  {
+    "question": "During a critical milestone, a scrum master reports a security incident. What do you do?",
+    "options": [
+      "Escalate immediately",
+      "Discuss the issue privately",
+      "Clarify acceptance criteria together",
+      "Add it to the backlog for prioritization"
+    ],
+    "answer": "Escalate immediately",
+    "explanation": "Follow incident response protocol immediately; containment and escalation are priority."
+  },
+  {
+    "question": "Estimate to Complete (ETC) represents:",
+    "options": [
+      "Expected cost to finish remaining work",
+      "Total project budget",
+      "Work done to date",
+      "Variance at completion"
+    ],
+    "answer": "Expected cost to finish remaining work",
+    "explanation": "How much more will be needed to complete the project."
+  },
+  {
+    "question": "Continuous Delivery primarily aims to:",
+    "options": [
+      "Keep code in a deployable state",
+      "Avoid testing",
+      "Stop releases",
+      "Replace version control"
+    ],
+    "answer": "Keep code in a deployable state",
+    "explanation": "Automated pipelines enable small, frequent, low-risk releases."
+  },
+  {
+    "question": "During a critical milestone, a designer requests an out-of-scope feature in review. What do you do?",
+    "options": [
+      "Assess impact and replan",
+      "Add it to the backlog for prioritization",
+      "Reassign their work",
+      "Assess the critical path and dependencies"
+    ],
+    "answer": "Add it to the backlog for prioritization",
+    "explanation": "Respect focus; capture in backlog and prioritize collaboratively."
+  },
+  {
+    "question": "Which is a risk response for threats?",
+    "options": [
+      "Mitigate",
+      "Exploit",
+      "Enhance",
+      "Share"
+    ],
+    "answer": "Mitigate",
+    "explanation": "Mitigation reduces probability and/or impact of a threat."
+  },
+  {
+    "question": "What is the timebox for a Sprint in Scrum?",
+    "options": [
+      "One month or less",
+      "Exactly two months",
+      "No time limit",
+      "Exactly one week"
+    ],
+    "answer": "One month or less",
+    "explanation": "Scrum Sprints are one month or less to enable frequent inspection and adaptation."
+  },
+  {
+    "question": "During a critical milestone, a developer goes on leave. What do you do?",
+    "options": [
+      "Clarify acceptance criteria together",
+      "Discuss the issue privately",
+      "Add it to the backlog for prioritization",
+      "Reassign their work"
+    ],
+    "answer": "Reassign their work",
+    "explanation": "First secure continuity and communicate; escalate only if unmanaged impact remains."
+  },
+  {
+    "question": "Which are the Scrum artifacts?",
+    "options": [
+      "Product Backlog, Sprint Backlog, Increment",
+      "Roadmap, Burnup, Charter",
+      "Risk Register, RAID, Log",
+      "WBS, Gantt, Contract"
+    ],
+    "answer": "Product Backlog, Sprint Backlog, Increment",
+    "explanation": "Scrum artifacts provide transparency of work and progress."
+  },
+  {
+    "question": "What is the formula for SPI?",
+    "options": [
+      "EV / PV",
+      "EV / AC",
+      "AC / EV",
+      "PV / EV"
+    ],
+    "answer": "EV / PV",
+    "explanation": "SPI (Schedule Performance Index) measures schedule efficiency — how efficiently the project is progressing against the planned schedule. EV (Earned Value) is the value of work completed; PV (Planned Value) is the value of work planned to be done by this point. Formula: SPI = EV ÷ PV."
+  },
+  {
+    "question": "Who crafts the Sprint Goal?",
+    "options": [
+      "Entire Scrum Team",
+      "Product Owner",
+      "Scrum Master",
+      "Architect"
+    ],
+    "answer": "Entire Scrum Team",
+    "explanation": "The Sprint Goal is created collaboratively during Sprint Planning."
+  },
+  {
+    "question": "During a critical milestone, a QA tester goes on leave. What do you do?",
+    "options": [
+      "Assess impact and replan",
+      "Ignore it",
+      "Reassign their work",
+      "Clarify acceptance criteria together"
+    ],
+    "answer": "Reassign their work",
+    "explanation": "First secure continuity and communicate; escalate only if unmanaged impact remains."
+  },
+  {
+    "question": "The Sprint Backlog is owned by which role?",
+    "options": [
+      "Developers",
+      "Product Owner",
+      "Scrum Master",
+      "Stakeholders"
+    ],
+    "answer": "Developers",
+    "explanation": "Developers manage the Sprint Backlog and plan for delivering the Increment."
+  },
+  {
+    "question": "What is the commitment for the Increment?",
+    "options": [
+      "Definition of Done",
+      "Product Goal",
+      "Team Charter",
+      "WIP Limit"
+    ],
+    "answer": "Definition of Done",
+    "explanation": "The Definition of Done ensures each Increment meets a shared quality standard."
+  },
+  {
+    "question": "What is the recommended size of a Scrum Team?",
+    "options": [
+      "10 or fewer",
+      "30+",
+      "Exactly 5",
+      "Only 3"
+    ],
+    "answer": "10 or fewer",
+    "explanation": "Small, cross-functional teams remain nimble and effective."
+  },
+  {
+    "question": "Sprint Planning primarily establishes which of the following?",
+    "options": [
+      "Define why, what, and how for the Sprint",
+      "Review the budget",
+      "Hire new team members",
+      "Demo the product"
+    ],
+    "answer": "Define why, what, and how for the Sprint",
+    "explanation": "Sprint Planning sets the Sprint Goal (why), selects work (what), and crafts a plan (how)."
+  },
+  {
+    "question": "During a critical milestone, a developer requests an out-of-scope feature in review. What do you do?",
+    "options": [
+      "Assess the critical path and dependencies",
+      "Clarify acceptance criteria together",
+      "Escalate immediately",
+      "Add it to the backlog for prioritization"
+    ],
+    "answer": "Add it to the backlog for prioritization",
+    "explanation": "Respect focus; capture in backlog and prioritize collaboratively."
+  },
+  {
+    "question": "A product roadmap communicates:",
+    "options": [
+      "Planned outcomes over time",
+      "Source code layout",
+      "Team salaries",
+      "Legal risks"
+    ],
+    "answer": "Planned outcomes over time",
+    "explanation": "High-level direction; it’s not a fixed commitment."
+  },
+  {
+    "question": "What is a scope baseline composed of?",
+    "options": [
+      "Scope statement, WBS, WBS dictionary",
+      "Charter, WBS, roadmap",
+      "Risk log, WBS, budget",
+      "WBS only"
+    ],
+    "answer": "Scope statement, WBS, WBS dictionary",
+    "explanation": "The scope baseline documents approved project scope for control."
+  },
+  {
+    "question": "During a critical milestone, a stakeholder disagrees on acceptance criteria. What do you do?",
+    "options": [
+      "Assess impact and replan",
+      "Add it to the backlog for prioritization",
+      "Clarify acceptance criteria together",
+      "Reassign their work"
+    ],
+    "answer": "Clarify acceptance criteria together",
+    "explanation": "Align on objective criteria early; reference DoD and user acceptance tests."
+  },
+  {
+    "question": "Which Agile value contrasts with 'processes and tools'?",
+    "options": [
+      "Individuals and interactions",
+      "Working software",
+      "Customer collaboration",
+      "Responding to change"
+    ],
+    "answer": "Individuals and interactions",
+    "explanation": "Agile values people and communication over rigid tools."
+  },
+  {
+    "question": "During a critical milestone, a designer misses a deadline. What do you do?",
+    "options": [
+      "Discuss the issue privately",
+      "Reassign their work",
+      "Escalate immediately",
+      "Assess the critical path and dependencies"
+    ],
+    "answer": "Discuss the issue privately",
+    "explanation": "Treat as a realized risk; understand causes, adjust plan, and protect milestones."
+  },
+  {
+    "question": "Which is a risk response for opportunities?",
+    "options": [
+      "Exploit",
+      "Avoid",
+      "Transfer",
+      "Mitigate"
+    ],
+    "answer": "Exploit",
+    "explanation": "Exploitation increases the probability of realizing a positive risk."
+  },
+  {
+    "question": "Who can cancel a Sprint?",
+    "options": [
+      "Product Owner",
+      "Scrum Master",
+      "Developers",
+      "Sponsor"
+    ],
+    "answer": "Product Owner",
+    "explanation": "If the Sprint Goal becomes obsolete, the Product Owner may cancel the Sprint."
+  },
+  {
+    "question": "Can scope change during a Sprint?",
+    "options": [
+      "Yes, if the Sprint Goal remains intact",
+      "No changes are allowed",
+      "Only bugs may be added",
+      "Only documentation may change"
+    ],
+    "answer": "Yes, if the Sprint Goal remains intact",
+    "explanation": "Developers and the Product Owner collaborate to adjust scope while preserving the Sprint Goal."
+  },
+  {
+    "question": "Who owns the Sprint Backlog?",
+    "options": [
+      "Developers",
+      "Product Owner",
+      "Scrum Master",
+      "Stakeholders"
+    ],
+    "answer": "Developers",
+    "explanation": "Developers manage the Sprint Backlog and plan for delivering the Increment."
+  },
+  {
+    "question": "During a critical milestone, a stakeholder reports a blocker. What do you do?",
+    "options": [
+      "Escalate immediately",
+      "Reassign their work",
+      "Discuss the issue privately",
+      "Ignore it"
+    ],
+    "answer": "Escalate immediately",
+    "explanation": "Impediments need rapid removal; increase visibility and escalate if the team cannot resolve quickly."
+  },
+  {
+    "question": "Which role orders the Product Backlog to maximize value?",
+    "options": [
+      "Product Owner",
+      "Scrum Master",
+      "Developers",
+      "Project Manager"
+    ],
+    "answer": "Product Owner",
+    "explanation": "The Product Owner orders the Product Backlog and is accountable for value."
+  },
+  {
+    "question": "During a critical milestone, a stakeholder requests an out-of-scope feature in review. What do you do?",
+    "options": [
+      "Reassign their work",
+      "Assess impact and replan",
+      "Add it to the backlog for prioritization",
+      "Ignore it"
+    ],
+    "answer": "Add it to the backlog for prioritization",
+    "explanation": "Respect focus; capture in backlog and prioritize collaboratively."
+  },
+  {
+    "question": "A communications channel count grows roughly as:",
+    "options": [
+      "n(n-1)/2",
+      "n^2",
+      "n",
+      "log n"
+    ],
+    "answer": "n(n-1)/2",
+    "explanation": "More people means rapidly increasing potential communication paths."
+  },
+  {
+    "question": "Sprint Review primarily aims to do what?",
+    "options": [
+      "Inspect the Increment with stakeholders",
+      "Do performance reviews",
+      "Set salaries",
+      "Run a retrospective"
+    ],
+    "answer": "Inspect the Increment with stakeholders",
+    "explanation": "Feedback from stakeholders informs future backlog ordering."
+  },
+  {
+    "question": "During a critical milestone, a QA tester delivers low-quality work. What do you do?",
+    "options": [
+      "Reassign their work",
+      "Escalate immediately",
+      "Clarify acceptance criteria together",
+      "Discuss the issue privately"
+    ],
+    "answer": "Discuss the issue privately",
+    "explanation": "Reinforce Definition of Done and acceptance criteria; coach before escalating."
+  },
+  {
+    "question": "The Product Backlog is ordered by:",
+    "options": [
+      "Product Owner",
+      "Scrum Master",
+      "Developers",
+      "PMO"
+    ],
+    "answer": "Product Owner",
+    "explanation": "Ordering maximizes value delivery and clarity."
+  },
+  {
+    "question": "During a critical milestone, a scrum master delivers low-quality work. What do you do?",
+    "options": [
+      "Discuss the issue privately",
+      "Reassign their work",
+      "Assess impact and replan",
+      "Add it to the backlog for prioritization"
+    ],
+    "answer": "Discuss the issue privately",
+    "explanation": "Reinforce Definition of Done and acceptance criteria; coach before escalating."
+  },
+  {
+    "question": "Quantitative risk analysis estimates:",
+    "options": [
+      "Numerical impact on objectives",
+      "Stakeholder salience",
+      "Team morale",
+      "Code quality"
+    ],
+    "answer": "Numerical impact on objectives",
+    "explanation": "Often uses simulations or decision tree analysis."
+  },
+  {
+    "question": "Common procurement contract types include:",
+    "options": [
+      "Fixed price, Time & Materials, Cost-reimbursable",
+      "Agile, Waterfall, Hybrid",
+      "Short, Medium, Long",
+      "Open, Closed, Sealed"
+    ],
+    "answer": "Fixed price, Time & Materials, Cost-reimbursable",
+    "explanation": "Choose based on risk sharing, scope certainty, and market conditions."
+  },
+  {
+    "question": "During a critical milestone, a developer misses a deadline. What do you do?",
+    "options": [
+      "Discuss the issue privately",
+      "Add it to the backlog for prioritization",
+      "Reassign their work",
+      "Escalate immediately"
+    ],
+    "answer": "Discuss the issue privately",
+    "explanation": "Treat as a realized risk; understand causes, adjust plan, and protect milestones."
+  },
+  {
+    "question": "What are the commitments for Scrum artifacts?",
+    "options": [
+      "Product Goal, Sprint Goal, Definition of Done",
+      "Budget, Schedule, Scope",
+      "RACI, RAID, KPI",
+      "Vision, Strategy, Tactics"
+    ],
+    "answer": "Product Goal, Sprint Goal, Definition of Done",
+    "explanation": "Each artifact has a commitment that reinforces transparency and focus."
+  },
+  {
+    "question": "What ends a Sprint?",
+    "options": [
+      "The timebox expiring",
+      "PO sign-off",
+      "Bug count zero",
+      "Velocity target hit"
+    ],
+    "answer": "The timebox expiring",
+    "explanation": "Sprints are fixed duration timeboxes."
+  },
+  {
+    "question": "Which are the Scrum artifacts?",
+    "options": [
+      "Product Backlog, Sprint Backlog, Increment",
+      "Roadmap, Burnup, Charter",
+      "Risk Register, RAID, Log",
+      "WBS, Gantt, Contract"
+    ],
+    "answer": "Product Backlog, Sprint Backlog, Increment",
+    "explanation": "Scrum artifacts provide transparency of work and progress."
+  },
+  {
+    "question": "The Sprint Goal is created by whom?",
+    "options": [
+      "Entire Scrum Team",
+      "Product Owner",
+      "Scrum Master",
+      "Architect"
+    ],
+    "answer": "Entire Scrum Team",
+    "explanation": "The Sprint Goal is created collaboratively during Sprint Planning."
+  },
+  {
+    "question": "What is the timebox for the Daily Scrum?",
+    "options": [
+      "15 minutes",
+      "60 minutes",
+      "45 minutes",
+      "As long as needed"
+    ],
+    "answer": "15 minutes",
+    "explanation": "Daily Scrum is a focused 15-minute event for Developers to inspect progress and adapt the plan."
+  },
+  {
+    "question": "A risk register typically tracks:",
+    "options": [
+      "Risks, owners, responses",
+      "Source code",
+      "Designs",
+      "Invoices"
+    ],
+    "answer": "Risks, owners, responses",
+    "explanation": "Document risks, analysis, response strategies, and status for review."
+  },
+  {
+    "question": "How long can a Scrum Sprint be at most?",
+    "options": [
+      "One month or less",
+      "Exactly two months",
+      "No time limit",
+      "Exactly one week"
+    ],
+    "answer": "One month or less",
+    "explanation": "Scrum Sprints are one month or less to enable frequent inspection and adaptation."
+  },
+  {
+    "question": "Which commitment is tied to the Increment?",
+    "options": [
+      "Definition of Done",
+      "Product Goal",
+      "Team Charter",
+      "WIP Limit"
+    ],
+    "answer": "Definition of Done",
+    "explanation": "The Definition of Done ensures each Increment meets a shared quality standard."
+  },
+  {
+    "question": "During a critical milestone, a stakeholder goes on leave. What do you do?",
+    "options": [
+      "Add it to the backlog for prioritization",
+      "Discuss the issue privately",
+      "Assess impact and replan",
+      "Reassign their work"
+    ],
+    "answer": "Reassign their work",
+    "explanation": "First secure continuity and communicate; escalate only if unmanaged impact remains."
+  },
+  {
+    "question": "What is the maximum length of a Scrum Sprint?",
+    "options": [
+      "One month or less",
+      "Exactly two months",
+      "No time limit",
+      "Exactly one week"
+    ],
+    "answer": "One month or less",
+    "explanation": "Scrum Sprints are one month or less to enable frequent inspection and adaptation."
+  },
+  {
+    "question": "During a critical milestone, a developer disagrees on acceptance criteria. What do you do?",
+    "options": [
+      "Assess impact and replan",
+      "Assess the critical path and dependencies",
+      "Clarify acceptance criteria together",
+      "Add it to the backlog for prioritization"
+    ],
+    "answer": "Clarify acceptance criteria together",
+    "explanation": "Align on objective criteria early; reference DoD and user acceptance tests."
+  },
+  {
+    "question": "Who is responsible for managing the Sprint Backlog?",
+    "options": [
+      "Developers",
+      "Product Owner",
+      "Scrum Master",
+      "Stakeholders"
+    ],
+    "answer": "Developers",
+    "explanation": "Developers manage the Sprint Backlog and plan for delivering the Increment."
+  },
+  {
+    "question": "The cost baseline includes:",
+    "options": [
+      "Contingency reserve but not management reserve",
+      "Management reserve only",
+      "No reserves",
+      "Both reserves"
+    ],
+    "answer": "Contingency reserve but not management reserve",
+    "explanation": "Management reserve sits above the cost baseline."
+  },
+  {
+    "question": "A lessons learned register should be:",
+    "options": [
+      "Updated continuously",
+      "Created only at project close",
+      "Owned by HR only",
+      "Ignored if busy"
+    ],
+    "answer": "Updated continuously",
+    "explanation": "Turn insights into practice during the project."
+  },
+  {
+    "question": "During Sprint Planning, what is determined?",
+    "options": [
+      "Define why, what, and how for the Sprint",
+      "Review the budget",
+      "Hire new team members",
+      "Demo the product"
+    ],
+    "answer": "Define why, what, and how for the Sprint",
+    "explanation": "Sprint Planning sets the Sprint Goal (why), selects work (what), and crafts a plan (how)."
+  },
+  {
+    "question": "SAFe’s Agile Release Train (ART) is:",
+    "options": [
+      "A long-lived team of teams",
+      "A Gantt template",
+      "A procurement vehicle",
+      "A QA framework"
+    ],
+    "answer": "A long-lived team of teams",
+    "explanation": "ARTs align multiple teams on a common cadence and vision."
+  },
+  {
+    "question": "What is the main purpose of Sprint Planning?",
+    "options": [
+      "Define why, what, and how for the Sprint",
+      "Review the budget",
+      "Hire new team members",
+      "Demo the product"
+    ],
+    "answer": "Define why, what, and how for the Sprint",
+    "explanation": "Sprint Planning sets the Sprint Goal (why), selects work (what), and crafts a plan (how)."
+  },
+  {
+    "question": "Which group is responsible for crafting the Sprint Goal?",
+    "options": [
+      "Entire Scrum Team",
+      "Product Owner",
+      "Scrum Master",
+      "Architect"
+    ],
+    "answer": "Entire Scrum Team",
+    "explanation": "The Sprint Goal is created collaboratively during Sprint Planning."
+  },
+  {
+    "question": "During a critical milestone, a QA tester reports a security incident. What do you do?",
+    "options": [
+      "Escalate immediately",
+      "Assess the critical path and dependencies",
+      "Discuss the issue privately",
+      "Clarify acceptance criteria together"
+    ],
+    "answer": "Escalate immediately",
+    "explanation": "Follow incident response protocol immediately; containment and escalation are priority."
+  },
+  {
+    "question": "What does a cumulative flow diagram show?",
+    "options": [
+      "Work states over time",
+      "Budget by month",
+      "Headcount trend",
+      "Risk severity only"
+    ],
+    "answer": "Work states over time",
+    "explanation": "A CFD highlights bottlenecks, queue growth, and WIP issues."
+  },
+  {
+    "question": "What is the purpose of the Sprint Review?",
+    "options": [
+      "Inspect the Increment with stakeholders",
+      "Do performance reviews",
+      "Set salaries",
+      "Run a retrospective"
+    ],
+    "answer": "Inspect the Increment with stakeholders",
+    "explanation": "Feedback from stakeholders informs future backlog ordering."
+  },
+  {
+    "question": "Throughput measures what?",
+    "options": [
+      "Items completed per time",
+      "Velocity points only",
+      "Budget per team",
+      "Defects per test"
+    ],
+    "answer": "Items completed per time",
+    "explanation": "Throughput is a core flow metric; track with run charts or CFDs."
+  },
+  {
+    "question": "Which forecast considers current cost efficiency?",
+    "options": [
+      "EAC = BAC / CPI",
+      "EAC = AC + ETC (bottom-up)",
+      "EAC = AC + (BAC - EV)",
+      "EAC = BAC × CPI"
+    ],
+    "answer": "EAC = BAC / CPI",
+    "explanation": "A common rough forecast uses current CPI to project total cost."
+  },
+  {
+    "question": "Definition of Done primarily provides:",
+    "options": [
+      "Shared quality criteria",
+      "Exact hours per task",
+      "Hiring plan",
+      "UI style guide"
+    ],
+    "answer": "Shared quality criteria",
+    "explanation": "DoD makes completeness and quality explicit for every Increment."
+  },
+  {
+    "question": "What does a cumulative flow diagram show?",
+    "options": [
+      "Work states over time",
+      "Budget by month",
+      "Headcount trend",
+      "Risk severity only"
+    ],
+    "answer": "Work states over time",
+    "explanation": "A CFD highlights bottlenecks, queue growth, and WIP issues."
+  },
+  {
+    "question": "Value stream mapping helps to:",
+    "options": [
+      "See end-to-end flow and waste",
+      "Allocate budgets",
+      "Design UIs",
+      "Define roles"
+    ],
+    "answer": "See end-to-end flow and waste",
+    "explanation": "Helps reduce delays, handoffs, and rework."
+  },
+  {
+    "question": "Quality assurance (QA) focuses on:",
+    "options": [
+      "Process to prevent defects",
+      "Finding defects only",
+      "Late testing",
+      "Budget approval"
+    ],
+    "answer": "Process to prevent defects",
+    "explanation": "QA is preventive; quality control (QC) detects defects."
+  },
+  {
+    "question": "A milestone is best described as:?",
+    "options": [
+      "A zero-duration marker",
+      "A phase gate",
+      "A critical risk",
+      "A budget line"
+    ],
+    "answer": "A zero-duration marker",
+    "explanation": "Milestones mark significant points in the schedule."
+  },
+  {
+    "question": "During a critical milestone, a sponsor reports a security incident. What do you do?",
+    "options": [
+      "Escalate immediately",
+      "Ignore it",
+      "Clarify acceptance criteria together",
+      "Discuss the issue privately"
+    ],
+    "answer": "Escalate immediately",
+    "explanation": "Follow incident response protocol immediately; containment and escalation are priority."
+  },
+  {
+    "question": "Rolling wave planning means:?",
+    "options": [
+      "Plan near-term in detail, future at a higher level",
+      "Plan everything upfront",
+      "Avoid planning",
+      "Plan only test work"
+    ],
+    "answer": "Plan near-term in detail, future at a higher level",
+    "explanation": "Detail increases as work gets closer and clearer."
+  },
+  {
+    "question": "Little’s Law relates which variables?",
+    "options": [
+      "WIP, throughput, lead time",
+      "Scope, time, cost",
+      "Risk, impact, probability",
+      "CPU, RAM, I/O"
+    ],
+    "answer": "WIP, throughput, lead time",
+    "explanation": "Lead time ≈ WIP / Throughput (stable systems, consistent units)."
+  },
+  {
+    "question": "Which chart shows work remaining vs time in Scrum?",
+    "options": [
+      "Burndown chart",
+      "Control chart",
+      "CFD",
+      "Gantt chart"
+    ],
+    "answer": "Burndown chart",
+    "explanation": "Tracks remaining work during a Sprint or release."
+  },
+  {
+    "question": "The primary purpose of a project charter is to:",
+    "options": [
+      "Authorize the project and the project manager",
+      "Define the sprint plan",
+      "Hire the team",
+      "Procure vendors"
+    ],
+    "answer": "Authorize the project and the project manager",
+    "explanation": "It provides authority to apply organizational resources."
+  },
+  {
+    "question": "If CPI < 1.0, cost performance is:",
+    "options": [
+      "Over budget",
+      "Under budget",
+      "On budget",
+      "Unknown"
+    ],
+    "answer": "Over budget",
+    "explanation": "CPI below 1 indicates you are spending more than planned per unit of value."
+  },
+  {
+    "question": "The Sprint Goal is created by whom?",
+    "options": [
+      "Entire Scrum Team",
+      "Product Owner",
+      "Scrum Master",
+      "Architect"
+    ],
+    "answer": "Entire Scrum Team",
+    "explanation": "The Sprint Goal is created collaboratively during Sprint Planning."
+  },
+  {
+    "question": "In schedule management, the critical path is:",
+    "options": [
+      "The longest path that determines duration",
+      "The shortest path",
+      "The cheapest path",
+      "The safest path"
+    ],
+    "answer": "The longest path that determines duration",
+    "explanation": "Delays on the critical path delay the overall project."
+  },
+  {
+    "question": "A Work Breakdown Structure (WBS) is:",
+    "options": [
+      "Hierarchical decomposition of deliverables",
+      "A team chart",
+      "A risk register",
+      "A Gantt template"
+    ],
+    "answer": "Hierarchical decomposition of deliverables",
+    "explanation": "WBS breaks scope into manageable components for planning and control."
+  },
+  {
+    "question": "What is total float (slack)?",
+    "options": [
+      "Time an activity can slip without delaying the project",
+      "Extra budget",
+      "Unused scope",
+      "Vendor buffer"
+    ],
+    "answer": "Time an activity can slip without delaying the project",
+    "explanation": "Float indicates schedule flexibility for non-critical activities."
+  },
+  {
+    "question": "How long is the Daily Scrum event?",
+    "options": [
+      "15 minutes",
+      "60 minutes",
+      "45 minutes",
+      "As long as needed"
+    ],
+    "answer": "15 minutes",
+    "explanation": "Daily Scrum is a focused 15-minute event for Developers to inspect progress and adapt the plan."
+  },
+  {
+    "question": "Three-point estimating often uses which values?",
+    "options": [
+      "Optimistic, Most likely, Pessimistic",
+      "High, Medium, Low",
+      "Plan, Actual, Forecast",
+      "Min, Mean, Max"
+    ],
+    "answer": "Optimistic, Most likely, Pessimistic",
+    "explanation": "Helps account for uncertainty and variability."
+  },
+  {
+    "question": "Who should attend the Daily Scrum?",
+    "options": [
+      "Developers",
+      "Entire company",
+      "Only the Product Owner",
+      "Only executives"
+    ],
+    "answer": "Developers",
+    "explanation": "Others may attend if they help, but Developers run it."
+  },
+  {
+    "question": "During a critical milestone, a scrum master introduces a critical dependency late. What do you do?",
+    "options": [
+      "Discuss the issue privately",
+      "Reassign their work",
+      "Assess impact and replan",
+      "Escalate immediately"
+    ],
+    "answer": "Assess impact and replan",
+    "explanation": "Reassess plan and risks; negotiate scope/time/cost and escalate if necessary."
+  },
+  {
+    "question": "What does EV stand for in EVM?",
+    "options": [
+      "Earned Value",
+      "Estimated Variance",
+      "Expected Volume",
+      "Expense Value"
+    ],
+    "answer": "Earned Value",
+    "explanation": "Earned Value quantifies the work performed in budget terms."
+  },
+  {
+    "question": "During a critical milestone, a sponsor reports a blocker. What do you do?",
+    "options": [
+      "Assess impact and replan",
+      "Escalate immediately",
+      "Clarify acceptance criteria together",
+      "Reassign their work"
+    ],
+    "answer": "Escalate immediately",
+    "explanation": "Impediments need rapid removal; increase visibility and escalate if the team cannot resolve quickly."
+  },
+  {
+    "question": "Definition of Ready helps teams:",
+    "options": [
+      "Clarify when work can start",
+      "Finish work",
+      "Report risks",
+      "Hire staff"
+    ],
+    "answer": "Clarify when work can start",
+    "explanation": "An optional checklist that improves clarity before starting a backlog item."
+  },
+  {
+    "question": "During a critical milestone, a QA tester requests an out-of-scope feature in review. What do you do?",
+    "options": [
+      "Discuss the issue privately",
+      "Add it to the backlog for prioritization",
+      "Reassign their work",
+      "Assess the critical path and dependencies"
+    ],
+    "answer": "Add it to the backlog for prioritization",
+    "explanation": "Respect focus; capture in backlog and prioritize collaboratively."
+  },
+  {
+    "question": "What is the focus of the Sprint Retrospective?",
+    "options": [
+      "Improving process and collaboration",
+      "Approving code",
+      "Hiring",
+      "Contract renewals"
+    ],
+    "answer": "Improving process and collaboration",
+    "explanation": "The team inspects people, processes, and tools, then adapts for the next Sprint."
+  },
+  {
+    "question": "If CPI < 1.0, cost performance is:?",
+    "options": [
+      "Over budget",
+      "Under budget",
+      "On budget",
+      "Unknown"
+    ],
+    "answer": "Over budget",
+    "explanation": "CPI below 1 indicates you are spending more than planned per unit of value."
+  },
+  {
+    "question": "Free float is the time an activity can slip without:",
+    "options": [
+      "Delaying its immediate successor",
+      "Delaying the entire project",
+      "Increasing cost",
+      "Changing scope"
+    ],
+    "answer": "Delaying its immediate successor",
+    "explanation": "Total float is about the project finish; free float is about the successor."
+  },
+  {
+    "question": "The Sprint Backlog is owned by which role?",
+    "options": [
+      "Developers",
+      "Product Owner",
+      "Scrum Master",
+      "Stakeholders"
+    ],
+    "answer": "Developers",
+    "explanation": "Developers manage the Sprint Backlog and plan for delivering the Increment."
+  },
+  {
+    "question": "A Pareto chart helps to:",
+    "options": [
+      "Identify vital few defect causes",
+      "Schedule resources",
+      "Calculate CPI",
+      "Model risks"
+    ],
+    "answer": "Identify vital few defect causes",
+    "explanation": "80/20 principle—focus on the most significant contributors."
+  },
+  {
+    "question": "Throughput measures what?",
+    "options": [
+      "Items completed per time",
+      "Velocity points only",
+      "Budget per team",
+      "Defects per test"
+    ],
+    "answer": "Items completed per time",
+    "explanation": "Throughput is a core flow metric; track with run charts or CFDs."
+  },
+  {
+    "question": "If SPI > 1.0, schedule performance is:",
+    "options": [
+      "Ahead of plan",
+      "Behind plan",
+      "On plan",
+      "Not applicable"
+    ],
+    "answer": "Ahead of plan",
+    "explanation": "SPI above 1 indicates work is being earned faster than planned."
+  },
+  {
+    "question": "Working software is valued over:",
+    "options": [
+      "Comprehensive documentation",
+      "Contract negotiation",
+      "Change control",
+      "Procurement"
+    ],
+    "answer": "Comprehensive documentation",
+    "explanation": "Documentation is useful, but delivery of value is paramount."
+  },
+  {
+    "question": "What are the commitments for Scrum artifacts?",
+    "options": [
+      "Product Goal, Sprint Goal, Definition of Done",
+      "Budget, Schedule, Scope",
+      "RACI, RAID, KPI",
+      "Vision, Strategy, Tactics"
+    ],
+    "answer": "Product Goal, Sprint Goal, Definition of Done",
+    "explanation": "Each artifact has a commitment that reinforces transparency and focus."
+  }
+]

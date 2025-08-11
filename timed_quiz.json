@@ -1,0 +1,2257 @@
+[
+  {
+    "question": "Zero-shot prompting is",
+    "options": [
+      "No examples in the prompt",
+      "Many labeled examples",
+      "Fine-tuning on domain data",
+      "Using tools only"
+    ],
+    "answer": "No examples in the prompt",
+    "tip": "Relies on instruction-following ability."
+  },
+  {
+    "question": "What is the context window?",
+    "options": [
+      "Max tokens model attends to",
+      "GPU memory size",
+      "API rate limit",
+      "Batch size"
+    ],
+    "answer": "Max tokens model attends to",
+    "tip": "Longer windows allow longer prompts."
+  },
+  {
+    "question": "Safety filters are",
+    "options": [
+      "Classifiers that block unsafe content",
+      "Loss functions",
+      "Vector stores",
+      "Tokenizers"
+    ],
+    "answer": "Classifiers that block unsafe content",
+    "tip": "Run on inputs and outputs."
+  },
+  {
+    "question": "Quality assurance focuses on",
+    "options": [
+      "Process to prevent defects",
+      "Finding defects",
+      "User training",
+      "Budget audits"
+    ],
+    "answer": "Process to prevent defects",
+    "tip": "QA is preventive; QC detects."
+  },
+  {
+    "question": "How long is Sprint Planning?",
+    "options": [
+      "Max 8 hours for 1-month Sprint",
+      "Two days",
+      "No limit",
+      "15 minutes"
+    ],
+    "answer": "Max 8 hours for 1-month Sprint",
+    "tip": "Shorter Sprints use less time."
+  },
+  {
+    "question": "Scrum Master serves",
+    "options": [
+      "Product Owner, Developers, Organization",
+      "Only CEO",
+      "Only PMO",
+      "Only QA"
+    ],
+    "answer": "Product Owner, Developers, Organization",
+    "tip": "Coaching, facilitation, and impediment removal."
+  },
+  {
+    "question": "Pair programming benefits include",
+    "options": [
+      "Shared knowledge",
+      "Double coding time",
+      "Less testing needed",
+      "Bigger pull requests"
+    ],
+    "answer": "Shared knowledge",
+    "tip": "Also improves quality and onboarding."
+  },
+  {
+    "question": "A baseline is",
+    "options": [
+      "Approved plan for tracking",
+      "Rough idea",
+      "Daily standup",
+      "Risk heat map"
+    ],
+    "answer": "Approved plan for tracking",
+    "tip": "Scope, schedule, cost baselines."
+  },
+  {
+    "question": "In top-k sampling, what does k represent?",
+    "options": [
+      "The number of tokens randomly discarded",
+      "The number of tokens the model can choose from",
+      "The total vocabulary size",
+      "The probability threshold for token selection"
+    ],
+    "answer": "The number of tokens the model can choose from",
+    "tip": "Think of k as a shortlist size \u2014 the model picks from the top k most likely tokens."
+  },
+  {
+    "question": "What happens when k = 1 in top-k sampling?",
+    "options": [
+      "The model chooses completely randomly",
+      "The model always picks the most likely token",
+      "The model ignores token probabilities",
+      "The model generates gibberish"
+    ],
+    "answer": "The model always picks the most likely token",
+    "tip": "k = 1 means zero randomness \u2014 fully deterministic output."
+  },
+  {
+    "question": "What happens when k is small (e.g., 3 or 5) in top-k sampling?",
+    "options": [
+      "Output is safer and more predictable",
+      "Output is more random and creative",
+      "Output ignores probabilities",
+      "Output contains more typos"
+    ],
+    "answer": "Output is safer and more predictable",
+    "tip": "Smaller k keeps the shortlist tight, reducing unexpected words."
+  },
+  {
+    "question": "What happens when k is large (e.g., 50 or 100) in top-k sampling?",
+    "options": [
+      "Output is always deterministic",
+      "Output becomes more diverse but riskier",
+      "Output ignores probabilities",
+      "Output is shorter"
+    ],
+    "answer": "Output becomes more diverse but riskier",
+    "tip": "Larger k increases variety but can cause less coherent answers."
+  },
+  {
+    "question": "What does k equal in 'all tokens' sampling?",
+    "options": [
+      "1",
+      "The vocabulary size",
+      "0",
+      "10"
+    ],
+    "answer": "The vocabulary size",
+    "tip": "This is basically unconstrained sampling \u2014 no shortlist limit."
+  },
+  {
+    "question": "Prompt injection is",
+    "options": [
+      "Malicious text overriding instructions",
+      "A logging format",
+      "A memory bug",
+      "A tokenizer bug"
+    ],
+    "answer": "Malicious text overriding instructions",
+    "tip": "Sanitize inputs and isolate tools."
+  },
+  {
+    "question": "Definition of Done ensures",
+    "options": [
+      "Quality and completeness",
+      "Velocity tracking",
+      "Budget control",
+      "Roadmap alignment only"
+    ],
+    "answer": "Quality and completeness",
+    "tip": "A shared standard for Increment readiness."
+  },
+  {
+    "question": "TDD stands for",
+    "options": [
+      "Test-Driven Development",
+      "Team Data Design",
+      "Token-Distribution Diagram",
+      "Task-Duration Draft"
+    ],
+    "answer": "Test-Driven Development",
+    "tip": "Write tests first, then code."
+  },
+  {
+    "question": "Who attends Daily Scrum?",
+    "options": [
+      "Developers",
+      "PO only",
+      "SM only",
+      "All employees"
+    ],
+    "answer": "Developers",
+    "tip": "SM/PO may join if they help."
+  },
+  {
+    "question": "Top-p (nucleus) sampling chooses from",
+    "options": [
+      "Tokens whose cumulative prob reaches p",
+      "Only the single top token",
+      "All tokens equally",
+      "Tokens seen in training set"
+    ],
+    "answer": "Tokens whose cumulative prob reaches p",
+    "tip": "Often paired with temperature for natural text."
+  },
+  {
+    "question": "Sprint Retrospective focuses on",
+    "options": [
+      "Improving process",
+      "Approving code",
+      "Hiring",
+      "Contract renewals"
+    ],
+    "answer": "Improving process",
+    "tip": "Inspect people, processes, tools, then adapt."
+  },
+  {
+    "question": "Who is accountable for maximizing product value?",
+    "options": [
+      "Product Owner",
+      "Scrum Master",
+      "Developers",
+      "Sponsor"
+    ],
+    "answer": "Product Owner",
+    "tip": "They manage the Product Backlog."
+  },
+  {
+    "question": "What is the role of embeddings?",
+    "options": [
+      "Represent meaning as vectors",
+      "Render UI",
+      "Compile code",
+      "Store raw text"
+    ],
+    "answer": "Represent meaning as vectors",
+    "tip": "Vectors allow similarity search and clustering."
+  },
+  {
+    "question": "Definition of Done applies to",
+    "options": [
+      "Every Increment",
+      "Only releases",
+      "Only prototypes",
+      "Only bugs"
+    ],
+    "answer": "Every Increment",
+    "tip": "Ensures quality is built-in."
+  },
+  {
+    "question": "Scrum artifacts include",
+    "options": [
+      "Product Backlog, Sprint Backlog, Increment",
+      "Risk Register, Gantt Chart, Budget",
+      "BRD, FRD, TSD",
+      "Kanban Board only"
+    ],
+    "answer": "Product Backlog, Sprint Backlog, Increment",
+    "tip": "Artifacts provide transparency."
+  },
+  {
+    "question": "Few-shot prompting is",
+    "options": [
+      "Providing labeled examples",
+      "Restricting tokens",
+      "Lowering temperature",
+      "Using images"
+    ],
+    "answer": "Providing labeled examples",
+    "tip": "Shows the pattern to imitate."
+  },
+  {
+    "question": "A RAID summary is best reviewed",
+    "options": [
+      "Weekly",
+      "Hourly",
+      "Yearly",
+      "Only at close"
+    ],
+    "answer": "Weekly",
+    "tip": "Keep stakeholders aligned."
+  },
+  {
+    "question": "Kanban focuses on",
+    "options": [
+      "Visualizing work and limiting WIP",
+      "Timeboxed Sprints",
+      "Test automation only",
+      "Pairing only"
+    ],
+    "answer": "Visualizing work and limiting WIP",
+    "tip": "Continuously pull work through the system."
+  },
+  {
+    "question": "A reranker does",
+    "options": [
+      "Re-scores retrieved passages",
+      "Trains embeddings",
+      "Caches prompts",
+      "Plots losses"
+    ],
+    "answer": "Re-scores retrieved passages",
+    "tip": "Improves retrieval quality for RAG."
+  },
+  {
+    "question": "Agile principle: The best architectures emerge from",
+    "options": [
+      "Self-organizing teams",
+      "Strict governance",
+      "Vendor mandates",
+      "Detailed contracts"
+    ],
+    "answer": "Self-organizing teams",
+    "tip": "Empower people closest to the work."
+  },
+  {
+    "question": "Which model architecture powers many modern language models?",
+    "options": [
+      "Transformer",
+      "CNN",
+      "Naive Bayes",
+      "KNN"
+    ],
+    "answer": "Transformer",
+    "tip": "Transformers use self-attention to weigh tokens."
+  },
+  {
+    "question": "A TTS model converts",
+    "options": [
+      "Text to speech",
+      "Text to SQL",
+      "Audio to text",
+      "Video to frames"
+    ],
+    "answer": "Text to speech",
+    "tip": "Useful for voice apps."
+  },
+  {
+    "question": "Sprint Review purpose is",
+    "options": [
+      "Inspect Increment with stakeholders",
+      "Assign tasks",
+      "Do performance reviews",
+      "Calculate budget"
+    ],
+    "answer": "Inspect Increment with stakeholders",
+    "tip": "Adapt the backlog based on feedback."
+  },
+  {
+    "question": "A VLM is a",
+    "options": [
+      "Vision-Language Model",
+      "Variable Length Matrix",
+      "Verified Learning Module",
+      "Vector Latency Model"
+    ],
+    "answer": "Vision-Language Model",
+    "tip": "Understands images and text jointly."
+  },
+  {
+    "question": "A retrospective aims to",
+    "options": [
+      "Inspect and adapt process",
+      "Sign contracts",
+      "Set salaries",
+      "Freeze scope"
+    ],
+    "answer": "Inspect and adapt process",
+    "tip": "Continuous improvement cadence."
+  },
+  {
+    "question": "What is the typical goal of a Sprint Review?",
+    "options": [
+      "Adapt the Product Backlog",
+      "Rate team members",
+      "Set salaries",
+      "Run a retrospective"
+    ],
+    "answer": "Adapt the Product Backlog",
+    "tip": "Inspect the Increment with stakeholders and adjust the plan."
+  },
+  {
+    "question": "Rolling wave planning means",
+    "options": [
+      "Plan near term in detail",
+      "Plan everything upfront",
+      "No planning",
+      "Only plan sprints"
+    ],
+    "answer": "Plan near term in detail",
+    "tip": "Detail increases as you get closer."
+  },
+  {
+    "question": "WIP limit means",
+    "options": [
+      "Cap on concurrent work",
+      "Weekend work only",
+      "Code freeze",
+      "Budget cap"
+    ],
+    "answer": "Cap on concurrent work",
+    "tip": "Limits improve focus and flow."
+  },
+  {
+    "question": "A milestone is",
+    "options": [
+      "Zero-duration marker",
+      "Critical path",
+      "Budget item",
+      "Risk owner"
+    ],
+    "answer": "Zero-duration marker",
+    "tip": "Highlights significant points."
+  },
+  {
+    "question": "Spike is",
+    "options": [
+      "Time-boxed research activity",
+      "CI server",
+      "Code smell",
+      "Daily metric"
+    ],
+    "answer": "Time-boxed research activity",
+    "tip": "Used to reduce uncertainty."
+  },
+  {
+    "question": "Lessons learned should be",
+    "options": [
+      "Captured and shared continuously",
+      "Saved for project close only",
+      "Ignored if busy",
+      "Owned by HR only"
+    ],
+    "answer": "Captured and shared continuously",
+    "tip": "Turn learning into practice."
+  },
+  {
+    "question": "Risk response 'mitigate' means",
+    "options": [
+      "Reduce probability or impact",
+      "Accept fully",
+      "Avoid scheduling",
+      "Transfer value"
+    ],
+    "answer": "Reduce probability or impact",
+    "tip": "Plan actions and owners."
+  },
+  {
+    "question": "Servant leadership emphasizes",
+    "options": [
+      "Enabling others to succeed",
+      "Directing every task",
+      "Micromanagement",
+      "Command-control"
+    ],
+    "answer": "Enabling others to succeed",
+    "tip": "Leaders remove blockers and grow people."
+  },
+  {
+    "question": "T-shaped skills combine",
+    "options": [
+      "Depth in one area with breadth",
+      "Depth in all areas",
+      "Only breadth",
+      "Only soft skills"
+    ],
+    "answer": "Depth in one area with breadth",
+    "tip": "Great for cross-functional teams."
+  },
+  {
+    "question": "Management by objectives (MBO) uses",
+    "options": [
+      "Goal setting with measures",
+      "Punishment only",
+      "Daily quizzes",
+      "Random KPIs"
+    ],
+    "answer": "Goal setting with measures",
+    "tip": "Aligns individual goals to strategy."
+  },
+  {
+    "question": "A Sprint Goal is",
+    "options": [
+      "A single objective for the Sprint",
+      "List of all tasks",
+      "Performance KPI",
+      "Capacity number"
+    ],
+    "answer": "A single objective for the Sprint",
+    "tip": "Gives focus and flexibility."
+  },
+  {
+    "question": "Early stopping prevents",
+    "options": [
+      "Overfitting",
+      "Tokenization",
+      "Quantization",
+      "Caching"
+    ],
+    "answer": "Overfitting",
+    "tip": "Stop when validation stops improving."
+  },
+  {
+    "question": "Grounding means",
+    "options": [
+      "Tying claims to sources",
+      "Using GPU ground pins",
+      "Fixing seed to 0",
+      "Training on the ground truth only"
+    ],
+    "answer": "Tying claims to sources",
+    "tip": "Citations + retrieval build trust."
+  },
+  {
+    "question": "Sunk cost fallacy leads to",
+    "options": [
+      "Throwing good money after bad",
+      "Stopping failed work early",
+      "Better forecasts",
+      "Accurate EV"
+    ],
+    "answer": "Throwing good money after bad",
+    "tip": "Decide based on future value, not spent cost."
+  },
+  {
+    "question": "What does NLP stand for?",
+    "options": [
+      "Natural Language Processing",
+      "Neural Logic Programming",
+      "Numeric Language Parsing",
+      "Network Language Protocol"
+    ],
+    "answer": "Natural Language Processing",
+    "tip": "NLP enables computers to work with human language."
+  },
+  {
+    "question": "Swarming means",
+    "options": [
+      "Team focuses on one item",
+      "Pair rotation only",
+      "Many items in parallel",
+      "Handing off work"
+    ],
+    "answer": "Team focuses on one item",
+    "tip": "Finishing beats starting."
+  },
+  {
+    "question": "Deterministic decoding uses",
+    "options": [
+      "Temperature 0",
+      "High temperature",
+      "Random seeds only",
+      "Top-p only"
+    ],
+    "answer": "Temperature 0",
+    "tip": "Good for tests and reproducibility."
+  },
+  {
+    "question": "Can a Sprint be canceled?",
+    "options": [
+      "Yes, by the Product Owner",
+      "No, never",
+      "Only by the CEO",
+      "By the Scrum Master alone"
+    ],
+    "answer": "Yes, by the Product Owner",
+    "tip": "If the Sprint Goal becomes obsolete."
+  },
+  {
+    "question": "A spike is",
+    "options": [
+      "Time-boxed research task",
+      "Critical bug",
+      "Stakeholder demo",
+      "Deployment"
+    ],
+    "answer": "Time-boxed research task",
+    "tip": "Used to explore unknowns."
+  },
+  {
+    "question": "The critical path is",
+    "options": [
+      "Longest path that determines duration",
+      "Shortest path",
+      "Cheapest path",
+      "Safest path"
+    ],
+    "answer": "Longest path that determines duration",
+    "tip": "Delays on it delay the project."
+  },
+  {
+    "question": "Cycle time measures",
+    "options": [
+      "Start-to-finish time per item",
+      "Team size",
+      "Budget",
+      "Bug severity"
+    ],
+    "answer": "Start-to-finish time per item",
+    "tip": "Shorter cycle time means faster flow."
+  },
+  {
+    "question": "Responding to change over",
+    "options": [
+      "Following a plan",
+      "Estimating",
+      "QA reviews",
+      "Risk logs"
+    ],
+    "answer": "Following a plan",
+    "tip": "Adaptation beats rigid plans."
+  },
+  {
+    "question": "Throughput in flow systems is",
+    "options": [
+      "Items done per time unit",
+      "CPU usage",
+      "Budget spent",
+      "Velocity points"
+    ],
+    "answer": "Items done per time unit",
+    "tip": "Track with run charts or CFD."
+  },
+  {
+    "question": "Servant leadership style is",
+    "options": [
+      "Empower and remove blockers",
+      "Command and control",
+      "Micromanage",
+      "Punitive"
+    ],
+    "answer": "Empower and remove blockers",
+    "tip": "Effective with knowledge work."
+  },
+  {
+    "question": "Who accepts work as Done?",
+    "options": [
+      "Scrum Team via DoD",
+      "Sponsor signs a form",
+      "Only QA",
+      "PO alone"
+    ],
+    "answer": "Scrum Team via DoD",
+    "tip": "Meeting DoD means the Increment is done."
+  },
+  {
+    "question": "Work authorization ensures",
+    "options": [
+      "Only approved work starts",
+      "Everyone codes",
+      "Vendors get paid",
+      "Backlog is empty"
+    ],
+    "answer": "Only approved work starts",
+    "tip": "Prevents scope drift."
+  },
+  {
+    "question": "A stakeholder is",
+    "options": [
+      "Anyone affected by the project",
+      "Only executives",
+      "Only developers",
+      "Only customers"
+    ],
+    "answer": "Anyone affected by the project",
+    "tip": "Identify and manage expectations."
+  },
+  {
+    "question": "Who ensures Scrum is understood?",
+    "options": [
+      "Scrum Master",
+      "CIO",
+      "QA Manager",
+      "UX Lead"
+    ],
+    "answer": "Scrum Master",
+    "tip": "They coach the team and the org."
+  },
+  {
+    "question": "Escalation path clarifies",
+    "options": [
+      "Who to notify for issues",
+      "Deployment steps",
+      "Code style",
+      "Test pyramid"
+    ],
+    "answer": "Who to notify for issues",
+    "tip": "Removes ambiguity in crises."
+  },
+  {
+    "question": "Developers in Scrum are",
+    "options": [
+      "People who create the Increment",
+      "Only coders",
+      "Only testers",
+      "Only analysts"
+    ],
+    "answer": "People who create the Increment",
+    "tip": "Cross-functional and self-managing."
+  },
+  {
+    "question": "Latency hiding is",
+    "options": [
+      "Streaming tokens early",
+      "Caching models on disk",
+      "Bigger batches",
+      "Turning off logs"
+    ],
+    "answer": "Streaming tokens early",
+    "tip": "Improves perceived speed."
+  },
+  {
+    "question": "Scrum Team size is",
+    "options": [
+      "10 or fewer",
+      "30+",
+      "Exactly 5",
+      "Only 3"
+    ],
+    "answer": "10 or fewer",
+    "tip": "Small enough to be nimble, large enough to deliver."
+  },
+  {
+    "question": "Work breakdown structure (WBS) is",
+    "options": [
+      "Hierarchical decomposition of work",
+      "Team chart",
+      "Risk matrix",
+      "Budget tree"
+    ],
+    "answer": "Hierarchical decomposition of work",
+    "tip": "Breaks deliverables into components."
+  },
+  {
+    "question": "Minimum viable product is",
+    "options": [
+      "Smallest thing to test value",
+      "Final product",
+      "Internal tool",
+      "Design doc"
+    ],
+    "answer": "Smallest thing to test value",
+    "tip": "Ship early to learn."
+  },
+  {
+    "question": "Monte Carlo simulation helps",
+    "options": [
+      "Assess schedule/cost uncertainty",
+      "Hire faster",
+      "Improve UI",
+      "Pick vendors"
+    ],
+    "answer": "Assess schedule/cost uncertainty",
+    "tip": "Run scenarios to see probabilities."
+  },
+  {
+    "question": "Cosine similarity measures",
+    "options": [
+      "Angle between vectors",
+      "Token count",
+      "Latency",
+      "Loss value"
+    ],
+    "answer": "Angle between vectors",
+    "tip": "1.0 identical direction; 0 orthogonal."
+  },
+  {
+    "question": "Dropout randomly",
+    "options": [
+      "Disables neurons during training",
+      "Deletes tokens",
+      "Stops caching",
+      "Masks prompts"
+    ],
+    "answer": "Disables neurons during training",
+    "tip": "Reduces overfitting."
+  },
+  {
+    "question": "Nexus or Scrum@Scale are",
+    "options": [
+      "Scaling frameworks",
+      "Databases",
+      "Scripting languages",
+      "Bug trackers"
+    ],
+    "answer": "Scaling frameworks",
+    "tip": "Coordinate multiple teams."
+  },
+  {
+    "question": "Change control manages",
+    "options": [
+      "Scope changes",
+      "Team hiring",
+      "Office seating",
+      "Vendor payments"
+    ],
+    "answer": "Scope changes",
+    "tip": "Assess impact before approving."
+  },
+  {
+    "question": "RAG stands for",
+    "options": [
+      "Retrieval-Augmented Generation",
+      "Randomized Adversarial Gradient",
+      "Recurrent Attention Graph",
+      "Rapid Alignment Gain"
+    ],
+    "answer": "Retrieval-Augmented Generation",
+    "tip": "Fetch documents then generate grounded answers."
+  },
+  {
+    "question": "Developers choose how much to",
+    "options": [
+      "Forecast for the Sprint",
+      "Order backlog",
+      "Set budgets",
+      "Hire"
+    ],
+    "answer": "Forecast for the Sprint",
+    "tip": "They own the plan to meet the Sprint Goal."
+  },
+  {
+    "question": "Backlog refinement is",
+    "options": [
+      "Ongoing clarification of items",
+      "A formal event",
+      "A contract review",
+      "Bug triage only"
+    ],
+    "answer": "Ongoing clarification of items",
+    "tip": "Helps items be understood and sized."
+  },
+  {
+    "question": "Weight decay is",
+    "options": [
+      "L2 regularization",
+      "Data augmentation",
+      "Dropout",
+      "A scheduler"
+    ],
+    "answer": "L2 regularization",
+    "tip": "Improves generalization."
+  },
+  {
+    "question": "Managing by exception means",
+    "options": [
+      "Escalate only out-of-tolerance",
+      "Escalate all details",
+      "Never escalate",
+      "Escalate by title"
+    ],
+    "answer": "Escalate only out-of-tolerance",
+    "tip": "Used in PRINCE2."
+  },
+  {
+    "question": "DORA metric 'deployment frequency' aims for",
+    "options": [
+      "More frequent releases",
+      "Larger batch sizes",
+      "Fewer tests",
+      "Manual deploys"
+    ],
+    "answer": "More frequent releases",
+    "tip": "Small, frequent changes lower risk."
+  },
+  {
+    "question": "Story points estimate",
+    "options": [
+      "Relative effort/complexity",
+      "Exact hours",
+      "Budget",
+      "Headcount"
+    ],
+    "answer": "Relative effort/complexity",
+    "tip": "Abstract sizes aid forecasting."
+  },
+  {
+    "question": "A JSON schema in prompts",
+    "options": [
+      "Specifies strict output format",
+      "Encrypts responses",
+      "Compresses files",
+      "Allocates GPUs"
+    ],
+    "answer": "Specifies strict output format",
+    "tip": "Helps with structured tool use."
+  },
+  {
+    "question": "Agile contract type that shares risk is",
+    "options": [
+      "Time-and-materials with cap",
+      "Fixed scope only",
+      "Pure time-and-materials",
+      "Cost plus award fee"
+    ],
+    "answer": "Time-and-materials with cap",
+    "tip": "Supports change while limiting risk."
+  },
+  {
+    "question": "Refinement typically consumes",
+    "options": [
+      "No more than 10% of capacity",
+      "50% of capacity",
+      "All Fridays",
+      "Only off-hours"
+    ],
+    "answer": "No more than 10% of capacity",
+    "tip": "Keep it light but continuous."
+  },
+  {
+    "question": "Project lifecycle phases often are",
+    "options": [
+      "Initiate, Plan, Execute, Monitor, Close",
+      "Design, Code, Test",
+      "Think, Do, Check",
+      "Alpha, Beta"
+    ],
+    "answer": "Initiate, Plan, Execute, Monitor, Close",
+    "tip": "Tailor to your organization."
+  },
+  {
+    "question": "INVEST is a heuristic for",
+    "options": [
+      "Good user stories",
+      "Database indexing",
+      "UI layout",
+      "GPU tuning"
+    ],
+    "answer": "Good user stories",
+    "tip": "Independent, Negotiable, Valuable, Estimable, Small, Testable."
+  },
+  {
+    "question": "Overfitting means the model",
+    "options": [
+      "Memorizes training data",
+      "Has no bias",
+      "Is too small",
+      "Is perfectly general"
+    ],
+    "answer": "Memorizes training data",
+    "tip": "Use regularization and more data."
+  },
+  {
+    "question": "Timebox for a Sprint is",
+    "options": [
+      "One month or less",
+      "Exactly two weeks",
+      "Three months",
+      "No limit"
+    ],
+    "answer": "One month or less",
+    "tip": "Short, consistent timeboxes enable feedback."
+  },
+  {
+    "question": "What does a tokenizer do?",
+    "options": [
+      "Splits text into tokens",
+      "Compresses images",
+      "Encrypts requests",
+      "Sorts datasets"
+    ],
+    "answer": "Splits text into tokens",
+    "tip": "Tokens can be words, subwords, or characters."
+  },
+  {
+    "question": "Commitments for artifacts are",
+    "options": [
+      "Product Goal, Sprint Goal, Definition of Done",
+      "Budget, Scope, Time",
+      "RACI, RAID, KPI",
+      "Persona, Journey, Wireframe"
+    ],
+    "answer": "Product Goal, Sprint Goal, Definition of Done",
+    "tip": "They enhance transparency and focus."
+  },
+  {
+    "question": "Gradient clipping",
+    "options": [
+      "Limits gradient norms",
+      "Adds more layers",
+      "Deletes cache",
+      "Raises context"
+    ],
+    "answer": "Limits gradient norms",
+    "tip": "Prevents exploding gradients."
+  },
+  {
+    "question": "Cumulative flow diagram shows",
+    "options": [
+      "Work states over time",
+      "Test pass rate",
+      "Team mood",
+      "Budget burn"
+    ],
+    "answer": "Work states over time",
+    "tip": "Gaps indicate bottlenecks or WIP issues."
+  },
+  {
+    "question": "Lead time measures",
+    "options": [
+      "Request to delivery",
+      "Coding only",
+      "Testing only",
+      "Deploy time"
+    ],
+    "answer": "Request to delivery",
+    "tip": "Customers care about lead time."
+  },
+  {
+    "question": "Benefit realization tracks",
+    "options": [
+      "Outcomes vs expected value",
+      "Only costs",
+      "Only headcount",
+      "Only defects"
+    ],
+    "answer": "Outcomes vs expected value",
+    "tip": "Did we get the value we wanted?"
+  },
+  {
+    "question": "In Agile, what does 'definition of done' primarily provide?",
+    "options": [
+      "Shared quality criteria",
+      "Exact hours per task",
+      "Hiring plan",
+      "UI style guide"
+    ],
+    "answer": "Shared quality criteria",
+    "tip": "It makes work transparency and quality explicit."
+  },
+  {
+    "question": "Seed controls",
+    "options": [
+      "Randomness initialization",
+      "GPU temp",
+      "Prompt length",
+      "Batch size"
+    ],
+    "answer": "Randomness initialization",
+    "tip": "Same seed + params  reproducible outputs."
+  },
+  {
+    "question": "Beam search is",
+    "options": [
+      "Decoding that keeps multiple candidates",
+      "An optimizer",
+      "A training loss",
+      "A compression method"
+    ],
+    "answer": "Decoding that keeps multiple candidates",
+    "tip": "Good for determinism; can sound stiff."
+  },
+  {
+    "question": "User story format often is",
+    "options": [
+      "As a <role>, I want <need> so that <benefit>",
+      "Given-When-Then",
+      "If-Else",
+      "SELECT * FROM"
+    ],
+    "answer": "As a <role>, I want <need> so that <benefit>",
+    "tip": "Keep stories customer-centric."
+  },
+  {
+    "question": "Kickoff meeting purpose is",
+    "options": [
+      "Align team and stakeholders",
+      "Sign contracts only",
+      "Demo UI",
+      "Sell services"
+    ],
+    "answer": "Align team and stakeholders",
+    "tip": "Set context and expectations."
+  },
+  {
+    "question": "Scrum requires",
+    "options": [
+      "Empiricism and lean thinking",
+      "Strict command-control",
+      "Waterfall phases",
+      "Only pair programming"
+    ],
+    "answer": "Empiricism and lean thinking",
+    "tip": "Transparency, inspection, adaptation."
+  },
+  {
+    "question": "What is the goal of a Sprint?",
+    "options": [
+      "Create a usable Increment",
+      "Finish all backlog items",
+      "Write documentation",
+      "Refactor only"
+    ],
+    "answer": "Create a usable Increment",
+    "tip": "Each Sprint should deliver a potentially shippable Increment."
+  },
+  {
+    "question": "Scope creep is",
+    "options": [
+      "Uncontrolled expansion of scope",
+      "Better scope control",
+      "Risk reduction",
+      "Vendor consolidation"
+    ],
+    "answer": "Uncontrolled expansion of scope",
+    "tip": "Use change control to prevent it."
+  },
+  {
+    "question": "Project charter authorizes",
+    "options": [
+      "The project and the PM",
+      "Only the budget",
+      "Only the team",
+      "Only procurement"
+    ],
+    "answer": "The project and the PM",
+    "tip": "Gives authority to use resources."
+  },
+  {
+    "question": "What is RLHF?",
+    "options": [
+      "Reinforcement Learning from Human Feedback",
+      "Regularized Loss for Human Facts",
+      "Random Label Heuristic Filter",
+      "Ranked Language Head Format"
+    ],
+    "answer": "Reinforcement Learning from Human Feedback",
+    "tip": "Aligns outputs to human preferences."
+  },
+  {
+    "question": "Who owns the Product Backlog?",
+    "options": [
+      "Product Owner",
+      "Scrum Master",
+      "Developers",
+      "Stakeholders"
+    ],
+    "answer": "Product Owner",
+    "tip": "The Product Owner is accountable for maximizing product value."
+  },
+  {
+    "question": "CPI measures",
+    "options": [
+      "Cost performance",
+      "Code performance",
+      "Customer performance",
+      "Contract performance"
+    ],
+    "answer": "Cost performance",
+    "tip": "CPI = EV / AC."
+  },
+  {
+    "question": "Value stream mapping helps",
+    "options": [
+      "See end-to-end flow",
+      "Allocate budgets",
+      "Design UIs",
+      "Define roles"
+    ],
+    "answer": "See end-to-end flow",
+    "tip": "Spot waits and wastes."
+  },
+  {
+    "question": "Stakeholder engagement levels include",
+    "options": [
+      "Unaware to leading",
+      "Junior to senior",
+      "Green to red",
+      "Alpha to omega"
+    ],
+    "answer": "Unaware to leading",
+    "tip": "From PMIs spectrum."
+  },
+  {
+    "question": "Instruction tuning trains models to",
+    "options": [
+      "Follow natural language tasks",
+      "Render images",
+      "Stream audio",
+      "Compile code"
+    ],
+    "answer": "Follow natural language tasks",
+    "tip": "Prepares a base model for helpfulness."
+  },
+  {
+    "question": "A product roadmap shows",
+    "options": [
+      "Planned outcomes over time",
+      "Source code layout",
+      "Team salaries",
+      "Legal risks"
+    ],
+    "answer": "Planned outcomes over time",
+    "tip": "High-level direction; not a commitment."
+  },
+  {
+    "question": "A Gantt chart visualizes",
+    "options": [
+      "Schedule over time",
+      "Risk probability",
+      "Team skills",
+      "Test coverage"
+    ],
+    "answer": "Schedule over time",
+    "tip": "Bars show tasks and dependencies."
+  },
+  {
+    "question": "Function/tool calling lets a model",
+    "options": [
+      "Request structured actions",
+      "Train faster",
+      "Add layers",
+      "Skip decoding"
+    ],
+    "answer": "Request structured actions",
+    "tip": "Use JSON args and validate before running."
+  },
+  {
+    "question": "Sprint cancelation causes include",
+    "options": [
+      "Obsolete Sprint Goal",
+      "Low velocity",
+      "Team vacation",
+      "New laptop"
+    ],
+    "answer": "Obsolete Sprint Goal",
+    "tip": "PO may cancel if the goal no longer makes sense."
+  },
+  {
+    "question": "Procurement contract types include",
+    "options": [
+      "Fixed price, T&M, Cost-reimbursable",
+      "Agile, Waterfall, Hybrid",
+      "Open, Closed, Sealed",
+      "Short, Medium, Long"
+    ],
+    "answer": "Fixed price, T&M, Cost-reimbursable",
+    "tip": "Pick based on risk appetite."
+  },
+  {
+    "question": "Scrum Master removes",
+    "options": [
+      "Impediments",
+      "PO authority",
+      "Stakeholders",
+      "Business value"
+    ],
+    "answer": "Impediments",
+    "tip": "Helps the team improve flow."
+  },
+  {
+    "question": "Velocity measures",
+    "options": [
+      "Amount of work completed per Sprint",
+      "Team happiness",
+      "Bug count",
+      "Budget variance"
+    ],
+    "answer": "Amount of work completed per Sprint",
+    "tip": "Useful trend, not a target."
+  },
+  {
+    "question": "What ends a Sprint?",
+    "options": [
+      "Timebox expires",
+      "PO signs off",
+      "Bug count zero",
+      "Velocity target hit"
+    ],
+    "answer": "Timebox expires",
+    "tip": "Sprints are fixed durations."
+  },
+  {
+    "question": "BDD stands for",
+    "options": [
+      "Behavior-Driven Development",
+      "Backlog-Driven Design",
+      "Build-Deploy-Deliver",
+      "Binary Debugging Device"
+    ],
+    "answer": "Behavior-Driven Development",
+    "tip": "Use examples to express expected behavior."
+  },
+  {
+    "question": "INVEST stands for",
+    "options": [
+      "Independent, Negotiable, Valuable, Estimable, Small, Testable",
+      "Iterative, New, Verified, Easy, Stable, Timely",
+      "Incremental, Neutral, Valid, Exact, Simple, Tracked",
+      "None of these"
+    ],
+    "answer": "Independent, Negotiable, Valuable, Estimable, Small, Testable",
+    "tip": "A quality heuristic for user stories."
+  },
+  {
+    "question": "What does temperature control?",
+    "options": [
+      "Randomness of output",
+      "Model size",
+      "Latency",
+      "Learning rate"
+    ],
+    "answer": "Randomness of output",
+    "tip": "Lower = deterministic, higher = creative."
+  },
+  {
+    "question": "Benefits vs features difference is",
+    "options": [
+      "Outcome vs function",
+      "Schedule vs cost",
+      "Risk vs issue",
+      "Scope vs budget"
+    ],
+    "answer": "Outcome vs function",
+    "tip": "Focus on value delivered."
+  },
+  {
+    "question": "Sustainable pace means",
+    "options": [
+      "Work at a rate you can keep",
+      "Crunch every week",
+      "24/7 on-call",
+      "No vacations"
+    ],
+    "answer": "Work at a rate you can keep",
+    "tip": "Avoid burnout and defects."
+  },
+  {
+    "question": "VAE stands for",
+    "options": [
+      "Variational Autoencoder",
+      "Vector Attention Encoder",
+      "Visual Adaptor Engine",
+      "Virtual AI Evaluator"
+    ],
+    "answer": "Variational Autoencoder",
+    "tip": "Often used to encode image latents."
+  },
+  {
+    "question": "A vector database supports",
+    "options": [
+      "Similarity search",
+      "Only SQL joins",
+      "Browser storage",
+      "Cron jobs"
+    ],
+    "answer": "Similarity search",
+    "tip": "Common for embeddings-based retrieval."
+  },
+  {
+    "question": "Sprint backlog is owned by",
+    "options": [
+      "Developers",
+      "PO",
+      "SM",
+      "Stakeholders"
+    ],
+    "answer": "Developers",
+    "tip": "They plan and adapt the work during Sprint."
+  },
+  {
+    "question": "KV cache speeds up",
+    "options": [
+      "Autoregressive decoding",
+      "Model training",
+      "Image rendering",
+      "Disk I/O"
+    ],
+    "answer": "Autoregressive decoding",
+    "tip": "Reuses keys/values from prior tokens."
+  },
+  {
+    "question": "JSON-only prompting asks for",
+    "options": [
+      "Pure JSON output",
+      "XML only",
+      "CSV only",
+      "HTML only"
+    ],
+    "answer": "Pure JSON output",
+    "tip": "Great with schema + stop sequences."
+  },
+  {
+    "question": "Product Goal describes",
+    "options": [
+      "A long-term objective",
+      "Next task only",
+      "Team structure",
+      "Budget line"
+    ],
+    "answer": "A long-term objective",
+    "tip": "Guides backlog and Sprint Goals."
+  },
+  {
+    "question": "A risk register tracks",
+    "options": [
+      "Risks, owners, responses",
+      "Source code",
+      "Designs",
+      "Invoices"
+    ],
+    "answer": "Risks, owners, responses",
+    "tip": "Log and review regularly."
+  },
+  {
+    "question": "Management reserve is for",
+    "options": [
+      "Unknown-unknowns",
+      "Known risks",
+      "Vendor rebates",
+      "Travel"
+    ],
+    "answer": "Unknown-unknowns",
+    "tip": "Controlled by management, not PM."
+  },
+  {
+    "question": "What is a Sprint Backlog?",
+    "options": [
+      "Plan for Sprint work",
+      "Company budget",
+      "Hiring plan",
+      "Risk register"
+    ],
+    "answer": "Plan for Sprint work",
+    "tip": "Selected items + plan to deliver them."
+  },
+  {
+    "question": "Fast tracking is",
+    "options": [
+      "Do activities in parallel",
+      "Add more resources",
+      "Cut scope",
+      "Delay risks"
+    ],
+    "answer": "Do activities in parallel",
+    "tip": "Increases risk to reduce schedule."
+  },
+  {
+    "question": "Rolling risk reviews occur",
+    "options": [
+      "At a regular cadence",
+      "Only at close",
+      "Only at start",
+      "Twice a year"
+    ],
+    "answer": "At a regular cadence",
+    "tip": "Risk management is continuous."
+  },
+  {
+    "question": "Procurement SOW describes",
+    "options": [
+      "Work to be done for vendors",
+      "Salary bands",
+      "UI colors",
+      "OS images"
+    ],
+    "answer": "Work to be done for vendors",
+    "tip": "Clear SOW reduces disputes."
+  },
+  {
+    "question": "What is a release burndown?",
+    "options": [
+      "Progress across Sprints",
+      "Daily task list",
+      "Risk matrix",
+      "Defect log"
+    ],
+    "answer": "Progress across Sprints",
+    "tip": "Shows remaining work to a release goal."
+  },
+  {
+    "question": "Definition of Ready helps",
+    "options": [
+      "Clarify when stories can start",
+      "Finish work",
+      "Report risks",
+      "Hire staff"
+    ],
+    "answer": "Clarify when stories can start",
+    "tip": "Optional agreement for clarity."
+  },
+  {
+    "question": "Littles Law relates",
+    "options": [
+      "WIP, throughput, lead time",
+      "Scope, time, cost",
+      "Risk, impact, probability",
+      "CPU, RAM, I/O"
+    ],
+    "answer": "WIP, throughput, lead time",
+    "tip": "Lead time = WIP / Throughput."
+  },
+  {
+    "question": "Quantization does what?",
+    "options": [
+      "Reduces weight precision",
+      "Adds more layers",
+      "Increases sequence length",
+      "Scrambles tokens"
+    ],
+    "answer": "Reduces weight precision",
+    "tip": "E.g., 16-bit to 8-bit to save memory."
+  },
+  {
+    "question": "Who facilitates Scrum events?",
+    "options": [
+      "Scrum Master",
+      "Project Manager",
+      "Architect",
+      "Tester"
+    ],
+    "answer": "Scrum Master",
+    "tip": "Scrum Master serves the team and the organization."
+  },
+  {
+    "question": "RACI matrix defines",
+    "options": [
+      "Roles and responsibilities",
+      "Budget lines",
+      "Roadmaps",
+      "APIs"
+    ],
+    "answer": "Roles and responsibilities",
+    "tip": "Responsible, Accountable, Consulted, Informed."
+  },
+  {
+    "question": "Sprint Planning answers",
+    "options": [
+      "Why, what, and how",
+      "Who gets promoted",
+      "Where to host servers",
+      "Which IDE to use"
+    ],
+    "answer": "Why, what, and how",
+    "tip": "Decide Sprint Goal, selected work, and plan."
+  },
+  {
+    "question": "Definition of Ready is",
+    "options": [
+      "Optional checklist before starting work",
+      "Part of Scrum Guide",
+      "A contract",
+      "A process audit"
+    ],
+    "answer": "Optional checklist before starting work",
+    "tip": "Many teams use it to improve clarity."
+  },
+  {
+    "question": "Who orders the Product Backlog?",
+    "options": [
+      "Product Owner",
+      "Scrum Master",
+      "Developers",
+      "PMO"
+    ],
+    "answer": "Product Owner",
+    "tip": "Ordering maximizes value delivery."
+  },
+  {
+    "question": "MVP stands for",
+    "options": [
+      "Minimum Viable Product",
+      "Most Valuable Process",
+      "Managed Value Plan",
+      "Model-View-Presenter"
+    ],
+    "answer": "Minimum Viable Product",
+    "tip": "Build the smallest thing to learn fast."
+  },
+  {
+    "question": "Continuous delivery aims to",
+    "options": [
+      "Keep code deployable",
+      "Avoid testing",
+      "Stop releases",
+      "Replace version control"
+    ],
+    "answer": "Keep code deployable",
+    "tip": "Automate and ship frequently."
+  },
+  {
+    "question": "What is a Product Increment?",
+    "options": [
+      "Sum of all completed items",
+      "Future roadmap",
+      "Demo deck",
+      "Prototype only"
+    ],
+    "answer": "Sum of all completed items",
+    "tip": "Must meet the Definition of Done."
+  },
+  {
+    "question": "Customer collaboration over",
+    "options": [
+      "Contract negotiation",
+      "Unit tests",
+      "Pair programming",
+      "Daily standups"
+    ],
+    "answer": "Contract negotiation",
+    "tip": "Engage customers continuously."
+  },
+  {
+    "question": "MoSCoW stands for",
+    "options": [
+      "Must, Should, Could, Wont",
+      "Model, Scope, Code, Work",
+      "Monitor, Secure, Control, Warn",
+      "More Scrum or Waterfall"
+    ],
+    "answer": "Must, Should, Could, Wont",
+    "tip": "A prioritization technique."
+  },
+  {
+    "question": "Backlog grooming is another term for",
+    "options": [
+      "Refinement",
+      "Retrospective",
+      "Planning",
+      "Demo"
+    ],
+    "answer": "Refinement",
+    "tip": "Clarify, split, and estimate items."
+  },
+  {
+    "question": "Perplexity measures",
+    "options": [
+      "Language model fit",
+      "GPU temps",
+      "UI clicks",
+      "Vector angles"
+    ],
+    "answer": "Language model fit",
+    "tip": "Lower perplexity is better."
+  },
+  {
+    "question": "Communication plan defines",
+    "options": [
+      "Who gets what info when",
+      "UI style",
+      "Code review rules",
+      "Server configs"
+    ],
+    "answer": "Who gets what info when",
+    "tip": "Right info to the right people."
+  },
+  {
+    "question": "Hybrid lifecycle blends",
+    "options": [
+      "Predictive and adaptive",
+      "Finance and HR",
+      "UX and DevOps",
+      "QA and Sales"
+    ],
+    "answer": "Predictive and adaptive",
+    "tip": "Fit approach to product and risk."
+  },
+  {
+    "question": "PEFT refers to",
+    "options": [
+      "Parameter-Efficient Fine-Tuning",
+      "Parallel Evaluation for Transformers",
+      "Probabilistic Embedding Factorization",
+      "Pipeline Executable FT"
+    ],
+    "answer": "Parameter-Efficient Fine-Tuning",
+    "tip": "Family incl. LoRA, adapters, prompt-tuning."
+  },
+  {
+    "question": "Kaizen means",
+    "options": [
+      "Continuous improvement",
+      "Big bang change",
+      "Budget freeze",
+      "Team lunch"
+    ],
+    "answer": "Continuous improvement",
+    "tip": "Small, steady improvements."
+  },
+  {
+    "question": "Change requests should include",
+    "options": [
+      "Reason, impact, decision",
+      "Only reason",
+      "Only budget",
+      "Only scope"
+    ],
+    "answer": "Reason, impact, decision",
+    "tip": "Keep a log with status."
+  },
+  {
+    "question": "Empirical process control pillars are",
+    "options": [
+      "Transparency, Inspection, Adaptation",
+      "Scope, Time, Cost",
+      "Plan, Do, Check",
+      "People, Process, Tools"
+    ],
+    "answer": "Transparency, Inspection, Adaptation",
+    "tip": "The foundation of Scrum."
+  },
+  {
+    "question": "A learning rate is",
+    "options": [
+      "Step size for updates",
+      "Token size",
+      "Batch length",
+      "GPU power"
+    ],
+    "answer": "Step size for updates",
+    "tip": "Schedulers and warm-up help stability."
+  },
+  {
+    "question": "Earned Value 'SPI' compares",
+    "options": [
+      "Schedule performance to plan",
+      "Spend to budget",
+      "Risks to issues",
+      "People to roles"
+    ],
+    "answer": "Schedule performance to plan",
+    "tip": "SPI = EV / PV."
+  },
+  {
+    "question": "OKRs connect",
+    "options": [
+      "Objectives to measurable key results",
+      "Backlog to code",
+      "Servers to users",
+      "Tests to coverage"
+    ],
+    "answer": "Objectives to measurable key results",
+    "tip": "Great for alignment and focus."
+  },
+  {
+    "question": "Greedy decoding means",
+    "options": [
+      "Always pick highest-prob token",
+      "Sample from top-k",
+      "Use top-p",
+      "Shuffle tokens"
+    ],
+    "answer": "Always pick highest-prob token",
+    "tip": "Deterministic but may be dull."
+  },
+  {
+    "question": "Underfitting means the model",
+    "options": [
+      "Is too simple for patterns",
+      "Uses too much GPU",
+      "Ignores prompts",
+      "Always samples"
+    ],
+    "answer": "Is too simple for patterns",
+    "tip": "Increase capacity or features."
+  },
+  {
+    "question": "Agile release train belongs to",
+    "options": [
+      "SAFe",
+      "Scrum",
+      "XP",
+      "LeSS"
+    ],
+    "answer": "SAFe",
+    "tip": "Coordinates multiple teams in a program."
+  },
+  {
+    "question": "Can scope change during a Sprint?",
+    "options": [
+      "Yes, if Sprint Goal remains intact",
+      "No changes allowed",
+      "Only bugs allowed",
+      "Only docs allowed"
+    ],
+    "answer": "Yes, if Sprint Goal remains intact",
+    "tip": "Developers and PO collaborate on scope."
+  },
+  {
+    "question": "Trunk-based development prefers",
+    "options": [
+      "Short-lived branches",
+      "Long-lived branches",
+      "No version control",
+      "Forks only"
+    ],
+    "answer": "Short-lived branches",
+    "tip": "Integrate early and often."
+  },
+  {
+    "question": "Chain-of-Thought asks the model to",
+    "options": [
+      "Reason step by step",
+      "Use beam search",
+      "Cache output",
+      "Train longer"
+    ],
+    "answer": "Reason step by step",
+    "tip": "Great for math/logic tasks."
+  },
+  {
+    "question": "Risk burndown tracks",
+    "options": [
+      "Exposure over time",
+      "Budget per team",
+      "Bugs per sprint",
+      "Hires per month"
+    ],
+    "answer": "Exposure over time",
+    "tip": "Reduce probability or impact."
+  },
+  {
+    "question": "Prompt leaking is",
+    "options": [
+      "Revealing hidden instructions",
+      "Caching prompts",
+      "Tokenizing quotes",
+      "Logging latency only"
+    ],
+    "answer": "Revealing hidden instructions",
+    "tip": "Avoid secrets in promptsuse env vars."
+  },
+  {
+    "question": "Project scope statement includes",
+    "options": [
+      "Deliverables and exclusions",
+      "Team birthdays",
+      "Brand colors",
+      "CI config"
+    ],
+    "answer": "Deliverables and exclusions",
+    "tip": "Clarifies whats in and out."
+  },
+  {
+    "question": "Burndown chart shows",
+    "options": [
+      "Work remaining over time",
+      "Cost per feature",
+      "Team skills map",
+      "Risk exposure"
+    ],
+    "answer": "Work remaining over time",
+    "tip": "Visualizes progress within a timebox."
+  },
+  {
+    "question": "An ASR model converts",
+    "options": [
+      "Audio to text",
+      "Text to audio",
+      "Text to image",
+      "Image to text"
+    ],
+    "answer": "Audio to text",
+    "tip": "Use for transcripts and captions."
+  },
+  {
+    "question": "Design thinking starts with",
+    "options": [
+      "Empathy for users",
+      "Cost control",
+      "Tool selection",
+      "Data lake"
+    ],
+    "answer": "Empathy for users",
+    "tip": "Understand needs before solutions."
+  },
+  {
+    "question": "What is a guardrail?",
+    "options": [
+      "Control that shapes/blocks outputs",
+      "A caching layer",
+      "A training dataset",
+      "A vector dimension"
+    ],
+    "answer": "Control that shapes/blocks outputs",
+    "tip": "Use filters, policies, and validators."
+  },
+  {
+    "question": "Safety watermarking is",
+    "options": [
+      "Marking AI-generated content",
+      "Encrypting prompts",
+      "Hashing tokens",
+      "GPU logging"
+    ],
+    "answer": "Marking AI-generated content",
+    "tip": "Aids attribution and detection."
+  },
+  {
+    "question": "Resource smoothing adjusts",
+    "options": [
+      "Activities within float",
+      "Critical path",
+      "Scope only",
+      "Budget baselines"
+    ],
+    "answer": "Activities within float",
+    "tip": "Keep resource usage within limits."
+  },
+  {
+    "question": "Which format is commonly used for line-delimited training/eval data?",
+    "options": [
+      "JSONL",
+      "CSV",
+      "XML",
+      "HTML"
+    ],
+    "answer": "JSONL",
+    "tip": "JSON Lines stores one JSON object per linegreat for streaming."
+  },
+  {
+    "question": "Stakeholder salience considers",
+    "options": [
+      "Power, legitimacy, urgency",
+      "Cost, time, scope",
+      "Age, role, tenure",
+      "City, office, desk"
+    ],
+    "answer": "Power, legitimacy, urgency",
+    "tip": "Helps prioritize engagement."
+  },
+  {
+    "question": "Story mapping helps",
+    "options": [
+      "Visualize user journeys and slices",
+      "Draw DB schemas",
+      "Plan sprints only",
+      "Design logos"
+    ],
+    "answer": "Visualize user journeys and slices",
+    "tip": "Split by outcomes, not components."
+  },
+  {
+    "question": "Definition of success should be",
+    "options": [
+      "Measured with clear KPIs",
+      "Only anecdotal",
+      "Only financial",
+      "Undefined"
+    ],
+    "answer": "Measured with clear KPIs",
+    "tip": "Agree upfront with sponsors."
+  },
+  {
+    "question": "A dependency is",
+    "options": [
+      "Relationship between tasks",
+      "Budget buffer",
+      "Risk owner",
+      "Resource plan"
+    ],
+    "answer": "Relationship between tasks",
+    "tip": "FS, SS, FF, SF relationships."
+  },
+  {
+    "question": "Crashing is",
+    "options": [
+      "Add resources to shorten time",
+      "Stop testing",
+      "Remove quality",
+      "Delay budget"
+    ],
+    "answer": "Add resources to shorten time",
+    "tip": "Usually increases cost."
+  },
+  {
+    "question": "A RAID log records",
+    "options": [
+      "Risks, Assumptions, Issues, Dependencies",
+      "Roadmaps and Ideas",
+      "Roles and Interfaces",
+      "Reports and Docs"
+    ],
+    "answer": "Risks, Assumptions, Issues, Dependencies",
+    "tip": "Keep it updated weekly."
+  },
+  {
+    "question": "Harmonization in RAG is",
+    "options": [
+      "Cleaning retrieved text",
+      "Boosting temperature",
+      "Truncating prompts",
+      "Sampling more"
+    ],
+    "answer": "Cleaning retrieved text",
+    "tip": "Fix encoding/tables before generation."
+  },
+  {
+    "question": "OCR stands for",
+    "options": [
+      "Optical Character Recognition",
+      "Optimal Context Ratio",
+      "Object Capture Routine",
+      "Online Code Runner"
+    ],
+    "answer": "Optical Character Recognition",
+    "tip": "Converts images/PDFs into text."
+  },
+  {
+    "question": "Extreme Programming practice includes",
+    "options": [
+      "Continuous integration",
+      "Stage-gate reviews",
+      "Monthly phase gates",
+      "Annual design approval"
+    ],
+    "answer": "Continuous integration",
+    "tip": "XP emphasizes engineering excellence."
+  },
+  {
+    "question": "LoRA is",
+    "options": [
+      "Low-Rank Adaptation",
+      "Loss-Rank Alignment",
+      "Local Random Augmentation",
+      "Layer-wise Residual Attention"
+    ],
+    "answer": "Low-Rank Adaptation",
+    "tip": "Adds small trainable ranks to frozen weights."
+  },
+  {
+    "question": "Working software over",
+    "options": [
+      "Comprehensive documentation",
+      "Customer collaboration",
+      "Contract negotiation",
+      "Change control"
+    ],
+    "answer": "Comprehensive documentation",
+    "tip": "Documentation is useful, but delivery is king."
+  },
+  {
+    "question": "Kanban cadences include",
+    "options": [
+      "Replenishment and delivery planning",
+      "Daily testing",
+      "Monthly HR check-ins",
+      "Yearly audits"
+    ],
+    "answer": "Replenishment and delivery planning",
+    "tip": "Regular, short meetings for flow."
+  },
+  {
+    "question": "Positional encoding provides",
+    "options": [
+      "Order information",
+      "GPU addresses",
+      "User IDs",
+      "Loss scaling"
+    ],
+    "answer": "Order information",
+    "tip": "Sinusoidal, learned, or rotary (RoPE)."
+  },
+  {
+    "question": "Daily Scrum duration is",
+    "options": [
+      "15 minutes",
+      "60 minutes",
+      "30 minutes",
+      "As long as needed"
+    ],
+    "answer": "15 minutes",
+    "tip": "A short event for developers to inspect progress."
+  },
+  {
+    "question": "Diffusion models are used for",
+    "options": [
+      "Image generation",
+      "SQL parsing",
+      "Time series imputation only",
+      "Sorting logs"
+    ],
+    "answer": "Image generation",
+    "tip": "They denoise from noise to image latents."
+  },
+  {
+    "question": "Agile values individuals and interactions over",
+    "options": [
+      "Processes and tools",
+      "Working software",
+      "Customer collaboration",
+      "Responding to change"
+    ],
+    "answer": "Processes and tools",
+    "tip": "From the Agile Manifesto values."
+  },
+  {
+    "question": "Lean aims to eliminate",
+    "options": [
+      "Waste",
+      "Tests",
+      "Stakeholders",
+      "Backlogs"
+    ],
+    "answer": "Waste",
+    "tip": "Reduce handoffs, waits, rework, and overproduction."
+  },
+  {
+    "question": "MoE stands for",
+    "options": [
+      "Mixture-of-Experts",
+      "Model-on-Edge",
+      "Matrix-of-Embeddings",
+      "Memory-optimized Encoder"
+    ],
+    "answer": "Mixture-of-Experts",
+    "tip": "Routes tokens to specialized experts."
+  },
+  {
+    "question": "What is a hallucination?",
+    "options": [
+      "Confident but false output",
+      "GPU overheating",
+      "Loss scaling",
+      "Prompt token overflow"
+    ],
+    "answer": "Confident but false output",
+    "tip": "Mitigate with retrieval or constraints."
+  },
+  {
+    "question": "Typical sampling (top-a) selects",
+    "options": [
+      "Tokens near expected mass",
+      "Only top-1",
+      "Only low-freq tokens",
+      "Random tokens"
+    ],
+    "answer": "Tokens near expected mass",
+    "tip": "Alternative to top-p."
+  },
+  {
+    "question": "Agile planning is",
+    "options": [
+      "Adaptive and continuous",
+      "Rigid and yearly",
+      "Only top-down",
+      "Done once"
+    ],
+    "answer": "Adaptive and continuous",
+    "tip": "Plan at multiple horizons."
+  },
+  {
+    "question": "Fine-tuning means",
+    "options": [
+      "Training further on task data",
+      "Compressing weights",
+      "Changing API keys",
+      "Extending context window"
+    ],
+    "answer": "Training further on task data",
+    "tip": "Improves style or domain adherence."
+  },
+  {
+    "question": "The triple constraint includes scope, time, and",
+    "options": [
+      "Cost",
+      "Quality",
+      "Risk",
+      "HR"
+    ],
+    "answer": "Cost",
+    "tip": "Balance scope, schedule, and budget."
+  },
+  {
+    "question": "Technical debt is",
+    "options": [
+      "Cost of shortcuts",
+      "Stakeholder salary",
+      "Marketing spend",
+      "Sprint budget"
+    ],
+    "answer": "Cost of shortcuts",
+    "tip": "Schedule time to pay it down."
+  },
+  {
+    "question": "BPE is",
+    "options": [
+      "Byte Pair Encoding",
+      "Binary Parse Engine",
+      "Bayesian Prompt Estimator",
+      "Batch Processing Executor"
+    ],
+    "answer": "Byte Pair Encoding",
+    "tip": "A common subword tokenization method."
+  },
+  {
+    "question": "Relative sizing compares",
+    "options": [
+      "Items to a reference story",
+      "Hours to actuals",
+      "Budget to scope",
+      "Teams to teams"
+    ],
+    "answer": "Items to a reference story",
+    "tip": "Keeps estimates lightweight."
+  },
+  {
+    "question": "CLIP connects",
+    "options": [
+      "Images and text",
+      "Audio and video",
+      "SQL and NoSQL",
+      "CPU and GPU"
+    ],
+    "answer": "Images and text",
+    "tip": "Shared embedding space improves ranking."
+  },
+  {
+    "question": "What is a stop sequence?",
+    "options": [
+      "Token pattern to halt generation",
+      "A GPU driver",
+      "A learning schedule",
+      "A prompt template"
+    ],
+    "answer": "Token pattern to halt generation",
+    "tip": "Useful for JSON or structured outputs."
+  },
+  {
+    "question": "Issue vs risk difference is",
+    "options": [
+      "Issue is current; risk is future",
+      "Issue is future; risk is past",
+      "They are the same",
+      "None"
+    ],
+    "answer": "Issue is current; risk is future",
+    "tip": "Manage them differently."
+  },
+  {
+    "question": "A release plan focuses on",
+    "options": [
+      "Outcomes and dates",
+      "Team hierarchy",
+      "IDE versions",
+      "Office seating"
+    ],
+    "answer": "Outcomes and dates",
+    "tip": "Plan at coarse granularity."
+  },
+  {
+    "question": "Top-k sampling chooses from",
+    "options": [
+      "The k most likely tokens",
+      "All tokens",
+      "Only stop tokens",
+      "Tokens with prob < 0.01"
+    ],
+    "answer": "The k most likely tokens",
+    "tip": "Lower k is safer; higher k is diverse."
+  },
+  {
+    "question": "Who crafts the Sprint Goal?",
+    "options": [
+      "Entire Scrum Team",
+      "PO alone",
+      "SM alone",
+      "Architect"
+    ],
+    "answer": "Entire Scrum Team",
+    "tip": "Collaborative outcome of planning."
+  }
+]

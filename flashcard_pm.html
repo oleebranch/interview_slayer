@@ -83,7 +83,7 @@
       padding: 10px 20px;
       font-size: 1rem;
       background-color: #333;
-      color: #fff;
+      color: #ffcc00;
       border: none;
       border-radius: 6px;
       cursor: pointer;
@@ -117,906 +117,116 @@
   <button class="btn" onclick="nextCard()">Next Card</button>
 
   <script>
-    const cards = [
-      {
-        question: "What is a project?"
-        ,
-        answer: "A temporary endeavor undertaken to create a unique product, service, or result."
-      },
-      {
-        question: "What is change management?"
-        ,
-        answer: "A systematic approach to dealing with change both from the perspective of an organization and the individual."
-      },
-      {
-        question: "What is change management?"
-        ,
-        answer: "A systematic approach to dealing with change both from the perspective of an organization and the individual."
-      },
-      {
-        question: "What is stakeholder analysis?"
-        ,
-        answer: "A technique used to identify and assess the influence and impact of stakeholders."
-      },
-      {
-        question: "What is a stakeholder?"
-        ,
-        answer: "An individual, group, or organization that may affect, be affected by, or perceive itself to be affected by a decision or activity."
-      },
-      {
-        question: "What is stakeholder analysis?"
-        ,
-        answer: "A technique used to identify and assess the influence and impact of stakeholders."
-      },
-      {
-        question: "What is a dependency?"
-        ,
-        answer: "A relationship between tasks where one depends on the completion of another."
-      },
-      {
-        question: "What is a deliverable?"
-        ,
-        answer: "Any unique and verifiable product, result, or capability required to complete a process, phase, or project."
-      },
-      {
-        question: "What is a WBS?"
-        ,
-        answer: "Work Breakdown Structure: a hierarchical decomposition of the total scope of work."
-      },
-      {
-        question: "What is a project charter?"
-        ,
-        answer: "A document that formally authorizes a project and gives the project manager authority."
-      },
-      {
-        question: "What is a burn-down chart?"
-        ,
-        answer: "A graph that shows work remaining versus time."
-      },
-      {
-        question: "What is a project charter?"
-        ,
-        answer: "A document that formally authorizes a project and gives the project manager authority."
-      },
-      {
-        question: "What is the triple constraint "
-        ,
-        answer: "Scope, Time, and Cost."
-      },
-      {
-        question: "What is scope creep?"
-        ,
-        answer: "Uncontrolled changes or continuous growth in a project's scope."
-      },
-      {
-        question: "What is stakeholder analysis?"
-        ,
-        answer: "A technique used to identify and assess the influence and impact of stakeholders."
-      },
-      {
-        question: "What is a WBS?"
-        ,
-        answer: "Work Breakdown Structure: a hierarchical decomposition of the total scope of work."
-      },
-      {
-        question: "What is risk mitigation?"
-        ,
-        answer: "Actions taken to reduce the likelihood or impact of a risk."
-      },
-      {
-        question: "What is a sprint?"
-        ,
-        answer: "A time-boxed iteration in Scrum, usually 2–4 weeks long."
-      },
-      {
-        question: "What is a milestone?"
-        ,
-        answer: "A significant point or event in a project."
-      },
-      {
-        question: "What is a deliverable?"
-        ,
-        answer: "Any unique and verifiable product, result, or capability required to complete a process, phase, or project."
-      },
-      {
-        question: "What is a burn-down chart?"
-        ,
-        answer: "A graph that shows work remaining versus time."
-      },
-      {
-        question: "What is a milestone?"
-        ,
-        answer: "A significant point or event in a project."
-      },
-      {
-        question: "What is scope creep?"
-        ,
-        answer: "Uncontrolled changes or continuous growth in a project's scope."
-      },
-      {
-        question: "What is a dependency?"
-        ,
-        answer: "A relationship between tasks where one depends on the completion of another."
-      },
-      {
-        question: "What is scope creep?"
-        ,
-        answer: "Uncontrolled changes or continuous growth in a project's scope."
-      },
-      {
-        question: "What is risk mitigation?"
-        ,
-        answer: "Actions taken to reduce the likelihood or impact of a risk."
-      },
-      {
-        question: "What is a dependency?"
-        ,
-        answer: "A relationship between tasks where one depends on the completion of another."
-      },
-      {
-        question: "What is a Gantt chart?"
-        ,
-        answer: "A type of bar chart that illustrates a project schedule."
-      },
-      {
-        question: "What is a milestone?"
-        ,
-        answer: "A significant point or event in a project."
-      },
-      {
-        question: "What is a stakeholder?"
-        ,
-        answer: "An individual, group, or organization that may affect, be affected by, or perceive itself to be affected by a decision or activity."
-      },
-      {
-        question: "What is a WBS?"
-        ,
-        answer: "Work Breakdown Structure: a hierarchical decomposition of the total scope of work."
-      },
-      {
-        question: "What is stakeholder analysis?"
-        ,
-        answer: "A technique used to identify and assess the influence and impact of stakeholders."
-      },
-      {
-        question: "What is the critical path?"
-        ,
-        answer: "The sequence of tasks that determines the minimum project duration."
-      },
-      {
-        question: "What is the triple constraint?"
-        ,
-        answer: "Scope, Time, and Cost."
-      },
+    let deck = [];
+    let order = [];
+    let idx = 0;
+    let flipped = false;
 
-      {
-        question: "What is a stakeholder?"
-        ,
-        answer: "An individual, group, or organization that may affect, be affected by, or perceive itself to be affected by a decision or activity."
-      },
-      {
-        question: "What is scope creep?"
-        ,
-        answer: "Uncontrolled changes or continuous growth in a project's scope."
-      },
-      {
-        question: "What is Scrum?"
-        ,
-        answer: "A framework within Agile for developing, delivering, and sustaining complex products."
-      },
-      {
-        question: "What is a project?"
-        ,
-        answer: "A temporary endeavor undertaken to create a unique product, service, or result."
-      },
-      {
-        question: "What is scope creep?"
-        ,
-        answer: "Uncontrolled changes or continuous growth in a project's scope."
-      },
-      {
-        question: "What is a retrospective?"
-        ,
-        answer: "A meeting held at the end of a sprint to discuss what went well and what can be improved."
-      },
-      {
-        question: "What is a WBS?"
-        ,
-        answer: "Work Breakdown Structure: a hierarchical decomposition of the total scope of work."
-      },
+    async function loadDeck() {
+      // 1) Fetch cards from flashcard_pm_clean.json
+      const res = await fetch('flashcard_pm.json');
+      const raw = await res.json(); // expects [{question, answer, tip}, ...]
 
-      {
-        question: "What is Scrum? "
-        ,
-        answer: "A framework within Agile for developing, delivering, and sustaining complex products."
-      },
+      // 2) De-dupe identical Q/A pairs
+      const seen = new Set();
+      deck = raw.filter(({ question, answer }) => {
+        const key = (question || '').trim() + '||' + (answer || '').trim();
+        if (seen.has(key)) return false;
+        seen.add(key);
+        return Boolean(question && answer);
+      });
 
-      {
-        question: "What is a burn-down chart? "
-        ,
-        answer: "A graph that shows work remaining versus time."
-      },
-      {
-        question: "What is a WBS? "
-        ,
-        answer: "Work Breakdown Structure: a hierarchical decomposition of the total scope of work."
-      },
-      {
-        question: "What is risk mitigation? "
-        ,
-        answer: "Actions taken to reduce the likelihood or impact of a risk."
-      },
-      {
-        question: "What is a burn-down chart? "
-        ,
-        answer: "A graph that shows work remaining versus time."
-      },
-      {
-        question: "What is scope creep? "
-        ,
-        answer: "Uncontrolled changes or continuous growth in a project's scope."
-      },
-      {
-        question: "What is a deliverable? "
-        ,
-        answer: "Any unique and verifiable product, result, or capability required to complete a process, phase, or project."
-      },
-      {
-        question: "What is a milestone? "
-        ,
-        answer: "A significant point or event in a project."
-      },
-      {
-        question: "What is change management? "
-        ,
-        answer: "A systematic approach to dealing with change both from the perspective of an organization and the individual."
-      },
-      {
-        question: "What is a milestone? "
-        ,
-        answer: "A significant point or event in a project."
-      },
-      {
-        question: "What is risk mitigation? "
-        ,
-        answer: "Actions taken to reduce the likelihood or impact of a risk."
-      },
-      {
-        question: "What is a retrospective? "
-        ,
-        answer: "A meeting held at the end of a sprint to discuss what went well and what can be improved."
-      },
-      {
-        question: "What is a deliverable? "
-        ,
-        answer: "Any unique and verifiable product, result, or capability required to complete a process, phase, or project."
-      },
-      {
-        question: "What is Scrum? "
-        ,
-        answer: "A framework within Agile for developing, delivering, and sustaining complex products."
-      },
-      {
-        question: "What is change management? "
-        ,
-        answer: "A systematic approach to dealing with change both from the perspective of an organization and the individual."
-      },
-      {
-        question: "What is RAID in project management? "
-        ,
-        answer: "Risks, Assumptions, Issues, and Dependencies."
-      },
-      {
-        question: "What is Agile? "
-        ,
-        answer: "A project management methodology based on iterative development."
-      },
-      {
-        question: "What is Agile? "
-        ,
-        answer: "A project management methodology based on iterative development."
-      },
-      {
-        question: "What is a WBS? "
-        ,
-        answer: "Work Breakdown Structure: a hierarchical decomposition of the total scope of work."
-      },
-      {
-        question: "What is Scrum? "
-        ,
-        answer: "A framework within Agile for developing, delivering, and sustaining complex products."
-      },
-      {
-        question: "What is scope creep? "
-        ,
-        answer: "Uncontrolled changes or continuous growth in a project's scope."
-      },
-      {
-        question: "What is RAID in project management? "
-        ,
-        answer: "Risks, Assumptions, Issues, and Dependencies."
-      },
-      {
-        question: "What is Agile? "
-        ,
-        answer: "A project management methodology based on iterative development."
-      },
-      {
-        question: "What is change management? "
-        ,
-        answer: "A systematic approach to dealing with change both from the perspective of an organization and the individual."
-      },
-      {
-        question: "What is the triple constraint? "
-        ,
-        answer: "Scope, Time, and Cost."
-      },
-      {
-        question: "What is a WBS? "
-        ,
-        answer: "Work Breakdown Structure: a hierarchical decomposition of the total scope of work."
-      },
-      {
-        question: "What is a WBS? "
-        ,
-        answer: "Work Breakdown Structure: a hierarchical decomposition of the total scope of work."
-      },
-      {
-        question: "What is Agile? "
-        ,
-        answer: "A project management methodology based on iterative development."
-      },
-      {
-        question: "What is a retrospective? "
-        ,
-        answer: "A meeting held at the end of a sprint to discuss what went well and what can be improved."
-      },
-      {
-        question: "What is Agile? "
-        ,
-        answer: "A project management methodology based on iterative development."
-      },
-      {
-        question: "What is a deliverable? "
-        ,
-        answer: "Any unique and verifiable product, result, or capability required to complete a process, phase, or project."
-      },
-      {
-        question: "What is change management? "
-        ,
-        answer: "A systematic approach to dealing with change both from the perspective of an organization and the individual."
-      },
-      {
-        question: "What is a stakeholder? "
-        ,
-        answer: "An individual, group, or organization that may affect, be affected by, or perceive itself to be affected by a decision or activity."
-      },
-      {
-        question: "What is risk mitigation? "
-        ,
-        answer: "Actions taken to reduce the likelihood or impact of a risk."
-      },
-      {
-        question: "What is RAID in project management? "
-        ,
-        answer: "Risks, Assumptions, Issues, and Dependencies."
-      },
-      {
-        question: "What is a project? "
-        ,
-        answer: "A temporary endeavor undertaken to create a unique product, service, or result."
-      },
-      {
-        question: "What is a burn-down chart? "
-        ,
-        answer: "A graph that shows work remaining versus time."
-      },
-      {
-        question: "What is a project charter? "
-        ,
-        answer: "A document that formally authorizes a project and gives the project manager authority."
-      },
-      {
-        question: "What is a WBS? "
-        ,
-        answer: "Work Breakdown Structure: a hierarchical decomposition of the total scope of work."
-      },
-      {
-        question: "What is a stakeholder? "
-        ,
-        answer: "An individual, group, or organization that may affect, be affected by, or perceive itself to be affected by a decision or activity."
-      },
-      {
-        question: "What is a retrospective? "
-        ,
-        answer: "A meeting held at the end of a sprint to discuss what went well and what can be improved."
-      },
-      {
-        question: "What is a WBS? "
-        ,
-        answer: "Work Breakdown Structure: a hierarchical decomposition of the total scope of work."
-      },
-      {
-        question: "What is change management? "
-        ,
-        answer: "A systematic approach to dealing with change both from the perspective of an organization and the individual."
-      },
-      {
-        question: "What is a project? "
-        ,
-        answer: "A temporary endeavor undertaken to create a unique product, service, or result."
-      },
-      {
-        question: "What is the triple constraint? "
-        ,
-        answer: "Scope, Time, and Cost."
-      },
-      {
-        question: "What is a stakeholder? "
-        ,
-        answer: "An individual, group, or organization that may affect, be affected by, or perceive itself to be affected by a decision or activity."
-      },
-      {
-        question: "What is scope creep? "
-        ,
-        answer: "Uncontrolled changes or continuous growth in a project's scope."
-      },
-      {
-        question: "What is a WBS? "
-        ,
-        answer: "Work Breakdown Structure: a hierarchical decomposition of the total scope of work."
-      },
-      {
-        question: "What is risk mitigation? "
-        ,
-        answer: "Actions taken to reduce the likelihood or impact of a risk."
-      },
-      {
-        question: "What is the triple constraint? "
-        ,
-        answer: "Scope, Time, and Cost."
-      },
-      {
-        question: "What is a deliverable? "
-        ,
-        answer: "Any unique and verifiable product, result, or capability required to complete a process, phase, or project."
-      },
-      {
-        question: "What is a project? "
-        ,
-        answer: "A temporary endeavor undertaken to create a unique product, service, or result."
-      },
-      {
-        question: "What is change management? "
-        ,
-        answer: "A systematic approach to dealing with change both from the perspective of an organization and the individual."
-      },
-      {
-        question: "What is Agile? "
-        ,
-        answer: "A project management methodology based on iterative development."
-      },
-      {
-        question: "What is Agile? "
-        ,
-        answer: "A project management methodology based on iterative development."
-      },
-      {
-        question: "What is change management? "
-        ,
-        answer: "A systematic approach to dealing with change both from the perspective of an organization and the individual."
-      },
-      {
-        question: "What is a project charter? "
-        ,
-        answer: "A document that formally authorizes a project and gives the project manager authority."
-      },
-      {
-        question: "What is a project charter? "
-        ,
-        answer: "A document that formally authorizes a project and gives the project manager authority."
-      },
-      {
-        question: "What is risk mitigation? "
-        ,
-        answer: "Actions taken to reduce the likelihood or impact of a risk."
-      },
-      {
-        question: "What is a dependency? "
-        ,
-        answer: "A relationship between tasks where one depends on the completion of another."
-      },
-      {
-        question: "What is risk mitigation? "
-        ,
-        answer: "Actions taken to reduce the likelihood or impact of a risk."
-      },
-      {
-        question: "What is a project charter? "
-        ,
-        answer: "A document that formally authorizes a project and gives the project manager authority."
-      },
-      {
-        question: "What is a project? "
-        ,
-        answer: "A temporary endeavor undertaken to create a unique product, service, or result."
-      },
-      {
-        question: "What is risk mitigation? "
-        ,
-        answer: "Actions taken to reduce the likelihood or impact of a risk."
-      },
-      {
-        question: "What is risk mitigation? "
-        ,
-        answer: "Actions taken to reduce the likelihood or impact of a risk."
-      },
-      {
-        question: "What is a deliverable? "
-        ,
-        answer: "Any unique and verifiable product, result, or capability required to complete a process, phase, or project."
-      },
-      {
-        question: "What is RAID in project management? "
-        ,
-        answer: "Risks, Assumptions, Issues, and Dependencies."
-      },
-      {
-        question: "What is a project? "
-        ,
-        answer: "A temporary endeavor undertaken to create a unique product, service, or result."
-      },
-      {
-        question: "What is change management? "
-        ,
-        answer: "A systematic approach to dealing with change both from the perspective of an organization and the individual."
-      },
-      {
-        question: "What is a dependency? "
-        ,
-        answer: "A relationship between tasks where one depends on the completion of another."
-      },
-      {
-        question: "What is a milestone? "
-        ,
-        answer: "A significant point or event in a project."
-      },
-      {
-        question: "What is a dependency? "
-        ,
-        answer: "A relationship between tasks where one depends on the completion of another."
-      },
-      {
-        question: "What is scope creep? "
-        ,
-        answer: "Uncontrolled changes or continuous growth in a project's scope."
-      },
-      {
-        question: "What is the critical path? "
-        ,
-        answer: "The sequence of tasks that determines the minimum project duration."
-      },
-      {
-        question: "What is a deliverable? "
-        ,
-        answer: "Any unique and verifiable product, result, or capability required to complete a process, phase, or project."
-      },
-      {
-        question: "What is the triple constraint? "
-        ,
-        answer: "Scope, Time, and Cost."
-      },
-      {
-        question: "What is scope creep? "
-        ,
-        answer: "Uncontrolled changes or continuous growth in a project's scope."
-      },
-      {
-        question: "What is Agile? "
-        ,
-        answer: "A project management methodology based on iterative development."
-      },
-      {
-        question: "What is a project charter? "
-        ,
-        answer: "A document that formally authorizes a project and gives the project manager authority."
-      },
-      {
-        question: "What is risk mitigation? "
-        ,
-        answer: "Actions taken to reduce the likelihood or impact of a risk."
-      },
-      {
-        question: "What is RAID in project management? "
-        ,
-        answer: "Risks, Assumptions, Issues, and Dependencies."
-      },
-      {
-        question: "What is stakeholder analysis? "
-        ,
-        answer: "A technique used to identify and assess the influence and impact of stakeholders."
-      },
-      {
-        question: "What is the triple constraint? "
-        ,
-        answer: "Scope, Time, and Cost."
-      },
-      {
-        question: "What is a stakeholder? "
-        ,
-        answer: "An individual, group, or organization that may affect, be affected by, or perceive itself to be affected by a decision or activity."
-      },
-      {
-        question: "What is a project? "
-        ,
-        answer: "A temporary endeavor undertaken to create a unique product, service, or result."
-      },
-      {
-        question: "What is a burn-down chart? "
-        ,
-        answer: "A graph that shows work remaining versus time."
-      },
-      {
-        question: "What is the critical path? "
-        ,
-        answer: "The sequence of tasks that determines the minimum project duration."
-      },
-      {
-        question: "What is the triple constraint? "
-        ,
-        answer: "Scope, Time, and Cost."
-      },
-      {
-        question: "What is scope creep? "
-        ,
-        answer: "Uncontrolled changes or continuous growth in a project's scope."
-      },
-      {
-        question: "What is a WBS? "
-        ,
-        answer: "Work Breakdown Structure: a hierarchical decomposition of the total scope of work."
-      },
-      {
-        question: "What is Agile? "
-        ,
-        answer: "A project management methodology based on iterative development."
-      },
-      {
-        question: "What is a dependency? "
-        ,
-        answer: "A relationship between tasks where one depends on the completion of another."
-      },
-      {
-        question: "What is the critical path? "
-        ,
-        answer: "The sequence of tasks that determines the minimum project duration."
-      },
-      {
-        question: "What is risk mitigation? "
-        ,
-        answer: "Actions taken to reduce the likelihood or impact of a risk."
-      },
-      {
-        question: "What is a project charter? "
-        ,
-        answer: "A document that formally authorizes a project and gives the project manager authority."
-      },
-      {
-        question: "What is Scrum? "
-        ,
-        answer: "A framework within Agile for developing, delivering, and sustaining complex products."
-      },
-      {
-        question: "What is a project? "
-        ,
-        answer: "A temporary endeavor undertaken to create a unique product, service, or result."
-      },
-      {
-        question: "What is a burn-down chart? "
-        ,
-        answer: "A graph that shows work remaining versus time."
-      },
-      {
-        question: "What is Scrum? "
-        ,
-        answer: "A framework within Agile for developing, delivering, and sustaining complex products."
-      },
-      {
-        question: "What is the triple constraint? "
-        ,
-        answer: "Scope, Time, and Cost."
-      },
-      {
-        question: "What is risk mitigation? "
-        ,
-        answer: "Actions taken to reduce the likelihood or impact of a risk."
-      },
-      {
-        question: "What is a project charter? "
-        ,
-        answer: "A document that formally authorizes a project and gives the project manager authority."
-      },
-      {
-        question: "What is a project charter? "
-        ,
-        answer: "A document that formally authorizes a project and gives the project manager authority."
-      },
-      {
-        question: "What is the triple constraint? "
-        ,
-        answer: "Scope, Time, and Cost."
-      },
-      {
-        question: "What is a retrospective? "
-        ,
-        answer: "A meeting held at the end of a sprint to discuss what went well and what can be improved."
-      },
-      {
-        question: "What is a burn-down chart? "
-        ,
-        answer: "A graph that shows work remaining versus time."
-      },
-      {
-        question: "What is a project charter? "
-        ,
-        answer: "A document that formally authorizes a project and gives the project manager authority."
-      },
-      {
-        question: "What is a milestone? ",
-        answer: "A significant point or event in a project."
-      },
-      {
-        question: "What is the critical path? ",
-        answer: "The sequence of tasks that determines the minimum project duration."
-      },
-      {
-        question: "What is a deliverable? ",
-        answer: "Any unique and verifiable product, result, or capability required to complete a process, phase, or project."
-      },
-      {
-        question: "What is a milestone? ",
-        answer: "A significant point or event in a project."
-      },
-      {
-        question: "What is change management? ",
-        answer: "A systematic approach to dealing with change both from the perspective of an organization and the individual."
-      },
-      {
-        question: "What is a project charter? ",
-        answer: "A document that formally authorizes a project and gives the project manager authority."
-      },
-      {
-        question: "What is a burn-down chart? ",
-        answer: "A graph that shows work remaining versus time."
-      },
-      {
-        question: "What is the triple constraint? ",
-        answer: "Scope, Time, and Cost."
-      },
-      {
-        question: "What is the triple constraint? ",
-        answer: "Scope, Time, and Cost."
-      },
-      {
-        question: "What is scope creep? ",
-        answer: "Uncontrolled changes or continuous growth in a project's scope."
-      },
-      {
-        question: "What is a project charter? ",
-        answer: "A document that formally authorizes a project and gives the project manager authority."
-      },
-      {
-        question: "What is a retrospective? ",
-        answer: "A meeting held at the end of a sprint to discuss what went well and what can be improved."
-      },
-      {
-        question: "What is a milestone? ",
-        answer: "A significant point or event in a project."
-      },
-      {
-        question: "What is Agile? ",
-        answer: "A project management methodology based on iterative development."
-      },
-      {
-        question: "What is scope creep? ",
-        answer: "Uncontrolled changes or continuous growth in a project's scope."
-      },
-      {
-        question: "What is a retrospective? ",
-        answer: "A meeting held at the end of a sprint to discuss what went well and what can be improved."
-      },
-      {
-        question: "What is risk mitigation? ",
-        answer: "Actions taken to reduce the likelihood or impact of a risk."
-      },
-      {
-        question: "What is a project? ",
-        answer: "A temporary endeavor undertaken to create a unique product, service, or result."
-      },
-      {
-        question: "What is a retrospective? ",
-        answer: "A meeting held at the end of a sprint to discuss what went well and what can be improved."
-      },
-      {
-        question: "What is scope creep? ",
-        answer: "Uncontrolled changes or continuous growth in a project's scope."
-      },
-      {
-        question: "What is a WBS? ",
-        answer: "Work Breakdown Structure: a hierarchical decomposition of the total scope of work."
-      },
-      {
-        question: "What is a stakeholder? ",
-        answer: "An individual, group, or organization that may affect, be affected by, or perceive itself to be affected by a decision or activity."
-      },
-      {
-        question: "What is Agile? ",
-        answer: "A project management methodology based on iterative development."
-      },
-      {
-        question: "What is Agile? ",
-        answer: "A project management methodology based on iterative development."
-      },
-      {
-        question: "What is scope creep? ",
-        answer: "Uncontrolled changes or continuous growth in a project's scope."
-      },
-      {
-        question: "What is RAID in project management? ",
-        answer: "Risks, Assumptions, Issues, and Dependencies."
-      },
-      {
-        question: "What is a project charter? ",
-        answer: "A document that formally authorizes a project and gives the project manager authority."
-      },
-      {
-        question: "What is change management? ",
-        answer: "A systematic approach to dealing with change both from the perspective of an organization and the individual."
-      },
-      {
-        question: "What is change management? ",
-        answer: "A systematic approach to dealing with change both from the perspective of an organization and the individual."
-      },
-      {
-        question: "What is a deliverable? ",
-        answer: "Any unique and verifiable product, result, or capability required to complete a process, phase, or project."
-      },
-      {
-        question: "What is Agile? ",
-        answer: "A project management methodology based on iterative development."
-      },
-      {
-        question: "What is risk mitigation? ",
-        answer: "Actions taken to reduce the likelihood or impact of a risk."
+      // 3) Create shuffled order (Fisher–Yates)
+      order = [...deck.keys()];
+      for (let i = order.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [order[i], order[j]] = [order[j], order[i]];
       }
-    ];
-    let currentIndex = 0;
-    let isFlipped = false;
 
-    function loadCard(index) {
-      const card = cards[index];
-      document.getElementById("front").innerText = card.question;
-      document.getElementById("back").innerHTML = `<strong>Answer:</strong> ${card.answer}<br><br><em>Tip:</em> ${card.tip}`;
-      document.getElementById("card").classList.remove("flipped");
-      isFlipped = false;
+      idx = 0;
+      flipped = false;
+      render();
+      updateProgress();
+    }
+
+    function currentCard() {
+      return deck[order[idx]];
+    }
+
+    function render() {
+      const card = currentCard();
+      const front = document.getElementById('front');
+      const back = document.getElementById('back');
+      const cardEl = document.getElementById('card');
+
+      front.textContent = card.question;
+      back.innerHTML =
+        `<strong>Answer:</strong> ${card.answer}` +
+        (card.tip ? `<br><br><em>Tip:</em> ${card.tip}` : '');
+
+      cardEl.classList.remove('flipped');
+      flipped = false;
     }
 
     function flipCard() {
-      const card = document.getElementById("card");
-      isFlipped = !isFlipped;
-      card.classList.toggle("flipped");
+      const cardEl = document.getElementById('card');
+      flipped = !flipped;
+      cardEl.classList.toggle('flipped');
     }
 
     function nextCard() {
-      currentIndex = (currentIndex + 1) % cards.length;
-      loadCard(currentIndex);
+      if (idx < order.length - 1) {
+        idx += 1;
+        render();
+        updateProgress();
+      } else {
+        toast('Deck complete! Shuffling a fresh round…');
+        reshuffle();
+      }
     }
 
-    window.onload = function () {
-      cards.sort(() => 0.5 - Math.random());
-      loadCard(currentIndex);
-    };
+    function prevCard() {
+      if (idx > 0) {
+        idx -= 1;
+        render();
+        updateProgress();
+      }
+    }
+
+    function reshuffle() {
+      for (let i = order.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [order[i], order[j]] = [order[j], order[i]];
+      }
+      idx = 0;
+      render();
+      updateProgress();
+    }
+
+    function updateProgress() {
+      const el = document.getElementById('progress');
+      if (el) el.textContent = `${idx + 1} / ${order.length}`;
+    }
+
+    function toast(msg) {
+      const el = document.getElementById('toast');
+      if (!el) return;
+      el.textContent = msg;
+      el.style.opacity = '1';
+      setTimeout(() => (el.style.opacity = '0'), 1400);
+    }
+
+    // Optional keyboard UX
+    window.addEventListener('keydown', (e) => {
+      if (e.code === 'Space') { e.preventDefault(); flipCard(); }
+      if (e.key === 'ArrowRight') nextCard();
+      if (e.key === 'ArrowLeft') prevCard();
+    });
+
+    window.onload = loadDeck;
   </script>
+
+
 </body>
 
 </html>

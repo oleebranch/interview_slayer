@@ -404,6 +404,7 @@
 
   <script>
     const JSON_PATH = 'boss.json'; // keep next to this file
+    const LIMIT = 50;              // ✅ 50 questions per Boss round
 
     // State
     let items = [];
@@ -467,7 +468,8 @@
       idx = 0;
       correct = 0;
       answers = [];
-      order = shuffle([...Array(items.length).keys()]);
+      // ✅ build an index of the whole bank, shuffle, then cap to 50
+      order = shuffle([...Array(items.length).keys()]).slice(0, LIMIT);
       show('exam');
       render();
       startTimer();
@@ -475,7 +477,8 @@
 
     function render() {
       const q = items[order[idx]];
-      progressTxt.textContent = `Q ${idx + 1}/${items.length}`;
+      // ✅ show progress against the capped deck (1/50, 49/50, etc.)
+      progressTxt.textContent = `Q ${idx + 1}/${order.length}`;
       qtext.textContent = q.question;
       statusEl.textContent = '\u00A0';
       opts.innerHTML = '';
@@ -490,7 +493,8 @@
 
     function next() {
       idx++;
-      if (idx >= items.length) { finish(); }
+      // ✅ stop when we hit the end of the 50
+      if (idx >= order.length) { finish(); }
       else { render(); }
     }
 
@@ -516,7 +520,8 @@
     function finish() {
       clearInterval(timer);
       $('score').textContent = correct;
-      $('total').textContent = items.length;
+      // ✅ total reflects the capped deck
+      $('total').textContent = order.length;
       $('timeLeft').textContent = msToClock(endAt - Date.now());
       show('end');
     }
@@ -531,13 +536,13 @@
         div.innerHTML = '<div class="q">Flawless victory 💥</div><div class="a">You got everything right. Go celebrate or play another set.</div>';
         list.appendChild(div);
       } else {
-        wrong.forEach((r, idx) => {
+        wrong.forEach((r) => {
           const div = document.createElement('div');
           div.className = 'review';
           div.innerHTML = `<div class="q">${r.question}</div>
-        <div class="a">Correct: <strong>${r.correct}</strong></div>
-        <div class="a">You chose: <span class="muted">${r.chosen}</span></div>
-        ${r.tip ? `<div class="tip">Tip: ${r.tip}</div>` : ''}`;
+      <div class="a">Correct: <strong>${r.correct}</strong></div>
+      <div class="a">You chose: <span class="muted">${r.chosen}</span></div>
+      ${r.tip ? `<div class="tip">Tip: ${r.tip}</div>` : ''}`;
           list.appendChild(div);
         });
       }
@@ -547,7 +552,6 @@
     // Buttons
     $('startBtn').addEventListener('click', start);
     $('skipBtn').addEventListener('click', () => {
-      // record as skipped (no penalty beyond lost time)
       const q = items[order[idx]];
       answers.push({ question: q.question, chosen: '(skipped)', correct: q.answer, tip: q.tip || '' });
       next();
@@ -561,12 +565,14 @@
       .then(r => r.json())
       .then(data => {
         items = data;
+        // optional: if you want the Start button enabled only after load, do it here
       })
       .catch(e => {
         console.error(e);
-        alert('Could not load boss_moves_exam1.json. Place it next to this file.');
+        alert(`Could not load ${JSON_PATH}. Place it next to this file.`);
       });
   </script>
+
 </body>
 
 </html>

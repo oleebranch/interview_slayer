@@ -83,4 +83,62 @@ function startQuiz() {
   });
 }
 
+const fsBtn = document.getElementById('fs-btn');
+
+function isStandalone() {
+  return window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+}
+
+async function enterFullscreen(el = document.documentElement) {
+  const anyEl = el;
+  if (anyEl.requestFullscreen) return anyEl.requestFullscreen();
+  if (anyEl.webkitRequestFullscreen) return anyEl.webkitRequestFullscreen(); // Safari desktop
+  if (anyEl.msRequestFullscreen) return anyEl.msRequestFullscreen();         // Old Edge
+}
+
+async function exitFullscreen() {
+  if (document.exitFullscreen) return document.exitFullscreen();
+  if (document.webkitExitFullscreen) return document.webkitExitFullscreen();
+  if (document.msExitFullscreen) return document.msExitFullscreen();
+}
+
+function isFullscreen() {
+  return !!(document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement);
+}
+
+function updateFsButton() {
+  const on = isFullscreen() || isStandalone();
+  fsBtn.setAttribute('aria-pressed', String(on));
+  fsBtn.textContent = on ? '↙' : '⛶'; // simple icon swap
+  fsBtn.title = on ? 'Exit Fullscreen' : 'Go Fullscreen';
+  // Hide button if already a standalone PWA (no need to show)
+  fsBtn.style.display = isStandalone() ? 'none' : '';
+}
+
+fsBtn?.addEventListener('click', async () => {
+  try {
+    if (isFullscreen()) {
+      await exitFullscreen();
+    } else {
+      await enterFullscreen();
+    }
+  } catch (e) {
+    console.warn('Fullscreen error:', e);
+  } finally {
+    updateFsButton();
+  }
+});
+
+// Keep state in sync on ESC / changes
+['fullscreenchange', 'webkitfullscreenchange', 'msfullscreenchange'].forEach(ev =>
+  document.addEventListener(ev, updateFsButton)
+);
+
+// Detect PWA mode changes (Chrome fires this on install/open)
+window.matchMedia('(display-mode: standalone)').addEventListener('change', updateFsButton);
+
+// Initialize on load
+document.addEventListener('DOMContentLoaded', updateFsButton);
+
+
 }

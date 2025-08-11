@@ -1,0 +1,1652 @@
+[
+  {
+    "question": "What does NLP stand for or refer to?",
+    "options": [
+      "Architecture based on self attention",
+      "Text to Speech",
+      "Natural Language Processing",
+      "Cached attention keys and values"
+    ],
+    "answer": "Natural Language Processing",
+    "explanation": "NLP means: Natural Language Processing."
+  },
+  {
+    "question": "What does RAG stand for or refer to?",
+    "options": [
+      "Recall Oriented Understudy for Gisting Evaluation",
+      "Measure of angle between vectors",
+      "Last date of training data",
+      "Retrieval Augmented Generation"
+    ],
+    "answer": "Retrieval Augmented Generation",
+    "explanation": "RAG means: Retrieval Augmented Generation."
+  },
+  {
+    "question": "What does RLHF stand for or refer to?",
+    "options": [
+      "Byte Pair Encoding",
+      "Text to Speech",
+      "Reinforcement Learning from Human Feedback",
+      "Vision Language Model"
+    ],
+    "answer": "Reinforcement Learning from Human Feedback",
+    "explanation": "RLHF means: Reinforcement Learning from Human Feedback."
+  },
+  {
+    "question": "What does ASR stand for or refer to?",
+    "options": [
+      "Instructions that set the assistant behavior",
+      "Component that fetches relevant documents",
+      "Automatic Speech Recognition",
+      "Score cutoff for a match"
+    ],
+    "answer": "Automatic Speech Recognition",
+    "explanation": "ASR means: Automatic Speech Recognition."
+  },
+  {
+    "question": "What does TTS stand for or refer to?",
+    "options": [
+      "Text to Speech",
+      "Natural Language Processing",
+      "Split text by meaning not fixed size",
+      "Model that handles text image audio or video"
+    ],
+    "answer": "Text to Speech",
+    "explanation": "TTS means: Text to Speech."
+  },
+  {
+    "question": "What does VLM stand for or refer to?",
+    "options": [
+      "Split text by meaning not fixed size",
+      "Vision Language Model",
+      "Sample from the k most likely tokens",
+      "L2 regularization on weights"
+    ],
+    "answer": "Vision Language Model",
+    "explanation": "VLM means: Vision Language Model."
+  },
+  {
+    "question": "What does VAE stand for or refer to?",
+    "options": [
+      "Variational Autoencoder",
+      "Bilingual Evaluation Understudy",
+      "Byte Pair Encoding",
+      "Model too simple to learn patterns"
+    ],
+    "answer": "Variational Autoencoder",
+    "explanation": "VAE means: Variational Autoencoder."
+  },
+  {
+    "question": "What does GAN stand for or refer to?",
+    "options": [
+      "Bring similar items closer in embedding space",
+      "Rules that define allowed or blocked content",
+      "Vision Language Model",
+      "Generative Adversarial Network"
+    ],
+    "answer": "Generative Adversarial Network",
+    "explanation": "GAN means: Generative Adversarial Network."
+  },
+  {
+    "question": "What does LoRA stand for or refer to?",
+    "options": [
+      "Find nearest vectors in a database",
+      "Low Rank Adaptation",
+      "Text To Text Transfer Transformer",
+      "Clean and standardize retrieved text"
+    ],
+    "answer": "Low Rank Adaptation",
+    "explanation": "LoRA means: Low Rank Adaptation."
+  },
+  {
+    "question": "What does PEFT stand for or refer to?",
+    "options": [
+      "Low Rank Adaptation",
+      "Parameter Efficient Fine Tuning",
+      "Vision Language Model",
+      "Length of an embedding vector"
+    ],
+    "answer": "Parameter Efficient Fine Tuning",
+    "explanation": "PEFT means: Parameter Efficient Fine Tuning."
+  },
+  {
+    "question": "What does MoE stand for or refer to?",
+    "options": [
+      "Mixture of Experts",
+      "Model too simple to learn patterns",
+      "Token pattern that halts generation",
+      "Bilingual Evaluation Understudy"
+    ],
+    "answer": "Mixture of Experts",
+    "explanation": "MoE means: Mixture of Experts."
+  },
+  {
+    "question": "What does RoPE stand for or refer to?",
+    "options": [
+      "Rotary Positional Embeddings",
+      "Save memory by recomputing activations",
+      "Model memorizes training data",
+      "Sample from the smallest set with cum prob >= p"
+    ],
+    "answer": "Rotary Positional Embeddings",
+    "explanation": "RoPE means: Rotary Positional Embeddings."
+  },
+  {
+    "question": "What does BPE stand for or refer to?",
+    "options": [
+      "Low randomness setting for code or facts",
+      "Mechanism that weighs all tokens at once",
+      "Systematic tests to measure quality",
+      "Byte Pair Encoding"
+    ],
+    "answer": "Byte Pair Encoding",
+    "explanation": "BPE means: Byte Pair Encoding."
+  },
+  {
+    "question": "What does BLEU stand for or refer to?",
+    "options": [
+      "Bilingual Evaluation Understudy",
+      "Bring similar items closer in embedding space",
+      "Model outputs a structured request to call a tool",
+      "Saved model weights at a step"
+    ],
+    "answer": "Bilingual Evaluation Understudy",
+    "explanation": "BLEU means: Bilingual Evaluation Understudy."
+  },
+  {
+    "question": "What does ROUGE stand for or refer to?",
+    "options": [
+      "Recall Oriented Understudy for Gisting Evaluation",
+      "Common randomness setting for creative text",
+      "Architecture based on self attention",
+      "Model that re orders retrieved passages by relevance"
+    ],
+    "answer": "Recall Oriented Understudy for Gisting Evaluation",
+    "explanation": "ROUGE means: Recall Oriented Understudy for Gisting Evaluation."
+  },
+  {
+    "question": "What does KV cache stand for or refer to?",
+    "options": [
+      "Token pattern that halts generation",
+      "Generative Adversarial Network",
+      "Filter user input and model output",
+      "Cached attention keys and values"
+    ],
+    "answer": "Cached attention keys and values",
+    "explanation": "KV cache means: Cached attention keys and values."
+  },
+  {
+    "question": "What does embedding stand for or refer to?",
+    "options": [
+      "Ask to do a task with no examples",
+      "Model that re orders retrieved passages by relevance",
+      "Numeric vector that represents meaning",
+      "Low Rank Adaptation"
+    ],
+    "answer": "Numeric vector that represents meaning",
+    "explanation": "embedding means: Numeric vector that represents meaning."
+  },
+  {
+    "question": "What does vector database stand for or refer to?",
+    "options": [
+      "Mechanism that weighs all tokens at once",
+      "Database optimized for vector similarity search",
+      "Rules that define allowed or blocked content",
+      "Small piece of text used by the model"
+    ],
+    "answer": "Database optimized for vector similarity search",
+    "explanation": "vector database means: Database optimized for vector similarity search."
+  },
+  {
+    "question": "What does cosine similarity stand for or refer to?",
+    "options": [
+      "Measure of angle between vectors",
+      "Model outputs a structured request to call a tool",
+      "Component that fetches relevant documents",
+      "Putting too much text into the prompt"
+    ],
+    "answer": "Measure of angle between vectors",
+    "explanation": "cosine similarity means: Measure of angle between vectors."
+  },
+  {
+    "question": "What does beam search stand for or refer to?",
+    "options": [
+      "Maximum tokens the model attends to at once",
+      "Stop training when validation stops improving",
+      "Decoding that keeps multiple best candidates",
+      "Optical Character Recognition"
+    ],
+    "answer": "Decoding that keeps multiple best candidates",
+    "explanation": "beam search means: Decoding that keeps multiple best candidates."
+  },
+  {
+    "question": "What does top k sampling stand for or refer to?",
+    "options": [
+      "Rotary Positional Embeddings",
+      "Stages from query to results to ranking",
+      "Variational Autoencoder",
+      "Sample from the k most likely tokens"
+    ],
+    "answer": "Sample from the k most likely tokens",
+    "explanation": "top k sampling means: Sample from the k most likely tokens."
+  },
+  {
+    "question": "What does top p sampling stand for or refer to?",
+    "options": [
+      "Model that generates images from text",
+      "Always pick the most likely next token",
+      "Systematic tests to measure quality",
+      "Sample from the smallest set with cum prob >= p"
+    ],
+    "answer": "Sample from the smallest set with cum prob >= p",
+    "explanation": "top p sampling means: Sample from the smallest set with cum prob >= p."
+  },
+  {
+    "question": "What does temperature stand for or refer to?",
+    "options": [
+      "Model that generates images from text",
+      "Controls output randomness",
+      "Compressed internal features the model learns",
+      "Classifier that flags unsafe content"
+    ],
+    "answer": "Controls output randomness",
+    "explanation": "temperature means: Controls output randomness."
+  },
+  {
+    "question": "What does prompt injection stand for or refer to?",
+    "options": [
+      "Malicious input that tries to override instructions",
+      "Systematic tests to measure quality",
+      "Recall Oriented Understudy for Gisting Evaluation",
+      "Train to distinguish true from false pairs"
+    ],
+    "answer": "Malicious input that tries to override instructions",
+    "explanation": "prompt injection means: Malicious input that tries to override instructions."
+  },
+  {
+    "question": "What does jailbreak stand for or refer to?",
+    "options": [
+      "Clean and standardize retrieved text",
+      "Prompt that bypasses model safety",
+      "Greedy or beam search with temp 0",
+      "Recall Oriented Understudy for Gisting Evaluation"
+    ],
+    "answer": "Prompt that bypasses model safety",
+    "explanation": "jailbreak means: Prompt that bypasses model safety."
+  },
+  {
+    "question": "What does guardrail stand for or refer to?",
+    "options": [
+      "Remove or obfuscate personal identifiers",
+      "Control that restricts or shapes model outputs",
+      "Tie outputs to verifiable sources",
+      "Train to distinguish true from false pairs"
+    ],
+    "answer": "Control that restricts or shapes model outputs",
+    "explanation": "guardrail means: Control that restricts or shapes model outputs."
+  },
+  {
+    "question": "What does system prompt stand for or refer to?",
+    "options": [
+      "Generates images by iterative denoising",
+      "Architecture based on self attention",
+      "Instructions that set the assistant behavior",
+      "Text To Text Transfer Transformer"
+    ],
+    "answer": "Instructions that set the assistant behavior",
+    "explanation": "system prompt means: Instructions that set the assistant behavior."
+  },
+  {
+    "question": "What does few shot prompting stand for or refer to?",
+    "options": [
+      "Maps text to token IDs and back",
+      "Short UI hint, not an AI thing but common in apps",
+      "Sample from the k most likely tokens",
+      "Give labeled examples in the prompt"
+    ],
+    "answer": "Give labeled examples in the prompt",
+    "explanation": "few shot prompting means: Give labeled examples in the prompt."
+  },
+  {
+    "question": "What does zero shot prompting stand for or refer to?",
+    "options": [
+      "Recall Oriented Understudy for Gisting Evaluation",
+      "Ask to do a task with no examples",
+      "Reuse previous results for identical prompts",
+      "Reinforcement Learning from Human Feedback"
+    ],
+    "answer": "Ask to do a task with no examples",
+    "explanation": "zero shot prompting means: Ask to do a task with no examples."
+  },
+  {
+    "question": "What does chain of thought stand for or refer to?",
+    "options": [
+      "Value that initializes randomness",
+      "Generative Adversarial Network",
+      "Confident but unsupported answer",
+      "Ask the model to reason step by step"
+    ],
+    "answer": "Ask the model to reason step by step",
+    "explanation": "chain of thought means: Ask the model to reason step by step."
+  },
+  {
+    "question": "What does stop sequence stand for or refer to?",
+    "options": [
+      "Short UI hint, not an AI thing but common in apps",
+      "Saved model weights at a step",
+      "Token pattern that halts generation",
+      "Low Rank Adaptation"
+    ],
+    "answer": "Token pattern that halts generation",
+    "explanation": "stop sequence means: Token pattern that halts generation."
+  },
+  {
+    "question": "What does seed stand for or refer to?",
+    "options": [
+      "Find nearest vectors in a database",
+      "Sample from the smallest set with cum prob >= p",
+      "Value that initializes randomness",
+      "Tie outputs to verifiable sources"
+    ],
+    "answer": "Value that initializes randomness",
+    "explanation": "seed means: Value that initializes randomness."
+  },
+  {
+    "question": "What does function calling stand for or refer to?",
+    "options": [
+      "Model outputs a structured request to call a tool",
+      "Maximum tokens the model attends to at once",
+      "Score cutoff for a match",
+      "Model that connects images and text in a shared space"
+    ],
+    "answer": "Model outputs a structured request to call a tool",
+    "explanation": "function calling means: Model outputs a structured request to call a tool."
+  },
+  {
+    "question": "What does JSON schema stand for or refer to?",
+    "options": [
+      "Value that initializes randomness",
+      "Ask to do a task with no examples",
+      "Cached attention keys and values",
+      "Strict format describing expected fields and types"
+    ],
+    "answer": "Strict format describing expected fields and types",
+    "explanation": "JSON schema means: Strict format describing expected fields and types."
+  },
+  {
+    "question": "What does grounding stand for or refer to?",
+    "options": [
+      "Ask the model to reason step by step",
+      "Find nearest vectors in a database",
+      "Tie outputs to verifiable sources",
+      "Model that handles text image audio or video"
+    ],
+    "answer": "Tie outputs to verifiable sources",
+    "explanation": "grounding means: Tie outputs to verifiable sources."
+  },
+  {
+    "question": "What does reranker stand for or refer to?",
+    "options": [
+      "Generative Adversarial Network",
+      "Text To Text Transfer Transformer",
+      "Model that re orders retrieved passages by relevance",
+      "Length of an embedding vector"
+    ],
+    "answer": "Model that re orders retrieved passages by relevance",
+    "explanation": "reranker means: Model that re orders retrieved passages by relevance."
+  },
+  {
+    "question": "What does semantic chunking stand for or refer to?",
+    "options": [
+      "Split text by meaning not fixed size",
+      "Parameter Efficient Fine Tuning",
+      "Share insights without revealing individuals",
+      "Randomly disable neurons during training"
+    ],
+    "answer": "Split text by meaning not fixed size",
+    "explanation": "semantic chunking means: Split text by meaning not fixed size."
+  },
+  {
+    "question": "What does chunk overlap stand for or refer to?",
+    "options": [
+      "Maps text to token IDs and back",
+      "Give labeled examples in the prompt",
+      "Repeat a little text between chunks",
+      "Numeric vector that represents meaning"
+    ],
+    "answer": "Repeat a little text between chunks",
+    "explanation": "chunk overlap means: Repeat a little text between chunks."
+  },
+  {
+    "question": "What does harmonization stand for or refer to?",
+    "options": [
+      "Byte Pair Encoding",
+      "Mathematical space where vectors live",
+      "Prompt that bypasses model safety",
+      "Clean and standardize retrieved text"
+    ],
+    "answer": "Clean and standardize retrieved text",
+    "explanation": "harmonization means: Clean and standardize retrieved text."
+  },
+  {
+    "question": "What does diffusion model stand for or refer to?",
+    "options": [
+      "Save memory by recomputing activations",
+      "Generates images by iterative denoising",
+      "Always pick the most likely next token",
+      "Mathematical space where vectors live"
+    ],
+    "answer": "Generates images by iterative denoising",
+    "explanation": "diffusion model means: Generates images by iterative denoising."
+  },
+  {
+    "question": "What does CLIP stand for or refer to?",
+    "options": [
+      "Inject token order information",
+      "JSON Lines one object per line",
+      "Mechanism that weighs all tokens at once",
+      "Model that connects images and text in a shared space"
+    ],
+    "answer": "Model that connects images and text in a shared space",
+    "explanation": "CLIP means: Model that connects images and text in a shared space."
+  },
+  {
+    "question": "What does quantization stand for or refer to?",
+    "options": [
+      "Bilingual Evaluation Understudy",
+      "L2 regularization on weights",
+      "Reduce precision to shrink and speed models",
+      "Bring similar items closer in embedding space"
+    ],
+    "answer": "Reduce precision to shrink and speed models",
+    "explanation": "quantization means: Reduce precision to shrink and speed models."
+  },
+  {
+    "question": "What does perplexity stand for or refer to?",
+    "options": [
+      "Train models to follow natural prompts",
+      "Saved model weights at a step",
+      "Exponentiated average negative log likelihood",
+      "Database optimized for vector similarity search"
+    ],
+    "answer": "Exponentiated average negative log likelihood",
+    "explanation": "perplexity means: Exponentiated average negative log likelihood."
+  },
+  {
+    "question": "What does dropout stand for or refer to?",
+    "options": [
+      "Classifier that flags unsafe content",
+      "Randomly disable neurons during training",
+      "Value that initializes randomness",
+      "Parameter Efficient Fine Tuning"
+    ],
+    "answer": "Randomly disable neurons during training",
+    "explanation": "dropout means: Randomly disable neurons during training."
+  },
+  {
+    "question": "What does weight decay stand for or refer to?",
+    "options": [
+      "Variational Autoencoder",
+      "Inject token order information",
+      "Maps text to token IDs and back",
+      "L2 regularization on weights"
+    ],
+    "answer": "L2 regularization on weights",
+    "explanation": "weight decay means: L2 regularization on weights."
+  },
+  {
+    "question": "What does gradient clipping stand for or refer to?",
+    "options": [
+      "Mathematical space where vectors live",
+      "Sample from the smallest set with cum prob >= p",
+      "Limit gradient norms to stabilize training",
+      "Reuse previous results for identical prompts"
+    ],
+    "answer": "Limit gradient norms to stabilize training",
+    "explanation": "gradient clipping means: Limit gradient norms to stabilize training."
+  },
+  {
+    "question": "What does gradient checkpointing stand for or refer to?",
+    "options": [
+      "Model too simple to learn patterns",
+      "Sample from the smallest set with cum prob >= p",
+      "Generative Adversarial Network",
+      "Save memory by recomputing activations"
+    ],
+    "answer": "Save memory by recomputing activations",
+    "explanation": "gradient checkpointing means: Save memory by recomputing activations."
+  },
+  {
+    "question": "What does early stopping stand for or refer to?",
+    "options": [
+      "Rules that define allowed or blocked content",
+      "Split text by meaning not fixed size",
+      "Stop training when validation stops improving",
+      "Always pick the most likely next token"
+    ],
+    "answer": "Stop training when validation stops improving",
+    "explanation": "early stopping means: Stop training when validation stops improving."
+  },
+  {
+    "question": "What does overfitting stand for or refer to?",
+    "options": [
+      "Generative Adversarial Network",
+      "Repeat a little text between chunks",
+      "Give labeled examples in the prompt",
+      "Model memorizes training data"
+    ],
+    "answer": "Model memorizes training data",
+    "explanation": "overfitting means: Model memorizes training data."
+  },
+  {
+    "question": "What does underfitting stand for or refer to?",
+    "options": [
+      "Generative Adversarial Network",
+      "Model too simple to learn patterns",
+      "Variational Autoencoder",
+      "Optical Character Recognition"
+    ],
+    "answer": "Model too simple to learn patterns",
+    "explanation": "underfitting means: Model too simple to learn patterns."
+  },
+  {
+    "question": "What does learning rate stand for or refer to?",
+    "options": [
+      "Mixture of Experts",
+      "Share insights without revealing individuals",
+      "Step size for weight updates",
+      "Generative Adversarial Network"
+    ],
+    "answer": "Step size for weight updates",
+    "explanation": "learning rate means: Step size for weight updates."
+  },
+  {
+    "question": "What does token stand for or refer to?",
+    "options": [
+      "JSON Lines one object per line",
+      "Maximum tokens the model attends to at once",
+      "Token pattern that halts generation",
+      "Small piece of text used by the model"
+    ],
+    "answer": "Small piece of text used by the model",
+    "explanation": "token means: Small piece of text used by the model."
+  },
+  {
+    "question": "What does context window stand for or refer to?",
+    "options": [
+      "Vision Language Model",
+      "Model that generates images from text",
+      "Optical Character Recognition",
+      "Maximum tokens the model attends to at once"
+    ],
+    "answer": "Maximum tokens the model attends to at once",
+    "explanation": "context window means: Maximum tokens the model attends to at once."
+  },
+  {
+    "question": "What does embedding space stand for or refer to?",
+    "options": [
+      "Reusable string with variables",
+      "Strict format describing expected fields and types",
+      "Mathematical space where vectors live",
+      "Instructions that set the assistant behavior"
+    ],
+    "answer": "Mathematical space where vectors live",
+    "explanation": "embedding space means: Mathematical space where vectors live."
+  },
+  {
+    "question": "What does cosine distance stand for or refer to?",
+    "options": [
+      "1 minus cosine similarity",
+      "Reusable string with variables",
+      "Step size for weight updates",
+      "Numeric vector that represents meaning"
+    ],
+    "answer": "1 minus cosine similarity",
+    "explanation": "cosine distance means: 1 minus cosine similarity."
+  },
+  {
+    "question": "What does greedy decoding stand for or refer to?",
+    "options": [
+      "Stages from query to results to ranking",
+      "Always pick the most likely next token",
+      "Parameter Efficient Fine Tuning",
+      "Retrieval Augmented Generation"
+    ],
+    "answer": "Always pick the most likely next token",
+    "explanation": "greedy decoding means: Always pick the most likely next token."
+  },
+  {
+    "question": "What does deterministic decoding stand for or refer to?",
+    "options": [
+      "Give labeled examples in the prompt",
+      "Parameter Efficient Fine Tuning",
+      "Greedy or beam search with temp 0",
+      "Saved model weights at a step"
+    ],
+    "answer": "Greedy or beam search with temp 0",
+    "explanation": "deterministic decoding means: Greedy or beam search with temp 0."
+  },
+  {
+    "question": "What does typical sampling stand for or refer to?",
+    "options": [
+      "Stop training when validation stops improving",
+      "Low Rank Adaptation",
+      "Sample near expected probability mass",
+      "Value that initializes randomness"
+    ],
+    "answer": "Sample near expected probability mass",
+    "explanation": "typical sampling means: Sample near expected probability mass."
+  },
+  {
+    "question": "What does instruction tuning stand for or refer to?",
+    "options": [
+      "Clean and standardize retrieved text",
+      "Maps text to token IDs and back",
+      "Length of an embedding vector",
+      "Train models to follow natural prompts"
+    ],
+    "answer": "Train models to follow natural prompts",
+    "explanation": "instruction tuning means: Train models to follow natural prompts."
+  },
+  {
+    "question": "What does safety policy stand for or refer to?",
+    "options": [
+      "Small module added for fine tuning",
+      "Database optimized for vector similarity search",
+      "Rules that define allowed or blocked content",
+      "Bilingual Evaluation Understudy"
+    ],
+    "answer": "Rules that define allowed or blocked content",
+    "explanation": "safety policy means: Rules that define allowed or blocked content."
+  },
+  {
+    "question": "What does safety filter stand for or refer to?",
+    "options": [
+      "Decoding that keeps multiple best candidates",
+      "Classifier that flags unsafe content",
+      "Putting too much text into the prompt",
+      "Find nearest vectors in a database"
+    ],
+    "answer": "Classifier that flags unsafe content",
+    "explanation": "safety filter means: Classifier that flags unsafe content."
+  },
+  {
+    "question": "What does rate limit stand for or refer to?",
+    "options": [
+      "Maximum API call rate",
+      "Score cutoff for a match",
+      "Instructions that set the assistant behavior",
+      "Randomly disable neurons during training"
+    ],
+    "answer": "Maximum API call rate",
+    "explanation": "rate limit means: Maximum API call rate."
+  },
+  {
+    "question": "What does request batching stand for or refer to?",
+    "options": [
+      "Variational Autoencoder",
+      "Combine multiple tasks into one call",
+      "Model outputs a structured request to call a tool",
+      "Rotary Positional Embeddings"
+    ],
+    "answer": "Combine multiple tasks into one call",
+    "explanation": "request batching means: Combine multiple tasks into one call."
+  },
+  {
+    "question": "What does caching stand for or refer to?",
+    "options": [
+      "Reuse previous results for identical prompts",
+      "Filter user input and model output",
+      "Exponentiated average negative log likelihood",
+      "Natural Language Processing"
+    ],
+    "answer": "Reuse previous results for identical prompts",
+    "explanation": "caching means: Reuse previous results for identical prompts."
+  },
+  {
+    "question": "What does PII stand for or refer to?",
+    "options": [
+      "Sample from the k most likely tokens",
+      "Personally Identifiable Information",
+      "Last date of training data",
+      "Greedy or beam search with temp 0"
+    ],
+    "answer": "Personally Identifiable Information",
+    "explanation": "PII means: Personally Identifiable Information."
+  },
+  {
+    "question": "What does data anonymization stand for or refer to?",
+    "options": [
+      "Common randomness setting for creative text",
+      "Remove or obfuscate personal identifiers",
+      "Parameter Efficient Fine Tuning",
+      "Recall Oriented Understudy for Gisting Evaluation"
+    ],
+    "answer": "Remove or obfuscate personal identifiers",
+    "explanation": "data anonymization means: Remove or obfuscate personal identifiers."
+  },
+  {
+    "question": "What does differential privacy stand for or refer to?",
+    "options": [
+      "Optical Character Recognition",
+      "Share insights without revealing individuals",
+      "Find nearest vectors in a database",
+      "Stop training when validation stops improving"
+    ],
+    "answer": "Share insights without revealing individuals",
+    "explanation": "differential privacy means: Share insights without revealing individuals."
+  },
+  {
+    "question": "What does tool sandbox stand for or refer to?",
+    "options": [
+      "Generates images by iterative denoising",
+      "Save memory by recomputing activations",
+      "Vision Language Model",
+      "Isolated environment for safe tool calls"
+    ],
+    "answer": "Isolated environment for safe tool calls",
+    "explanation": "tool sandbox means: Isolated environment for safe tool calls."
+  },
+  {
+    "question": "What does latent representation stand for or refer to?",
+    "options": [
+      "Reusable string with variables",
+      "Value that initializes randomness",
+      "Systematic tests to measure quality",
+      "Compressed internal features the model learns"
+    ],
+    "answer": "Compressed internal features the model learns",
+    "explanation": "latent representation means: Compressed internal features the model learns."
+  },
+  {
+    "question": "What does checkpoint stand for or refer to?",
+    "options": [
+      "Decoding that keeps multiple best candidates",
+      "Putting too much text into the prompt",
+      "Saved model weights at a step",
+      "Bidirectional Encoder Representations from Transformers"
+    ],
+    "answer": "Saved model weights at a step",
+    "explanation": "checkpoint means: Saved model weights at a step."
+  },
+  {
+    "question": "What does tokenizer stand for or refer to?",
+    "options": [
+      "Controls output randomness",
+      "Maps text to token IDs and back",
+      "Maximum tokens the model attends to at once",
+      "Automatic Speech Recognition"
+    ],
+    "answer": "Maps text to token IDs and back",
+    "explanation": "tokenizer means: Maps text to token IDs and back."
+  },
+  {
+    "question": "What does vector search stand for or refer to?",
+    "options": [
+      "Sample from the k most likely tokens",
+      "Low randomness setting for code or facts",
+      "Tie outputs to verifiable sources",
+      "Find nearest vectors in a database"
+    ],
+    "answer": "Find nearest vectors in a database",
+    "explanation": "vector search means: Find nearest vectors in a database."
+  },
+  {
+    "question": "What does retriever stand for or refer to?",
+    "options": [
+      "Component that fetches relevant documents",
+      "Ask to do a task with no examples",
+      "Classifier that flags unsafe content",
+      "Control that restricts or shapes model outputs"
+    ],
+    "answer": "Component that fetches relevant documents",
+    "explanation": "retriever means: Component that fetches relevant documents."
+  },
+  {
+    "question": "What does hallucination stand for or refer to?",
+    "options": [
+      "Confident but unsupported answer",
+      "Ask to do a task with no examples",
+      "Automatic Speech Recognition",
+      "Ask the model to reason step by step"
+    ],
+    "answer": "Confident but unsupported answer",
+    "explanation": "hallucination means: Confident but unsupported answer."
+  },
+  {
+    "question": "What does citation stand for or refer to?",
+    "options": [
+      "Reference to a supporting source",
+      "Filter user input and model output",
+      "Model that re orders retrieved passages by relevance",
+      "Low Rank Adaptation"
+    ],
+    "answer": "Reference to a supporting source",
+    "explanation": "citation means: Reference to a supporting source."
+  },
+  {
+    "question": "What does OCR stand for or refer to?",
+    "options": [
+      "Compressed internal features the model learns",
+      "JSON Lines one object per line",
+      "Exponentiated average negative log likelihood",
+      "Optical Character Recognition"
+    ],
+    "answer": "Optical Character Recognition",
+    "explanation": "OCR means: Optical Character Recognition."
+  },
+  {
+    "question": "What does multimodal model stand for or refer to?",
+    "options": [
+      "Reference to a supporting source",
+      "Controls output randomness",
+      "Strict format describing expected fields and types",
+      "Model that handles text image audio or video"
+    ],
+    "answer": "Model that handles text image audio or video",
+    "explanation": "multimodal model means: Model that handles text image audio or video."
+  },
+  {
+    "question": "What does DALL-E stand for or refer to?",
+    "options": [
+      "L2 regularization on weights",
+      "Model that generates images from text",
+      "Bring similar items closer in embedding space",
+      "Model that connects images and text in a shared space"
+    ],
+    "answer": "Model that generates images from text",
+    "explanation": "DALL-E means: Model that generates images from text."
+  },
+  {
+    "question": "What does Stable Diffusion stand for or refer to?",
+    "options": [
+      "Prompt that bypasses model safety",
+      "Model too simple to learn patterns",
+      "Open model that generates images by diffusion",
+      "Confident but unsupported answer"
+    ],
+    "answer": "Open model that generates images by diffusion",
+    "explanation": "Stable Diffusion means: Open model that generates images by diffusion."
+  },
+  {
+    "question": "What does Whisper stand for or refer to?",
+    "options": [
+      "Model for speech to text",
+      "Share insights without revealing individuals",
+      "Compressed internal features the model learns",
+      "Natural Language Processing"
+    ],
+    "answer": "Model for speech to text",
+    "explanation": "Whisper means: Model for speech to text."
+  },
+  {
+    "question": "What does BERT stand for or refer to?",
+    "options": [
+      "Low Rank Adaptation",
+      "Bidirectional Encoder Representations from Transformers",
+      "Exponentiated average negative log likelihood",
+      "Reusable string with variables"
+    ],
+    "answer": "Bidirectional Encoder Representations from Transformers",
+    "explanation": "BERT means: Bidirectional Encoder Representations from Transformers."
+  },
+  {
+    "question": "What does T5 stand for or refer to?",
+    "options": [
+      "Text To Text Transfer Transformer",
+      "Train to distinguish true from false pairs",
+      "Personally Identifiable Information",
+      "Clean and standardize retrieved text"
+    ],
+    "answer": "Text To Text Transfer Transformer",
+    "explanation": "T5 means: Text To Text Transfer Transformer."
+  },
+  {
+    "question": "What does transformer stand for or refer to?",
+    "options": [
+      "Reduce precision to shrink and speed models",
+      "Architecture based on self attention",
+      "Low randomness setting for code or facts",
+      "Small piece of text used by the model"
+    ],
+    "answer": "Architecture based on self attention",
+    "explanation": "transformer means: Architecture based on self attention."
+  },
+  {
+    "question": "What does self attention stand for or refer to?",
+    "options": [
+      "Prompt that bypasses model safety",
+      "Mechanism that weighs all tokens at once",
+      "Mathematical space where vectors live",
+      "Reusable string with variables"
+    ],
+    "answer": "Mechanism that weighs all tokens at once",
+    "explanation": "self attention means: Mechanism that weighs all tokens at once."
+  },
+  {
+    "question": "What does positional encoding stand for or refer to?",
+    "options": [
+      "Open model that generates images by diffusion",
+      "Inject token order information",
+      "Component that fetches relevant documents",
+      "Clean and standardize retrieved text"
+    ],
+    "answer": "Inject token order information",
+    "explanation": "positional encoding means: Inject token order information."
+  },
+  {
+    "question": "What does adapter stand for or refer to?",
+    "options": [
+      "Small module added for fine tuning",
+      "Clean and standardize retrieved text",
+      "Split text by meaning not fixed size",
+      "Instructions that set the assistant behavior"
+    ],
+    "answer": "Small module added for fine tuning",
+    "explanation": "adapter means: Small module added for fine tuning."
+  },
+  {
+    "question": "What does prompt template stand for or refer to?",
+    "options": [
+      "Reusable string with variables",
+      "JSON Lines one object per line",
+      "Greedy or beam search with temp 0",
+      "Rules that define allowed or blocked content"
+    ],
+    "answer": "Reusable string with variables",
+    "explanation": "prompt template means: Reusable string with variables."
+  },
+  {
+    "question": "What does JSONL stand for or refer to?",
+    "options": [
+      "Inject token order information",
+      "Sample from the smallest set with cum prob >= p",
+      "Last date of training data",
+      "JSON Lines one object per line"
+    ],
+    "answer": "JSON Lines one object per line",
+    "explanation": "JSONL means: JSON Lines one object per line."
+  },
+  {
+    "question": "What does evals stand for or refer to?",
+    "options": [
+      "Rotary Positional Embeddings",
+      "Token pattern that halts generation",
+      "Systematic tests to measure quality",
+      "Stages from query to results to ranking"
+    ],
+    "answer": "Systematic tests to measure quality",
+    "explanation": "evals means: Systematic tests to measure quality."
+  },
+  {
+    "question": "What does typical temperature stand for or refer to?",
+    "options": [
+      "Automatic Speech Recognition",
+      "Common randomness setting for creative text",
+      "Vision Language Model",
+      "Measure of angle between vectors"
+    ],
+    "answer": "Common randomness setting for creative text",
+    "explanation": "typical temperature means: Common randomness setting for creative text."
+  },
+  {
+    "question": "What does coding temperature stand for or refer to?",
+    "options": [
+      "Low randomness setting for code or facts",
+      "Bidirectional Encoder Representations from Transformers",
+      "Mathematical space where vectors live",
+      "Train models to follow natural prompts"
+    ],
+    "answer": "Low randomness setting for code or facts",
+    "explanation": "coding temperature means: Low randomness setting for code or facts."
+  },
+  {
+    "question": "What does vector dimension stand for or refer to?",
+    "options": [
+      "Value that initializes randomness",
+      "Length of an embedding vector",
+      "Small piece of text used by the model",
+      "Reuse previous results for identical prompts"
+    ],
+    "answer": "Length of an embedding vector",
+    "explanation": "vector dimension means: Length of an embedding vector."
+  },
+  {
+    "question": "What does cosine threshold stand for or refer to?",
+    "options": [
+      "Stages from query to results to ranking",
+      "Filter user input and model output",
+      "Score cutoff for a match",
+      "Bilingual Evaluation Understudy"
+    ],
+    "answer": "Score cutoff for a match",
+    "explanation": "cosine threshold means: Score cutoff for a match."
+  },
+  {
+    "question": "What does negative sampling stand for or refer to?",
+    "options": [
+      "Common randomness setting for creative text",
+      "Rules that define allowed or blocked content",
+      "Share insights without revealing individuals",
+      "Train to distinguish true from false pairs"
+    ],
+    "answer": "Train to distinguish true from false pairs",
+    "explanation": "negative sampling means: Train to distinguish true from false pairs."
+  },
+  {
+    "question": "What does contrastive learning stand for or refer to?",
+    "options": [
+      "Bring similar items closer in embedding space",
+      "Cached attention keys and values",
+      "Train models to follow natural prompts",
+      "Database optimized for vector similarity search"
+    ],
+    "answer": "Bring similar items closer in embedding space",
+    "explanation": "contrastive learning means: Bring similar items closer in embedding space."
+  },
+  {
+    "question": "What does knowledge cutoff stand for or refer to?",
+    "options": [
+      "Last date of training data",
+      "Stages from query to results to ranking",
+      "Greedy or beam search with temp 0",
+      "Open model that generates images by diffusion"
+    ],
+    "answer": "Last date of training data",
+    "explanation": "knowledge cutoff means: Last date of training data."
+  },
+  {
+    "question": "What does context stuffing stand for or refer to?",
+    "options": [
+      "Last date of training data",
+      "Putting too much text into the prompt",
+      "Sample from the k most likely tokens",
+      "Classifier that flags unsafe content"
+    ],
+    "answer": "Putting too much text into the prompt",
+    "explanation": "context stuffing means: Putting too much text into the prompt."
+  },
+  {
+    "question": "What does retrieval pipeline stand for or refer to?",
+    "options": [
+      "Text To Text Transfer Transformer",
+      "Stages from query to results to ranking",
+      "Model that re orders retrieved passages by relevance",
+      "Filter user input and model output"
+    ],
+    "answer": "Stages from query to results to ranking",
+    "explanation": "retrieval pipeline means: Stages from query to results to ranking."
+  },
+  {
+    "question": "What does tooltip stand for or refer to?",
+    "options": [
+      "Parameter Efficient Fine Tuning",
+      "Model that re orders retrieved passages by relevance",
+      "Short UI hint, not an AI thing but common in apps",
+      "Greedy or beam search with temp 0"
+    ],
+    "answer": "Short UI hint, not an AI thing but common in apps",
+    "explanation": "tooltip means: Short UI hint, not an AI thing but common in apps."
+  },
+  {
+    "question": "What does content moderation stand for or refer to?",
+    "options": [
+      "Exponentiated average negative log likelihood",
+      "Model that connects images and text in a shared space",
+      "Saved model weights at a step",
+      "Filter user input and model output"
+    ],
+    "answer": "Filter user input and model output",
+    "explanation": "content moderation means: Filter user input and model output."
+  },
+  {
+    "question": "What does the temperature setting control in text generation?",
+    "options": [
+      "GPU memory usage",
+      "Output randomness",
+      "Training speed",
+      "Token length"
+    ],
+    "answer": "Output randomness",
+    "explanation": "Higher temperature increases variation; lower makes outputs safer."
+  },
+  {
+    "question": "Which setting samples from the k most likely tokens?",
+    "options": [
+      "Greedy decoding",
+      "Beam search",
+      "Top k sampling",
+      "Top p sampling"
+    ],
+    "answer": "Top k sampling",
+    "explanation": "Top k restricts to a fixed number k; top p uses a probability mass."
+  },
+  {
+    "question": "Which method is best for deterministic outputs in tests?",
+    "options": [
+      "Greedy decoding",
+      "Typical sampling",
+      "Top p sampling",
+      "Temperature 1.0"
+    ],
+    "answer": "Greedy decoding",
+    "explanation": "Greedy or beam search with temperature 0 is deterministic."
+  },
+  {
+    "question": "What is the purpose of a stop sequence?",
+    "options": [
+      "To start generation faster",
+      "To compress outputs",
+      "To halt generation at a token pattern",
+      "To increase context"
+    ],
+    "answer": "To halt generation at a token pattern",
+    "explanation": "Stop sequences ensure clean boundaries in structured outputs."
+  },
+  {
+    "question": "What is the main goal of embeddings in a RAG system?",
+    "options": [
+      "Generate audio",
+      "Find semantically similar passages",
+      "Compress images",
+      "Encrypt documents"
+    ],
+    "answer": "Find semantically similar passages",
+    "explanation": "Embeddings enable similarity search over meaning, not surface form."
+  },
+  {
+    "question": "Which metric is commonly used to compare text similarity for MT evaluation?",
+    "options": [
+      "AUC",
+      "BLEU",
+      "RMSE",
+      "MSE"
+    ],
+    "answer": "BLEU",
+    "explanation": "BLEU measures n-gram overlap between candidate and reference."
+  },
+  {
+    "question": "Which component re-orders retrieved passages for better relevance?",
+    "options": [
+      "Reranker",
+      "Scheduler",
+      "Tokenizer",
+      "Sampler"
+    ],
+    "answer": "Reranker",
+    "explanation": "A reranker improves precision by scoring retrieved passages."
+  },
+  {
+    "question": "Which practice helps reduce hallucinations in a GenAI app?",
+    "options": [
+      "Raising temperature",
+      "Grounding with citations",
+      "Removing guardrails",
+      "Shorter prompts always"
+    ],
+    "answer": "Grounding with citations",
+    "explanation": "Tie claims to sources and show citations to build trust."
+  },
+  {
+    "question": "Which option best describes a vector database?",
+    "options": [
+      "Image store only",
+      "Relational DB for SQL only",
+      "Database for fast vector similarity search",
+      "Key value cache only"
+    ],
+    "answer": "Database for fast vector similarity search",
+    "explanation": "Vector DBs index embeddings to enable nearest neighbor search."
+  },
+  {
+    "question": "Which is a common guardrail in GenAI systems?",
+    "options": [
+      "More GPUs",
+      "Content moderation filter",
+      "Higher token limit",
+      "Color themes"
+    ],
+    "answer": "Content moderation filter",
+    "explanation": "Guardrails restrict unsafe content and enforce policy."
+  },
+  {
+    "question": "Which task best fits a transformer language model?",
+    "options": [
+      "Text summarization",
+      "3D rendering",
+      "Face recognition",
+      "Sensor fusion"
+    ],
+    "answer": "Text summarization",
+    "explanation": "Transformers excel at NLP tasks like summarization and QA."
+  },
+  {
+    "question": "Which model is built for converting speech to text?",
+    "options": [
+      "OCR",
+      "ASR",
+      "GAN",
+      "TTS"
+    ],
+    "answer": "ASR",
+    "explanation": "ASR stands for Automatic Speech Recognition."
+  },
+  {
+    "question": "Which model can turn text prompts into images?",
+    "options": [
+      "Whisper",
+      "T5",
+      "BERT",
+      "DALL-E"
+    ],
+    "answer": "DALL-E",
+    "explanation": "DALL-E is an image generation model."
+  },
+  {
+    "question": "Which pipeline step should run before generation in RAG?",
+    "options": [
+      "Blur images",
+      "Render charts",
+      "Translate to audio",
+      "Retrieve relevant documents"
+    ],
+    "answer": "Retrieve relevant documents",
+    "explanation": "RAG retrieves sources and then generates grounded answers."
+  },
+  {
+    "question": "What is prompt injection?",
+    "options": [
+      "A type of beam search",
+      "Malicious input that tries to override instructions",
+      "A GPU kernel",
+      "A faster tokenizer"
+    ],
+    "answer": "Malicious input that tries to override instructions",
+    "explanation": "Always treat external text as untrusted and filter it."
+  },
+  {
+    "question": "What is a jailbreak in GenAI?",
+    "options": [
+      "A JSON schema",
+      "A model checkpoint",
+      "A training loss",
+      "A prompt that tries to bypass safety rules"
+    ],
+    "answer": "A prompt that tries to bypass safety rules",
+    "explanation": "Adversarial prompts attempt to elicit restricted content."
+  },
+  {
+    "question": "What is PII?",
+    "options": [
+      "Personal Inference Insight",
+      "Private Internal Intent",
+      "Personally Identifiable Information",
+      "Public Internet Index"
+    ],
+    "answer": "Personally Identifiable Information",
+    "explanation": "Never log or leak PII from prompts or outputs."
+  },
+  {
+    "question": "What does data anonymization do?",
+    "options": [
+      "Remove or obfuscate personal identifiers",
+      "Increase batch size",
+      "Compress text",
+      "Encrypt weights"
+    ],
+    "answer": "Remove or obfuscate personal identifiers",
+    "explanation": "Anonymization helps privacy and compliance."
+  },
+  {
+    "question": "What is differential privacy?",
+    "options": [
+      "Share insights without revealing individuals",
+      "GPU quantization",
+      "Lossless compression",
+      "Faster decoding"
+    ],
+    "answer": "Share insights without revealing individuals",
+    "explanation": "Noise is added so individual records cannot be inferred."
+  },
+  {
+    "question": "What does weight decay help with?",
+    "options": [
+      "Longer context",
+      "Audio quality",
+      "Faster GPUs",
+      "Generalization via L2 regularization"
+    ],
+    "answer": "Generalization via L2 regularization",
+    "explanation": "L2 discourages large weights that overfit."
+  },
+  {
+    "question": "What is early stopping used for?",
+    "options": [
+      "Increase learning rate",
+      "Freeze the tokenizer",
+      "Force overfitting",
+      "Stop training when validation stops improving"
+    ],
+    "answer": "Stop training when validation stops improving",
+    "explanation": "It prevents overfitting and saves compute."
+  },
+  {
+    "question": "What does quantization do?",
+    "options": [
+      "Add more layers",
+      "Improve audio fidelity",
+      "Increase context",
+      "Reduce precision to shrink and speed models"
+    ],
+    "answer": "Reduce precision to shrink and speed models",
+    "explanation": "INT8 or FP8 can reduce memory with small accuracy trade offs."
+  },
+  {
+    "question": "What is gradient clipping for?",
+    "options": [
+      "Increase randomness",
+      "Grow vocab size",
+      "Speed up IO",
+      "Limit gradient norms to stabilize training"
+    ],
+    "answer": "Limit gradient norms to stabilize training",
+    "explanation": "Clipping prevents exploding gradients."
+  },
+  {
+    "question": "What is function calling in LLMs?",
+    "options": [
+      "Model trains a new layer",
+      "GPU warms up",
+      "Browser downloads a file",
+      "Model emits a structured request to call a tool"
+    ],
+    "answer": "Model emits a structured request to call a tool",
+    "explanation": "Function calls let the assistant act, not just chat."
+  },
+  {
+    "question": "Why include a JSON schema with function calling?",
+    "options": [
+      "To add emojis",
+      "To speed GPUs",
+      "To enforce strict output fields and types",
+      "To minify tokens"
+    ],
+    "answer": "To enforce strict output fields and types",
+    "explanation": "Schemas guide the model and simplify validation."
+  },
+  {
+    "question": "Which parameter most increases randomness?",
+    "options": [
+      "Beam size",
+      "Vector dimension",
+      "Batch size",
+      "Temperature"
+    ],
+    "answer": "Temperature",
+    "explanation": "Temperature > 1 increases variability; near 0 is conservative."
+  },
+  {
+    "question": "Which sampling limits to a probability mass threshold?",
+    "options": [
+      "Top p sampling",
+      "Top k sampling",
+      "Greedy decoding",
+      "Beam search"
+    ],
+    "answer": "Top p sampling",
+    "explanation": "Top p selects the smallest set with cumulative prob >= p."
+  },
+  {
+    "question": "What does a reranker improve in RAG?",
+    "options": [
+      "Tokenization speed",
+      "GPU memory",
+      "Relevance of retrieved passages",
+      "Voice quality"
+    ],
+    "answer": "Relevance of retrieved passages",
+    "explanation": "Rerankers improve precision by better scoring."
+  },
+  {
+    "question": "What does chain of thought prompting request?",
+    "options": [
+      "Higher temperature",
+      "Step by step reasoning",
+      "No citations",
+      "Shorter outputs"
+    ],
+    "answer": "Step by step reasoning",
+    "explanation": "It guides the model to explain intermediate steps."
+  },
+  {
+    "question": "What is the purpose of a seed in generation?",
+    "options": [
+      "Compress outputs",
+      "Increase batch size",
+      "Reduce context",
+      "Control randomness for reproducibility"
+    ],
+    "answer": "Control randomness for reproducibility",
+    "explanation": "Same seed and params lead to similar outputs."
+  },
+  {
+    "question": "Which model focuses on bidirectional context in pretraining?",
+    "options": [
+      "GPT",
+      "BERT",
+      "Whisper",
+      "DALL-E"
+    ],
+    "answer": "BERT",
+    "explanation": "BERT uses masked language modeling with bidirectional context."
+  },
+  {
+    "question": "Which task is best for Whisper?",
+    "options": [
+      "Text to speech",
+      "Grammar correction",
+      "Image captioning",
+      "Speech to text"
+    ],
+    "answer": "Speech to text",
+    "explanation": "Whisper is an ASR model."
+  },
+  {
+    "question": "What is cosine similarity used for?",
+    "options": [
+      "Train adapters",
+      "Render images",
+      "Parse JSONL",
+      "Compare embedding vectors"
+    ],
+    "answer": "Compare embedding vectors",
+    "explanation": "It measures how aligned two vectors are."
+  },
+  {
+    "question": "What does a vector database store?",
+    "options": [
+      "Audio waveforms only",
+      "CSS styles",
+      "Compiled binaries",
+      "Embeddings for similarity search"
+    ],
+    "answer": "Embeddings for similarity search",
+    "explanation": "It indexes vectors for nearest neighbor search."
+  },
+  {
+    "question": "What does a content moderation filter do?",
+    "options": [
+      "Blocks or flags unsafe content",
+      "Sorts JSON keys",
+      "Adds emojis",
+      "Speeds up GPUs"
+    ],
+    "answer": "Blocks or flags unsafe content",
+    "explanation": "Moderation acts as a guardrail."
+  },
+  {
+    "question": "What is positional encoding for?",
+    "options": [
+      "Encrypt prompts",
+      "Compress weights",
+      "Inject token order information",
+      "Add colors"
+    ],
+    "answer": "Inject token order information",
+    "explanation": "Transformers need position information."
+  },
+  {
+    "question": "What is typical sampling?",
+    "options": [
+      "Beam search only",
+      "Always pick the least likely",
+      "Sample the top 1 token",
+      "Sample near expected probability mass"
+    ],
+    "answer": "Sample near expected probability mass",
+    "explanation": "Typical sampling balances diversity and coherence."
+  },
+  {
+    "question": "Which method improves context recall at chunk boundaries?",
+    "options": [
+      "No retrieval",
+      "Lower batch size",
+      "Higher temperature",
+      "Chunk overlap"
+    ],
+    "answer": "Chunk overlap",
+    "explanation": "Small overlaps preserve continuity."
+  },
+  {
+    "question": "What helps normalize messy retrieved pages?",
+    "options": [
+      "Beam search",
+      "Harmonization",
+      "Top k",
+      "Jailbreak"
+    ],
+    "answer": "Harmonization",
+    "explanation": "Clean and standardize text before passing to the model."
+  },
+  {
+    "question": "What is an adapter used for?",
+    "options": [
+      "GPU cooler",
+      "Bigger tokenizer",
+      "Small module added for fine tuning",
+      "Audio codec"
+    ],
+    "answer": "Small module added for fine tuning",
+    "explanation": "Adapters enable PEFT without changing base weights."
+  },
+  {
+    "question": "What is LoRA primarily for?",
+    "options": [
+      "Low rank adaptation for efficient tuning",
+      "Audio denoising",
+      "Lossless compression",
+      "Image upscaling"
+    ],
+    "answer": "Low rank adaptation for efficient tuning",
+    "explanation": "LoRA adds low rank matrices to a frozen model."
+  },
+  {
+    "question": "What is the context window?",
+    "options": [
+      "Image resolution",
+      "Max tokens the model attends to",
+      "GPU core count",
+      "HTTP timeout"
+    ],
+    "answer": "Max tokens the model attends to",
+    "explanation": "Bigger windows allow longer prompts."
+  },
+  {
+    "question": "Which step should run after retrieval in RAG?",
+    "options": [
+      "Upload logs",
+      "Resize images",
+      "Quantize the GPU",
+      "Rerank and then generate"
+    ],
+    "answer": "Rerank and then generate",
+    "explanation": "A common pipeline: retrieve, rerank, read, generate."
+  },
+  {
+    "question": "What is OCR used for?",
+    "options": [
+      "Turn text in images into machine readable text",
+      "Color correct images",
+      "Create code from UML",
+      "Translate audio to text"
+    ],
+    "answer": "Turn text in images into machine readable text",
+    "explanation": "OCR extracts text from images or PDFs."
+  },
+  {
+    "question": "Which parameter most increases randomness? (concept check)",
+    "options": [
+      "Vector dimension",
+      "Beam size",
+      "Temperature",
+      "Batch size"
+    ],
+    "answer": "Temperature",
+    "explanation": "Temperature > 1 increases variability; near 0 is conservative."
+  },
+  {
+    "question": "Which sampling limits to a probability mass threshold? (concept check)",
+    "options": [
+      "Beam search",
+      "Top k sampling",
+      "Top p sampling",
+      "Greedy decoding"
+    ],
+    "answer": "Top p sampling",
+    "explanation": "Top p selects the smallest set with cumulative prob >= p."
+  },
+  {
+    "question": "What does a reranker improve in RAG? (concept check)",
+    "options": [
+      "Relevance of retrieved passages",
+      "Voice quality",
+      "GPU memory",
+      "Tokenization speed"
+    ],
+    "answer": "Relevance of retrieved passages",
+    "explanation": "Rerankers improve precision by better scoring."
+  },
+  {
+    "question": "What does chain of thought prompting request? (concept check)",
+    "options": [
+      "Step by step reasoning",
+      "No citations",
+      "Shorter outputs",
+      "Higher temperature"
+    ],
+    "answer": "Step by step reasoning",
+    "explanation": "It guides the model to explain intermediate steps."
+  },
+  {
+    "question": "What is the purpose of a seed in generation? (concept check)",
+    "options": [
+      "Reduce context",
+      "Compress outputs",
+      "Increase batch size",
+      "Control randomness for reproducibility"
+    ],
+    "answer": "Control randomness for reproducibility",
+    "explanation": "Same seed and params lead to similar outputs."
+  },
+  {
+    "question": "Which model focuses on bidirectional context in pretraining? (concept check)",
+    "options": [
+      "Whisper",
+      "GPT",
+      "DALL-E",
+      "BERT"
+    ],
+    "answer": "BERT",
+    "explanation": "BERT uses masked language modeling with bidirectional context."
+  }
+]

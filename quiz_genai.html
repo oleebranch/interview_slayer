@@ -2,314 +2,320 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#121212">
-
+  <meta name="theme-color" content="#121212" />
   <title>Combat Drill: GenAI</title>
+
   <style>
+    :root {
+      --bg: #0e0f12;
+      --panel: #1a1d22;
+      --panel-2: #15181d;
+      --text: #e9eef3;
+      --muted: #a9b1bb;
+      --border: #2a2f36;
+      --yellow: #ffcc00;
+      --ok: #2dd47a;
+      --danger: #ff5d73;
+    }
+
+    /* reset / base */
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
     body {
       margin: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #121212;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+      min-height: 100svh;
+      overflow: hidden;
+      /* no scroll “thingy” on standard screens */
     }
 
-    header {
-      width: 100%;
-      text-align: left;
+    /* Back link stays fixed */
+    a.back {
+      position: fixed;
+      top: 12px;
+      left: 12px;
+      color: var(--yellow);
+      text-decoration: none;
+      font-weight: 600;
+      z-index: 10;
     }
 
-    .back-button {
-      font-size: 1rem;
-      color: #ffcc00;
-      ;
-      background: none;
-      border: none;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
+    a.back::before {
+      content: "⬅ ";
     }
 
-    .back-button:hover {
-      color: #fff;
+    /* Full-viewport center stage */
+    .stage {
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      /* centers vertically + horizontally */
+      padding: 0 16px;
+      /* no big bottom padding */
     }
 
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 20px;
+    /* Stack title + card with 20px gap */
+    .stack {
+      display: grid;
+      justify-items: center;
+      gap: 20px;
+    }
+
+    /* Title */
+    .page-head {
+      margin: 0;
       text-align: center;
-      color: #ffcc00;
+      font-size: clamp(1.6rem, 2.2vw + 1rem, 2.2rem);
+      color: var(--yellow);
+      font-weight: 800;
     }
 
-    .question-box {
-      background-color: #1e1e1e;
-      border-radius: 10px;
-      padding: 20px;
-      max-width: 700px;
-      width: 100%;
-      margin-bottom: 30px;
+    /* Card */
+    .card {
+      width: min(760px, 92vw);
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px;
+      box-shadow: 0 8px 28px rgba(0, 0, 0, .35);
+    }
+
+    /* Optional: if someone’s screen is tiny (short laptops), allow scroll */
+    @media (max-height: 620px) {
+      body {
+        overflow: auto;
+      }
     }
 
     .question {
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-      color: #ffcc00;
+      font-size: clamp(1.05rem, .8vw + 1rem, 1.25rem);
+      font-weight: 800;
+      color: var(--yellow);
+      margin-bottom: 14px;
+      line-height: 1.4;
+    }
+
+    .options {
+      display: grid;
+      gap: 10px;
+      margin: 14px 0 4px;
     }
 
     .options button {
-      display: block;
-      background-color: #2c2c2c;
-      color: #ccc;
-      border: none;
-      padding: 10px;
-      margin: 5px 0;
-      width: 100%;
       text-align: left;
-      border-radius: 5px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px 14px;
+      background: var(--panel-2);
+      color: var(--text);
       cursor: pointer;
+      transition: transform .05s ease, border-color .2s ease, background .2s ease;
     }
 
     .options button:hover {
-      background-color: #333;
+      transform: translateY(-1px);
+      border-color: #3a404a;
+    }
+
+    .options button:disabled {
+      opacity: .8;
+      cursor: default;
     }
 
     .options button.correct {
-      background-color: #4caf50;
-      color: white;
+      outline: 2px solid var(--ok);
     }
 
     .options button.wrong {
-      background-color: #e53935;
-      color: white;
+      outline: 2px solid var(--danger);
     }
 
     .feedback {
-      margin-top: 15px;
+      margin-top: 12px;
+      color: var(--muted);
       font-style: italic;
     }
 
-    .next-btn {
-      margin-top: 20px;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      font-size: 1rem;
-      border-radius: 5px;
+    .toolbar {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 14px;
+    }
+
+    .btn {
+      border: 1px solid var(--border);
+      background: var(--yellow);
+      color: #111;
+      font-weight: 800;
+      border-radius: 10px;
+      padding: 10px 16px;
       cursor: pointer;
     }
 
-    .next-btn:hover {
-      background-color: #0056b3;
+    .btn:disabled {
+      opacity: .6;
+      cursor: default;
+    }
+
+    @media (max-width:540px) {
+      .card {
+        padding: 16px;
+      }
     }
   </style>
 </head>
 
 <body>
-  <header>
-    <button class="back-button" onclick="goBack()">⬅ Back</button>
-  </header>
-  <h1>⚔️ GenAI Combat Drill</h1>
-  <div id="quiz-container"></div>
+  <a class="back" href="index.html">Back</a>
+
+  <main class="stage">
+    <div class="stack">
+      <h1 class="page-head">⚔️ GenAI Combat Drill</h1>
+      <div id="quiz" class="card" role="region" aria-live="polite"></div>
+    </div>
+  </main>
+
   <script>
-    const questions = [
-      {
-        "question": "What does NLP stand for in the context of Generative AI?",
-        "options": ["Neural Language Prediction", "Natural Language Processing", "Neuro Learning Protocol", "Numeric Logic Prediction"],
-        "answer": "Natural Language Processing",
-        "explanation": "NLP stands for Natural Language Processing, a subfield of AI that enables machines to understand and generate human language."
-      },
-      {
-        "question": "Which model architecture is most commonly used for generative AI language tasks?",
-        "options": ["CNN", "RNN", "Transformer", "K-Nearest Neighbors"],
-        "answer": "Transformer",
-        "explanation": "Transformer models are the backbone of modern generative AI applications like ChatGPT and Bard."
-      },
-      {
-        "question": "Which technique helps prevent a Large Language Model from generating inappropriate content?",
-        "options": [
-          "Greedy Decoding",
-          "Temperature Sampling",
-          "Prompt Engineering",
-          "Fine-Tuning"
-        ],
-        "correct_answer": "Fine-Tuning",
-        "explanation": "Fine-tuning retrains the model on a carefully curated dataset to reduce bias and inappropriate outputs."
-      },
-      {
-        "question": "What is the primary advantage of using embeddings in Generative AI models?",
-        "options": [
-          "They increase token length",
-          "They translate data into fixed JSON formats",
-          "They represent semantic similarity between inputs",
-          "They reduce the size of output files"
-        ],
-        "correct_answer": "They represent semantic similarity between inputs",
-        "explanation": "Embeddings allow models to understand the meaning and relationships between inputs based on vector similarity."
-      },
-      {
-        "question": "Which evaluation metric is most commonly used to assess the fluency of text generated by a language model?",
-        "options": [
-          "BLEU Score",
-          "RMSE",
-          "Accuracy",
-          "Precision"
-        ],
-        "correct_answer": "BLEU Score",
-        "explanation": "BLEU Score measures the overlap between generated text and reference text, evaluating fluency and coherence."
-      },
-      {
-        "question": "How does 'Chain of Thought' prompting improve generative model outputs?",
-        "options": [
-          "By skipping redundant computations",
-          "By adding more stylistic options to outputs",
-          "By encouraging step-by-step reasoning",
-          "By removing noise in training data"
-        ],
-        "correct_answer": "By encouraging step-by-step reasoning",
-        "explanation": "Chain of Thought prompting guides the model to break down complex tasks into intermediate reasoning steps."
-      },
-      {
-        "question": "Which GenAI task is best suited for a Transformer-based architecture?",
-        "options": [
-          "Face recognition",
-          "Object detection",
-          "Text summarization",
-          "Voice pitch correction"
-        ],
-        "correct_answer": "Text summarization",
-        "explanation": "Transformers are highly effective in NLP tasks like summarization due to their attention mechanism."
-      },
-      {
-        "question": "Why is tokenization important in GenAI models?",
-        "options": [
-          "It helps convert models into executable code",
-          "It adds visual features to datasets",
-          "It transforms input text into model-understandable units",
-          "It organizes files into folders"
-        ],
-        "correct_answer": "It transforms input text into model-understandable units",
-        "explanation": "Tokenization breaks down text into smaller units like words or subwords that the model can process."
-      },
-      {
-        "question": "Which model is designed specifically to generate images from text prompts?",
-        "options": [
-          "BERT",
-          "DALL\u00b7E",
-          "T5",
-          "Whisper"
-        ],
-        "correct_answer": "DALL\u00b7E",
-        "explanation": "DALL\u00b7E is an image-generating model developed by OpenAI that creates visuals from textual descriptions."
-      },
-      {
-        "question": "What does RLHF stand for in Generative AI?",
-        "options": [
-          "Regular Language Hallucination Filter",
-          "Reinforcement Learning from Human Feedback",
-          "Realistic Language Hyper Fine-tuning",
-          "Rapid Learning for Human Foresight"
-        ],
-        "correct_answer": "Reinforcement Learning from Human Feedback",
-        "explanation": "RLHF improves model behavior by aligning outputs with human preferences through feedback-based training."
-      },
-      {
-        "question": "In a project context, which GenAI capability is ideal for creating structured meeting summaries?",
-        "options": [
-          "Text-to-SQL",
-          "Automatic Speech Recognition",
-          "Text Classification",
-          "Text Summarization"
-        ],
-        "correct_answer": "Text Summarization",
-        "explanation": "Text summarization condenses long-form meeting notes into concise summaries, making it ideal for PM workflows."
-      },
-      {
-        "question": "Which method helps reduce hallucinations in generative text models?",
-        "options": [
-          "Increasing learning rate",
-          "Using Chain-of-Thought prompting",
-          "Using longer prompts",
-          "Reducing dataset size"
-        ],
-        "correct_answer": "Using Chain-of-Thought prompting",
-        "explanation": "Chain-of-Thought prompting supports logical reasoning, which helps the model generate more accurate outputs."
+    // ---- CONFIG ----
+    const JSON_URL = 'genai_quiz.json';
+    const STORAGE_KEY = 'genai_quiz_state_v1';
+
+    // ---- STATE ----
+    let questions = [];
+    let order = [];     // shuffled indices
+    let current = 0;    // pointer into order[]
+
+    // Fisher–Yates
+    function shuffle(arr) {
+      for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
       }
-      // Add more questions here from JSON if needed
-    ];
+      return arr;
+    }
 
-    let current = 0;
+    function saveState() {
+      sessionStorage.setItem(STORAGE_KEY, JSON.stringify({ order, current }));
+    }
 
-    function renderQuestion() {
-      const container = document.getElementById('quiz-container');
-      container.innerHTML = '';
+    function loadState(len) {
+      try {
+        const raw = sessionStorage.getItem(STORAGE_KEY);
+        if (!raw) return false;
+        const { order: savedOrder, current: savedCurrent } = JSON.parse(raw);
+        if (!Array.isArray(savedOrder)) return false;
+        if (savedOrder.length !== len) return false;
+        order = savedOrder.slice();
+        current = Math.min(Math.max(0, savedCurrent | 0), order.length - 1);
+        return true;
+      } catch { return false; }
+    }
 
-      const qBox = document.createElement('div');
-      qBox.className = 'question-box';
+    // ---- INIT ----
+    fetch(JSON_URL)
+      .then(r => r.json())
+      .then(data => {
+        // normalize fields
+        questions = data.map(q => ({
+          ...q,
+          answer: q.answer ?? q.correct_answer,
+          explanation: q.explanation ?? ''
+        }));
 
-      const qText = document.createElement('div');
-      qText.className = 'question';
-      qText.innerText = questions[current].question;
-      qBox.appendChild(qText);
+        // try to restore; otherwise create a fresh shuffled run
+        if (!loadState(questions.length)) {
+          order = shuffle([...Array(questions.length).keys()]);
+          current = 0;
+          saveState();
+        }
 
-      const optionsDiv = document.createElement('div');
-      optionsDiv.className = 'options';
-      questions[current].options.forEach(opt => {
-        const btn = document.createElement('button');
-        btn.innerText = opt;
-        btn.onclick = () => handleAnswer(btn, opt);
-        optionsDiv.appendChild(btn);
+        renderQuestion();
+      })
+      .catch(err => {
+        console.error(err);
+        document.getElementById('quiz').innerHTML =
+          '<p style="color:#ff8080">Could not load genai_quiz.json.</p>';
       });
-      qBox.appendChild(optionsDiv);
 
-      container.appendChild(qBox);
+    // ---- RENDER ----
+    function renderQuestion() {
+      const $quiz = document.getElementById('quiz');
+      const q = questions[order[current]];
+      $quiz.innerHTML = '';
+
+      const qEl = document.createElement('div');
+      qEl.className = 'question';
+      qEl.textContent = q.question;
+      $quiz.appendChild(qEl);
+
+      const opts = document.createElement('div');
+      opts.className = 'options';
+      q.options.forEach(opt => {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.textContent = opt;
+        b.addEventListener('click', () => handleAnswer(b, opt));
+        opts.appendChild(b);
+      });
+      $quiz.appendChild(opts);
     }
 
     function handleAnswer(btn, choice) {
-      const correct = questions[current].answer;
-      const feedback = document.createElement('div');
-      feedback.className = 'feedback';
+      const $quiz = document.getElementById('quiz');
+      const q = questions[order[current]];
+      const all = [...$quiz.querySelectorAll('.options button')];
+      all.forEach(b => b.disabled = true);
 
-      if (choice === correct) {
+      const isCorrect = choice === q.answer;
+      if (isCorrect) {
         btn.classList.add('correct');
-        feedback.innerText = "✅ Correct!";
       } else {
         btn.classList.add('wrong');
-        feedback.innerText = `❌ Nope. Tip: ${questions[current].explanation}\nCorrect: ${correct}`;
+        const correctBtn = all.find(b => b.textContent === q.answer);
+        if (correctBtn) correctBtn.classList.add('correct');
       }
 
-      document.querySelectorAll('.options button').forEach(b => b.disabled = true);
+      const fb = document.createElement('div');
+      fb.className = 'feedback';
+      fb.textContent = isCorrect ? '✅ Correct!' : `❌ Not quite. ${q.explanation}`;
+      $quiz.appendChild(fb);
 
-      document.querySelector('.question-box').appendChild(feedback);
-
-      const nextBtn = document.createElement('button');
-      nextBtn.className = 'next-btn';
-      nextBtn.innerText = 'Next';
-      nextBtn.onclick = () => {
-        current++;
-        if (current < questions.length) {
-          renderQuestion();
-        } else {
-          document.getElementById('quiz-container').innerHTML = '<h2>You completed the drill 💪</h2>';
-        }
-      };
-
-      document.querySelector('.question-box').appendChild(nextBtn);
+      const bar = document.createElement('div');
+      bar.className = 'toolbar';
+      const next = document.createElement('button');
+      next.className = 'btn';
+      next.textContent = current < order.length - 1 ? 'Next' : 'Finish';
+      next.addEventListener('click', nextQuestion);
+      bar.appendChild(next);
+      $quiz.appendChild(bar);
     }
 
-    function goBack() {
-      window.history.back();
+    function nextQuestion() {
+      current++;
+      saveState();
+      if (current < order.length) {
+        renderQuestion();
+      } else {
+        sessionStorage.removeItem(STORAGE_KEY); // run complete
+        document.getElementById('quiz').innerHTML =
+          `<div class="question" style="color:var(--text)">You completed the drill 💪</div>`;
+      }
     }
-
-    renderQuestion();
   </script>
+
+
 </body>
 
 </html>

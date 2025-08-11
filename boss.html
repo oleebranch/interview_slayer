@@ -28,11 +28,59 @@
       box-sizing: border-box
     } */
 
+    html,
     body {
       margin: 0;
+      padding: 0;
       background: var(--bg);
       color: var(--text);
+      height: 100%;
       font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    }
+
+    html,
+    body,
+    #appRoot {
+      height: 100%;
+    }
+
+    #appRoot {
+      min-height: 100dvh;
+      /* dynamic viewport height (best on mobile) */
+      min-height: 100svh;
+      /* small viewport height fallback */
+      display: grid;
+      grid-template-rows: auto 1fr;
+    }
+
+    body {
+      background-color: #121212;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .app-header {
+      background: #0b0b12;
+      /* same dark color */
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      padding: calc(8px + env(safe-area-inset-top, 0px)) 12px 8px 12px;
+    }
+
+    #fs-btn {
+      display: none;
+    }
+
+    .fullbleed {
+      block-size: 100dvh;
+      inline-size: 100%;
+      overflow: hidden;
     }
 
     .wrap {
@@ -284,6 +332,11 @@
 
 <body>
   <a class="back" href="index.html">Back</a>
+  <div class="app">
+    <header class="app-header">
+      <button id="fs-btn" aria-pressed="false" title="Toggle Fullscreen"></button>
+    </header>
+  </div>
   <div class="start-screen" id="screen-start">
     <h1>⚔️ Boss Moves</h1>
     <p class="subtext">

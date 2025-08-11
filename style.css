@@ -1,13 +1,46 @@
+html, body, #appRoot {
+  height: 100%;
+}
+#appRoot {
+  min-height: 100dvh;   /* dynamic viewport height (best on mobile) */
+  min-height: 100svh;   /* small viewport height fallback */
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.fullbleed {
+  block-size: 100dvh;
+  inline-size: 100%;
+  overflow: hidden;
+}
+
 body {
   background-color: #121212;
-  color: #ffffff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   margin: 0;
+  padding: 0;
 }
+
+/* Put the header items on one line, push FS button to the right */
+.app-header {
+  display:flex; align-items:center; justify-content:flex-end;
+  gap:.5rem; padding: calc(8px + env(safe-area-inset-top,0))
+  12px 8px 12px;
+}
+#fs-btn{
+  padding:.45rem .6rem; border-radius:.6rem; border:1px solid #2a2b31;
+  background:#191a1f; color:#eee; cursor:pointer;
+}
+/* optional: hide FS button when already a standalone PWA */
+@media (display-mode: standalone){ #fs-btn{ display:none; } }
+
+/* Keep your centered block tidy */
+.stack{ display:grid; gap:.75rem; }
+
 
 .arena-container {
   text-align: center;

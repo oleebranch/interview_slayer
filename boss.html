@@ -10,6 +10,7 @@
   <title>Interview Slayer — Boss Moves</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <style>
     :root {
       --bg: #0e0f12;
@@ -51,42 +52,6 @@
       /* small viewport height fallback */
       display: grid;
       grid-template-rows: auto 1fr;
-    }
-
-    body {
-      background-color: #121212;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-
-    .app-header {
-      background: #0b0b12;
-      /* same dark color */
-      display: flex;
-      align-items: center;
-      gap: .5rem;
-      padding: calc(8px + env(safe-area-inset-top, 0px)) 12px 8px 12px;
-    }
-
-    #fs-btn {
-      display: none;
-    }
-
-    .fullbleed {
-      block-size: 100dvh;
-      inline-size: 100%;
-      overflow: hidden;
-    }
-
-    .wrap {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 20px
     }
 
     a.back {
@@ -149,13 +114,6 @@
       margin-bottom: 30px;
     }
 
-    .card {
-      background: #1e1e1e;
-      border-radius: 12px;
-      padding: 20px;
-      display: inline-block;
-    }
-
     .ready {
       font-weight: bold;
       font-size: 1.2rem;
@@ -163,20 +121,21 @@
     }
 
     .card {
-      width: 100%;
-      max-width: 760px;
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 22px;
-      box-shadow: 0 6px 24px rgba(0, 0, 0, .35);
+      background: #1f1e1e;
+      border-radius: 12px;
+      padding: 1.5rem;
+      display: inline-block;
+      width: 90%;
+      max-width: 600px;
+      margin: 20px auto;
+      /* breathing space all around */
+      box-sizing: border-box;
     }
 
     .ready {
       font-size: 22px;
       font-weight: 700;
       text-align: center;
-
     }
 
     .options {
@@ -331,12 +290,15 @@
 </head>
 
 <body>
-  <a class="back" href="index.html">Back</a>
-  <div class="app">
-    <header class="app-header">
-      <button id="fs-btn" aria-pressed="false" title="Toggle Fullscreen"></button>
-    </header>
-  </div>
+  <a href="index.html" style="
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: #f1f1f1;
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: #ffcc00;
+    ">⬅ Back</a>
   <div class="start-screen" id="screen-start">
     <h1>⚔️ Boss Moves</h1>
     <p class="subtext">

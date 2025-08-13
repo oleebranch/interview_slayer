@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- PWA and Mobile App Meta Tags -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#121212">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <title>About Interview Slayer</title>
+
+    <style>
+        /* --- Base Styles & Theme --- */
+        :root {
+            --primary-yellow: #ffcc00;
+            --background-dark: #121212;
+            --text-light: #e0e0e0;
+            --text-secondary: #b0b0b0;
+        }
+
+        body {
+            /* UPDATED FONT FAMILY */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-dark);
+            color: var(--text-light);
+            margin: 0;
+            padding: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            /* Align content to the top */
+            min-height: 100vh;
+        }
+
+        /* --- Main Container --- */
+        .container {
+            width: 100%;
+            max-width: 600px;
+            /* A bit wider for better text readability */
+            text-align: left;
+            position: relative;
+        }
+
+        /* --- Back Button --- */
+        .back-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-yellow);
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: opacity 0.2s ease;
+        }
+
+        .back-btn:hover {
+            opacity: 0.8;
+        }
+
+        .back-btn .arrow {
+            width: 24px;
+            height: 24px;
+        }
+
+        /* --- Content Styling --- */
+        .content {
+            padding-top: 60px;
+            /* Space below the back button */
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: var(--primary-yellow);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        /* This now targets the "Let's slay..." line */
+        p:nth-last-of-type(2) {
+            font-weight: bold;
+            color: var(--text-light);
+            /* Make this line stand out */
+        }
+
+        /* This styles the new signoff */
+        p:last-of-type {
+            margin-top: 2.5rem;
+            /* Add some space before the signoff */
+            margin-bottom: 0;
+            font-style: italic;
+            line-height: 1.5;
+            color: var(--text-light);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- The back button should link to your app's home page, e.g., index.html -->
+        <a href="index.html" class="back-btn" aria-label="Go back to home">
+            <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z">
+                </path>
+            </svg>
+            Back
+        </a>
+
+        <div class="content">
+            <h1>About The App</h1>
+
+            <p>
+                I'm currently in the job-hunting arena myself, looking for that next great PM role.
+            </p>
+
+            <p>
+                After finishing my Coursera PM and IBM Generative AI certifications, I wanted to put my new skills to
+                the test on a real project. So, I built Interview Slayer. It started as my personal study partner and
+                interview prep tool, and now I'm sharing it with you.
+            </p>
+
+            <p>
+                My hope is that these challenges help you stay sharp, confident, and ready to land your dream job. Let's
+                slay these interviews together.
+            </p>
+
+            <p>
+                Sincerely,<br>
+                Olive 💕
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
+```

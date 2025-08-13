@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- PWA and Mobile App Meta Tags -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#121212">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <title>Feedback - Interview Slayer</title>
+
+    <style>
+        /* --- Base Styles & Theme --- */
+        :root {
+            --primary-yellow: #ffcc00;
+            --background-dark: #121212;
+            --text-light: #e0e0e0;
+            --text-secondary: #b0b0b0;
+            --surface-dark: #1e1e1e;
+            --border-color: #444;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-dark);
+            color: var(--text-light);
+            margin: 0;
+            padding: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        /* --- Main Container --- */
+        .container {
+            width: 100%;
+            max-width: 600px;
+            text-align: left;
+            position: relative;
+        }
+
+        /* --- Back Button --- */
+        .back-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-yellow);
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: opacity 0.2s ease;
+        }
+
+        .back-btn:hover {
+            opacity: 0.8;
+        }
+
+        .back-btn .arrow {
+            width: 24px;
+            height: 24px;
+        }
+
+        /* --- Content Styling --- */
+        .content {
+            padding-top: 60px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: var(--primary-yellow);
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: var(--text-secondary);
+            margin-bottom: 2.5rem;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* --- Action Button --- */
+        .action-btn {
+            display: inline-block;
+            background-color: var(--primary-yellow);
+            color: var(--background-dark);
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+
+        .action-btn:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- The back button should link to your app's home page, e.g., index.html -->
+        <a href="index.html" class="back-btn" aria-label="Go back to home">
+            <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z">
+                </path>
+            </svg>
+            Back
+        </a>
+
+        <div class="content">
+            <h1>Share Your Feedback</h1>
+
+            <p>
+                Thank you for helping make Interview Slayer better! Your feedback is crucial. You'll be taken to a
+                Google Form to share your thoughts.
+            </p>
+
+            <!-- 
+                IMPORTANT: Replace "#" with the actual link to your Google Form.
+                Use target="_blank" to open the form in a new tab, which is good practice.
+            -->
+            <a href="https://forms.gle/G6gNmCtnbTCpjEQx7" target="_blank" class="action-btn">
+                Open Feedback Form
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -17,9 +17,123 @@
   <title>Interview Slayer Arena</title>
   <link rel="stylesheet" href="style.css" />
 
+  <style>
+    :root {
+      --primary-yellow: #ffcc00;
+      --background-dark: #121212;
+      --surface-dark: #1e1e1e;
+      --text-light: #e0e0e0;
+      --text-dark: #333333;
+      --border-color: #444;
+    }
+
+    /* --- Header & Hamburger Menu --- */
+    .app-header {
+      position: absolute;
+      top: -1rem;
+      right: 0;
+      z-index: 1001;
+      /* Ensure it's above other content */
+    }
+
+    .hamburger-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 36px;
+      height: 36px;
+      z-index: 1001;
+      margin: 2.5rem 1.5rem 0 0;
+    }
+
+    .hamburger-btn .line {
+      width: 100%;
+      height: 3px;
+      background-color: var(--primary-yellow);
+      border-radius: 3px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    /* --- Side Navigation Panel --- */
+    .side-nav {
+      position: fixed;
+      top: 0;
+      right: -300px;
+      /* Start off-screen */
+      width: 280px;
+      height: 100%;
+      background-color: var(--surface-dark);
+      box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+      transition: right 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      z-index: 1000;
+      padding-top: 60px;
+    }
+
+    .side-nav.open {
+      right: 0;
+      /* Slide in */
+    }
+
+    .side-nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .side-nav li a {
+      display: block;
+      padding: 20px 30px;
+      color: var(--primary-yellow);
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .side-nav li a:hover {
+      background-color: var(--primary-yellow);
+      color: var(--text-dark);
+    }
+
+    /* Overlay for when menu is open */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 999;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.4s ease, visibility 0.4s ease;
+    }
+
+    .overlay.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .menu-link {
+      color: #ffcc00;
+    }
+  </style>
+
 </head>
 
 <body>
+  <header class="app-header">
+    <button class="hamburger-btn" id="hamburger-btn" aria-label="Open menu">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </button>
+  </header>
+
   <div class="arena-container">
     <h1 class="arena-title">
       <span class="eyebrow">You are in the</span>
@@ -32,6 +146,16 @@
       <button onclick="goToArena('boss.html')">🦾 Boss Moves</button>
     </div>
   </div>
+
+  <div class="overlay" id="overlay"></div>
+  <!-- Slide-out Navigation Menu -->
+  <nav class="side-nav" id="side-nav">
+    <ul>
+      <li><a href="about_the_app.html" class="menu-link">About the App</a></li>
+      <li><a href="feedback.html" class="menu-link">Feedback</a></li>
+      <li><a href="share.html" class="menu-link">Share App</a></li>
+    </ul>
+  </nav>
   <script>
     function goToArena(file) {
       window.location.href = file;
@@ -43,6 +167,23 @@
           .catch(console.error);
       });
     }
+
+    // --- JavaScript for Menu Toggle ---
+
+    // Get the necessary elements from the DOM
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const sideNav = document.getElementById('side-nav');
+    const overlay = document.getElementById('overlay');
+
+    // Function to toggle the menu open/closed
+    function toggleMenu() {
+      sideNav.classList.toggle('open');
+      overlay.classList.toggle('show');
+    }
+
+    // Add click event listeners
+    hamburgerBtn.addEventListener('click', toggleMenu);
+    overlay.addEventListener('click', toggleMenu); // Close menu when clicking overlay
   </script>
 </body>
 

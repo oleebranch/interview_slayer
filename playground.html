@@ -17,6 +17,14 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #e5e7eb;
+            /* Equivalent to text-gray-200 */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
         }
 
         ::-webkit-scrollbar {
@@ -55,15 +63,9 @@
 </head>
 
 <body class="bg-[#121212] text-gray-200 flex flex-col items-center min-h-screen p-4 sm:p-6">
-    <a href="index.html" style="
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      color: #f1f1f1;
-      text-decoration: none;
-      font-size: 1.2rem;
-      color: #ffcc00;
-    ">⬅ Back </a>
+    <a href="index.html"
+        class="absolute top-4 left-4 sm:top-6 sm:left-6 text-[#ffcc00] text-xl font-bold hover:opacity-80 transition-opacity z-10 flex items-center gap-2">⬅
+        Back </a>
 
     <div class="w-full max-w-4xl relative pt-24">
 
@@ -80,7 +82,7 @@
                     &larr; Last
                 </button>
                 <button id="next-challenge-btn"
-                    class="bg-[#ffcc00] text-[#121212] font-semibold py-2 px-3 rounded-lg hover:opacity-90 transition">
+                    class="bg-[#ffcc00] text-[#121212] font-semibold py-2 px-4 rounded-lg hover:opacity-90 transition">
                     Next &rarr;
                 </button>
             </div>

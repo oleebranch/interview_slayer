@@ -1,0 +1,178 @@
+[
+    {
+        "title": "Extract and Format Meeting Attendees",
+        "description": "From the 'Source Text' below, extract the full name, job title, and company of each person mentioned. The output must be a clean, numbered list following this exact format for each person:\n\n1. [Full Name] - [Job Title], [Company]",
+        "sourceText": "During the Lagos tech summit kickoff, several key figures were present. We met with Ms. Adaobi Eze, the CEO of Innovate Nigeria. Also present was Mr. Kofi Mensah, a lead investor from Accra Ventures. He holds the position of Managing Partner. From Kenya, Ms. Binta Diallo, the Head of Product at SafariPay, shared her insights. Mr. Tunde Adebayo, a senior software engineer from Paystack, joined the discussion later. Finally, Dr. Amina Yusuf, the Chief Technology Officer at Jumia, moderated the panel."
+    },
+    {
+        "title": "Solve the Fused Animal Riddle",
+        "description": "A riddle involves fusing animal names by taking the first few letters of one, reversing the first few letters of another, and stitching them together (e.g., 'wol' + 'tibar' (rabbit reversed) = 'woltibar').\n\nYour challenge: Create a prompt that solves the riddle for the words in the 'Source Text'. The output must be concise and include only the list of animal names at the end.",
+        "sourceText": "- aebrib\n- oilnid\n- somorc"
+    },
+    {
+        "title": "Summarize Customer Feedback for a Mobile Money App",
+        "description": "From the three customer reviews for a mobile money app in the 'Source Text' below, summarize the key positive and negative points into two distinct bulleted lists: one for 'Pros' and one for 'Cons'.",
+        "sourceText": "Review 1 (Kampala): \"The app is so easy to use for sending money to my family in the village. The transaction fees are also very low. I just wish it had a feature to pay for my boda boda rides directly.\"\nReview 2 (Nairobi): \"Customer support was amazing, they helped me reverse a wrong transaction instantly! However, the app sometimes crashes on my older phone.\"\nReview 3 (Accra): \"I love that I can pay my utility bills directly. The low fees are a huge plus. The interface could be a bit more modern, it looks dated.\""
+    },
+    {
+        "title": "Categorize Ugandan Expenses",
+        "description": "From the 'Source Text' list of transactions, categorize each one into 'Food & Groceries', 'Transport', 'Bills', or 'Airtime & Data'. The output should be a list where each line is '[Item]: [Category]'.",
+        "sourceText": "- Rolex from a street vendor: 3,000 UGX\n- Monthly Umeme Bill: 50,000 UGX\n- Boda boda to work: 5,000 UGX\n- MTN Data Bundle: 10,000 UGX\n- Groceries from Shoprite: 75,000 UGX\n- Matatu fare: 2,000 UGX"
+    },
+    {
+        "title": "Extract Contact Information",
+        "description": "From the block of text in the 'Source Text', extract only the email addresses and phone numbers mentioned. List them clearly under two headings: 'Emails' and 'Phone Numbers'.",
+        "sourceText": "Hi team, please reach out to our new supplier, Mr. Okoro, at chinedu.o@lagos-textiles.ng to finalize the order. His partner, Aisha, can be reached at +234 801 234 5678 if he's unavailable. My own email is manager@kampala-imports.ug. Also, the old contact, info@old-supplier.com, should be removed. For emergencies, call the main office at +256 772 987 654."
+    },
+    {
+        "title": "Identify Action Items from a Meeting",
+        "description": "From the meeting notes in the 'Source Text', identify and list all the action items and who they are assigned to. The output should be a simple list in the format '[Person] - [Action Item]'.",
+        "sourceText": "Meeting Notes - Q3 Planning:\n- The new marketing campaign looks good. Aisha to finalize the budget by Friday.\n- Tunde mentioned the server is slow. He will investigate the performance issues and report back next week.\n- We discussed the user feedback. Binta needs to create a summary of the top 3 feature requests.\n- Everyone agreed to the new timeline."
+    },
+    {
+        "title": "Simplify Jargon for a New Intern",
+        "description": "Take the sentence in the 'Source Text' and write a prompt to simplify it for a new intern who is not familiar with corporate jargon.",
+        "sourceText": "We must leverage our core competencies to synergize our value proposition and disrupt the vertical."
+    },
+    {
+        "title": "Format as a JSON Object",
+        "description": "Take the user profile in the 'Source Text' and write a prompt to format it as a clean JSON object.",
+        "sourceText": "Name: Adaobi Eze, Age: 34, City: Lagos, Role: CEO"
+    },
+    {
+        "title": "Rewrite for a Different Audience",
+        "description": "Take the technical product description for a solar panel in the 'Source Text' and rewrite it for a non-technical homeowner in a rural area in Uganda.",
+        "sourceText": "Our new PV module features monocrystalline silicon cells with a 22.5% efficiency rating and a maximum power output of 450W under standard test conditions. It includes an anti-reflective coating and a durable anodized aluminum frame."
+    },
+    {
+        "title": "Generate a Social Media Post for a Kampala Restaurant",
+        "description": "From the details in the 'Source Text', write a prompt to create a short, engaging Instagram post. Include emojis and relevant hashtags.",
+        "sourceText": "Restaurant: Cafe Javas\nLocation: Kampala Road\nSpecial Offer: Two-for-one on all milkshakes this Friday.\nDish to highlight: The Big Breakfast"
+    },
+    {
+        "title": "Explain 'Mobile Money' to a Jaja",
+        "description": "Write a prompt to explain the concept of 'Mobile Money' to a grandmother (Jaja) in Uganda who has never used it. Use a simple analogy."
+    },
+    {
+        "title": "Generate a Recipe for a Rolex",
+        "description": "From the ingredients in the 'Source Text', write a prompt to generate a simple, step-by-step recipe for a Ugandan Rolex.",
+        "sourceText": "Ingredients: Chapati, Eggs, Onions, Tomatoes, Cabbage, Salt"
+    },
+    {
+        "title": "Write a Professional Email to a Ugandan Company",
+        "description": "Using the details in the 'Source Text', draft a prompt that generates a professional email inquiring about potential job opportunities.",
+        "sourceText": "Your Name: Olive Nakiyemba\nYour Role: Project Manager\nTarget Company: Bank of Uganda\nReason: Admire their impact on urban transport in Kampala."
+    },
+    {
+        "title": "Generate a Project Plan Outline for a Ugandan Startup",
+        "description": "Create a prompt that outlines the main sections of a project plan for launching a new app that helps Ugandan farmers get weather alerts."
+    },
+    {
+        "title": "Translate to Casual Luganda",
+        "description": "Take the formal English sentence in the 'Source Text' and write a prompt to translate it into a casual, friendly Luganda phrase. Provide the English meaning as well.",
+        "sourceText": "Hello, how are you doing today?"
+    },
+    {
+        "title": "Identify Sentiment in a Tweet about a Ugandan Service",
+        "description": "Write a prompt that analyzes the tweet in the 'Source Text' and determines if the overall sentiment is 'Positive', 'Negative', or 'Neutral'.",
+        "sourceText": "Tweet: \"Waited for my SafeBoda for 20 minutes in the rain, the app kept crashing. Not a great experience today.\""
+    },
+    {
+        "title": "Role-play as a Historical Figure from Uganda",
+        "description": "Instruct the AI to answer the question 'What was your most important contribution?' while acting as Kabaka Muteesa I of Buganda."
+    },
+    {
+        "title": "Brainstorm Blog Post Titles about Kampala",
+        "description": "Generate 5 compelling blog post titles about the best places to eat in Kampala."
+    },
+    {
+        "title": "Write a Poem about Lake Victoria",
+        "description": "Create a prompt to write a four-line poem about a sunset over Lake Victoria."
+    },
+    {
+        "title": "Generate Test Data with Ugandan Names",
+        "description": "Create a prompt to generate a list of 5 fake Ugandan user profiles, each with a first name, last name, and a plausible phone number."
+    },
+    {
+        "title": "Create a Multiple-Choice Question about Uganda",
+        "description": "Write a prompt to create a multiple-choice question about the source of the Nile, with one correct answer and three plausible incorrect answers."
+    },
+    {
+        "title": "Explain Code for a Boda Boda Fare Calculator",
+        "description": "Given the simple Python function in the 'Source Text', write a prompt that explains what the code does in plain, easy-to-understand language.",
+        "sourceText": "def calculate_fare(distance_km, base_fare=2000, rate_per_km=1000):\n    return base_fare + (distance_km * rate_per_km)"
+    },
+    {
+        "title": "Generate a Fictional Character Bio",
+        "description": "Create a prompt to generate a short biography for a boda boda driver working in the Ntinda area of Kampala."
+    },
+    {
+        "title": "Create an Analogy for Kampala Traffic",
+        "description": "Write a prompt that creates a funny but accurate analogy to explain Kampala's traffic jams."
+    },
+    {
+        "title": "Generate a List of Pros and Cons",
+        "description": "Generate a list of pros and cons for starting a coffee shop on Acacia Avenue in Kampala."
+    },
+    {
+        "title": "Write a Product Description for Ugandan Coffee",
+        "description": "Using the details in the 'Source Text', write a prompt to generate a 50-word product description for a new brand of coffee.",
+        "sourceText": "Brand Name: Rwenzori Roast\nOrigin: Slopes of the Rwenzori Mountains, Uganda\nFlavor Notes: Chocolate, citrus, bold\nType: Single-origin Arabica"
+    },
+    {
+        "title": "Generate a Story Plot",
+        "description": "Create a prompt to generate a basic three-act story plot about a young entrepreneur from Entebbe who starts a successful fish export business."
+    },
+    {
+        "title": "Generate Interview Questions for a Ugandan Tech Role",
+        "description": "Create a prompt to generate five behavioral interview questions for a Junior Developer role at a tech hub in Kampala."
+    },
+    {
+        "title": "Write a Haiku about a Kampala Rolex",
+        "description": "Write a prompt to generate a haiku (5-7-5 syllables) about eating a fresh Rolex in Kampala."
+    },
+    {
+        "title": "Generate a Business Name",
+        "description": "Generate 5 creative business names for a fashion brand that uses Ugandan barkcloth."
+    },
+    {
+        "title": "Write a Movie Synopsis for a Ugandan Film",
+        "description": "Write a prompt to generate a 2-sentence synopsis for a Ugandan film about a group of friends who go on a safari in Murchison Falls National Park."
+    },
+    {
+        "title": "Generate a Thank You Note in Luganda",
+        "description": "Create a prompt to generate a short, polite thank you note in Luganda for a gift. Provide the English translation as well."
+    },
+    {
+        "title": "Generate a Packing List for a Trip to Jinja",
+        "description": "Create a prompt to generate a packing list for a 3-day adventure trip to Jinja, including activities like rafting and bungee jumping."
+    },
+    {
+        "title": "Write a Song Chorus",
+        "description": "Write a prompt to generate a 4-line chorus for a Ugandan pop song about a fun weekend."
+    },
+    {
+        "title": "Generate a Character Dialogue",
+        "description": "Create a prompt to generate a short, funny dialogue between a taxi conductor and a passenger in Kampala's Old Taxi Park."
+    },
+    {
+        "title": "Create a Business SWOT Analysis",
+        "description": "Write a prompt to generate a basic SWOT (Strengths, Weaknesses, Opportunities, Threats) analysis for a new co-working space opening in Kololo."
+    },
+    {
+        "title": "Generate a Quiz about Ugandan Wildlife",
+        "description": "Create a prompt to generate a 3-question true/false quiz about the animals found in Queen Elizabeth National Park."
+    },
+    {
+        "title": "Write a Rejection Email",
+        "description": "Write a prompt to generate a polite and professional email to a job candidate who was not selected for a role at your Kampala-based company."
+    },
+    {
+        "title": "Generate a Press Release Headline",
+        "description": "Generate 3 catchy headlines for a press release about a Ugandan fintech startup, like Xente, launching a new feature."
+    },
+    {
+        "title": "Create a Fictional Timeline",
+        "description": "Write a prompt to generate a timeline of 5 key events in the history of the Buganda Kingdom."
+    }
+]

@@ -56,7 +56,8 @@
 
 <body class="bg-[#121212] text-gray-200 flex flex-col items-center min-h-screen p-4 sm:p-6">
 
-    <a href="steady.html" style="
+    <div class="w-full max-w-4xl relative pt-24">
+        <a href="index.html" style="
       position: absolute;
       top: 20px;
       left: 20px;
@@ -66,61 +67,61 @@
       color: #ffcc00;
     ">⬅ </a>
 
-    <header class="text-center mb-6">
-        <h1 class="text-3xl sm:text-4xl font-bold text-[#ffcc00] mt-5">🤖 GenAI Prompt Playground</h1>
-        <p class="text-gray-400 mt-2">Hone your prompt engineering skills. Test different structures and see the
-            results.</p>
-    </header>
+        <header class="text-center mb-6">
+            <h1 class="text-3xl sm:text-4xl font-bold text-[#ffcc00]">🤖 GenAI Prompt Playground</h1>
+            <p class="text-gray-400 mt-2">Hone your prompt engineering skills. Test different structures and see the
+                results.</p>
+        </header>
 
-    <section id="challenge-section" class="bg-[#2a2a2a] border border-gray-700 rounded-xl p-6 mb-6">
-        <!-- UPDATED: Removed heading, buttons are now on opposite sides -->
-        <div class="flex justify-between items-center mb-4">
-            <button id="last-challenge-btn"
-                class="bg-[#ffcc00] text-[#121212] font-semibold py-2 px-3 rounded-lg hover:opacity-90 transition">
-                &larr; Last
-            </button>
-            <button id="next-challenge-btn"
-                class="bg-[#ffcc00] text-[#121212] font-semibold py-2 px-4 rounded-lg hover:opacity-90 transition">
-                Next &rarr;
-            </button>
-        </div>
-        <div id="challenge-content">
-            <h3 id="challenge-title" class="text-xl font-semibold text-[#ffcc00] mb-2"></h3>
-            <p id="challenge-description" class="text-gray-400 whitespace-pre-wrap mb-4"></p>
-            <pre id="challenge-source-text"
-                class="bg-gray-800 p-4 rounded-lg text-gray-300 text-sm whitespace-pre-wrap overflow-x-auto hidden"></pre>
-        </div>
-    </section>
-
-    <main class="bg-[#1e1e1e] rounded-xl shadow-lg p-6 sm:p-8">
-        <div class="mb-6">
-            <label for="prompt-input" class="block text-lg font-semibold mb-2 text-gray-300">Your Prompt:</label>
-            <textarea id="prompt-input" rows="8"
-                class="w-full bg-[#2a2a2a] border border-gray-600 rounded-lg p-4 focus:ring-2 focus:ring-[#ffcc00] focus:border-[#ffcc00] focus:outline-none transition duration-200"
-                placeholder="Craft your prompt here to solve the challenge above..."></textarea>
-        </div>
-
-        <div class="text-center mb-6">
-            <button id="submit-btn"
-                class="bg-[#ffcc00] text-[#121212] font-bold py-3 px-8 rounded-lg hover:opacity-90 transition-transform transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center mx-auto">
-                <span id="button-text">Generate Response</span>
-                <div id="spinner" class="spinner w-6 h-6 rounded-full ml-3 hidden"></div>
-            </button>
-        </div>
-
-        <div>
-            <label for="response-output" class="block text-lg font-semibold mb-2 text-gray-300">AI Response:</label>
-            <div id="response-output"
-                class="w-full bg-[#2a2a2a] border border-gray-600 rounded-lg p-4 h-96 overflow-y-auto whitespace-pre-wrap">
-                <span class="text-gray-500">The model's response will appear here...</span>
+        <section id="challenge-section" class="bg-[#2a2a2a] border border-gray-700 rounded-xl p-6 mb-6">
+            <div class="flex justify-between items-center mb-4">
+                <button id="last-challenge-btn"
+                    class="bg-[#ffcc00] text-[#121212] font-semibold py-2 px-3 rounded-lg hover:opacity-90 transition">
+                    &larr; Last
+                </button>
+                <button id="next-challenge-btn"
+                    class="bg-[#ffcc00] text-[#121212] font-semibold py-2 px-4 rounded-lg hover:opacity-90 transition">
+                    Next &rarr;
+                </button>
             </div>
-        </div>
-    </main>
+            <div id="challenge-content">
+                <h3 id="challenge-title" class="text-xl font-semibold text-[#ffcc00] mb-2"></h3>
+                <p id="challenge-description" class="text-gray-400 whitespace-pre-wrap mb-4"></p>
+                <pre id="challenge-source-text"
+                    class="bg-gray-800 p-4 rounded-lg text-gray-300 text-sm whitespace-pre-wrap overflow-x-auto hidden"></pre>
+            </div>
+        </section>
 
-    <footer class="text-center text-gray-600 mt-8">
-        <p>Built for 🫒 by 🫒</p>
-    </footer>
+        <main class="bg-[#1e1e1e] rounded-xl shadow-lg p-6 sm:p-8">
+            <div class="mb-6">
+                <label for="prompt-input" class="block text-lg font-semibold mb-2 text-gray-300">Your Prompt:</label>
+                <textarea id="prompt-input" rows="8"
+                    class="w-full bg-[#2a2a2a] border border-gray-600 rounded-lg p-4 focus:ring-2 focus:ring-[#ffcc00] focus:border-[#ffcc00] focus:outline-none transition duration-200"
+                    placeholder="Craft your prompt here to solve the challenge above..."></textarea>
+            </div>
+
+            <div class="text-center mb-6">
+                <button id="submit-btn"
+                    class="bg-[#ffcc00] text-[#121212] font-bold py-3 px-8 rounded-lg hover:opacity-90 transition-transform transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center mx-auto">
+                    <span id="button-text">Generate Response</span>
+                    <div id="spinner" class="spinner w-6 h-6 rounded-full ml-3 hidden"></div>
+                </button>
+            </div>
+
+            <div>
+                <label for="response-output" class="block text-lg font-semibold mb-2 text-gray-300">AI Response:</label>
+                <div id="response-output"
+                    class="w-full bg-[#2a2a2a] border border-gray-600 rounded-lg p-4 h-96 overflow-y-auto whitespace-pre-wrap">
+                    <p class="text-gray-500">The model's response will appear here...</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="text-center text-gray-600 mt-8">
+            <p>Built for 🫒 by 🫒</p>
+        </footer>
     </div>
+
 
     <script src="config.js"></script>
 

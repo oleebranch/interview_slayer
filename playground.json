@@ -4,6 +4,11 @@
         "description": "From the 'Source Text' below, extract the full name, job title, and company of each person mentioned. The output must be a clean, numbered list following this exact format for each person:\n\n1. [Full Name] - [Job Title], [Company]",
         "sourceText": "During the Lagos tech summit kickoff, several key figures were present. We met with Ms. Adaobi Eze, the CEO of Innovate Nigeria. Also present was Mr. Kofi Mensah, a lead investor from Accra Ventures. He holds the position of Managing Partner. From Kenya, Ms. Binta Diallo, the Head of Product at SafariPay, shared her insights. Mr. Tunde Adebayo, a senior software engineer from Paystack, joined the discussion later. Finally, Dr. Amina Yusuf, the Chief Technology Officer at Jumia, moderated the panel."
     },
+      {
+        "title": "Categorize Expenses from a Household",
+        "description": "From the 'Source Text' list of expenses, categorize each one into 'Food & Groceries', 'Transport', 'Bills', or 'Entertainment'.",
+        "sourceText": "Bakery purchase: \u20ac15\nTrain ticket: \u20ac40\nNetflix subscription: \u20ac12\nElectricity bill: \u20ac80\nSupermarket groceries: \u20ac65"
+    },
     {
         "title": "Extract and Format Conference Attendees",
         "description": "From the 'Source Text' below, extract and format the attendees in the exact format 'Name - Job Title, Company'.",
@@ -18,11 +23,6 @@
         "title": "Summarize Customer Feedback for a FinTech App",
         "description": "From the three customer reviews for a FinTech app in the 'Source Text' below, summarize the key positive and negative points into two distinct bulleted lists.",
         "sourceText": "Review 1 (New York): 'Great app for sending money internationally, though the fees are a bit high.' Review 2 (Toronto): 'Easy to use, but exchange rates could be better.' Review 3 (S\u00e3o Paulo): 'Fast transfers and good security features, but sometimes the app crashes.'"
-    },
-    {
-        "title": "Categorize Expenses from a Household",
-        "description": "From the 'Source Text' list of expenses, categorize each one into 'Food & Groceries', 'Transport', 'Bills', or 'Entertainment'.",
-        "sourceText": "Bakery purchase: \u20ac15\nTrain ticket: \u20ac40\nNetflix subscription: \u20ac12\nElectricity bill: \u20ac80\nSupermarket groceries: \u20ac65"
     },
     {
         "title": "Solve the Fused Animal Riddle",
@@ -59,12 +59,7 @@
         "description": "From the three customer reviews for a FinTech app in the 'Source Text' below, summarize the key positive and negative points into two distinct bulleted lists.",
         "sourceText": "Review 1 (New York): 'Great app for sending money internationally, though the fees are a bit high.' Review 2 (Toronto): 'Easy to use, but exchange rates could be better.' Review 3 (S\u00e3o Paulo): 'Fast transfers and good security features, but sometimes the app crashes.'"
     },
-    {
-        "title": "Categorize Expenses from a Household",
-        "description": "From the 'Source Text' list of expenses, categorize each one into 'Food & Groceries', 'Transport', 'Bills', or 'Entertainment'.",
-        "sourceText": "Bakery purchase: \u20ac15\nTrain ticket: \u20ac40\nNetflix subscription: \u20ac12\nElectricity bill: \u20ac80\nSupermarket groceries: \u20ac65"
-    },
-    {
+     {
         "title": "Simplify Jargon from a Tech Meeting",
         "description": "Take the sentence in the 'Source Text' and simplify it for someone new to the company.",
         "sourceText": "We must leverage our agile frameworks to optimize cross-functional synergies across verticals.'"
@@ -140,9 +135,39 @@
         "sourceText": "Review 1 (New York): 'Great app for sending money internationally, though the fees are a bit high.' Review 2 (Toronto): 'Easy to use, but exchange rates could be better.' Review 3 (S\u00e3o Paulo): 'Fast transfers and good security features, but sometimes the app crashes.'"
     },
     {
-        "title": "Categorize Expenses from a Household",
-        "description": "From the 'Source Text' list of expenses, categorize each one into 'Food & Groceries', 'Transport', 'Bills', or 'Entertainment'.",
-        "sourceText": "Bakery purchase: \u20ac15\nTrain ticket: \u20ac40\nNetflix subscription: \u20ac12\nElectricity bill: \u20ac80\nSupermarket groceries: \u20ac65"
+        "title": "Simplify Jargon from a Tech Meeting",
+        "description": "Take the sentence in the 'Source Text' and simplify it for someone new to the company.",
+        "sourceText": "'We must leverage our agile frameworks to optimize cross-functional synergies across verticals.'"
+    },
+    {
+        "title": "Extract Contact Information",
+        "description": "From the block of text in the 'Source Text', extract all the email addresses and phone numbers mentioned. List them clearly under two headings: 'Emails' and 'Phone Numbers'.",
+        "sourceText": "For more details, contact Mr. Ahmed at ahmed@dubai-tech.ae or call him on +971 50 123 4567. You may also reach Ms. Fatima via fatima@uae-startups.com."
+    },
+    {
+        "title": "Identify Action Items from a Meeting",
+        "description": "From the meeting notes in the 'Source Text', identify and list all the action items and who they are assigned to. The output should be a simple list in the format '[Person] - [Action Item]'.",
+        "sourceText": "Meeting Notes \u2014 Riyadh HQ:\nAli will prepare the quarterly budget report.\nSara to lead the marketing campaign launch by end of month.\nKhalid will oversee IT security upgrades."
+    },
+    {
+        "title": "Summarize Customer Reviews for an E-commerce Site",
+        "description": "From the three customer reviews in the 'Source Text', summarize the feedback into positives and negatives.",
+        "sourceText": "Review 1 (Delhi): 'Wide range of products, but delivery took too long.' Review 2 (Tokyo): 'Very reliable service and fast delivery, though prices are a bit higher.' Review 3 (Jakarta): 'Affordable and convenient, but packaging could be improved.'"
+    },
+    {
+        "title": "Extract and Format Conference Attendees",
+        "description": "From the 'Source Text' below, extract and format the attendees in the exact format 'Name - Job Title, Company'.",
+        "sourceText": "Attendees at the Asia Tech Forum included Dr. Mei Ling, AI Researcher at Shenzhen Robotics; Mr. Ramesh Gupta, COO of Bangalore Cloud Systems; and Ms. Hana Kim, Head of Design at Seoul Innovations."
+    },
+    {
+        "title": "Extract and Format Meeting Attendees",
+        "description": "From the 'Source Text' below, extract the full name, job title, and company of each person mentioned. The output must be a clean, numbered list following this exact format: 'Name - Job Title, Company'.",
+        "sourceText": "At the Silicon Valley summit, attendees included Mr. Carlos Rivera, CTO of InnovateX, and Ms. Julia Martinez, Head of Product at BrightApps. Dr. Andrew Lee, CEO of QuantumLeap AI, was also present."
+    },
+    {
+        "title": "Summarize Customer Feedback for a FinTech App",
+        "description": "From the three customer reviews for a FinTech app in the 'Source Text' below, summarize the key positive and negative points into two distinct bulleted lists.",
+        "sourceText": "Review 1 (New York): 'Great app for sending money internationally, though the fees are a bit high.' Review 2 (Toronto): 'Easy to use, but exchange rates could be better.' Review 3 (S\u00e3o Paulo): 'Fast transfers and good security features, but sometimes the app crashes.'"
     },
     {
         "title": "Simplify Jargon from a Tech Meeting",
@@ -180,11 +205,6 @@
         "sourceText": "Review 1 (New York): 'Great app for sending money internationally, though the fees are a bit high.' Review 2 (Toronto): 'Easy to use, but exchange rates could be better.' Review 3 (S\u00e3o Paulo): 'Fast transfers and good security features, but sometimes the app crashes.'"
     },
     {
-        "title": "Categorize Expenses from a Household",
-        "description": "From the 'Source Text' list of expenses, categorize each one into 'Food & Groceries', 'Transport', 'Bills', or 'Entertainment'.",
-        "sourceText": "Bakery purchase: \u20ac15\nTrain ticket: \u20ac40\nNetflix subscription: \u20ac12\nElectricity bill: \u20ac80\nSupermarket groceries: \u20ac65"
-    },
-    {
         "title": "Simplify Jargon from a Tech Meeting",
         "description": "Take the sentence in the 'Source Text' and simplify it for someone new to the company.",
         "sourceText": "'We must leverage our agile frameworks to optimize cross-functional synergies across verticals.'"
@@ -218,51 +238,6 @@
         "title": "Summarize Customer Feedback for a FinTech App",
         "description": "From the three customer reviews for a FinTech app in the 'Source Text' below, summarize the key positive and negative points into two distinct bulleted lists.",
         "sourceText": "Review 1 (New York): 'Great app for sending money internationally, though the fees are a bit high.' Review 2 (Toronto): 'Easy to use, but exchange rates could be better.' Review 3 (S\u00e3o Paulo): 'Fast transfers and good security features, but sometimes the app crashes.'"
-    },
-    {
-        "title": "Categorize Expenses from a Household",
-        "description": "From the 'Source Text' list of expenses, categorize each one into 'Food & Groceries', 'Transport', 'Bills', or 'Entertainment'.",
-        "sourceText": "Bakery purchase: \u20ac15\nTrain ticket: \u20ac40\nNetflix subscription: \u20ac12\nElectricity bill: \u20ac80\nSupermarket groceries: \u20ac65"
-    },
-    {
-        "title": "Simplify Jargon from a Tech Meeting",
-        "description": "Take the sentence in the 'Source Text' and simplify it for someone new to the company.",
-        "sourceText": "'We must leverage our agile frameworks to optimize cross-functional synergies across verticals.'"
-    },
-    {
-        "title": "Extract Contact Information",
-        "description": "From the block of text in the 'Source Text', extract all the email addresses and phone numbers mentioned. List them clearly under two headings: 'Emails' and 'Phone Numbers'.",
-        "sourceText": "For more details, contact Mr. Ahmed at ahmed@dubai-tech.ae or call him on +971 50 123 4567. You may also reach Ms. Fatima via fatima@uae-startups.com."
-    },
-    {
-        "title": "Identify Action Items from a Meeting",
-        "description": "From the meeting notes in the 'Source Text', identify and list all the action items and who they are assigned to. The output should be a simple list in the format '[Person] - [Action Item]'.",
-        "sourceText": "Meeting Notes \u2014 Riyadh HQ:\nAli will prepare the quarterly budget report.\nSara to lead the marketing campaign launch by end of month.\nKhalid will oversee IT security upgrades."
-    },
-    {
-        "title": "Summarize Customer Reviews for an E-commerce Site",
-        "description": "From the three customer reviews in the 'Source Text', summarize the feedback into positives and negatives.",
-        "sourceText": "Review 1 (Delhi): 'Wide range of products, but delivery took too long.' Review 2 (Tokyo): 'Very reliable service and fast delivery, though prices are a bit higher.' Review 3 (Jakarta): 'Affordable and convenient, but packaging could be improved.'"
-    },
-    {
-        "title": "Extract and Format Conference Attendees",
-        "description": "From the 'Source Text' below, extract and format the attendees in the exact format 'Name - Job Title, Company'.",
-        "sourceText": "Attendees at the Asia Tech Forum included Dr. Mei Ling, AI Researcher at Shenzhen Robotics; Mr. Ramesh Gupta, COO of Bangalore Cloud Systems; and Ms. Hana Kim, Head of Design at Seoul Innovations."
-    },
-    {
-        "title": "Extract and Format Meeting Attendees",
-        "description": "From the 'Source Text' below, extract the full name, job title, and company of each person mentioned. The output must be a clean, numbered list following this exact format: 'Name - Job Title, Company'.",
-        "sourceText": "At the Silicon Valley summit, attendees included Mr. Carlos Rivera, CTO of InnovateX, and Ms. Julia Martinez, Head of Product at BrightApps. Dr. Andrew Lee, CEO of QuantumLeap AI, was also present."
-    },
-    {
-        "title": "Summarize Customer Feedback for a FinTech App",
-        "description": "From the three customer reviews for a FinTech app in the 'Source Text' below, summarize the key positive and negative points into two distinct bulleted lists.",
-        "sourceText": "Review 1 (New York): 'Great app for sending money internationally, though the fees are a bit high.' Review 2 (Toronto): 'Easy to use, but exchange rates could be better.' Review 3 (S\u00e3o Paulo): 'Fast transfers and good security features, but sometimes the app crashes.'"
-    },
-    {
-        "title": "Categorize Expenses from a Household",
-        "description": "From the 'Source Text' list of expenses, categorize each one into 'Food & Groceries', 'Transport', 'Bills', or 'Entertainment'.",
-        "sourceText": "Bakery purchase: \u20ac15\nTrain ticket: \u20ac40\nNetflix subscription: \u20ac12\nElectricity bill: \u20ac80\nSupermarket groceries: \u20ac65"
     },
     {
         "title": "Simplify Jargon from a Tech Meeting",

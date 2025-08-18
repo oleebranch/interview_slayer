@@ -152,6 +152,14 @@
             }
         }
 
+        function clearPromptAndResponse() {
+            // Clear prompt input
+            promptInput.value = '';
+
+            // Reset response output to default message
+            responseOutput.innerHTML = '<p class="text-gray-600">The model\'s response will appear here...</p>';
+        }
+
         function loadChallenge(index) {
             if (challenges.length === 0) return;
             const challenge = challenges[index];
@@ -164,6 +172,7 @@
             } else {
                 challengeSourceText.classList.add('hidden');
             }
+            clearPromptAndResponse();
         }
 
         async function handleGenerateClick() {
